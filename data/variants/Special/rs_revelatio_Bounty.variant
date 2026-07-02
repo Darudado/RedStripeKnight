@@ -1,0 +1,83 @@
+{
+  "variantId": "rs_revelatio_Bounty",
+  "hullId": "rs_revelatio",
+  "displayName": "Bounty",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "quality": 4,
+  "sMods": [
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "autorepair",
+    "magazines",],
+  "hullMods": [
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 022": "rs_scattercannon_L",
+        "WS 023": "rs_scattercannon_L",
+        "WS 024": "rs_scattercannon_L",
+        "WS 025": "rs_scattercannon_L"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "cr_KEP_11",
+        "WS 005": "cr_KEP_11",
+        "WS 006": "cr_KEP_11",
+        "WS 007": "cr_KEP_11",
+        "WS 018": "autopulse",
+        "WS 019": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 016": "irautolance",
+        "WS 017": "irautolance",
+        "WS 026": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "pdlaser",
+        "WS 001": "pdlaser",
+        "WS 008": "pdlaser",
+        "WS 009": "pdlaser",
+        "WS 010": "pdlaser",
+        "WS 011": "pdlaser",
+        "WS 012": "pdlaser",
+        "WS 013": "pdlaser",
+        "WS 020": "guardian",
+        "WS 021": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "cr_EFlak_69",
+        "WS 003": "cr_EFlak_69",
+        "WS 014": "cr_EFlakT_69",
+        "WS 015": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

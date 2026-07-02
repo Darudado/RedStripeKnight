@@ -1,0 +1,301 @@
+{
+  "hullName": "HastaArgentiDivinus",
+  "hullId": "cr_hastaargentidivinus",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Crusaders/HastaArgentiDivinus.png",
+  "style": "CR_TECH",
+  "height": 424,
+  "width": 302,
+  "center": [151, 212],
+  "collisionRadius": 214,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 231.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "SPAutomated",
+    "Excalibur"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "PC_engine",
+    "LE2_Left": "PC_engine",
+    "RE1_Right": "PC_engine",
+    "RE2_Right": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -63,
+      "locations": [1.5, -71.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 63,
+      "locations": [1.5, 71.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 89.5,
+      "locations": [83.5, -13]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -89.5,
+      "locations": [83.5, 13]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-6, 0.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -15,
+      "locations": [-34, -54]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 15,
+      "locations": [-34, 54]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-119, 0.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 155,
+      "locations": [-68.5, 42]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -155,
+      "locations": [-68.5, -42]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [13, 36]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -0,
+      "locations": [13, -36]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [60, 24.5]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -0,
+      "locations": [60, -24.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [111, 24]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -0,
+      "locations": [111, -24]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -145,
+      "locations": [-49.5, -100]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 145,
+      "locations": [-49.5, 100]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-90, -53.5]
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-90, 53.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-165, -0],
+      "length": 140,
+      "width": 39,
+      "angle": 180,
+      "contrailSize": 39,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-90, -53.5],
+      "length": 73.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-90, 53.5],
+      "length": 73.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-49.5, -100],
+      "length": 45.670929,
+      "width": 15.800789,
+      "angle": -145,
+      "contrailSize": 15.800789,
+      "style": "CR_REFIT"
+    },
+    {
+      "location": [-49.5, 100],
+      "length": 45.670929,
+      "width": 15.800789,
+      "angle": 145,
+      "contrailSize": 15.800789,
+      "style": "CR_REFIT"
+    }
+  ],
+  "bounds": [
+    -200, 8,
+    -198, 9,
+    -123.5, 25,
+    -87, 46,
+    -87, 48,
+    -109, 53,
+    -88, 61,
+    -54, 91,
+    -68, 109,
+    -65, 114,
+    -48, 108,
+    -45, 129,
+    -14, 97,
+    -4, 97,
+    12, 117,
+    22, 114,
+    23, 79,
+    37, 65,
+    103, 46,
+    114, 46,
+    162, 31,
+    200, 14,
+    200, 7,
+    151, 7,
+    151, -7,
+    200, -7,
+    200, -14,
+    162, -31,
+    114, -46,
+    103, -46,
+    37, -65,
+    23, -79,
+    22, -114,
+    12, -117,
+    -4, -97,
+    -14, -97,
+    -45, -129,
+    -48, -108,
+    -65, -114,
+    -68, -109,
+    -54, -91,
+    -88, -61,
+    -109, -53,
+    -87, -48,
+    -87, -46,
+    -123.5, -25,
+    -198, -9,
+    -200, -8
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "variantId": "rs_sophia_variant",
+  "hullId": "rs_sophia",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ControllingSystem_manned",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0018": "squall",
+        "WS0019": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "guardian",
+        "WS0016": "cr_EFlak_69",
+        "WS0017": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_appellatio_wing",
+    "rs_appellatio_wing",
+    "rs_aquilachrysaetos_wing",
+    "rs_aquilachrysaetos_wing",
+    "rs_aquilachrysaetos_wing"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+	"id":"rs_dorne_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/drone_fighter_missile.png",
+	"glowSprite":"",
+	"glowColor":[190,60,255,255],
+	"size":[30,50],	
+	"center":[15,25],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[148,0,211,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"flameoutTime":0.3, # total time from flameout to full fadeout
+	"fadeTime":0.3, # fadeout duration
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered	
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":150,
+				  "acc":75,
+				  "dec":40},
+	"armingTime":1,
+    "engineSlots":[{"id":"ES1",
+                    "loc":[-10, 0],
+                    "style":"CUSTOM",
+                    "styleSpec":{
+                        "mode":"QUAD_STRIP",
+                        "engineColor":[242,90,95,255],
+                        "contrailDuration":2.5,
+                        "contrailWidthMult":2,
+                        "contrailWidthAddedFractionAtEnd":2,
+                        "contrailMinSeg":15,
+                        "contrailMaxSpeedMult":.0,
+                        "contrailAngularVelocityMult":0.5,
+                        "contrailSpawnDistMult":1,
+                        "contrailColor":[194,49,49,75],
+                        "type":"GLOW"
+                    },
+                    "width":6.0,
+                    "length":40.0,
+                    "angle":180.0}]
+}
+
+

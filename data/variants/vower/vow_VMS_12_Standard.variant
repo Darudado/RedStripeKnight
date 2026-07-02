@@ -1,0 +1,40 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "vow_VMS_12",
+    "hullMods": [
+        "BallisticTargetCognetrix",
+        "vow_VMS_12_arm_right_antiship_Mode",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_VMS_12_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "LEG_SOURCE": "dragon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "vow_VMS_12_arm_left_missile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "vow_VMS_12_arm_right_antiship",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,10 @@
+id,type,frame,magnitude,map,path
+cr_theonova,ship,,1,normal,graphics/normal/Theonova_normal.png
+cr_theonova,ship,,1,surface,graphics/surface/Theonova_surface.png
+cr_theonova,ship,,1,material,graphics/material/Theonova_material.png
+cr_theosphany,ship,,1,normal,graphics/normal/Theosphany_narmal.png
+cr_theosphany,ship,,1,surface,graphics/surface/Theosphany_surface.png
+cr_theosphany,ship,,1,material,graphics/material/Theosphany_material.png
+,,,,,
+,,,,,
+,,,,,

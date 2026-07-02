@@ -1,0 +1,44 @@
+{
+  "variantId": "cr_raffaello_variant",
+  "hullId": "cr_raffaello",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "EnergyTargetCognetrix",
+        "PolariphaseDrive",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_LEA_51",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "pdlaser",
+                "WS0002": "pdlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "cr_EFlak_69",
+                "WS0004": "cr_EFlak_69",
+            }
+        },
+    ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "vow_VMS_Hambrabi_machinegun_right",
+  "specClass": "projectile",
+  "projectileSpecId": "SEHP_38_shot",
+  "everyFrameEffect": "data.scripts.weapons.MisericordeEffect",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/ships/Mobile_Armor/VMS_14/Hambrabi/Hambrabi_machinegun_right_00.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/VMS_14/Hambrabi/Hambrabi_machinegun_right_00.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    85,
+    -10.5,
+    81,
+    -4.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    206.5,
+    -10.5,
+    202.5,
+    -4.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "numFrames": 3,
+  "frameRate": 20,
+  "animationType": "MUZZLE_FLASH",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 10,
+    "particleSizeMin": 7,
+    "particleSizeRange": 7,
+    "particleDuration": 0.2,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      255,
+      255,
+      175
+    ]
+  },
+  "fireSoundTwo": "KEP_fire"
+}

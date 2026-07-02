@@ -1,0 +1,61 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"骑士团",
+    
+    "directoryUseShortName":true,
+
+    "startRelationships":{},
+    "maxRelationships":{},
+    "diplomacyPositiveChance":{},
+    "diplomacyNegativeChance":{},
+    #"morality":"amoral",
+    
+    "alignments":{
+        "corporate":0.5,
+        "technocratic":0.4,
+        "militarist":0,
+        "diplomatic":0.6,
+        "ideological":0.7,
+    },
+	"diplomacyTraits":["paranoid", "stalwart",  "law_and_order", "envious"],
+    
+    "vengeanceLevelNames":["审查"],
+    "vengeanceFleetNames":["巡察组"],
+	
+	"startShipsSolo":[
+	  ["rs_789_standard"]
+	],
+    "startShipsCombatSmall":[
+      ["rs_avaritia_variant", "rs_huo_standard"],
+    ],
+    "startShipsTradeLarge":[
+	  ["rs_huo_standard", "rs_avaritia_variant", "rs_livoroculorum_variant"],
+	  ["rs_you_standard", "rs_huo_standard", "rs_livoroculorum_variant"]
+	],
+    "startShipsCombatLarge":[
+      ["rs_xun_standard", "rs_behemoth_variant", "rs_livoroculorum_variant"]
+    ],
+    "startShipsCarrierLarge":[
+	  ["rs_archons_standard", "rs_livoroculorum_variant", "rs_livoroculorum_variant"]
+	],
+	"startShipsSuper":[
+        ["rs_infernum_Standard"],
+        ["rs_liliumcandidum_Standard"]
+],
+    
+    "startSpecialItems":[
+        [["rs_package", ""]],
+    ],
+
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+	
+	"industrySeeds":[
+		{"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1}
+    ],
+}

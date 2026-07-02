@@ -1,0 +1,20 @@
+{
+	"id":"sinfulplumage_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.SinfulplumageEffect",
+	"length":175.0,
+	"width":45,
+	"fadeTime":0.3,
+	"fringeColor":[135,40,110,255],
+	"coreColor":[175, 90, 90, 190],
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/fx/beam_weave_core.png","graphics/fx/beam_weave_core.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+}

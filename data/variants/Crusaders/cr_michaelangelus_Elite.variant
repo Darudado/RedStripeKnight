@@ -1,0 +1,88 @@
+{
+  "variantId": "cr_michaelangelus_Elite",
+  "hullId": "cr_michaelangelus",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+        "turretgyros",
+    ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_LEA_51",
+        "WS0003": "cr_LEA_51",
+        "WS0006": "cr_LEA_17",
+        "WS0007": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pilum_large",
+        "WS0018": "pilum_large",
+        "WS0030": "pilum_large",
+        "WS0031": "pilum_large"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_EFlak_69",
+        "WS0005": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0011": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69",
+        "WS0016": "cr_EFlak_69",
+        "WS0017": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "cr_frigate_launcher1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FA2_wing",
+        "cr_FA2_wing",
+        "cr_FFR31MR_wing",
+        "cr_FFR31MR_wing",
+    ]
+}

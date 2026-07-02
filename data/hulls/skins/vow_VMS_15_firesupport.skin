@@ -1,0 +1,51 @@
+{
+	"baseHullId":"vow_VMS_15",
+	"skinHullId":"vow_VMS_15_firesupport",
+	"hullName":"里海泽（汉谟拉比-支援装备 )",
+	"incompatibleWithBaseHull":false, # for the autofit dialog
+	"descriptionId":"rs_Tr_1_owsla",
+	"descriptionPrefix":"该型号为密接火力支援进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"tags":[auto_rec, codex_unlockable ,crusaders_ma],
+	"tech":"誓言者设计",
+	"fleetPoints":12,
+	"ordnancePoints":110,
+	"maxSpeed":105,
+	"acceleration":115,
+	"deceleration":65,
+	"suppliesToRecover":30,
+	"suppliesPerMonth":30,
+	"fluxdissipation":575,
+	"baseValueMult":1,
+	"systemId":"CR_PhaseVerbJet",
+	"spriteName":"graphics/ships/Mobile_Armor/VMS_15/body/VMS_15_body.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+		"Excalibur"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"subENGINE"
+	], 		# weapon slot ids
+	"builtInMods":[
+		"Rhongomyniad"
+	],
+	"weaponSlotChanges":{
+		"SWL1":{
+		  "type": "SYNERGY",
+	   },
+	   "SWR1":{
+		  "type": "SYNERGY",
+	   },
+		"BACKPACK_WEA_R":{
+		  "type": "BUILT_IN",
+	   },
+	   "BACKPACK_WEA_L":{
+		  "type": "BUILT_IN",
+	   },
+	},  
+	"builtInWeapons":{
+    "SHOULDERe_A": "vow_VMS_Hambrabi",
+	"BACKPACK_WEA_R": "vow_VMS_Hambrabi_machinegun_right",
+	"BACKPACK_WEA_L": "vow_VMS_Hambrabi_machinegun_left"
+     },
+}

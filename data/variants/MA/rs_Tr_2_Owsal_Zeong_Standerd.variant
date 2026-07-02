@@ -1,0 +1,86 @@
+{
+  "variantId": "rs_Tr_2_Owsal_Zeong_Standerd",
+  "hullId": "rs_Tr_2_Owsal_Zeong",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "Moci_SMA_LandingSequence",
+    "autorepair",
+    "insulatedengine",
+    "stabilizedshieldemitter",
+    "PolariphaseDrive",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BIT_L": "rs_Owsla_Arm_LinerBit_Control_L",
+        "BIT_R": "rs_Owsla_Arm_LinerBit_Control_R",
+        "MAINGUN": "rs_Tr_2_BL_m"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_lasertorpedo",
+        "WS0003": "rs_lasertorpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BACKGUN_L": "rs_owsla_left_gun_rifle",
+        "BACKGUN_R": "rs_owsla_right_gun_rifle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "rs_scattercannon_L"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "HEAD_SOURCE": "rs_Tr_head_vulcan",
+        "TL_SOURCE": "cr_EFlak_69",
+        "TR_SOURCE": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "hammerrack"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "BIT_WPR": "rs_Tr_1_LinerBit_arm_R_Base"
+    },
+    {
+      "BIT_WPL": "rs_Tr_1_LinerBit_arm_L_Base"
+    },
+    {
+      "BACKPACK_MODULE": "rs_Tr_2_Owsal_backpack_Base"
+    }
+  ],
+  "wings": []
+}

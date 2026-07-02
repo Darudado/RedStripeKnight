@@ -1,0 +1,172 @@
+{
+  "hullName": "MSA0011(Bst)303E_MainEngine",
+  "hullId": "rs_MSA0011(Bst)303E_ManEngine",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Mobile_Armor/MSA-0011(Bst)303E/MSA-0011(Bst)303E_Engine.png",
+  "style": "RS_MA_Module",
+  "height": 110,
+  "width": 120,
+  "center": [60, 55],
+  "collisionRadius": 117,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 107,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersPlating",
+    "CrusadersCore",
+    "MSA0011Bst303E_Controlling",
+    "never_detaches",
+    "Moci_SpecializedMobileArmor_module"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "TVC_engine",
+    "RE1_Right": "TVC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -138,
+      "locations": [5, 15.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 138,
+      "locations": [5, -15.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 138,
+      "locations": [8, -14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -138,
+      "locations": [8, 14]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": -150,
+      "locations": [-17, -43.5]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 150,
+      "locations": [-17, 43.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-27.5, -28],
+      "length": 67.588921,
+      "width": 18.21957,
+      "angle": -171.5,
+      "contrailSize": 18.21957,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-27.5, 28],
+      "length": 67.588921,
+      "width": 18.21957,
+      "angle": 171.5,
+      "contrailSize": 18.21957,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-17, -43.5],
+      "length": 38.7798,
+      "width": 8.337168,
+      "angle": -150,
+      "contrailSize": 8.337168,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-17, 43.5],
+      "length": 38.7798,
+      "width": 8.337168,
+      "angle": 150,
+      "contrailSize": 8.337168,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    -21, 2,
+    -20, 4,
+    16, 6,
+    16, 7,
+    -22, 17,
+    -27, 20,
+    -27, 28,
+    -24, 36,
+    -32, 39,
+    -30, 50,
+    -12, 47,
+    -12, 53,
+    -6, 47,
+    -6, 44,
+    26, 32,
+    26, 30,
+    32, 30,
+    32, 27,
+    36, 27,
+    40, 24,
+    44, 15,
+    44, 10,
+    51, 6.5,
+    51, -6.5,
+    44, -10,
+    44, -15,
+    40, -24,
+    36, -27,
+    32, -27,
+    32, -30,
+    26, -30,
+    26, -32,
+    -6, -44,
+    -6, -47,
+    -12, -53,
+    -12, -47,
+    -30, -50,
+    -32, -39,
+    -24, -36,
+    -27, -28,
+    -27, -20,
+    -22, -17,
+    16, -7,
+    16, -6,
+    -20, -4,
+    -21, -2
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "vow_VMS_12_arm_right_machinegun",
+  "specClass": "projectile",
+  "projectileSpecId": "misericorde_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/ships/Mobile_Armor/VMS_12/arms/VMS_12_arm_right_machinegun_00.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/VMS_12/arms/VMS_12_arm_right_machinegun_00.png",
+  "glowColor": [
+    255,
+    155,
+    150,
+    255
+  ],
+  "visualRecoil": 5,
+  "turretOffsets": [
+    73,
+    -3.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    146,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      224,
+      56,
+      142,
+      255
+    ]
+  },
+  "fireSoundTwo": "flak_fire"
+}

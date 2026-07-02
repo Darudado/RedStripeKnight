@@ -1,0 +1,82 @@
+{
+  "variantId": "rs_lordanes_Standerd",
+  "hullId": "rs_lordanes",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 13,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "ControllingSystem_auto",
+        "ControllingSystem_support",
+        "EnergyTargetCognetrix",
+        "autorepair",
+        "fluxcoil",
+        "turretgyros",
+    ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "M1": "rs_Lordanes_missile",
+        "M2": "rs_Lordanes_missile",
+        "M3": "rs_Lordanes_missile",
+        "WS0007_SOURCE": "cr_url_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002_SOURCE": "rs_scattercannon_M",
+        "WS0003_SOURCE": "rs_scattercannon_M",
+        "WS0010_SOURCE": "cr_KEP_11",
+        "WS0011_SOURCE": "cr_KEP_11"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001_SOURCE": "cr_MEP_43",
+        "WS0008_SOURCE": "pdburst",
+        "WS0009_SOURCE": "pdburst",
+        "WS0012_SOURCE": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004_SOURCE": "cr_EFlakT_69",
+        "WS0005_SOURCE": "cr_EFlakT_69",
+        "WS0006_SOURCE": "cr_EFlakT_69",
+        "WS0013_SOURCE": "cr_EFlak_69",
+        "WS0014_SOURCE": "cr_EFlak_69",
+        "WS0015_SOURCE": "cr_EFlak_69",
+        "WS0016_SOURCE": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN": "rs_Lordanes_maingun"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "MODULE_RING": "rs_lordanes_ring_Standerd"
+    }
+  ],
+  "wings": [
+    "rs_thunderbird_wing",
+    "rs_buboscandiacus_wing",
+    "rs_buboscandiacus_wing",
+    "rs_buboscandiacus_wing",
+    "rs_thunderbird_wing"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "rs_fiver_wing_right",
+  "specClass": "beam",
+  "type": "DECORATIVE",
+  "size": "SMALL",
+  "everyFrameEffect": "data.scripts.weapons.Tr_FiverWingController_R",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/Tr5/Fiver/wings/Tr5_mainwing_right_00.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/Tr5/Fiver/wings/Tr5_mainwing_right_00.png",
+  "numFrames": 2,
+  "frameRate": 2,
+  "glowColor": [
+    255,
+    255,
+    255,
+    0
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    69,
+    5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    104,
+    5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    255,
+    0,
+    30,
+    0
+  ],
+  "coreColor": [
+    255,
+    10,
+    50,
+    0
+  ],
+  "width": 6,
+  "textureType": SMOOTH,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ]
+}

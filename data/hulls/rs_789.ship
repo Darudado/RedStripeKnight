@@ -1,0 +1,133 @@
+{
+  "hullName": "RS 789",
+  "hullId": "rs_789",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/789.png",
+  "style": "HIGH_TECH",
+  "height": 79,
+  "width": 72,
+  "center": [36, 34.5],
+  "collisionRadius": 51.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 52,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-26.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-32.5, 14]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -180,
+      "locations": [-32.5, -14]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-17.5, 26]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -180,
+      "locations": [-17.5, -26]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-20, 3.5],
+      "length": 35.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-20, -3.5],
+      "length": 35.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, -10],
+      "length": 35,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, 10],
+      "length": 35,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-24.5, -16.5],
+      "length": 35,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-24.5, 16.5],
+      "length": 35,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -24.5, -3.5,
+    -24.5, -9.5,
+    -32.5, -13.5,
+    -24.5, -21.5,
+    -18, -23,
+    -15.5, -35.5,
+    -7.5, -36,
+    16.5, -13.5,
+    27.5, -12.5,
+    41, -0,
+    27.5, 12.5,
+    16.5, 13.5,
+    -7.5, 36,
+    -15.5, 35.5,
+    -18, 23,
+    -24.5, 21.5,
+    -32.5, 13.5,
+    -24.5, 9.5,
+    -24.5, 3.5,
+    -31, -0.5
+  ]
+}

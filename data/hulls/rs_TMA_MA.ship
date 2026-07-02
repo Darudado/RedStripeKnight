@@ -1,0 +1,225 @@
+{
+  "hullName": "Phalaenopsis",
+  "hullId": "rs_TMA_MA",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Mobile_Armor/TMA_MA/TMA_MA_Base.png",
+  "style": "RS_MA_Module",
+  "height": 140,
+  "width": 140,
+  "center": [70, 70],
+  "collisionRadius": 83,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 74.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "HiddenMissles",
+    "Moci_RS_GNShield",
+    "Excalibur",
+    "MilitarySpecialized",
+    "Moci_SpecializedMobileArmour"
+  ],
+  "builtInWeapons": {
+    "Head": "rs_RX78_GP03D_Head",
+    "LE1_Left": "PC_engine",
+    "LEG_LW": "rs_TMA_MA_left_wingengine",
+    "LEG_RW": "rs_TMA_MA_right_wingengine",
+    "MAIN_ENGINE": "TVC_engine",
+    "RE1_Right": "PC_engine",
+    "WING_L": "rs_TMA_MA_Wing_Left",
+    "WING_R": "rs_TMA_MA_Wing_Right",
+    "WS0004": "cr_eoswhisper",
+    "WS0005": "cr_eoswhisper",
+    "WS0007": "cr_eoswhisper",
+    "WS0008": "cr_eoswhisper"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [20.5, 15]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [20.5, -15]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 0,
+      "locations": [24.5, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 0,
+      "locations": [15.5, -0]
+    },
+    {
+      "id": "WING_R",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [13, -20.5],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WING_L",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [13, 20.5],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "Head",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [0.5, -0]
+    },
+    {
+      "id": "MAIN_ENGINE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 180,
+      "locations": [-22.5, -0]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-24, -9.5]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-24, 9.5]
+    },
+    {
+      "id": "LEG_RW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 4,
+      "locations": [-25.5, -50],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "LEG_LW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -4,
+      "locations": [-25.5, 50],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": -90,
+      "locations": [-5, -11]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 90,
+      "locations": [-5, 11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-24, -9.5],
+      "length": 19,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-24, 9.5],
+      "length": 19,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    -24, 12,
+    -57, 12,
+    -56, 15,
+    -20, 26,
+    -11, 22,
+    17, 22,
+    27.5, 29,
+    36.5, 23,
+    39, 12,
+    68, 2,
+    68, -2,
+    39, -12,
+    36.5, -23,
+    27.5, -29,
+    17, -22,
+    -11, -22,
+    -20, -26,
+    -56, -15,
+    -57, -12,
+    -24, -12
+  ]
+}

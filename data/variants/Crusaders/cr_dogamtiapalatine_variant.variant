@@ -1,0 +1,43 @@
+{
+  "variantId": "cr_dogamtiapalatine_variant",
+  "hullId": "cr_dogamtiapalatine",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "CR_FighterProducingOverloading",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "fluxdistributor",
+        "hardenedshieldemitter",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_frigate_launcher1",
+                "WS0005": "cr_EFlakT_69",
+                "WS0007": "cr_EFlakT_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "cr_EFlakT_69",
+                "WS0006": "cr_eoswhisper",
+            }
+        },
+    ],
+  "modules": [],
+  "wings": [
+        "cr_FFR31MR_wing",
+        "cr_FFR31MR_wing",
+        "cr_FFR31MR_wing",
+    ]
+}

@@ -1,0 +1,69 @@
+{
+  "variantId": "rs_cerberus_variant",
+  "hullId": "rs_cerberus",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 7,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "PolariphaseDrive",
+    "EnergyTargetCognetrix",
+    "ControllingSystem_manned",
+    "fluxbreakers",
+    "fluxcoil",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hil",
+        "WS0003": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "gravitonbeam",
+        "WS0006": "gravitonbeam",
+        "WS0007": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_EFlakT_69",
+        "WS0009": "cr_EFlakT_69",
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN": "rs_Ludiciumaccelerator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

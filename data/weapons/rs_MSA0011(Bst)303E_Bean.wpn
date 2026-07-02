@@ -1,0 +1,36 @@
+{
+  "id": "rs_MSA0011(Bst)303E_Bean",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.Moci_BeamEMP",
+  "everyFrameEffect":"data.scripts.weapons.BrustBeanEveryFrame",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "",
+  "turretGlowSprite": "",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "",
+  "glowColor": [130,0,0,150],
+  "hitGlowRadius": 100,
+  "turretOffsets": [3,0],
+  "turretAngleOffsets": [0],
+  "hardpointOffsets": [8,0],
+  "hardpointAngleOffsets": [0],
+  "fringeColor": [107,195,210,175],
+  "coreColor": [33,103,120,255],
+  "width": 30,
+  "textureType": [
+    "graphics/fx/Moci_beam_fringe_3.png",
+    "graphics/fx/Moci_beam_core_3.png"
+  ],
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 4,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ]
+}

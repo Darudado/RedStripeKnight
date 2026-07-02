@@ -1,0 +1,70 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 10,
+    "fluxVents": 2,
+    "goalVariant": false,
+    "hullId": "rs_Tr_6_haznthley",
+    "hullMods": [
+        "CR_EngineRegularBoost",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "Moci_SMA_LandingSequence",
+        "autorepair",
+        "hardenedshieldemitter",
+        "rs_Tr_6_haznthley_assault_selector",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rs_Tr_6_haznthley_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "SUBGUN": "rs_Tr_6_subgun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKWEAPON_L2_SOURCE": "rs_scindeterram",
+                "BACKWEAPON_R2_SOURCE": "rs_scindeterram",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "rs_Tr_6_arm_right_gun_rifle",
+                "ARM_L_SOURCE": "rs_Tr_6_arm_left_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKWEAPON_L1_SOURCE": "rs_owsla_left_gun_rifle",
+                "BACKWEAPON_R1_SOURCE": "rs_owsla_right_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {
+      "GUNSHIELD_L": "rs_Tr_1_left_shield_Base"
+    },
+    {
+      "GUNSHIELD_R": "rs_Tr_1_right_shield_Base"
+    }
+    ],
+}

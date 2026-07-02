@@ -1,0 +1,8 @@
+name,id,tags,rarity,base price,stack size,cargo space,icon,sound id,sound id drop,plugin,plugin params,desc,order
+红条骑士团老式 蓝图,rs_old_package,package_bp,,150000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_old_bp,,230.3
+红条骑士团 蓝图,rs_package,package_bp,,250000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_bp,,230.4
+骑士团实验计划 蓝图,rs_shiyan_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_shiyan_bp,,230.5
+,,,,,,,,,,,,,
+誓言者常规 蓝图,vownor_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,vownor_bp,,230.6
+,,,,,,,,,,,,,
+十字军常规武器 蓝图,cr_normalweapon_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,cr_norwea_bp,,230.7

@@ -1,0 +1,65 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"寻誓着",
+    
+    "directoryUseShortName":true,
+
+    "difficultyString":"艰难",
+    
+    "marketSpawnWeight":0.5,
+
+    "startRelationships":{ "hegemony":-0.5},
+    "maxRelationships":{},
+    "diplomacyPositiveChance":{ "hegemony":-0.6,},
+    "diplomacyNegativeChance":{},
+    #"morality":"amoral",
+    
+    "alignments":{
+        "corporate":0.5,
+        "technocratic":0.4,
+        "militarist":0,
+        "diplomatic":0.6,
+        "ideological":0.7,
+    },
+	"diplomacyTraits":["stalwart", "dislikes_ai", "anarchist"],
+    
+    "vengeanceLevelNames":["审判"],
+    "vengeanceFleetNames":["裁判庭"],
+	
+	"startShipsSolo":[
+	  ["vow_VMS_15_Standard"]
+	],
+    "startShipsCombatSmall":[
+      ["vow_VMS_14_Standard", "vow_VMS_12_Standard"]
+    ],
+	"startShipsCarrierSmall":[
+	  ["vow_piafides_Standard", "vow_VMS_12_heavyweapon_Standard"]
+	],
+    "startShipsTradeLarge":[
+	  ["rs_huo_standard", "vow_VMS_12_heavyweapon_Standard", "vow_VMS_12_heavyweapon_Standard"],
+	  ["rs_you_standard", "rs_huo_standard_standard", "vow_VMS_14_Standard"]
+	],
+    "startShipsCombatLarge":[
+      ["vow_disciplina_Standard", "vow_piafides_Standard", "vow_VMS_12_heavyweapon_Standard"],
+      ["vow_castigatio_Standard", "vow_VMS_14_Standard", "vow_VMS_12_heavyweapon_Standard"]
+    ],
+    "startShipsCarrierLarge":[
+	  ["vow_admonitio_Standerd", "vow_piafides_Standard", "vow_VMS_14_Standard"]
+	],
+	"startShipsSuper":[["rs_zui_standard"]],
+    
+    "startSpecialItems":[
+        [["vownor_package", ""]],
+    ],
+
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+	
+	"industrySeeds":[
+	
+    ],
+}

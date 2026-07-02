@@ -1,0 +1,46 @@
+{
+  "variantId": "rs_thunderbird_wing",
+  "hullId": "rs_thunderbird",
+  "displayName": "超重型炮艇",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_oeconomia_M"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_KEP_11",
+        "WS0003": "cr_KEP_11"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "irpulse",
+        "WS0007": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_EFlak_69",
+        "WS0005": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

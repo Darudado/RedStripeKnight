@@ -1,0 +1,59 @@
+{
+  "id": "vow_euthystopos_e_VT",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_euthystopos_e_VT_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.NazaretMainGunAmmoSwitch_Energy",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/ships/Ordo Praetorianorum/Nazaret/MainGun/Nazaret_MainGun_E_Base.png",
+  "turretGunSprite": "graphics/ships/Ordo Praetorianorum/Nazaret/MainGun//Nazaret_MainGun_E_Recoil.png",
+  "hardpointSprite": "graphics/ships/Ordo Praetorianorum/Nazaret/MainGun//Nazaret_MainGun_E_Base.png",
+  "hardpointGunSprite": "graphics/ships/Ordo Praetorianorum/Nazaret/MainGun//Nazaret_MainGun_E_Recoil.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    62,
+    13,
+    62,
+    0,
+    62,
+    -13
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    96,
+    13,
+    96,
+    0,
+    96,
+    -13
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "spread": 20,
+    "particleSizeMin": 12,
+    "particleSizeRange": 16,
+    "particleDuration": 0.5,
+    "particleCount": 16,
+    "particleColor": [
+      255,
+      125,
+      105,
+      255
+    ]
+  }
+}

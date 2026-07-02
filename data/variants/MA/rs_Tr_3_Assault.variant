@@ -1,0 +1,43 @@
+{
+  "variantId": "rs_Tr_3_Assault",
+  "hullId": "rs_Tr_3",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "autorepair",
+    "Moci_SMA_LandingSequence",
+    "PolariphaseDrive",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "rs_Tr_3_arm_left_gun_Sabre"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "rs_Tr_3_arm_right_gun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sabot",
+        "WS0002": "sabot"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,136 @@
+{
+    "designTypeColors":{
+		"红条骑士团":[160,0,0,255],
+		"骑士团实验":[222,30,15,255],
+		"骑士团科技":[222,30,15,255],
+		"红条近卫军团":[150,25,25,255],
+		"十字军计划（独特）":[150,25,50,255],
+		"誓言者设计":[255,94,94,255],
+		"十字军计划":[35,135,205,255],
+
+		"能量核心-拓展":[222,30,15,255],
+		"能量核心-强化":[35,135,205,255],
+		"能量核心-覆写":[255,94,94,255],
+    },
+  "graphics":{
+    "blueprint_packages":{
+	  "rs_package":"graphics/icons/cargo/rs_package.png",
+	  "rs_shiyan_package":"graphics/icons/cargo/rs_shiyan_package.png",
+    },
+	"portraits":{
+		"rs_dark_nebula":"data/campaign/terrain/rs_dark_nebula.png",
+	},
+	"terrain":{
+		"rs_Komet":"graphics/portraits/Komet.png",
+		"rs_Schwalbe":"graphics/portraits/Schwalbe.png",
+		"rs_Frieda":"graphics/portraits/Frieda.png",
+		"rs_Brigitta":"graphics/portraits/Brigitta.png",
+	},
+	"planets":{
+		"rs_earth":"graphics/planets/rs_earth.png",
+		"rs_dark":"graphics/planets/rs_dark_eye.png",
+		"rs_hot_jupiter":"graphics/planets/rs_hot_jupiter.png",
+	},
+	"fx":{	
+		"crusaders_shieldTexture":"graphics/fx/crusaders_shieldTexture.png",
+		"cr_trans_frame1":"graphics/fx/ANIM/cr_trans_frame1.png",
+		"cr_trans_frame2":"graphics/fx/ANIM/cr_trans_frame2.png",
+		"cr_skr_can_glow":"graphics/fx/cr_skr_can_glow.png",
+		"cr_SKR_drill_swoosh":"graphics/fx/cr_SKR_drill_swoosh.png",
+		"CR_shields_IN":"graphics/fx/CR_shields_inner.png",
+		"CR_shields_OUT":"graphics/fx/CR_shields_outer.png",
+
+		"CR_HITGLOW":"graphics/fx/glow64.png",
+
+		"CR_NUKE_EXP_1":"graphics/fx/explosion0.png",
+		"CR_NUKE_EXP_2":"graphics/fx/explosion1.png",
+		"CR_NUKE_EXP_3":"graphics/fx/explosion2.png",
+		"CR_NUKE_EXP_WAVE":"graphics/fx/explosion_ring0.png",
+
+
+		"Moci_magnum_beam_core":"graphics/fx/Moci_magnum_beam_core.png",
+		"Moci_magnum_beam_fringe":"graphics/fx/Moci_magnum_beam_fringe.png",
+		"Moci_magnum_fx_blink":"graphics/fx/Moci_magnum_fx_blink.png",
+		"Moci_magnum_fx_core":"graphics/fx/Moci_magnum_fx_core.png",
+		"Moci_magnum_fx_fringe":"graphics/fx/Moci_magnum_fx_fringe.png",
+
+		"Moci_linebeamcore":"graphics/fx/Moci_linebeamcore.png",
+		
+		"rs_3_weave_core":"graphics/fx/Moci_beam_core_3.png",
+		"rs_3_weave_fringe":"graphics/fx/goatbeamfringec3.png",
+
+
+		"BLADE_WAVE":"graphics/fx/shields256.png",
+
+
+		"Moci_bullet_aura": "graphics/fx/Moci_bullet_aura.png",
+
+	    "Moci_GNShield":"graphics/fx/Moci_GNShield.png",
+		"Moci_GNShield_fog":"graphics/fx/Moci_GNShield_fog.png",
+		"Moci_GNShield_hit":"graphics/fx/Moci_GNShield_hit.png",
+
+		"Moci_trails_contrail":"graphics/fx/Moci_trails_contrail.png",
+		"Moci_trails_1":"graphics/fx/Moci_trails_1.png",
+		"Moci_trails_2":"graphics/fx/Moci_trails_2.png",
+		"Moci_trails_electric":"graphics/fx/Moci_trails_electric.png",
+		"Moci_trails_flame":"graphics/fx/Moci_trails_flame.png",
+		"Moci_trails_smoke":"graphics/fx/Moci_trails_smoke.png",
+		"Moci_trails_zappy":"graphics/fx/Moci_trails_zappy.png",
+
+		"trails_contrail_1":"graphics/fx/trails_contrail_1.png",
+		"trails_contrail_2":"graphics/fx/trails_contrail_2.png",
+
+		"engineflame32-orig":"graphics/fx/engineflame32-orig.png",
+		"engineglow32_crystal":"graphics/fx/engineglow32_crystal.png",
+		"engineflame32_FLY":"graphics/fx/engineflame32_FLY.png",
+		"engineglow32_SUB":"graphics/fx/engineglow32_SUB.png",
+		"engineglow32_crystal_move":"graphics/fx/engineglow32_crystal_move.png",
+		"MBSlowSprite":"graphics/fx/MBSlowSprite.png",
+
+		"RS_flare1":"graphics/fx/RS_flare1.png",
+
+
+			
+
+	  "zap_00": "graphics/fx/zap_00.png",
+      "zap_01": "graphics/fx/zap_01.png",
+      "zap_02": "graphics/fx/zap_02.png",
+      "zap_03": "graphics/fx/zap_03.png",
+      "zap_04": "graphics/fx/zap_04.png",
+      "zap_05": "graphics/fx/zap_05.png",
+      "zap_06": "graphics/fx/zap_06.png",
+      "zap_07": "graphics/fx/zap_07.png",
+
+	  "banshee_wave": "graphics/fx/banshee_wave.png",
+
+	  "DIAMOND": "graphics/fx/da_targetingDiamond.png",
+	  "DIAMONDAWACS": "graphics/fx/da_targetingDiamondAWACS.png",
+	  "RING": "graphics/fx/da_targetingRing.png",
+
+		},		
+	"misc":{
+		"dengine_glow":"graphics/weapons/dengine/dengine_glow.png",
+		"cr_viadivina_LED00": "graphics/ships/ViaDivina/Viadivina_LED00.png",
+		"cr_viadivina_LED01": "graphics/ships/ViaDivina/Viadivina_LED01.png",
+		"cr_viadivina_LED02": "graphics/ships/ViaDivina/Viadivina_LED02.png",
+
+		"goat_dengine_glow":"graphics/weapons/dengine/dengine_glow.png",
+
+		"Moci_slipstream2":"graphics/fx/Moci_slipstream2.png",
+		"Moci_slipstream3":"graphics/fx/Moci_slipstream3.png",
+	},
+	"ui":{	
+			"backup_deck":"graphics/icons/hullys/cr_backup_deck.png",
+
+		}
+	
+  },
+
+  "campaignMissions":{
+	        "rs_CinisOfCrusaders_bounty":"graphics/icons/missions/mission_cinis_of_crusaders.png"
+		},
+
+  "plugins":{
+		"RSSettingsRegisteredPlugin":"data.scripts.RSSettingsRegisteredPlugin",
+	},
+}

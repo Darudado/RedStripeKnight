@@ -1,0 +1,30 @@
+{
+  "variantId": "rs_vigifavilla_variant",
+  "hullId": "rs_vigifavilla",
+  "displayName": "重型无人支援机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_LEA_51"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "guardian",
+        "WS0003": "guardian"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

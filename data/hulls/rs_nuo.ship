@@ -1,0 +1,140 @@
+{
+  "hullName": "rs_nuo",
+  "hullId": "rs_nuo",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rs1000/rs_nuo.png",
+  "style": "MIDLINE",
+  "height": 149,
+  "width": 56,
+  "center": [27.5, 69],
+  "collisionRadius": 102,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 97.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 228,
+      "angle": 0,
+      "locations": [56.5, -0.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 201,
+      "angle": 0,
+      "locations": [-28.5, -0.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        2, 11.5,
+        16.5, 10.5,
+        30.5, 10.5,
+        7.5, 11
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        2, -12,
+        8, -12,
+        16.5, -12,
+        30.5, -12
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 198,
+      "angle": 41,
+      "locations": [-16, 16.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 198,
+      "angle": -41,
+      "locations": [-16, -17.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-53, -23],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, 22],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-68, 6],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-68, -7],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    77.5, -5,
+    68, -18,
+    52, -19,
+    50.5, -15,
+    29.5, -15,
+    27.5, -18.5,
+    -5, -18,
+    -6, -20.5,
+    -14, -27.5,
+    -52.5, -26,
+    -53, -12,
+    -67.5, -9.5,
+    -67.5, 8.5,
+    -53, 11,
+    -52.5, 25,
+    -14, 26.5,
+    -6, 19.5,
+    -5, 17,
+    27.5, 17.5,
+    29.5, 14,
+    50.5, 14,
+    52, 18,
+    68, 17,
+    77.5, 4
+  ]
+}

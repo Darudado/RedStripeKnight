@@ -1,0 +1,71 @@
+{
+  "variantId": "rs_constantia_attack",
+  "hullId": "rs_constantia",
+  "displayName": "Attack",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "ControllingSystem_manned",
+    "ControllingSystem_strike",
+    "rs_constantia_Maingun1_Mode",
+    "turretgyros",
+    "EnergyTargetCognetrix",
+    "PolariphaseDrive"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_constantia_Maingun1"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hil",
+        "WS0003": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_KEP_11",
+        "WS0009": "cr_KEP_11"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_EFlakT_69",
+        "WS0005": "cr_EFlakT_69",
+        "WS0006": "cr_EFlakT_69",
+        "WS0007": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69",
+        "WS0012": "pdlaser",
+        "WS0013": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_falcoperegrinus_wing",
+    "broadsword_wing",
+    "broadsword_wing",
+    "broadsword_wing"
+  ]
+}

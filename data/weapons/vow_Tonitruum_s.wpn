@@ -1,0 +1,61 @@
+{
+  "id": "vow_Tonitruum_s",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "beamEffect": "data.scripts.weapons.TonitruumBeanEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/Tonitruum/Tonitruum_s.png",
+  "turretGlowSprite": "graphics/weapons/Tonitruum/Tonitruum_s_glow.png",
+  "hardpointSprite": "graphics/weapons/Tonitruum/Tonitruum_s.png",
+  "hardpointGlowSprite": "graphics/weapons/Tonitruum/Tonitruum_s_glow.png",
+  "glowColor": [
+    125,
+    110,
+    255,
+    255
+  ],
+  "hitGlowRadius": 75,
+  "turretOffsets": [
+    1,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    7.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    100,
+    25,
+    175,
+    255
+  ],
+  "coreColor": [
+    120,
+    75,
+    255,
+    200
+  ],
+  "width": 6,
+  "textureType": [
+    "graphics/fx/rs_SCY_GRRRfringe.png",
+    "graphics/fx/SCY_particuleBeam.png"
+  ],
+  "textureScrollSpeed": 260,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "ion_beam_loop"
+}

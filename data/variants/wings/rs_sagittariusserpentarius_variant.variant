@@ -1,0 +1,29 @@
+{
+  "variantId": "rs_sagittariusserpentarius_variant",
+  "hullId": "rs_sagittariusserpentarius",
+  "displayName": "先进中型无人支援机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_LEA_26"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

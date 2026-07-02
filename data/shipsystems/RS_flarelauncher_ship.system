@@ -1,0 +1,12 @@
+{
+	"id":"RS_flarelauncher_ship",
+	"type":"WEAPON",
+	"aiType":"FLARE",
+	"weaponDataId":"rs_flarelauncher_ship",
+	
+	#"useSound":"system_flare_launcher_active",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}	
+}

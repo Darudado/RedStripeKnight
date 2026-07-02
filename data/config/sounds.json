@@ -1,0 +1,147 @@
+{
+# IMPULSE BOOSTER
+    "cr_booster_activate":
+    [
+        {"file":"sounds/red stripe/systems/drivebooster_init.ogg","pitch":1.0,"volume":0.70},
+        {"file":"sounds/red stripe/systems/drivebooster_init.ogg","pitch":0.97,"volume":0.71},
+        {"file":"sounds/red stripe/systems/drivebooster_init.ogg","pitch":1.03,"volume":0.69}
+    ],
+    "cr_booster_boom":
+    [
+        {"file":"sounds/red stripe/systems/drivebooster_boost.ogg","pitch":1.0,"volume":0.95},
+        {"file":"sounds/red stripe/systems/drivebooster_boost.ogg","pitch":1.03,"volume":0.95},
+        {"file":"sounds/red stripe/systems/drivebooster_boost.ogg","pitch":0.97,"volume":0.95}
+    ],
+    "cr_url_fire":
+    [
+        {"file":"sounds/red stripe/rs_wpn_missiles/URL_fire.ogg","pitch":1.0,"volume":0.75},
+    ],
+    "Misericorde_spin":[
+            {"file":"sounds/red stripe/rs_wpn_guns/Misericorde_spinLoop.ogg","pitch":1.0, "volume":1},
+	],				
+	"Misericorde_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/Misericorde_fireLoop.ogg","pitch":1.0, "volume":0.5},
+	],
+    "Justiceconfessor_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/Justiceconfessor_fireLoop.ogg","pitch":1.0, "volume":0.25},
+            {"file":"sounds/red stripe/rs_wpn_guns/Justiceconfessor_fireLoop.ogg","pitch":1.1, "volume":0.2},
+	],
+    "Pyreticon_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/rs_pyreticon.ogg","pitch":1.0, "volume":0.5},
+            {"file":"sounds/red stripe/rs_wpn_guns/rs_pyreticon.ogg","pitch":1.1, "volume":0.45},
+	],
+    "Proorizo_Charging_Loop":[
+            {"file":"sounds/red stripe/rs_wpn_guns/Proorizo_Charging_Loop.ogg","pitch":1.0, "volume":0.5},
+            {"file":"sounds/red stripe/rs_wpn_guns/Proorizo_Charging_Loop.ogg","pitch":1.1, "volume":0.45},
+	],
+    "Large_Gun_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/Large_railgun.ogg","pitch":1.03, "volume":1.00},
+            {"file":"sounds/red stripe/rs_wpn_guns/Large_railgun.ogg","pitch":1.0, "volume":0.95},
+            {"file":"sounds/red stripe/rs_wpn_guns/Large_railgun.ogg","pitch":0.97, "volume":0.90},
+	],
+    "MEA_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/MEA_fireLoop.ogg","pitch":1.0, "volume":0.75},
+            {"file":"sounds/red stripe/rs_wpn_guns/MEA_fireLoop.ogg","pitch":1.1, "volume":0.85},
+	],
+    "cr_EFlak":[
+            {"file":"sounds/red stripe/rs_wpn_guns/cr_EFlak.ogg","pitch":1.0, "volume":0.1},
+            {"file":"sounds/red stripe/rs_wpn_guns/cr_EFlak.ogg","pitch":1.1, "volume":0.05},
+	],
+    "LEA_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/LEA_fireLoop.ogg","pitch":1.0, "volume":1.5},
+            {"file":"sounds/red stripe/rs_wpn_guns/LEA_fireLoop.ogg","pitch":1.1, "volume":1.55},
+	],
+    "MEP_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/MEP_fireLoop.ogg","pitch":1.0, "volume":0.25},
+            {"file":"sounds/red stripe/rs_wpn_guns/MEP_fireLoop.ogg","pitch":1.1, "volume":0.3},
+	],
+    "KEP_fire":[
+            {"file":"sounds/red stripe/rs_wpn_guns/KEP_fireLoop.ogg","pitch":1.0, "volume":0.15},
+	],
+    "Moci_HearyEnergy_3":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_3.ogg","pitch":1.03,"volume":0.35},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_3.ogg","pitch":1.00,"volume":0.30},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_3.ogg","pitch":0.97,"volume":0.25},
+    ],
+    "Moci_HearyEnergy_6":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_6.ogg","pitch":1.03,"volume":0.50},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_6.ogg","pitch":1.00,"volume":0.45},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_HearyEnergy_6.ogg","pitch":0.97,"volume":0.40},
+    ],
+
+# Moci_Magnum_01
+    "Moci_vow_Magnum_01":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_01.ogg","pitch":1.00,"volume":0.85},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_01.ogg","pitch":0.98,"volume":0.83},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_01.ogg","pitch":0.95,"volume":0.88},
+    ],
+  # Moci_Magnum_02
+    "Moci_vow_Magnum_02":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_02.ogg","pitch":1.00,"volume":0.85},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_02.ogg","pitch":0.98,"volume":0.83},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_02.ogg","pitch":0.95,"volume":0.88},
+    ],
+  # Moci_Magnum_03
+    "Moci_vow_Magnum_03":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_03.ogg","pitch":1.00,"volume":0.85},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_03.ogg","pitch":0.98,"volume":0.83},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_Magnum_03.ogg","pitch":0.95,"volume":0.88},
+    ],
+
+
+    "cr_shield_raise":[
+            {"file":"sounds/red stripe/setting/cr_shield_raise.ogg","pitch":1.0, "volume":0.5},
+	],
+    "cr_shield_down":[
+            {"file":"sounds/red stripe/setting/cr_shield_down.ogg","pitch":1.0, "volume":0.5},
+	],
+    "cr_flux_loop":[
+            {"file":"sounds/red stripe/setting/cr_flux_loop.ogg","pitch":1.0, "volume":0.5},
+	],
+    "cr_engine_loop":[
+            {"file":"sounds/red stripe/setting/cr_engine_loop.ogg","pitch":1.0, "volume":0.5},
+	],
+
+
+
+    "cr_phaseplatingactivate":[{"file":"sounds/red stripe/hullmods/phaseplatingactivate.ogg","pitch":1,"volume":1}],
+ 	
+	"cr_phaseplatingbreak":[{"file":"sounds/red stripe/hullmods/phaseplatingbreak.ogg","pitch":1, "volume":1}],
+
+	"cr_phaseplatingloop":[{"file":"sounds/red stripe/hullmods/phaseplatingloop.ogg","pitch":1, "volume":1}],
+
+	"cr_phaseplatinghit":[{"file":"sounds/red stripe/hullmods/phaseplatinghit.ogg","pitch":1, "volume":1}],
+
+    "Moci_beam_hit":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_beam_hit_01.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_beam_hit_02.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/Moci_beam_hit_03.ogg","pitch":1.00,"volume":1.00},
+    ],
+
+    "rs_euthystopos_b_fire":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_b_fire.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_b_fire.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_b_fire.ogg","pitch":1.05,"volume":1.25},
+    ],
+
+    "rs_euthystopos_e_fire":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_e_fire.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_e_fire.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_euthystopos_e_fire.ogg","pitch":1.05,"volume":1.25},
+    ],
+
+    "rs_tr_bean_rifle_fire":
+    [
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_tr_bean_rifle.ogg","pitch":0.95,"volume":0.75},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_tr_bean_rifle.ogg","pitch":1.00,"volume":1.00},
+        {"file":"sounds/red stripe/rs_wpn_guns/rs_tr_bean_rifle.ogg","pitch":1.05,"volume":1.25},
+    ],
+}

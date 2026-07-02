@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_admonitio",
+    "skinHullId": "vow_admonitioC",
+    "hullName": "劝诫 (货运)",
+    "descriptionId": "vow_admonitio",
+    "descriptionPrefix": "将舰船的部分空间用于运载货物。",
+    "spriteName": "graphics/ships/Vower/Admonitio.png",
+    "removeBuiltInMods":[
+		"PennaVelox"
+	], 
+    "builtInMods":[
+		"ImpregnableRampart"
+	],
+    "addHints": [
+        HIDE_IN_CODEX,CIVILIAN
+    ],
+    "systemId": "RS_FortressShieldStats",
+    "weaponSlotChanges": {}
+}

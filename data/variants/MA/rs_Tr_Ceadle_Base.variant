@@ -1,0 +1,14 @@
+{
+  "variantId": "rs_Tr_Ceadle_Base",
+  "hullId": "rs_Tr_Ceadle",
+  "displayName": "Base",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

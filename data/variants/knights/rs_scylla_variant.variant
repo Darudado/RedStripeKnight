@@ -1,0 +1,55 @@
+{
+  "variantId": "rs_scylla_variant",
+  "hullId": "rs_scylla",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ControllingSystem_manned",
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rs_lasertorpedo",
+        "WS0005": "rs_lasertorpedo",
+        "WS0006": "rs_lasertorpedo",
+        "WS0007": "rs_lasertorpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_scattercannon_L"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_KEP_21",
+        "WS0009": "cr_KEP_21"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

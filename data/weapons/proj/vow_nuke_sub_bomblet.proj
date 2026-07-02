@@ -1,0 +1,20 @@
+{
+	"id":"vow_nuke_sub_bomblet",
+	"specClass":"missile",			
+	"missileType":"MISSILE",
+	"onHitEffect":"data.scripts.weapons.VOW_NukeSubOnhit",
+	"sprite":"graphics/missiles/hungering_rift_projectile.png",
+	"size":[9,8],	
+	"center":[4.5,4],
+	"collisionRadius":0,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[105,255,175,205],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":300, # purely visual
+	"flameoutTime":0.1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.1, # time spent without the engine glow being rendered
+	"fadeTime":0.1, # fadeout duration	
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":0,
+				  "dec":0},
+}

@@ -1,0 +1,44 @@
+{
+	"baseHullId":"rs_Tr_6_haznthley",
+	"skinHullId":"rs_Tr_6_haznthley_assault",
+	"hullName":"伍德沃特-海瑟斯雷(战术破袭装备 )",
+	"incompatibleWithBaseHull":false, # for the autofit dialog
+	"descriptionId":"rs_Tr_6_haznthley",
+	"descriptionPrefix":"该型号为突击作战进行了特殊改造，并搭载了特殊的战术系统。借此，该机体将发挥出不同以往的性能。",
+	"tags":[auto_rec],
+	"tech":"红条近卫军团",
+	"fleetPoints":12,
+	"ordnancePoints":85,
+	"maxSpeed":80,
+	"acceleration":115,
+	"deceleration":115,
+	"suppliesToRecover":30,
+	"suppliesPerMonth":30,
+	"baseValueMult":2.5,
+	"systemId":"CR_PhaseCrossing",
+	"spriteName":"graphics/ships/Mobile_Armor/Tr6/Woundwort/body/Tr6_body.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+		"Rhongomyniad"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BACKWEAPON_L1",
+		"BACKWEAPON_R1"
+	], 		# weapon slot ids
+	"builtInMods":[
+		"Excalibur"
+	],
+	"builtInWeapons":{
+	"BACKWEAPON_L1_SOURCE": "rs_owsla_left_gun_rifle",
+	"BACKWEAPON_R1_SOURCE": "rs_owsla_right_gun_rifle",
+     },
+ 	"weaponSlotChanges":{
+		"BACKWEAPON_L1_SOURCE":{
+		  "type": "BUILT_IN",
+	   },
+	   "BACKWEAPON_R1_SOURCE":{
+		  "type": "BUILT_IN",
+	   }
+	},  
+}

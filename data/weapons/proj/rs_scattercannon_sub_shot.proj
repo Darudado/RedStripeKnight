@@ -1,0 +1,18 @@
+{
+	"id":"rs_scattercannon_sub_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.SEHPEffect",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":15.0,
+	"fadeTime":0.1,
+	"fringeColor":[5,120,175,255],
+	"coreColor":[175,200,255,255],
+	"hitGlowRadius":30,
+	"textureType":["graphics/fx/beam_weave_core.png","graphics/fx/beam_weave_core.png"],  # only needed for BEAM spawnType
+	"textureScrollSpeed":-96.0,
+	"pixelsPerTexel":1.0	
+}

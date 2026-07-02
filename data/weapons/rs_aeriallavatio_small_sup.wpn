@@ -1,0 +1,59 @@
+{
+  "id": "rs_aeriallavatio_small_sup",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_aeriallavatio_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 350,
+  "turretSprite": "graphics/weapons/AerialLavatio/AerialLavatio_small_base_t.png",
+  "turretGunSprite": "graphics/weapons/AerialLavatio/AerialLavatio_small_recoil_t.png",
+  "hardpointSprite": "graphics/weapons/AerialLavatio/AerialLavatio_small_base_h.png",
+  "hardpointGunSprite": "graphics/weapons/AerialLavatio/AerialLavatio_small_recoil_h.png",
+  "visualRecoil": 4,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    10,
+    -3,
+    10,
+    0,
+    10,
+    3
+  ],
+  "turretAngleOffsets": [
+    -3,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    -4,
+    12,
+    0,
+    12,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    -3,
+    0,
+    3
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 6,
+    "particleSizeMin": 6,
+    "particleSizeRange": 8,
+    "particleDuration": 0.15,
+    "particleCount": 7,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ]
+  },
+  "fireSoundTwo": "vulcan_cannon_fire"
+}

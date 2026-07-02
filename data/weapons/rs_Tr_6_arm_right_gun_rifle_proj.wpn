@@ -1,0 +1,39 @@
+{
+  "id": "rs_Tr_6_arm_right_gun_rifle_proj",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_Tr_6_arm_right_gun_rifle_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "",
+  "turretGlowSprite": "",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "glowColor":[195,175,45,255],
+	"darkCore":false,
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [195,170,35,175],
+  },
+  "fireSoundTwo": "LEA_fire"
+}

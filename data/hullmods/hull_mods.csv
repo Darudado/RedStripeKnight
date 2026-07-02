@@ -1,0 +1,214 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+红条骑士团,RS_Redstripe,,,骑士团科技,"codex_unlockable, special",,,,TRUE,,0,0,0,0,data.hullmods.RS_Redstripe,憵根据自身作战需求对舰船进行适应性改造。提升了舰船的装甲值、结构值、电网强度与机动性。但是这样大刀阔斧的修改是以牺牲部分护盾效率作为代价的。,,,graphics/hullmods/RS_Redstripe.png
+誓言者设计,VOW_DesignSystem,,,骑士团科技,"codex_unlockable, special",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_DesignSystem,"誓言者设计的偏向机动游击作战的舰船，结构简单，功能多样，不善于长时间高强度执行作战任务；虽然舰体强度孱弱但是易于维护。
+舰船的维修速度提升 %s ，维修所消耗的补给降低 %s ，电网可改装上限增加 %s ，但是舰船的战备流失速度提升 %s 。
+且舰船携带电子战设备，降低自身 %s 被探测距离，也能够降低舰队整体传感器信号强度。",,,
+#通用套件,,,,,,,,,,,,,,,,,,,
+能量投射计算阵列,EnergyTargetCognetrix,0,,骑士团科技,"codex_unlockable, offensive, merc, standard,crusaders",武器,5000,TRUE,,,6,10,15,25,data.hullmods.EnergyTargetCognetrix,经过特殊改造的专用于能量武器投射的定位阵列。在只能提升 %s 实弹武器的射程的同时，能够根据舰体规模提升战机 %s 、护卫舰 %s 、驱逐舰 %s 、巡洋舰 %s 与战列舰 %s 的能量武器射程。不兼容于目标定位系统、先进光学器件、专注型目标锁定核心以及先进目标定位核心,,将计算阵列集成至舰船中枢指挥系统，额外提升 %s 本舰能量武器的伤害,graphics/hullmods/EnergyTargetCognetrix.png
+质量投射计算阵列,BallisticTargetCognetrix,0,,骑士团科技,"codex_unlockable, offensive, merc, standard,crusaders",武器,5000,TRUE,,,6,10,15,25,data.hullmods.BallisticTargetCognetrix,经过特殊改造的专用于实弹武器投射的定位阵列。在只能提升 %s 能量武器的射程的同时，能够根据舰体规模提升战机 %s 、护卫舰 %s 、驱逐舰 %s 、巡洋舰 %s 与战列舰 %s 的实弹武器射程。不兼容于目标定位系统、先进光学器件、专注型目标锁定核心以及先进目标定位核心,,将计算阵列集成至舰船中枢指挥系统，额外提升 %s 本舰实弹武器的伤害,graphics/hullmods/BallisticTargetCognetrix.png
+通用性测距仪,UniversalRangeFinder,2,,骑士团科技,"codex_unlockable, offensive, merc, standard,crusaders",武器,8000,,TRUE,,5,10,15,25,data.hullmods.UniversalRangeFinder,整合全舰武器射程。,整合全舰武器射程。,将计算系统完全整合至舰船框架中，精密的能量计算体系将减少实弹与能量武器 %s 的辐能消耗并提升 %s 的射速，但作为代价的是其伤害减低 %s 。,graphics/hullmods/universial_rangefinder.png
+,,,,,,,,,,,,,,,,,,,
+#势力强化插件,,,,,,,,,,,,,,,,,,,
+火控升级,CR_ImprovedWeaponControlling,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,4,8,12,16,data.hullmods.Installable.CR_ImprovedWeaponControlling,改进舰船火控系统，能提升 %s 炮塔移动速度，减少 %s 非导弹武器产生的后坐力，同时提升 %s 非导弹武器射程并减少 %s 非导弹武器激发所产生的辐能。,,额外提升 %s 自动开火精度与弹道武器的弹丸速度。,graphics/hullmods/CR_ImprovedWeaponControlling.png
+战机锻炉超弛,CR_FighterProducingOverloading,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,4,8,12,16,data.hullmods.Installable.CR_FighterProducingOverloading,在战机数量低于一定阈值是占用电网加速战机生产与整备。,,额外提升常规状态下 %s 战机替换速度。,graphics/hullmods/CR_FighterProducingOverloading.png
+潮汐式引擎改装,CR_EngineRegularBoost,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,8,12,18,24,data.hullmods.Installable.CR_EngineRegularBoost,对引擎输出系统进行改装。在提升常规状态下 %s 舰船机动性；并利用周期性能量涌流对舰船性能进行周期性增强。,,额外提升常规状态下 %s 节舰船最大航速。,graphics/hullmods/CR_EngineRegularBoost.png
+浪涌式护盾强化,CR_ChargingRing,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,8,12,18,24,data.hullmods.Installable.CR_ChargingRing,对舰船电网系统进行改造，提升舰船护盾 %s 速度、减少护盾 %s 维持。,,额外提升护盾 %s 强度并将受到硬辐能伤害中的 %s 转换为软辐能。,graphics/hullmods/CR_ChargingRing.png
+层流式舰体补强,CR_StructureUpgrading,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,8,12,18,24,data.hullmods.Installable.CR_StructureUpgrading,利用核心外溢能量对舰体强度进行结构性补强，提升舰船装甲 %s 伤害减免，但是减少护盾 %s 维持的护盾展开、旋转速度并提高护盾维持费用。,,额外提升舰船 %s 的装甲值。,graphics/hullmods/CR_StructureUpgrading.png
+潮萍式冲击缓解,CR_ShieldOscillating,2,,能量核心-拓展,"codex_unlockable, offensive,  crusaders",拓展升级,10000,,,,8,12,18,24,data.hullmods.Installable.CR_ShieldOscillating,"使护盾系统并网时轴寄存器，在护盾承受冲击时可采取时间震颤措施缓解力度，维持稳定性。但冲击力度越大，缓解程度越不明显。与此同时，大量的时轴变更导致的时间空泡将产生剧烈的热电弧，它们将锁定最近的寄存器进行释放。
+降低舰船护盾受到 %s 的动能伤害、 %s 的能量伤害，并使护盾承受硬辐能伤害的 %s 转化为软辐能。",,额外提升护盾 %s 速度。,graphics/hullmods/CR_ShieldOscillating.png
+,,,,,,,,,,,,,,,,,,,
+#特化升级套件,,,,,,,,,,,,,,,,,,,
+偏相驱动,PolariphaseDrive,2,,能量核心-强化,"codex_unlockable,engines, req_spaceport ,no_build_in,crusaders",核心强化,12000,TRUE,,,10,15,28,40,data.hullmods.PolariphaseDrive,一类专门强化带有十字军能源核心舰船机动性能的的特殊组件，以特殊方式提高十字军核心的能量利用效率并将多余能量供给至动力舱，提升舰船速度与机动性。,,,graphics/hullmods/PolariphaseDrive.png
+偏相维度差防御,PhaseDefenseUnit,2,,能量核心-强化,"codex_unlockable,defensive,req_spaceport ,no_build_in,crusaders",核心强化,12000,TRUE,,,10,15,28,40,data.hullmods.PhaseDefenseUnit,一类专门强化带有十字军能源核心舰船防御性能的的特殊组件，吸收射弹，形成熵增，并以此对镀层进行充能。,,,graphics/hullmods/PhaseDefenseUnit.png
+偏相武器系统超载,WeaponOverLoad,2,,能量核心-强化,"codex_unlockable,offensive,req_spaceport ,no_build_in,crusaders",核心强化,12000,TRUE,,,10,15,28,40,data.hullmods.WeaponOverLoad,一类专门强化带有十字军能源核心舰船火力强度的的特殊组件，超载武器系统并额外产生辐能。,,,graphics/hullmods/WeaponOverLoad.png
+,,,,,,,,,,,,,,,,,,,
+#功能覆写插件,,,,,,,,,,,,,,,,,,,
+协议覆写-坚守,CR_Retinere,2,,能量核心-覆写,"codex_unlockable, special, engines, offensive, no_build_in ,vower",核心覆写,70000,TRUE,,,15,25,35,50,data.hullmods.Installable.CR_Retinere,我舰奉命坚守阵地，不惜代价。,,,
+协议覆写-誓言,CR_Votum,2,,能量核心-覆写,"codex_unlockable, special, offensive, no_build_in ,vower",核心覆写,70000,TRUE,,,15,25,35,50,data.hullmods.Installable.CR_Votum,前进！前进！唯有前进！这是我们已立的誓言！,,,
+协议覆写-围猎,CR_Circumvenire,2,,能量核心-覆写,"codex_unlockable, special, offensive, no_build_in ,vower",核心覆写,70000,TRUE,,,15,25,35,50,data.hullmods.Installable.CR_Circumvenire,沉默的狼群正在狩猎，他们践行着祂的判决。,,,
+,,,,,,,,,,,,,,,,,,,
+#特殊套件,,,,,,,,,,,,,,,,,,,
+军规舰体改装,MilitarySpecialized,3,0.3,骑士团科技,"codex_unlockable,req_spaceport,crusaders",后勤,22450,,,,8,12,24,32,data.hullmods.Installable.RS_MilitarySpecialized,"得益于十字军们一贯以来的多冗余、强模块化设计，这些舰船能够较为轻松地经过较少的改动便能承担不同的角色。安装此插件以强化舰船的作战性能。
+注：此插件可能对舰队后勤产生更多要求，请量力而行。",以维护成本换取更优秀的战斗表现。,性能增强为基础数值的 %s ，补给消耗减少为基础数值的 %s 。,graphics/hullmods/MilitarySpecialized.png
+远洋航行改装,CR_ExplorationModification,3,0.3,骑士团科技,"codex_unlockable,req_spaceport,crusaders",后勤,22450,,,,5,8,12,20,data.hullmods.Installable.CR_ExplorationModification,"得益于十字军们一贯以来的多冗余、强模块化设计，这些舰船能够较为轻松地经过较少的改动便能承担不同的角色。安装此插件以强化舰船的远洋航行性能。
+减少 %s 舰船日常维护所需的补给、燃料以及人员需求。
+增加 %s舰船战后维修速度。
+增加 %s 舰船的运载能力，包括载货量与燃料装载量。
+每一个飞行甲板为舰船额外提供 %s 的运载能力。",优化舰船日常维护成本以适应远洋航行,进一步减少 %s 舰船的日常维护消耗。,graphics/hullmods/CR_ExplorationModification.png
+冗余系统框架,VOW_FluxExtendTendency,2,,誓言者设计,"codex_unlockable, special, offensive, vow_design",架构附加,70000,TRUE,,,10,15,26,35,data.hullmods.Installable.VOW_FluxExtendTendency,将舰船强制排散速率提升 %s ，舰体结构提升 %s ，并将冗余结构接入舰船电网以优化武器输出表现，但是舰船常规耗散下降 %s 。,,将舰船强制排散速率提升 %s ，舰体结构提升 %s ，舰船最大容量提升 %s 。,graphics/hullmods/VOW_FluxExtendTendency.png
+强导热结构附加,VOW_AdditionalFluxDissipation,2,,誓言者设计,"codex_unlockable, special, offensive ,vow_design",架构附加,70000,TRUE,,,10,15,26,35,data.hullmods.Installable.VOW_AdditionalFluxDissipation,舰船耗散提升 %s ，舰体结构提升 %s ，但是舰体装甲值下降 %s ；同时在战斗时随着舰体结构的下降，额外提升的辐能耗散能力从 %s 下降至0，额外舰体伤害减免从0增加至 %s 。,,将舰船耗散速率提升 %s ，舰体结构提升 %s ，同时可以在张开护盾时排散 %s 的硬辐能。,graphics/hullmods/VOW_AdditionalFluxDissipation.png
+进攻性武器底座,VOW_WeaponRepairingBoost,2,,誓言者设计,"codex_unlockable, special, weapons ,vow_design",架构附加,70000,TRUE,,,10,15,26,35,data.hullmods.Installable.VOW_WeaponRepairingBoost,强化武器底座，加快武器修理速度，在武器完成维修后的2秒内加速该武器的射速并修复一定量舰船结构。,,,graphics/hullmods/VOW_WeaponRepairingBoost.png
+,,,,,,,,,,,,,,,,,,,
+#内置插件,,,,,,,,,,,,,,,,,,,
+连体舰船,RS_LinkedHull,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.RS_LinkedHull,在子母船体间同步某些特定数据。,,,graphics/hullmods/vast_bulk.png
+拜占庭核心控制系统,ByzantineCoreSystem,,,,hide_in_codex,,,,TRUE,,0,0,0,0,data.hullmods.ByzantineCoreSystem,在子母船体间同步某些特定数据。,,,graphics/hullmods/vast_bulk.png
+拜占庭模块控制系统,ByzantineModuleSystem,,,,hide_in_codex,,,,TRUE,,0,0,0,0,data.hullmods.ByzantineModuleSystem,在子母船体间同步某些特定数据。,,,graphics/hullmods/vast_bulk.png
+模块控制系统,CR_ModuleContorlling,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.CR_ModuleContorlling,在子母船体间同步某些特定数据。,,,graphics/hullmods/vast_bulk.png
+权柄模块控制,XIV_LinkedHull,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.XIV_LinkedHull,在子母船体间同步某些特定数据。,,,graphics/hullmods/vast_bulk.png
+空之王座调度系统,CR_RichathaoirnaBandeSystem,,,,hide_in_codex,,,,TRUE,,0,0,0,0,data.hullmods.RichathaoirnaBandeSystem,为了优化这一庞然大物的各个火力单元间的配合与调度进程，这项特别设计的子系统被赋予了优化火力调配与统筹全舰航空管制的任务；毋庸置疑地，她将这项任务完成的很完美。,,,graphics/hullmods/vast_bulk.png
+船插冲突,IncompatibleHullmodWarning,,,,hide_in_codex,,,,TRUE,,0,0,0,0,data.hullmods.IncompatibleHullmodWarning,"%s, 你试图安装的船插与此舰船或已经安装的另一个船插相冲突。","%s, 你试图安装的船插与此舰船或已经安装的另一个船插相冲突。",,graphics/icons/intel/investigation.png
+“迷醉”广域电子战套件,ECCM_package,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ECCM_package,,,,graphics/hullmods/vast_bulk.png
+妖精女王,Yukikaze,,,,hide_in_codex,,,,TRUE,,0,0,0,0,data.hullmods.Yukikaze,,,,graphics/hullmods/vast_bulk.png
+雪风电子战套件,YukikazeTargeting,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.YukikazeTargeting,,,,graphics/hullmods/vast_bulk.png
+伯利恒指挥系统,BethlehemSystem,,,,"special,no_drop,no_sell,no_drop_salvage,hide_in_codex",特殊,,,TRUE,,0,0,0,0,data.hullmods.BethlehemSystem,,,,graphics/hullmods/vast_bulk.png
+舰队空港,CR_ReparingCarrier,,,,"special,no_drop,no_sell,no_drop_salvage,hide_in_codex",特殊,,,TRUE,,0,0,0,0,data.hullmods.ReparingCarrier,"这艘舰拥有一座开放式工程系统，配合其庞大的舰体可以同时承担飞机起降与作战舰船维护职能；同时拥有特殊设计的航空管制系统，能够在作战中指挥海量舰载机群进行拒止与打击战术。
+同时后勤系统使得她的载货、载油量提升 %s ，舰队维修速度提升 %s 。",,,graphics/hullmods/CR_ReparingCarrier.png
+巨型开放式空港,HugeOpenPort,,,,"special,no_drop,no_sell,no_drop_salvage,hide_in_codex",特殊,,,TRUE,,0,0,0,0,data.hullmods.HugeOpenPort,这艘舰船被设计成完全开放式，配合其庞大的舰体可以同时承担飞机起降与小型舰船维护职能。配合特殊设计的航空管制系统，她总能在空战指挥中获得压倒性优势。,,,graphics/hullmods/vast_bulk.png
+开放式空港,OpenPort,,,,"special,no_drop,no_sell,no_drop_salvage,hide_in_codex",特殊,,,TRUE,,0,0,0,0,data.hullmods.OpenPort,从 米开朗琪罗级 的巨型开放型空港及其配套子系统获得的启发，骑士团研究机构为适应己方航空作战需求开发的开放型空港；几乎能够复刻本尊的作战性能，但是其冗余系统不支持对舰船进行系统性整修，不过依旧支持对小型舰船进行战备性质整备与基本维护。,,,graphics/hullmods/vast_bulk.png
+天启计算阵列,RevelatioComputingCognetrix,,,,"special,no_drop,no_sell,no_drop_salvage,hide_in_codex",特殊,,,TRUE,,0,0,0,0,data.hullmods.RevelatioComputingCognetrix,"她也许能够抵达人类认知的边界，测量生命，计算死亡。
+武器开火所需幅能减少 %s 
+摧毁敌方单位时舰船回复 %s 结构值,并修复 %s 装甲。
+每损失 %s 结构值舰船造成的伤害提高 %s 。",,,graphics/hullmods/RevelatioComputingCognetrix.png
+,,,,,,,,,,,,,,,,,,,
+十字军偏相镀层,CrusadersPlating,,,十字军计划,"defensive, merc,special,no_drop,no_sell,no_drop_salvage,hide_in_codex","防护,十字军计划",,,TRUE,TRUE,0,0,0,0,data.hullmods.crusaders.CrusadersPlating,由先进的十字军核心的可控外泄能量形成的类装甲镀层，根据船体规模与辐能容量提供 %s 减伤，可见于大部分安装有十字军核心的舰船。这是一种由纯粹能量构成的完整镀层，呈现了奇特的偏相特征，可减少 %s 武器与引擎收到的伤害，减少 %s 舰体受到的伤害，减少 %s 舰船受到的EMP伤害；所有减伤效果根据当前暂态镀层完整度计算。,,,graphics/hullmods/CrusadersPlating.png
+十字军能量核心,CrusadersCore,,,十字军计划,"special,no_drop,no_sell,no_drop_salvage,codex_unlockable","特殊,十字军计划",,,TRUE,,0,0,0,0,data.hullmods.crusaders.CrusadersCore,"一类安装于特殊设计的舰船上的高功率整合式能源核心。其产生的巨量能量可以做到些微地扭曲空间乃至于时间。但外泄的能量干扰了舰船护盾发生器，使护盾的战斗效能降低。
+舰船时间流速加快 %s 
+提高 %s 强制排幅的速率
+护盾效率降低 %s ",,,graphics/hullmods/CrusadersCore.png
+空域管制系统,CelestiLockSystem,0,,十字军计划,"special, merc,no_drop,no_sell,no_drop_salvage,codex_unlockable","战机, 十字军计划",,,TRUE,,0,0,0,0,data.hullmods.CelestiLockSystem,"扩大的飞行甲板，配套有强化的舰载纳米工厂与特殊设计的空管系统，便于整备与指挥战斗机与截击机进行作战。
+
+当舰船搭载的机组为常规轰炸机时，此类特化设施不会提供增益，也不会造成性能减损。",提高战机替补速率，增加战机作战范围和武器伤害,,graphics/hullmods/CelestiLockSystem.png
+舰载机火力支援管制,CR_carrier_supportcommand,0,,十字军计划,"special, req_spaceport,merc,no_drop,no_sell,no_drop_salvage","Fighters, Requires Dock",,,TRUE,TRUE,0,0,0,0,data.hullmods.CR_carrier_supportcommand,"A carrier doctrine that excels in extended warfare. This encourages faster fighter deployment and recovery on a type of schedule known as 'cyclic operations'. Exceptional safety measures for the pilots and up-armored fighter chassis are applied to increase the efficiency of this doctrine.
+
+Can only install %s type of S.L. Carrier hullmod on a ship.","Faster fighter replacement, fighters gets reduced damage taken and lesser fighter crew casualties. Extends fighter engagement range.",,
+舰载机区域突进管制,CR_carrier_strikecommand,0,,十字军计划,"special,  req_spaceport,merc,no_drop,no_sell,no_drop_salvage","Fighters, Requires Dock",,,TRUE,TRUE,0,0,0,0,data.hullmods.CR_carrier_strikecommand,"An aggressive strike craft doctrine meant to neutralize and destroy enemies quickly. Strike craft ordnance is significantly tuned up to deliver deadly alpha strikes, turning the carrier's fighters into a flock of terror on the battlefield.
+
+Can only install %s type of S.L. Carrier hullmod on a ship.","Increases fighter's missile speed, durability, maneuverability and range. Damage to destroyer size hull and above is increased.",,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+特化自动系统,SPAutomated,,,十字军计划,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.SPAutomated,"在首席学者托普斯的强烈要求下，十字军计划的大型舰船全部为了能够兼容人类指挥体系与ai核心指挥系统的目的进行了特殊的舰船系统设计。数个世纪以来，这个特殊设计在十字军计划与其后来者的设计上一直留存着。
+
+其特化性系统需要较为严格的维护手段，提高 %s 的每月维护需求。",兼容性接口,,
+自动模式,ControllingSystem_auto,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.ControllingSystem,该舰可以自定义指派人类船员或{AI}驾驶，当前为：自动模式，点击移除该船插即可切换模式。,切换模式,,
+载人模式,ControllingSystem_manned,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.ControllingSystem,该舰可以自定义指派人类船员或{AI}驾驶，当前为：载人模式，点击移除该船插即可切换模式。,切换模式,,
+特化全自动舰船,CRAutomatedUnit,,,,hide_in_codex,,,,TRUE,TRUE,0,0,0,0,data.hullmods.CRAutomatedUnit,能全自动化运作，无需人类船员操作，但保留了可供一定数量船员生活的维生系统。,无需船员也无法搭载船员。,,graphics/hullmods/automated.png
+隐藏导弹,HiddenMissles,0,,十字军计划,hide_in_codex,,,FALSE,TRUE,TRUE,0,0,0,0,data.hullmods.HiddenMissles,,,,
+航空指挥切换,CarrierSwitch,0,,十字军计划,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex","战机, 十字军计划",,,TRUE,TRUE,0,0,0,0,data.hullmods.CarrierSwitch,"扩大的飞行甲板，特别设计的空管系统，成就了这一专为制空权的争夺而设计的一套完全的航空集成设施。便于整备并指挥战斗机与截击机作战。
+
+当舰船搭载的机组为常规轰炸机时，这些特化设施不会提供增益，也不会造成性能减损。",提高战机替补速率，增加战机作战范围和武器伤害,,
+支援模式,ControllingSystem_support,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,以保守防御为主体思想的航空指挥方案，极大地降低舰载机攻击半径为代价，提升舰载机武器的攻击范围。,,,
+突击模式,ControllingSystem_strike,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,以积极进攻为主体思想的航空指挥方案，强化舰载机的突防能力，但相应地增加舰载机被击毁可能造成的人员损失。,,,
+,,,,,,,,,,,,,,,,,,,
+坚壁,ImpregnableRampart,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.ImpregnableRampart,自适应护盾强化系统，随着辐能的上涨强化盾效与护盾展开速度。,,,
+迅羽,PennaVelox,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.PennaVelox,自适应航空整备系统，随着辐能的上涨强化舰载机性能；但是以舰载机的结构减少与装甲效果下降为代价。,,,
+胜誓,Excalibur,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.Excalibur,自适应动力强化系统，随着辐能的上涨强化舰船机动性并加速时流。但是提升百分之二十五受到的EMP伤害与舰体受到的伤害。,,,
+终灭,Rhongomyniad,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.Rhongomyniad,自适应武器强化系统，随着辐能的上涨强化武器伤害与光束造成的硬辐能比例。,,,
+,,,,,,,,,,,,,,,,,,,
+破交设计,RS_InterdictionDesign,,,,"special, merc,no_drop,no_sell,no_drop_salvage",特化系统,,,TRUE,,0,0,0,0,data.hullmods.RS_InterdictionDesign,专用大型破交战舰设计，会随着结构值的下降增强战舰性能。,,,graphics/hullmods/vast_bulk.png
+前线空母调度,RS_AssaultCombatCarrier,,,,"special, merc,no_drop,no_sell,no_drop_salvage",特化系统,,,TRUE,,0,0,0,0,data.hullmods.AssaultCombatCarrier,前线重型空母调度系统，随着舰载机吞吐量的增加强化舰船性能。,,,graphics/hullmods/vast_bulk.png
+,,,,,,,,,,,,,,,,,,,
+翼装飞控系统,VowerMoudleController,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.VowerMoudleController,控制翼状模块行为。,,,
+圣枪系统,Hastadiparaoxa,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.Hastadiparaoxa,,,,
+突进轻骑兵,MobileAssault,0,,,"special, merc,no_drop,no_sell,no_drop_salvage",特化系统,,,TRUE,TRUE,0,0,0,0,data.hullmods.MobileAssault,,,,
+分布式维度差相位线圈,DividedDimensionalPhaseRecoil,0,,,"special, merc,no_drop,no_sell,no_drop_salvage",相位线圈,,,TRUE,,0,0,0,0,data.hullmods.DividedDimensionalPhaseRecoil,,,,graphics/hullmods/DividedDimensionalPhaseRecoil.png
+,,,,,,,,,,,,,,,,,,,
+灼兰特化电子战系统,CyprpediumECM,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",特化系统,,,TRUE,,0,0,0,0,data.hullmods.CyprpediumECM,,,,
+,,,,,,,,,,,,,,,,,,,
+蜃景,CR_QubitMirage,0,,遗落,"special, merc,no_drop,no_sell,no_drop_salvage",遗落的十字军,,,TRUE,,0,0,0,0,data.hullmods.QubitMirage,蜃景测试,,,
+,,,,,,,,,,,,,,,,,,,
+天途LED,CR_ViaDivinaLED,0,,,hide_in_codex,,0,,TRUE,TRUE,0,0,0,0,data.hullmods.ViaDivinaLED,,,,
+,,,,,,,,,,,,,,,,,,,
+神赐,rs_bracha_Mode,0,,,"no_build_in,hide_in_codex",粽子,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,A型,,,
+神恩,rs_chesed_Mode,0,,,"no_build_in,hide_in_codex",粽子,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,B型,,,
+,,,,,,,,,,,,,,,,,,,
+高能热脉冲加农炮,rs_constantia_Maingun1_Mode,0,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将内置炮塔替换为高能热脉冲加农炮,,,
+过充大型高斯加农,rs_constantia_Maingun2_Mode,0,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将内置炮塔替换为大型过充高斯加农,,,
+,,,,,,,,,,,,,,,,,,,
+#MA插件,,,,,,,,,,,,,,,,,,,
+特装机动装甲,Moci_SpecializedMobileArmour,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SpecializedMobileArmor,<Tooltip created in script>,机动装甲作为独特的舰船类型，战场表现与通常舰船有所不同。,,graphics/hullmods/Moci_MobileArmor.png
+特装机动装甲模块,Moci_SpecializedMobileArmor_module,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SpecializedMobileArmor_module,<Tooltip created in script>,机动装甲作为独特的舰船类型，战场表现与通常舰船有所不同。,,graphics/hullmods/Moci_MobileArmor.png
+GN护盾,Moci_RS_GNShield,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.RS_Moci_GNShield,将你的护盾替换为覆盖于机体表面的镀层。,将你的护盾替换为覆盖于机体表面的镀层。,,graphics/hullmods/Moci_GNShield.png
+,,,,,,,,,,,,,,,,,,,
+整备湾,Moci_LandingBay,,,独行轻骑兵,no_build_in,特殊,,TRUE,TRUE,TRUE,5,10,15,20,data.hullmods.Moci_RS_RepairBayHullModEffect,允许持有着陆程序的机甲降落修整。,,,graphics/hullmods/Moci_LandingBay.png
+机动装甲整备湾,Moci_ma_repair_bay,,,独行轻骑兵,no_build_in,特殊,,,TRUE,,0,0,0,0,data.hullmods.Moci_MaRepairBayHullModEffect,允许持有着陆程序的机动装甲降落修整。,,,graphics/hullmods/Moci_LandingBay.png
+,,,,,,,,,,,,,,,,,,,
+特殊着陆程序,Moci_SMA_LandingSequence,,,独行轻骑兵,"no_build_in,hide_in_codex",特殊,,TRUE,TRUE,TRUE,0,0,0,0,data.hullmods.Moci_SMALandingSequence,允许在具有特定设施的友军航母上降落修整。,,,graphics/hullmods/Moci_LandingSequence.png
+,,,,,,,,,,,,,,,,,,,
+武器切换器,MA_WeaponSwap,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.MA_WeaponSwitch,你不应该看到这个船插,你不应该看到这个船插,,
+,,,,,,,,,,,,,,,,,,,
+紫罗兰助推器控制,MSA0011Bst303E_ModuleController,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.MSA0011Bst303E_ModuleController,紫罗兰助推器控制,,,
+紫罗兰模块控制,MSA0011Bst303E_Controlling,0,,,"special, merc,no_drop,no_sell,no_drop_salvage,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.MSA0011Bst303E_Controlling,紫罗兰模块控制,,,
+,,,,,,,,,,,,,,,,,,,
+雄蕊右手光束步枪,rs_RX78_GP03D_arm_Right_gun_rifle_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为雄蕊的 右手 武器安装 光束步枪，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+雄蕊左手光束步枪,rs_RX78_GP03D_arm_Left_gun_rifle_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为雄蕊的 左手 武器安装 光束步枪，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+雄蕊右手高能火箭炮,rs_RX78_GP03D_arm_Right_Bazooka_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为雄蕊的 右手 武器安装 高能火箭筒，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+雄蕊左手高能火箭炮,rs_RX78_GP03D_arm_Left_Bazooka_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为雄蕊的 左手 武器安装 高能火箭筒，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰爪型光束炮左,rs_RX78_GP03D_Left_Bean_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+石斛兰爪型光束炮右,rs_RX78_GP03D_Right_Bean_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 左侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+石斛兰爪型光束剑左,rs_RX78_GP03D_Left_BeanSword_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Sabre.png
+石斛兰爪型光束剑右,rs_RX78_GP03D_Right_BeanSword_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Sabre.png
+石斛兰左侧一号挂架—集束导弹,rs_RX78_GP03D_MIRV1_Left1_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰左侧一号挂架—反舰导弹,rs_RX78_GP03D_MIRV2_Left1_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 左侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰左侧二号挂架—集束导弹,rs_RX78_GP03D_MIRV1_Left2_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰左侧二号挂架—反舰导弹,rs_RX78_GP03D_MIRV2_Left2_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰右侧一号挂架—集束导弹,rs_RX78_GP03D_MIRV1_Right1_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰右侧一号挂架—反舰导弹,rs_RX78_GP03D_MIRV2_Right1_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 左侧机械爪 武器安装 光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰右侧二号挂架—集束导弹,rs_RX78_GP03D_MIRV1_Right2_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+石斛兰右侧二号挂架—反舰导弹,rs_RX78_GP03D_MIRV2_Right2_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为石斛兰的 右侧机械爪 武器安装 高出力光束剑，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“沉渊”模块化三联装质量发射器,rs_euthystopos_b_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为舰船 前侧 专有槽位安装“沉渊”模块化三联装质量发射器,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“沉渊”模块化三联装阳电子发射器,rs_euthystopos_e_Mode1,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为舰船 前侧 专有槽位安装“沉渊”模块化三联装阳电子发射器,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“沉渊”模块化三联装质量发射器,rs_euthystopos_b_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为舰船 后侧 专有槽位安装“沉渊”模块化三联装质量发射器,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“沉渊”模块化三联装阳电子发射器,rs_euthystopos_e_Mode2,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,为舰船 后侧 专有槽位安装“沉渊”模块化三联装阳电子发射器,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+进攻型基哈尔发射器,rs_Fiver_lanuch_assault_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化进攻性能的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+防御型基哈尔发射器,rs_Fiver_lanuch_defense_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化防御性能的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+火力支援型基哈尔发射器,rs_Fiver_lanuch_firesupport_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化火力强度的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+进攻型基哈尔发射器,rs_Inle_lanuch_assault_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化进攻性能的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+防御型基哈尔发射器,rs_Inle_lanuch_defense_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化防御性能的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Gun.png
+火力支援型基哈尔发射器,rs_Inle_lanuch_firesupport_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,搭载的基哈尔无人作战单元会装配强化火力强度的装备，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“沉渊”内藏式质量发射器,rs_euthystopos_b_built_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,主炮将搭载具有持续压制力的多用途冲击炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+大型热熔裂解光束炮,rs_dsintegratorbean_L_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,主炮将搭载具有高爆发力的裂解光束炮，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+罗塞特光束火箭炮（爆发发射 ）,rs_AMS_06_beambazooka_brust_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将罗塞特的光束火箭筒调整为爆发发射模式，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+罗塞特光束火箭炮（充能发射 ）,rs_AMS_06_beambazooka_charge_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将罗塞特的光束火箭筒调整为充能发射模式，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+特拉杰长管加农,vow_VMS_12_arm_right_antiship_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将罗塞特的光束火箭筒调整为爆发发射模式，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+特拉杰光束马格南,vow_VMS_12_arm_right_magena_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将罗塞特的光束火箭筒调整为充能发射模式，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+特拉杰转管机枪,vow_VMS_12_arm_right_machinegun_Mode,,,,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.MA_WeaponSwitch2,将罗塞特的光束火箭筒调整为充能发射模式，移除插件将更换武器模式。,光束步枪,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+,,,,,,,,,,,,,,,,,,,
+I立场,Moci_IField,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Moci_IField,阻止来自舰船正面的光束武器，会产生幅能，当过载时失效。,阻止来自舰船正面的光束武器，会产生幅能，当过载时失效。,,
+,,,,,,,,,,,,,,,,,,,
+#Tr计划插件,,,,,,,,,,,,,,,,,,,
+Tr设计框架,Tr_DesignFrame,,,,,,,,TRUE,,0,0,0,0,data.hullmods.Tr.Tr_DesignFrame,作为星域中你所能见到最为精密而高效的武器，她需要一些特殊的优渥对待,,,
+特殊高密度镜面装甲,Tr_SpecializedArmor,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr_SpecializedArmor,你不应该看到这个船插,你不应该看到这个船插,,
+Tr6控制核心,Tr6_ControllingCore,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr6_ControllingCore,你不应该看到这个船插,你不应该看到这个船插,,
+Tr计划模块控制,Tr_Moudle_Controlling,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr_Moudle_Controlling,你不应该看到这个船插,你不应该看到这个船插,,
+“摇篮 ”模块控制,Tr_Cradle_Controlling,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr_Cradle_Controlling,摇篮脱离程序,,,
+“摇篮 ”模块,Tr_Cradle,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr_Cradle,你不应该看到这个船插,你不应该看到这个船插,,
+费伯飞控,Fiver_ModuleEngineController,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Fiver_ModuleEngineController,你不应该看到这个船插,你不应该看到这个船插,,
+,,,,,,,,,,,,,,,,,,,
+“伍德沃特-海瑟斯雷 ” 装备切换系统,Tr6_Haznthley_system,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.Tr6_Haznthley_system,你不应该看到这个船插,你不应该看到这个船插,,
+“伍德沃特-海瑟斯雷 ” 战术支援装备,rs_Tr_6_haznthley_support_selector,,,骑士团科技,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.Tr.Tr_6_selector,安装 海瑟斯雷-突击装备,使用 战术支援 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“伍德沃特-海瑟斯雷 ” 战术突击装备,rs_Tr_6_haznthley_assault_selector,,,骑士团科技,"no_build_in,hide_in_codex",,,TRUE,,,0,0,0,0,data.hullmods.Tr.Tr_6_selector,安装 海瑟斯雷-支援装备,使用 战术突击 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+,,,,,,,,,,,,,,,,,,,
+“巴扎姆 ” 装备切换系统,vow_VMS_14_system,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.VMS_14_system,你不应该看到这个船插,你不应该看到这个船插,,
+“巴扎姆 ” 汉谟拉比-支援装备,vow_VMS_14_firesupport_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,TRUE,,,0,0,0,0,data.hullmods.Tr.VMS_14_selector1,安装 汉谟拉比-突击装备,使用 战术支援 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“巴扎姆 ” 汉谟拉比-突击装备,vow_VMS_14_assault_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,TRUE,,,0,0,0,0,data.hullmods.Tr.VMS_14_selector2,安装 汉谟拉比-支援装备,使用 战术突击 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+,,,,,,,,,,,,,,,,,,,
+“里海泽 ” 装备切换系统,vow_VMS_15_system,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.Tr.VMS_15_system,你不应该看到这个船插,你不应该看到这个船插,,
+“里海泽 ” 汉谟拉比-突击装备,vow_VMS_15_assault_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,TRUE,,,0,0,0,0,data.hullmods.Tr.VMS_15_selector,安装 汉谟拉比-突击装备,使用 战术突击 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+“里海泽 ” 汉谟拉比-支援装备,vow_VMS_15_firesupport_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,TRUE,,,0,0,0,0,data.hullmods.Tr.VMS_15_selector,安装 汉谟拉比-支援装备,使用 战术突击 装备出战,,graphics/hullmods/Moci_MSSwapHullmod_Bazooka.png
+,,,,,,,,,,,,,,,,,,,
+“虔信 ” 舰体切换系统,VOW_PiafidesSystem,,,誓言者设计,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.VOW.VOW_PiafidesSystem,你不应该看到这个船插,你不应该看到这个船插,,
+“虔信 ” A型,vow_piafidesA_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Piafides_selector,调整为 A型 舰体,,,
+“虔信 ” B型,vow_piafidesB_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Piafides_selector,调整为 B型 舰体,,,
+“虔信 ” C型,vow_piafidesC_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Piafides_selector,,,,
+,,,,,,,,,,,,,,,,,,,
+“劝诫 ” 舰体切换系统,VOW_AdmonitioSystem,,,誓言者设计,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.VOW.VOW_AdmonitioSystem,你不应该看到这个船插,你不应该看到这个船插,,
+“劝诫 ” A型,vow_admonitioA_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Admonitio_selector,调整为 A型 舰体,,,
+“劝诫 ” B型,vow_admonitioB_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Admonitio_selector,调整为 B型 舰体,,,
+“劝诫 ” C型,vow_admonitioC_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Admonitio_selector,,,,
+,,,,,,,,,,,,,,,,,,,
+“管教 ” 舰体切换系统,VOW_DisciplinaSystem,,,誓言者设计,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.VOW.VOW_DisciplinaSystem,你不应该看到这个船插,你不应该看到这个船插,,
+“管教 ” A型,vow_disciplinaA_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Disciplina_selector,调整为 A型 舰体,,,
+“管教 ” B型,vow_disciplinaB_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Disciplina_selector,调整为 B型 舰体,,,
+,,,,,,,,,,,,,,,,,,,
+“责罚 ” 舰体切换系统,VOW_CastigatioSystem,,,誓言者设计,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.VOW.VOW_CastigatioSystem,你不应该看到这个船插,你不应该看到这个船插,,
+“责罚 ” A型,vow_castigatioA_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Castigatio_selector,调整为 A型 舰体,,,
+“责罚 ” B型,vow_castigatioB_selector,,,誓言者设计,"no_build_in,hide_in_codex",,,,TRUE,,0,0,0,0,data.hullmods.VOW.VOW_Castigatio_selector,调整为 B型 舰体,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+浮游炮模块,Moci_Module_Drone,,,,"no_build_in,hide_in_codex",,,,TRUE,TRUE,0,0,0,0,data.hullmods.Moci_Module_Drone,你不应该看到这个船插,你不应该看到这个船插,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

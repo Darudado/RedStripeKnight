@@ -1,0 +1,19 @@
+{
+	#this is for anti armor small-orange color
+	"id":"cr_ballistic_40mm",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_NO_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":60.0,
+	"hitGlowRadius":8,
+	"width":6,
+	"fadeTime":0.33,
+	#"fringeColor":[255,255,100,255],
+	#"coreColor":[255,255,200,150],
+	"fringeColor":[255, 184, 66,240],
+	"coreColor":[255,255,175,240],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/white_shell.png"
+}

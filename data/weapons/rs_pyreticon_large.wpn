@@ -1,0 +1,53 @@
+{
+  "id": "rs_pyreticon_large",
+  "specClass": "projectile",
+  "projectileSpecId": "pyreticon_proj",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 450,
+  "turretSprite": "graphics/weapons/Pyreticon/Pyreticon_largebase_t.png",
+  "turretGunSprite": "graphics/weapons/Pyreticon/Pyreticon_largerecoil_t.png",
+  "hardpointSprite": "graphics/weapons/Pyreticon/Pyreticon_largebase_h.png",
+  "hardpointGunSprite": "graphics/weapons/Pyreticon/Pyreticon_largerecoil_h.png",
+  "visualRecoil": 12,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    55.5,
+    -7,
+    55.5,
+    7
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    52,
+    -7,
+    52,
+    7
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 34,
+    "spread": 10,
+    "particleSizeMin": 18,
+    "particleSizeRange": 24,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      185,
+      215,
+      215
+    ]
+  },
+  "fireSoundTwo": "Pyreticon_fire"
+}

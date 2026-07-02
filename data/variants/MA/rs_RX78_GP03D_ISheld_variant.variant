@@ -1,0 +1,14 @@
+{
+  "variantId": "rs_RX78_GP03D_ISheld_variant",
+  "hullId": "rs_RX78_GP03D_ISheld",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

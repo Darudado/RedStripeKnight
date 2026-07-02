@@ -1,0 +1,44 @@
+{
+  "variantId": "rs_Tr_6_Standerd",
+  "hullId": "rs_Tr_6",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "PolariphaseDrive",
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "autorepair",
+    "stabilizedshieldemitter",
+    "hardened_subsystems",
+    "Moci_SMA_LandingSequence"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "rs_Tr_6_arm_right_gun_rifle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "SUBGUN": "rs_Tr_6_subgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "HEAD_SOURCE": "rs_Tr_head_vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

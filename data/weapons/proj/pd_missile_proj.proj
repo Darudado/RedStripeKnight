@@ -1,0 +1,55 @@
+{
+	"id":"pd_missile_proj",
+	"specClass":"missile",	
+	"missileType":"FLARE_SEEKER",
+	"sprite":"graphics/missiles/pd_srm.png",
+	"size":[5,9],	
+	"center":[2,4],
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.IonCannonOnHitEffect",
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,165,255, 190],
+	"explosionRadius":75,
+	"maxFlightTime":5,
+	"engineSpec":{
+                "turnAcc":300,
+				  "turnRate":450,
+				  "acc":350,
+				  "dec":350},  
+	"engineSlots":[
+                {"id":"ES1",
+                "loc":[-3, 0],
+                "style":"CUSTOM",
+                "styleSpec":{
+                        "mode":"QUAD_STRIP",
+                        "engineColor":[100,165,255,255],
+                        "contrailDuration":1.0,
+                        "contrailWidthMult":1,
+                        "contrailWidthAddedFractionAtEnd":1.5,
+                        "contrailMinSeg":5,
+                        "contrailMaxSpeedMult":0.75f,
+                        "contrailAngularVelocityMult":0.1f,
+                        "contrailColor":[100,165,255,25],
+                        "type":"SMOKE"
+                },
+                "width":4.0,
+                "length":20.0,
+                "angle":180.0
+                }],
+       "renderTargetIndicator":false,
+        "behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"effectRange":900,
+					"effectChance":0.8,
+					"explosionSpec":{"duration":0.5f,
+									 "radius":100,
+									 "coreRadius":45, # full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":100,
+									 "particleColor":[242,110,100,150],
+									 "sound":"explosion_flak"}
+					}
+}

@@ -1,0 +1,80 @@
+{
+  "hullName": "Elmo",
+  "hullId": "vow_elmo",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Elmo.png",
+  "style": "VOW_TECH",
+  "height": 36,
+  "width": 48,
+  "center": [24, 18],
+  "collisionRadius": 24.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "autorepair",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "WS0001": "fragbomb",
+    "WS0002": "mininglaser",
+    "WS0003": "mininglaser"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6, 19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-6, -19]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9, -3],
+      "length": 17,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-9, 3],
+      "length": 17,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "VOW_TECH"
+    }
+  ],
+  "bounds": [
+    -15, 2,
+    -5, 22,
+    16, 1,
+    16, -1,
+    -5, -22,
+    -15, -2
+  ]
+}

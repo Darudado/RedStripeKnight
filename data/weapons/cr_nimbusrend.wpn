@@ -1,0 +1,47 @@
+{
+  "id": "cr_nimbusrend",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.TachyonLanceEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "",
+  "turretGlowSprite": "",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "",
+  "glowColor": [130,0,0,150],
+  "hitGlowRadius": 100,
+  "turretOffsets": [
+    3,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    8,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [255,255,255,255],
+  "coreColor": [255,255,255,255],
+  "width": 60,
+  "textureType": [
+    "graphics/fx/rs_ac_beam_core.png",
+    "graphics/fx/rs_ac_beam.png"
+  ],
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 4,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo":"tachyon_lance_fire",
+}

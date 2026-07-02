@@ -1,0 +1,166 @@
+{
+  "hullName": "IronBall",
+  "hullId": "rs_MA_01",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Mobile_Armor/IronBall_MA/IronBall_Base.png",
+  "style": "RS_MA_Module",
+  "height": 100,
+  "width": 60,
+  "center": [30, 28],
+  "collisionRadius": 43.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 38.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "MilitarySpecialized",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour",
+    "Rhongomyniad",
+    "SPAutomated"
+  ],
+  "builtInWeapons": {
+    "ARM_LEFT": "rs_MA01_HAND_LEFT",
+    "ARM_RIGHT": "rs_MA01_HAND_RIGHT",
+    "LE1_Left": "TVC_engine",
+    "LE2_Left": "PC_engine",
+    "MAINGUN": "rs_dsintegratorbean",
+    "RE1_Right": "TVC_engine",
+    "RE2_Right": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "ARM_RIGHT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 0,
+      "locations": [8, -15.5]
+    },
+    {
+      "id": "ARM_LEFT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -0,
+      "locations": [4, 14.5]
+    },
+    {
+      "id": "ARM_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 0,
+      "locations": [8, -15.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "ARM_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -0,
+      "locations": [6, 10.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "MAINGUN",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [67.5, -0]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-23, -8.5]
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-23, 8.5]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 180,
+      "locations": [-20.5, -17.5]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": -180,
+      "locations": [-20.5, 17.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-23, -8.5],
+      "length": 19.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-23, 8.5],
+      "length": 19.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-20.5, -17.5],
+      "length": 31,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-20.5, 17.5],
+      "length": 31,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    -25, 11,
+    -22, 14,
+    -22, 19,
+    -19, 22,
+    4, 23,
+    14, 17,
+    23, 3,
+    23, -3,
+    14, -17,
+    4, -23,
+    -19, -22,
+    -22, -19,
+    -22, -14,
+    -25, -11
+  ]
+}

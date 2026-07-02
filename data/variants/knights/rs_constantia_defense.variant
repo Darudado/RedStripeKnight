@@ -1,0 +1,70 @@
+{
+  "variantId": "rs_constantia_defense",
+  "hullId": "rs_constantia",
+  "displayName": "Defense",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 13,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "ControllingSystem_manned",
+    "turretgyros",
+    "ControllingSystem_support",
+    "BallisticTargetCognetrix",
+    "rs_constantia_Maingun2_Mode"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_constantia_Maingun2"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "devastator",
+        "WS0003": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "rs_justiceconfessor_small",
+        "WS0009": "rs_justiceconfessor_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdburst",
+        "WS0005": "pdburst",
+        "WS0012": "mininglaser",
+        "WS0013": "mininglaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "flak",
+        "WS0007": "flak",
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_garuda_wing",
+    "rs_garuda_wing",
+    "rs_sagittariusserpentarius_wing",
+    "rs_sagittariusserpentarius_wing"
+  ]
+}

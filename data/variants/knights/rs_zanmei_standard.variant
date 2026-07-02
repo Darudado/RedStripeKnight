@@ -1,0 +1,79 @@
+{
+  "variantId": "rs_zanmei_standard",
+  "hullId": "rs_zanmei",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "turretgyros",
+    "armoredweapons",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "rs_pyreticon_large",
+        "WS0010": "rs_pyreticon_large",
+        "WS0011": "rs_pyreticon_large",
+        "WS0012": "rs_pyreticon_large",
+        "WS0013": "rs_pyreticon_medium",
+        "WS0014": "rs_pyreticon_medium",
+        "WS0015": "rs_aeriallavatio_medium",
+        "WS0016": "rs_aeriallavatio_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "flak",
+        "WS0018": "flak",
+        "WS0019": "flak",
+        "WS0020": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pilum",
+        "WS0002": "pilum",
+        "WS0028": "sabot",
+        "WS0029": "pilum",
+        "WS0030": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan",
+        "WS0005": "rs_aeriallavatio_medium",
+        "WS0006": "rs_aeriallavatio_medium",
+        "WS0007": "vulcan",
+        "WS0008": "vulcan",
+        "WS0021": "vulcan",
+        "WS0022": "vulcan",
+        "WS0023": "vulcan",
+        "WS0024": "vulcan",
+        "WS0025": "vulcan",
+        "WS0026": "vulcan",
+        "WS0027": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

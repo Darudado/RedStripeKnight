@@ -1,0 +1,74 @@
+{
+  "variantId": "rs_vincere_variant",
+  "hullId": "rs_vincere",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ControllingSystem_manned",
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "eccm",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_scattercannon_L"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_lasertorpedo",
+        "WS0003": "rs_lasertorpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_LEA_17",
+        "WS0008": "cr_MEP_15",
+        "WS0009": "cr_MEP_15",
+        "WS0011": "cr_LEA_17",
+        "WS0012": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "cr_SEHP_38",
+        "WS0006": "cr_SEHP_38"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "cr_EFlakT_69",
+        "WS0010": "cr_EFlakT_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "rs_petrarupt_b",
+        "WS0018": "rs_petrarupt_b"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

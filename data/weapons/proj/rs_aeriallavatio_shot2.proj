@@ -1,0 +1,20 @@
+{
+	"id":"rs_aeriallavatio_shot2",
+	"specClass":"projectile",
+	"onFireEffect":"data.scripts.weapons.AeriallavatiomediumOnFireEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"hitGlowRadius":15,
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":30.0,
+	"width":3.5,
+	"fadeTime":0.3,
+	"fringeColor":[162,193,255,200],
+	"coreColor":[30,106,246,80],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/white_shell.png"
+}

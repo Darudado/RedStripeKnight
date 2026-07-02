@@ -1,0 +1,61 @@
+{
+  "id": "vow_Ignis_l",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.IgnisBeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/Ignis/Ignis_turrent.png",
+  "turretGlowSprite": "graphics/weapons/Ignis/Ignis_turrent_glow.png",
+  "hardpointSprite": "graphics/weapons/Ignis/Ignis_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/Ignis/Ignis_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    150,
+    240,
+    235
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    42,
+    1
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    45.5,
+    1
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    180,
+    163,
+    243,
+    255
+  ],
+  "coreColor": [
+    239,
+    150,
+    240,
+    255
+  ],
+  "width": 35,
+  "textureType": [
+    "graphics/fx/goatbeamfringec2.png",
+    "graphics/fx/rs_SKR_beamZap.png"
+  ],
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "tachyon_lance_fire"
+}

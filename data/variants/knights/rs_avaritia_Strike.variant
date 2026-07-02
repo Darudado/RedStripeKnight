@@ -1,0 +1,43 @@
+{
+  "variantId": "rs_avaritia_Strike",
+  "hullId": "rs_avaritia",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "EnergyTargetCognetrix",
+    "ControllingSystem_manned"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_KEP_21",
+        "WS0005": "cr_KEP_21"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_lasertorpedo",
+        "WS0002": "rs_lasertorpedo",
+        "WS0003": "rs_lasertorpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

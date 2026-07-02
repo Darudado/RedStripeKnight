@@ -1,0 +1,16 @@
+{
+	"id":"cr_eccm_pro",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":0.0,
+	"hitGlowRadius":0,
+	"width":0,
+	"fadeTime":0.15,
+	"fringeColor":[0,0,0,0],
+	"coreColor":[0,0,0,0],
+	"textureScrollSpeed":0.0,
+	"pixelsPerTexel":0.0,
+	"bulletSprite":""
+}

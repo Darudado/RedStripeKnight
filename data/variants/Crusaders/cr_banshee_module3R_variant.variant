@@ -1,0 +1,32 @@
+{
+  "variantId": "cr_banshee_module3R_variant",
+  "hullId": "cr_banshee_module3R",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_EFlakT_69",
+        "WS0002": "cr_EFlakT_69",
+        "WS0003": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

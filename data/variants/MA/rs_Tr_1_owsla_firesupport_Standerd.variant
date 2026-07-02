@@ -1,0 +1,55 @@
+{
+    "displayName": "Standerd",
+    "fluxCapacitors": 5,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "rs_Tr_1_owsla_firesupport",
+    "hullMods": [
+        "magazines",
+        "armoredweapons",
+        "EnergyTargetCognetrix",
+        "stabilizedshieldemitter",
+        "Moci_SMA_LandingSequence",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rs_Tr_1_owsla_firesupport_Standerd",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WEAPONRIGHT_SOURCE": "rs_owsla_right_gun_rifle",
+                "WEAPONLEFT_SOURCE": "rs_owsla_left_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "cr_LEA_51",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "rs_scattercannon_L",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"GUNSHIELD_L": "rs_Tr_1_left_shield_Base"},
+        {"GUNSHIELD_R": "rs_Tr_1_right_shield_Base"},
+    ],
+}

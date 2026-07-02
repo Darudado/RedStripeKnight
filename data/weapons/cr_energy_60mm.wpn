@@ -1,0 +1,27 @@
+{
+	"id":"cr_energy_60mm",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"turretSprite":"",
+	"hardpointSprite":"",	
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[29, 0],
+	"hardpointAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":7.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":1.4,
+					   "particleSizeRange":2,
+					   "particleDuration":0.15,
+					   "particleCount":5,
+					   "particleColor":[255,240,165,200]},	
+	"projectileSpecId":"cr_energy_60mm",  # projectile that will be fired
+	#"noImpactSounds":true,
+	#"noShieldImpactSounds":true,
+	#"noNonShieldImpactSounds":true,
+	#"fireSoundOne":"chaingun_intro",	
+	"fireSoundTwo":"KEP_fire",	
+}

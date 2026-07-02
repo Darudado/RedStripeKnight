@@ -1,0 +1,166 @@
+{
+  "hullName": "Tr_5_manwing_right",
+  "hullId": "rs_Tr_5_mainwing_right",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr5/Fiver/wings/Tr5_mainwing_right_01.png",
+  "style": "RS_MA_Module",
+  "height": 820,
+  "width": 190,
+  "center": [95, 410],
+  "collisionRadius": 418,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 418,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "Moci_IField",
+    "Tr_DesignFrame",
+    "Tr_Moudle_Controlling",
+    "Moci_SpecializedMobileArmor_module"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_Fiver_pdleaser",
+    "WS0002": "rs_Fiver_pdleaser",
+    "WS0003": "rs_Fiver_pdleaser",
+    "WS0004": "rs_Fiver_pdleaser",
+    "WS0005": "rs_Fiver_pdleaser"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [41, 36]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -25,
+      "locations": [46.5, 22.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 25,
+      "locations": [46.5, 49.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [32, 50]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [32, 22]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -55.5,
+      "locations": [-24, 2]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 55.5,
+      "locations": [-24, 70]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 127,
+      "locations": [-108, 8]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 127,
+      "locations": [-135, 10]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -127,
+      "locations": [-108, 65]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -127,
+      "locations": [-135, 62]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    150, 27,
+    150, 44,
+    12, 62,
+    -15, 80,
+    -50, 79,
+    -66, 60,
+    -81, 60,
+    -95, 71,
+    -104, 79,
+    -149, 78,
+    -157.5, 69,
+    -176, 67,
+    -181, 60,
+    -326, 53,
+    -396, 46,
+    -400, 43,
+    -399, 41,
+    -395, 41,
+    -395, 31,
+    -399, 31,
+    -400, 29,
+    -396, 26,
+    -327, 19,
+    -181.5, 11,
+    -176, 5,
+    -158, 2,
+    -149, -6,
+    -104, -7,
+    -95, 1,
+    -81, 12,
+    -66, 12,
+    -52, -7,
+    -15, -8,
+    12, 10
+  ]
+}

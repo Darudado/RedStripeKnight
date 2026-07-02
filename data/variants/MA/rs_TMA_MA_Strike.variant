@@ -1,0 +1,62 @@
+{
+  "variantId": "rs_TMA_MA_Strike",
+  "hullId": "rs_TMA_MA",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "Moci_SMA_LandingSequence",
+    "armoredweapons",
+    "autorepair",
+    "turretgyros",
+    "PolariphaseDrive"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WING_L": "rs_TMA_MA_Wing_Left",
+        "WING_R": "rs_TMA_MA_Wing_Right"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_SEHP_38"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_MEP_15",
+        "WS0003": "cr_MEP_15"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_eoswhisper",
+        "WS0005": "cr_eoswhisper",
+        "WS0007": "cr_eoswhisper",
+        "WS0008": "cr_eoswhisper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "Head": "rs_RX78_GP03D_Head"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

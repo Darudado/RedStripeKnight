@@ -1,0 +1,86 @@
+{
+  "variantId": "rs_viadivina_FireSupport",
+  "hullId": "rs_viadivina",
+  "displayName": "FireSupport",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "armoredweapons",
+    "fluxcoil",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0035": "rs_petrarupt",
+        "WS0036": "rs_petrarupt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_justiceconfessor_large",
+        "WS0002": "rs_justiceconfessor_large",
+        "WS0003": "rs_justiceconfessor_large"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rs_misericorde_medium",
+        "WS0013": "rs_justiceconfessor_small",
+        "WS0014": "rs_justiceconfessor_small",
+        "WS0015": "rs_justiceconfessor_small",
+        "WS0016": "rs_justiceconfessor_small",
+        "WS0017": "rs_justiceconfessor_small",
+        "WS0018": "rs_justiceconfessor_small"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "rs_flammispurgatorialis",
+        "WS0006": "rs_flammispurgatorialis",
+        "WS0007": "rs_flammispurgatorialis",
+        "WS0008": "rs_flammispurgatorialis",
+        "WS0009": "rs_flammispurgatorialis",
+        "WS0010": "rs_flammispurgatorialis",
+        "WS0019": "rs_aeriallavatio_small",
+        "WS0020": "rs_aeriallavatio_small",
+        "WS0021": "rs_aeriallavatio_small",
+        "WS0022": "rs_aeriallavatio_small",
+        "WS0023": "rs_aeriallavatio_small",
+        "WS0024": "rs_aeriallavatio_small",
+        "WS0025": "rs_aeriallavatio_small",
+        "WS0026": "rs_aeriallavatio_small",
+        "WS0027": "rs_aeriallavatio_small",
+        "WS0028": "rs_aeriallavatio_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "rs_aeriallavatio_medium",
+        "WS0012": "rs_aeriallavatio_medium",
+        "WS0029": "vulcan",
+        "WS0030": "vulcan",
+        "WS0031": "vulcan",
+        "WS0032": "vulcan",
+        "WS0033": "vulcan",
+        "WS0034": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

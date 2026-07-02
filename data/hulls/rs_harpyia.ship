@@ -1,0 +1,120 @@
+{
+  "hullName": "Harpyia",
+  "hullId": "rs_harpyia",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/superfighter_Harpyia.png",
+  "style": "RS_TECH",
+  "height": 65,
+  "width": 70,
+  "center": [35, 32.5],
+  "collisionRadius": 43,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 38.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "armoredweapons",
+    "autorepair",
+    "HiddenMissles",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-7.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [0.5, 21]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 60,
+      "locations": [7.5, 9]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [7.5, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18.5, -7],
+      "length": 18.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-18.5, 7],
+      "length": 18.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-27.5, -13.5],
+      "length": 18,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-27.5, 13.5],
+      "length": 18,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-5, -33],
+      "length": 18,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-5, 33],
+      "length": 18,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -6, 32,
+    5, 32.5,
+    23, 8,
+    23, -8,
+    5, -32.5,
+    -6, -32,
+    -22.5, -12.5,
+    -22.5, 12.5
+  ]
+}

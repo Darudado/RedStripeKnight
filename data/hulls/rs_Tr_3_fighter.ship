@@ -1,0 +1,165 @@
+{
+  "hullName": "Tr_3",
+  "hullId": "rs_Tr_3_fighter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr3/Ms/body/Tr3_body.png",
+  "style": "RS_MA_Module",
+  "height": 120,
+  "width": 50,
+  "center": [25, 60],
+  "collisionRadius": 72.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 72.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "HiddenMissles",
+    "MobileAssault",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour",
+    "Tr_SpecializedArmor",
+    "Excalibur",
+    "automated",
+    "MilitarySpecialized",
+    "Tr_DesignFrame"
+  ],
+  "builtInWeapons": {
+    "ARM_L_SOURCE": "rs_Tr_3_arm_left_gun_Sabre",
+    "ARM_R_SOURCE": "rs_Tr_3_arm_right_gun",
+    "BODY": "rs_Tr_3_body",
+    "LE1_Left": "PC_engine",
+    "LEG": "rs_Tr_3_leg",
+    "RE1_Right": "PC_engine",
+    "SHOULDER": "rs_Tr_3_shoulder"
+  },
+  "weaponSlots": [
+    {
+      "id": "BODY",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 7
+    },
+    {
+      "id": "SHOULDER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-11, -0],
+      "renderOrderMod": 15
+    },
+    {
+      "id": "LEG",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-32, -0],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "ARM_R_SOURCE",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-17, -37],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "ARM_L_SOURCE",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [-17, 37],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3, -29]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [3, 29]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -155,
+      "locations": [-31, -23]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 155,
+      "locations": [-31, 23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -23],
+      "length": 40,
+      "width": 15,
+      "angle": -155,
+      "contrailSize": 40,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-31, 23],
+      "length": 40,
+      "width": 15,
+      "angle": 155,
+      "contrailSize": 40,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-31, -0],
+      "length": 50,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 40,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    -53, 8,
+    -35, 38,
+    -14, 49,
+    -5, 49,
+    19, 31,
+    4, 15.5,
+    33.5, 4,
+    33.5, -4,
+    4, -15.5,
+    19, -31,
+    -5, -49,
+    -14, -49,
+    -35, -38,
+    -53, -8
+  ]
+}

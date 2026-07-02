@@ -1,0 +1,69 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 15,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "vow_tentatio",
+    "hullMods": [
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "EnergyTargetCognetrix",
+        "MilitarySpecialized",
+        "VOW_AdditionalFluxDissipation",
+        "adaptive_coils",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_tentatio_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_url_m",
+                "WS0011": "rs_lasertorpedo_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vow_Sanctaferit_l",
+                "WS0001": "vow_Sanctaferit_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vow_Sanctaferit_m",
+                "WS0003": "vow_Tonitruum_s",
+                "WS0004": "vow_Tonitruum_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "vow_ligatio_s",
+                "WS0008": "vow_ligatio_s",
+                "WS0010": "vow_ligatio_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vow_ligatio",
+                "WS0007": "vow_ligatio_s",
+            }
+        },
+    ],
+    "wings": [
+        "vow_elmo_wing",
+        "vow_elmo_wing",
+        "vow_uriel_wing",
+    ],
+    "modules": [],
+}

@@ -1,0 +1,23 @@
+{
+	"id":"Moci_SMALaunchTravelDrive",
+	"type":"ENGINE_MOD",
+	"aiType":"NONE",
+	
+	"statsScript":"data.scripts.shipsystems.Moci_SMALaunchTravelDrive",
+	
+	"engineActivateHiddenNozzles":true,
+	"engineGlowGlowMult":2.5,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"loopSound":"system_travel_drive_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"averageSpeedIncrease":200,
+	}
+}

@@ -1,0 +1,88 @@
+{
+  "variantId": "cr_theosphany_variant",
+  "hullId": "cr_theosphany",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 25,
+  "fluxVents": 39,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "auxiliarythrusters",
+    "fluxcoil",
+    "fluxdistributor",
+    "ControllingSystem_auto",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_aetherclasm"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_nimbusrend_m",
+        "WS0003": "cr_nimbusrend_m",
+        "WS0020": "resonatormrm",
+        "WS0021": "resonatormrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "cr_LEA_17",
+        "WS0011": "cr_LEA_17",
+        "WS0016": "cr_MEP_15",
+        "WS0017": "cr_MEP_15"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0018": "cr_lapislull_b",
+        "WS0019": "cr_lapislull_b"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_EFlak_69",
+        "WS0009": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlakT_69",
+        "WS0015": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_eoswhisper",
+        "WS0005": "cr_eoswhisper",
+        "WS0006": "cr_eoswhisper",
+        "WS0007": "cr_eoswhisper",
+        "WS0022": "cr_eoswhisper",
+        "WS0023": "cr_eoswhisper",
+        "WS0024": "cr_eoswhisper",
+        "WS0025": "cr_eoswhisper",
+        "WS0026": "cr_eoswhisper",
+        "WS0027": "cr_eoswhisper",
+        "WS0028": "cr_eoswhisper",
+        "WS0029": "cr_eoswhisper"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

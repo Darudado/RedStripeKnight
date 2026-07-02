@@ -1,0 +1,65 @@
+{
+  "variantId": "rs_MSA0011(Bst)303E_variant",
+  "hullId": "rs_MSA0011(Bst)303E",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ControllingSystem_auto",
+    "EnergyTargetCognetrix",
+    "Moci_SMA_LandingSequence",
+    "armoredweapons",
+    "autorepair",
+    "ecm",
+    "fluxcoil",
+    "fluxdistributor",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "Hipgun_SOURCE": "rs_scattercannon_M",
+        "WS0007": "rs_MSA0011(Bst)303E_Bean"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rs_MSA0011(Bst)303E_Rifle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "rs_MSA0011(Bst)303E_Left",
+        "WS0010": "rs_MSA0011(Bst)303E_Head"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "rs_MSA0011(Bst)303E_Maingun"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0003": "rs_MSA0011(Bst)303E_ManEngine_variant"
+    },
+    {
+      "WS0001": "rs_MSA0011(Bst)303E_subEngineLeft_variant"
+    },
+    {
+      "WS0002": "rs_MSA0011(Bst)303E_subEngineRight_variant"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,17 @@
+{
+	"id":"abnegatio_shot",
+	"onFireEffect":"data.scripts.weapons.RS_ArcMine",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"NONE",
+	"collisionClassByFighter":"NONE",
+	"length":0,
+	"hitGlowRadius":0,
+	"width":0,
+	"fadeTime":0,
+	"fringeColor":[115,0,25,150],
+	"coreColor":[200,15,35,225],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":""
+}

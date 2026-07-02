@@ -1,0 +1,59 @@
+{
+    "displayName": "Remnants",
+    "fluxCapacitors": 50,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "crr_nova_mk2",
+    "hullMods": [
+        "armoredweapons",
+        "missleracks",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "crr_nova_mk2_Remnants",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "autopulse",
+                "WS 001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "sabotpod",
+                "WS 003": "sabotpod",
+                "WS 006": "sabotpod",
+                "WS 007": "sabotpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "dragon",
+                "WS 009": "dragon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "phasebeam",
+                "WS 005": "phasebeam",
+                "WS 011": "lightneedler",
+                "WS 012": "lightneedler",
+            }
+        },
+    ],
+    "wings": [
+        "wasp_wing",
+        "wasp_wing",
+    ],
+    "modules": [],
+}

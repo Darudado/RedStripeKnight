@@ -1,0 +1,33 @@
+{
+  "variantId": "cr_richathaoirnabande_variant",
+  "hullId": "cr_richathaoirnabande",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0016": "cr_banshee_module1L_variant"
+    },
+    {
+      "WS0015": "cr_banshee_module1R_variant"
+    },
+    {
+      "WS0017": "cr_banshee_module2R_variant"
+    },
+    {
+      "WS0018": "cr_banshee_module2L_variant"
+    },
+    {
+      "WS0022": "cr_banshee_module3L_variant"
+    },
+    {
+      "WS0021": "cr_banshee_module3R_variant"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,106 @@
+{
+  "hullName": "Seraphim",
+  "hullId": "vow_seraphim",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Seraphim.png",
+  "style": "VOW_TECH",
+  "height": 80,
+  "width": 56,
+  "center": [28, 40],
+  "collisionRadius": 42.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 42.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "autorepair"
+  ],
+  "builtInWeapons": {
+    "WS0001": "vow_nuke_fighter",
+    "WS0002": "vow_Seraphim_body",
+    "WS0003": "clusterbomb",
+    "WS0004": "vow_Sanctaferit_m"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 15
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1, 12.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [1, -12.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22, 3],
+      "length": 17.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-22, -3],
+      "length": 17.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-1, 9.5],
+      "length": 11,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-1, -9.5],
+      "length": 11,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "VOW_TECH"
+    }
+  ],
+  "bounds": [
+    -23.5, 3.5,
+    -4, 24,
+    29.5, 1.5,
+    29.5, -1.5,
+    -4, -24,
+    -23.5, -3.5
+  ]
+}

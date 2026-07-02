@@ -1,0 +1,56 @@
+{
+  "hullName": "rs_Tr_1_left_sabre_shield",
+  "hullId": "rs_Tr_1_left_sabre_shield",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr1/arms/Tr1_shield_sabre_Left.png",
+  "style": "RS_MA_Module",
+  "height": 110,
+  "width": 40,
+  "center": [44, 50],
+  "collisionRadius": 79.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 79,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -6,
+    -25
+  ],
+  "builtInMods": [
+    "HiddenMissles",
+    "Moci_IField",
+    "Moci_SpecializedMobileArmor_module",
+    "Tr_SpecializedArmor"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_scindeterram"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [50, 28]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    55, 23,
+    55, 27,
+    50, 31,
+    14, 36,
+    2, 41,
+    -29, 39,
+    -34, 35,
+    -34, 30,
+    -46, 27,
+    -44, 18,
+    -26, 15,
+    -21, 11,
+    5, 12,
+    14, 16,
+    52, 22
+  ]
+}

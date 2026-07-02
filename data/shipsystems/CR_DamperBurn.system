@@ -1,0 +1,28 @@
+{
+	"id":"CR_DamperBurn",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE_TOGGLE",
+	
+	"statsScript":"data.scripts.shipsystems.DamperBurn",
+	
+	"engineGlowLengthMult":2.75,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":1.75,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"system_burn_drive_activate",
+	"loopSound":"system_burn_drive_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":250,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":250,
+	}
+}

@@ -1,0 +1,55 @@
+{
+  "variantId": "cr_theosolaceon_variant",
+  "hullId": "cr_theosolaceon",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "eccm",
+    "fluxcoil",
+    "ControllingSystem_auto",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_nimbusrend_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_lapislull_b"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_LEA_17",
+        "WS0004": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "cr_EFlak_69",
+        "WS0006": "cr_EFlak_69",
+        "WS0007": "cr_EFlak_69",
+        "WS0008": "cr_EFlak_69",
+        "WS0009": "cr_eoswhisper",
+        "WS0010": "cr_eoswhisper"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

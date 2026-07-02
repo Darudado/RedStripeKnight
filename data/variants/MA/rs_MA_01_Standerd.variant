@@ -1,0 +1,40 @@
+{
+  "variantId": "rs_MA_01_Standerd",
+  "hullId": "rs_MA_01",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 2,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "armoredweapons",
+    "Moci_SMA_LandingSequence"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN": "rs_dsintegratorbean"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_RIGHT_FOLLOW": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_LEFT_FOLLOW": "rs_pyreticon_medium"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

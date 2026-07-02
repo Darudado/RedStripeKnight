@@ -1,0 +1,277 @@
+{
+  "hullName": "Tentatio",
+  "hullId": "vow_tentatio",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Vower/Tentatio.png",
+  "style": "VOW_TECH",
+  "height": 500,
+  "width": 200,
+  "center": [100, 250],
+  "collisionRadius": 263.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 263.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HiddenMissles",
+    "CrusadersCore",
+    "VOW_DesignSystem",
+    "CrusadersPlating",
+    "SPAutomated",
+    "Excalibur",
+    "DividedDimensionalPhaseRecoil",
+    "RS_AssaultCombatCarrier"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "PC_engine",
+    "LE2_Left": "PC_engine",
+    "RE1_Right": "dengineR_hiden",
+    "RE2_Right": "dengineR_hiden",
+    "RE3_Right": "dengineR_hiden",
+    "RE4_Right": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [81, -34]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -60,
+      "locations": [48, -34]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 60,
+      "locations": [100, 15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 60,
+      "locations": [119, 15]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 120,
+      "locations": [-39, 44]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [45, -77]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -5, -45,
+        6, -45
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        14, -45,
+        21, -38
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        37, -46,
+        26, -38
+      ]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [89, -61]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [12, -37]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-120, -3]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 130,
+      "locations": [-220, 8]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 90,
+      "locations": [50, 39]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -130,
+      "locations": [-40, -47]
+    },
+    {
+      "id": "RE4_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-12, -74]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 133,
+      "locations": [-67.5, 53.5]
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 133,
+      "locations": [-86.5, 33.5]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [174, -5.5]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [168, -5.5]
+    },
+    {
+      "id": "RE3_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [162, -5.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-67.5, 53.5],
+      "length": 46.833553,
+      "width": 12.468918,
+      "angle": 133,
+      "contrailSize": 12.468918,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-86.5, 33.5],
+      "length": 46.833553,
+      "width": 12.468918,
+      "angle": 133,
+      "contrailSize": 12.468918,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-12, -74],
+      "length": 53.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "VOW_TECH"
+    }
+  ],
+  "bounds": [
+    197, 7,
+    176.5, -9.5,
+    97, -10,
+    96.5, -67.5,
+    43.5, -88.5,
+    3.5, -90,
+    -74.5, -35.5,
+    -224.5, -22.5,
+    -232.5, 11,
+    -218.5, 20.5,
+    -199.5, 10.5,
+    -127, 11,
+    -56, 64.5,
+    5, 76.5,
+    59.5, 44,
+    129.5, 24.5,
+    197, 22
+  ]
+}

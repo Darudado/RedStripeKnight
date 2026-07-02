@@ -1,0 +1,19 @@
+{
+  "variantId": "rs_RX78_GP03_D_Rightmodule_variant",
+  "hullId": "rs_RX78_GP03_D_Rightmodule",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "fluxcoil",
+    "fluxdistributor",
+    "reduced_explosion"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,173 @@
+{
+
+	"RS_TECH":{
+		"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"engineColor":[173,14,14,225],
+		"engineCampaignColor":[173,15,15,255],
+
+		"glowSizeMult":0.75,
+
+		"contrailParticleSizeMult":3.5,
+		"contrailDuration":1.5,
+		"contrailParticleDuration":1.5,
+		"contrailParticleFinalSizeMult":0.2,
+		"contrailMaxSpeedMult":2.5,
+		"contrailAngularVelocityMult":15.5,
+		"contrailWidthMult":0.70,
+
+		"contrailColor":[194,49,49,125],
+		"glowAlternateColor":[173,14,14,255],
+		"contrailCampaignColor":[242,110,100,175],
+		"type":"GLOW",
+		"glowSprite":"graphics/fx/engineglow32_crystal.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+
+
+	"CR_TECH":{
+		"mode":"QUAD_STRIP",
+		"engineColor":[242,90,95,225],
+		"engineCampaignColor":[255,90,90,255],
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+
+
+		"glowSizeMult":0.75,
+
+		"contrailParticleSizeMult":3.5,
+		"contrailDuration":1.5,
+		"contrailParticleDuration":1.5,
+		"contrailParticleFinalSizeMult":0.2,
+		"contrailMaxSpeedMult":2.5,
+		"contrailAngularVelocityMult":15.5,
+		"contrailWidthMult":0.70,
+
+		"contrailColor":[194,49,49,225],
+		"glowAlternateColor":[173,14,14,255],
+		"contrailCampaignColor":[242,110,100,205],
+		"type":"GLOW",
+		"glowSprite":"graphics/fx/engineflame32_FLY.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+	"VOW_TECH":{
+		"mode":"QUAD_STRIP",
+		"engineColor":[239,150,240,255],
+		"engineCampaignColor":[229,154,159,255],
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+
+
+		"glowSizeMult":0.75,
+
+		"contrailParticleSizeMult":3.5,
+		"contrailDuration":1.5,
+		"contrailParticleDuration":1.5,
+		"contrailParticleFinalSizeMult":0.2,
+		"contrailMaxSpeedMult":2.5,
+		"contrailAngularVelocityMult":15.5,
+		"contrailWidthMult":0.70,
+
+		"contrailColor":[239,150,240,40],
+		"glowAlternateColor":[180,163,243,115],
+		"contrailCampaignColor":[180,163,243,115],
+		"type":"GLOW",
+		"glowSprite":"graphics/fx/engineglow32_crystal_move.png",
+		"glowOutline":"graphics/fx/engineflame32b.png"
+	},
+
+	
+	"DA_TECH":{
+		"mode":"QUAD_STRIP",
+		"engineColor":[107,195,210,225],
+		"engineCampaignColor":[110,195,200,255],
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+
+
+		"glowSizeMult":0.75,
+
+		"contrailParticleSizeMult":3.5,
+		"contrailDuration":1.5,
+		"contrailParticleDuration":1.5,
+		"contrailParticleFinalSizeMult":0.2,
+		"contrailMaxSpeedMult":2.5,
+		"contrailAngularVelocityMult":15.5,
+		"contrailWidthMult":0.70,
+
+		"contrailColor":[33,103,120,225],
+		"glowAlternateColor":[33,103,120,255],
+		"contrailCampaignColor":[107,195,210,175],
+		"type":"GLOW",
+		"glowSprite":"graphics/fx/engineglow32_crystal.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+	"RS_REFIT":{
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+
+		"engineColor":[173,14,14,255],
+
+		"contrailColor":[194,49,49,205],
+		"engineGlowGlowMult":1,
+		"type":"GLOW" ,
+		"glowSprite":"graphics/fx/engineglow32_crystal.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+	"CR_REFIT":{
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+
+		"engineColor":[242,90,95,255],
+		"contrailColor":[194,49,49,225],
+		"engineGlowGlowMult":1,
+		"type":"GLOW" ,
+		"glowSprite":"graphics/fx/engineflame32_FLY.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+
+	"DA_REFIT":{
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+
+		"engineColor":[107,195,210,255],
+		"contrailColor":[33,103,120,205],
+		"engineGlowGlowMult":1,
+		"type":"GLOW" ,
+		"glowSprite":"graphics/fx/engineglow32_crystal.png",
+		"glowOutline":"graphics/fx/engineflame32-orig.png"
+	},
+
+	"VOW_REFIT":{
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+
+		"engineColor":[239,150,240,255],
+		"contrailColor":[180,163,243,75],
+		"engineGlowGlowMult":1,
+		"type":"GLOW" ,
+		"glowSprite":"graphics/fx/engineglow32_crystal_move.png",
+		"glowOutline":"graphics/fx/engineflame32b.png"
+	}
+	
+}
+

@@ -1,0 +1,36 @@
+{
+  "variantId": "vow_seraphim_variant",
+  "hullId": "vow_seraphim",
+  "displayName": "重型战斗轰炸机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vow_nuke_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "clusterbomb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vow_Sanctaferit_m"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

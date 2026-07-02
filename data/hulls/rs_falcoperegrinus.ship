@@ -1,0 +1,76 @@
+{
+  "hullName": "Falcoperegrinus",
+  "hullId": "rs_falcoperegrinus",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Falcoperegrinus.png",
+  "style": "RS_TECH",
+  "height": 56,
+  "width": 38,
+  "center": [19, 28],
+  "collisionRadius": 28,
+  "shieldCenter": [-11, -0],
+  "shieldRadius": 39.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-5, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-5, -6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22, -7],
+      "length": 21.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-22, 7],
+      "length": 21.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -20, 18,
+    6, 5,
+    25, 2,
+    27, -0,
+    25, -2,
+    6, -5,
+    -20, -18,
+    -28, -0
+  ]
+}

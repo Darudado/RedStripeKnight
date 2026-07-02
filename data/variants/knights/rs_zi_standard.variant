@@ -1,0 +1,77 @@
+{
+  "variantId": "rs_zi_standard",
+  "hullId": "rs_zi",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "fluxdistributor",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse",
+        "WS0002": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "rs_pao",
+        "WS0005": "rs_pao"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rs_pao",
+        "WS0006": "rs_pao"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "harpoonpod",
+        "WS0010": "harpoonpod",
+        "WS0019": "sabot",
+        "WS0020": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "ionbeam",
+        "WS0008": "ionbeam",
+        "WS0011": "swarmer",
+        "WS0012": "swarmer",
+        "WS0013": "pdlaser",
+        "WS0014": "pdlaser",
+        "WS0015": "pdlaser",
+        "WS0016": "pdlaser",
+        "WS0017": "heatseeker",
+        "WS0018": "heatseeker",
+        "WS0021": "pdlaser",
+        "WS0022": "pdlaser",
+        "WS0023": "pdlaser",
+        "WS0024": "pdlaser",
+        "WS0025": "pdlaser",
+        "WS0026": "pdlaser",
+        "WS0027": "pdlaser",
+        "WS0028": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

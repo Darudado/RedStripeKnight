@@ -1,0 +1,77 @@
+{
+  "id": "rs_oeconomia_L",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_chaingun_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/Oeconomia/Oeconomia_Base_L.png",
+  "turretGunSprite": "graphics/weapons/Oeconomia/Oeconomia_Recoil_L.png",
+  "hardpointSprite": "graphics/weapons/Oeconomia/Oeconomia_Base_L_H.png",
+  "hardpointGunSprite": "graphics/weapons/Oeconomia/Oeconomia_Recoil_L_H.png",
+  "visualRecoil": 4,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    31,
+    16,
+    31,
+    -16,
+    31,
+    13,
+    31,
+    -13,
+    31,
+    10,
+    31,
+    -10
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    35,
+    16,
+    35,
+    -16,
+    35,
+    13,
+    35,
+    -13,
+    35,
+    10,
+    35,
+    -10
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 35,
+    "spread": 5,
+    "particleSizeMin": 6,
+    "particleSizeRange": 14,
+    "particleDuration": 0.15,
+    "particleCount": 11,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ]
+  },
+  "fireSoundTwo": "chaingun_fire"
+}

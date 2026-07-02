@@ -1,0 +1,31 @@
+{
+  "variantId": "rs_appellatio_Standerd",
+  "hullId": "rs_appellatio",
+  "displayName": "中型战斗轰炸机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_EFlak_69",
+        "WS0004": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gazer",
+        "WS0002": "swarmer"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,38 @@
+{
+	"id":"flammispurgatorialis_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":240.0,
+	"hitGlowRadius":30,
+	"width":5.0,
+	"fadeTime":0.4,
+	
+	"fringeColor":[235,235,255,255],
+	"coreColor":[175, 90, 90, 190],
+	"glowColor":[185, 90, 90,20],
+	
+	"glowRadius":35,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/rapid_gun.png",
+	
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":0.450,
+					"range":40,
+					"explosionSpec":{"duration":0.06f,
+									 "radius":50,
+									 "coreRadius":25, # full damage within core radius - at least equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":2.0,
+									 "particleSizeRange":4.0,
+									 "particleDuration":2,
+									 "particleCount":10,
+									 "particleColor":[235,235,255,255],
+									 "explosionColor":[175, 90, 90, 190],
+									 "sound":"devastator_explosion"},
+					},
+}

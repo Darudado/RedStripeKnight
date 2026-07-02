@@ -1,0 +1,59 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vow_VMS_15",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "autorepair",
+        "magazines",
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_VMS_15_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "sub_MISSILE_L": "swarmer",
+                "sub_MISSILE_R": "swarmer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MISSILE_SOURCE": "cr_url_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "vow_VMS_15_arm_right_gun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "vow_Sanctaferit_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

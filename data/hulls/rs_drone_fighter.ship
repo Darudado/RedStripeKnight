@@ -1,0 +1,70 @@
+{
+  "hullName": "Drone",
+  "hullId": "rs_drone_fighter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/drone_fighter.png",
+  "style": "RS_TECH",
+  "height": 46,
+  "width": 30,
+  "center": [15, 23],
+  "collisionRadius": 28,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HiddenMissles",
+    "ControllingSystem_auto",
+    "CrusadersCore",
+    "CrusadersPlating",
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "cr_EFlak_69",
+    "WS0003": "cr_KEP_11"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, -7]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9, 7]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-1, -5.5],
+      "length": 13,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-1, 5.5],
+      "length": 13,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    14, 12,
+    20, 8,
+    20, -8,
+    14, -12,
+    -20, -0
+  ]
+}

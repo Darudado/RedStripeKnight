@@ -1,0 +1,56 @@
+{
+  "variantId": "rs_byzantine_armor_right_Standerd",
+  "hullId": "rs_byzantine_armor_right",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 11,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons",
+    "magazines",
+    "fluxbreakers",
+    "stabilizedshieldemitter",
+    "hardenedshieldemitter"
+  ],
+  "sMods": [
+    "CR_ChargingRing",
+    "CR_ImprovedWeaponControlling"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001_SOURCE": "cr_SEHP_38",
+        "WS0002_SOURCE": "cr_SEHP_38"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003_SOURCE": "cr_EFlakT_69",
+        "WS0004_SOURCE": "cr_EFlakT_69",
+        "WS0005_SOURCE": "cr_EFlakT_69",
+        "WS0006_SOURCE": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007_SOURCE": "pdburst",
+        "WS0008_SOURCE": "pdburst",
+        "WS0009_SOURCE": "pdburst",
+        "WS0010_SOURCE": "pdburst",
+        "WS0011_SOURCE": "pdburst",
+        "WS0012_SOURCE": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

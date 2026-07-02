@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_castigatio",
+    "skinHullId": "vow_castigatioB",
+    "hullName": "责罚 (前线)",
+    "descriptionPrefix": "将舰船的动力舱能源增幅卸除改为舰船能量网络冗余，强化舰船抗压能力。",
+    "descriptionId": "vow_disciplina",
+    "spriteName": "graphics/ships/Vower/Castigatio.png",
+    "removeBuiltInMods":[
+		"Excalibur"
+	], 
+    "builtInMods":[
+		"ImpregnableRampart"
+	],
+    "addHints": [
+        HIDE_IN_CODEX
+    ],
+    "systemId": "CR_PhaseVerbJet",
+    "weaponSlotChanges": {}
+}

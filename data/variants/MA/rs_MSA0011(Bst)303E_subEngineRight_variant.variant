@@ -1,0 +1,17 @@
+{
+  "variantId": "rs_MSA0011(Bst)303E_subEngineRight_variant",
+  "hullId": "rs_MSA0011(Bst)303E_subEngineRight",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

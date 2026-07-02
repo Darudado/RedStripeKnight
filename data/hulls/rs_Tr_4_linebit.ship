@@ -1,0 +1,121 @@
+{
+  "hullName": "Tr_4_linebit",
+  "hullId": "rs_Tr_4_linebit",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr4/bits/Tr4_linebit.png",
+  "style": "RS_TECH",
+  "height": 154,
+  "width": 111,
+  "center": [55.5, 77],
+  "collisionRadius": 0,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 0,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "Tr_Moudle_Controlling",
+    "Tr_DesignFrame",
+    "Tr_SpecializedArmor",
+    "PhaseDefenseUnit"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_Tr_4_bitbean"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [42, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-77, 0],
+      "length": 57.842907,
+      "width": 19.616116,
+      "angle": 160,
+      "contrailSize": 19.616116,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-77, -0],
+      "length": 57.842907,
+      "width": 19.616116,
+      "angle": -160,
+      "contrailSize": 19.616116,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-77, -0],
+      "length": 61,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-77, -0],
+      "length": 39.663773,
+      "width": 15.399345,
+      "angle": -150,
+      "contrailSize": 15.399345,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-77, 0],
+      "length": 39.663773,
+      "width": 15.399345,
+      "angle": 150,
+      "contrailSize": 15.399345,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-77, -0],
+      "length": 29.549999,
+      "width": 14.37,
+      "angle": -140,
+      "contrailSize": 14.37,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-77, -0],
+      "length": 29.552559,
+      "width": 14.373066,
+      "angle": 140,
+      "contrailSize": 14.373066,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    -77, -28.5,
+    -74, -28.5,
+    -58, -34.5,
+    -53, -34.5,
+    -53, -31.5,
+    -49, -31.5,
+    -49, -45.5,
+    -45, -48.5,
+    -32, -48.5,
+    -26, -44.5,
+    -24.5, -37,
+    14.5, -25.5,
+    46, -16.5,
+    46, 16.5,
+    14.5, 25.5,
+    -24.5, 37,
+    -26, 44.5,
+    -32, 48.5,
+    -45, 48.5,
+    -49, 45.5,
+    -49, 31.5,
+    -53, 31.5,
+    -53, 34.5,
+    -58, 34.5,
+    -74, 28.5,
+    -77, 28.5
+  ]
+}

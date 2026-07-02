@@ -1,0 +1,57 @@
+{
+  "id": "rs_misericorde_large",
+  "specClass": "projectile",
+  "projectileSpecId": "misericorde_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.MisericordeEffect",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/weapons/Misericorde/Misericorde_large_recoil_t00.png",
+  "turretGunSprite": "graphics/weapons/Misericorde/Misericorde_large_base_t.png",
+  "hardpointSprite": "graphics/weapons/Misericorde/Misericorde_large_recoil_h00.png",
+  "hardpointGunSprite": "graphics/weapons/Misericorde/Misericorde_large_base_h.png",
+  "visualRecoil": 2,
+  "renderHints": [
+    "SUSPEND_RECOIL"
+  ],
+  "turretOffsets": [
+    55,
+    -6,
+    55,
+    6
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    66.5,
+    -6,
+    66.5,
+    6
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 4,
+  "frameRate": 20,
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 25,
+    "particleSizeMin": 8,
+    "particleSizeRange": 8,
+    "particleDuration": 0.12,
+    "particleCount": 46,
+    "particleColor": [
+      255,
+      155,
+      75,
+      245
+    ]
+  },
+  "fireSoundTwo": "flak_fire"
+}

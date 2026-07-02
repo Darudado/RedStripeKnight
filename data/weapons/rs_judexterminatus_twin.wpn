@@ -1,0 +1,60 @@
+{
+  "id": "rs_judexterminatus_twin",
+  "specClass": "projectile",
+  "projectileSpecId": "judexterminatus_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "visualRecoil": 25,
+  "displayArcRadius": 450,
+  "turretGunSprite": "graphics/weapons/Judexterminatus/Judexterminatus_trecoil.png",
+  "turretSprite": "graphics/weapons/Judexterminatus/Judexterminatus_tbase.png",
+  "hardpointGunSprite": "graphics/weapons/Judexterminatus/Judexterminatus_trecoil.png",
+  "hardpointSprite": "graphics/weapons/Judexterminatus/Judexterminatus_tbase.png",
+  "glowColor": [
+    175,
+    90,
+    90,
+    235
+  ],
+  "turretOffsets": [
+    78,
+    -12.5,
+    78,
+    12.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    100,
+    -12.5,
+    99,
+    13
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "flak_fire"
+}

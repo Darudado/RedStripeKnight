@@ -1,0 +1,89 @@
+{
+  "hullName": "rs_Tr_1_LinerBit_arm_L",
+  "hullId": "rs_Tr_1_LinerBit_arm_L",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr1/Owsla/bit/Tr1_Titan_linebit_Left.png",
+  "style": "RS_TECH",
+  "height": 280,
+  "width": 116,
+  "center": [29, 188],
+  "collisionRadius": 72.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 72.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "Moci_Module_Drone",
+    "autorepair",
+    "armoredweapons",
+    "insulatedengine",
+    "CrusadersCore",
+    "Rhongomyniad",
+    "Moci_SpecializedMobileArmor_module",
+    "Tr_SpecializedArmor",
+    "PhaseDefenseUnit"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_owsla_arm_bit_beam",
+    "WS0002": "rs_owsla_arm_bit_beam",
+    "WS0003": "rs_owsla_arm_bit_beam",
+    "WS0004": "rs_owsla_arm_bit_beam"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [48, -12.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [71, 2.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [68, 13]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [58, 17.5]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -28, 16,
+    -28, -8,
+    -22, -13,
+    23, -14,
+    27, -10,
+    44, -10,
+    51, 1,
+    51, 15,
+    37, 19,
+    23, 17,
+    21, 18,
+    17, 23,
+    -7, 26,
+    -16, 26,
+    -17, 25,
+    -17, 18,
+    -23, 18
+  ]
+}

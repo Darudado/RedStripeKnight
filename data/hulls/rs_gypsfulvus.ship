@@ -1,0 +1,76 @@
+{
+  "hullName": "Gpsfulvus",
+  "hullId": "rs_gypsfulvus",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Gypsfulvus​.png",
+  "style": "RS_TECH",
+  "height": 53,
+  "width": 48,
+  "center": [24, 26.5],
+  "collisionRadius": 31.5,
+  "shieldCenter": [-12.5, -0],
+  "shieldRadius": 44.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-8.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [7, -10]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [7.5, 9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16.5, -13],
+      "length": 22,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-16.5, 13],
+      "length": 22,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    24, 16.5,
+    -13, 21,
+    -26.5, 0,
+    -26.5, -0,
+    -13, -21,
+    24, -16.5,
+    16.5, -2.5,
+    16.5, 2.5
+  ]
+}

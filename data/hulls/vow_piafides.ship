@@ -1,0 +1,249 @@
+{
+  "hullName": "Piafides",
+  "hullId": "vow_piafides",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Vower/Piafides.png",
+  "style": "VOW_TECH",
+  "height": 330,
+  "width": 110,
+  "center": [55, 165],
+  "collisionRadius": 182,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 182,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "VOW_DesignSystem",
+    "CrusadersPlating",
+    "CelestiLockSystem",
+    "CarrierSwitch",
+    "VOW_PiafidesSystem",
+    "SPAutomated",
+    "PennaVelox"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "PC_engine",
+    "RE1_Right": "dengineR_hiden",
+    "RE2_Right": "dengineR_hiden",
+    "RE3_Right": "dengineR_hiden",
+    "RE4_Right": "dengineR_hiden",
+    "RE5_Right": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        92, -2,
+        85, -2
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        63, -3,
+        52, -3
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        15, -7,
+        3, -14
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 20,
+      "locations": [69, -15]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -20,
+      "locations": [50, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-131, 2]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-79, -37]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-69, 36]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-45, -44]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-30, -44]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-15, -44]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [0, -44]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -81,
+      "locations": [118, -25]
+    },
+    {
+      "id": "RE5_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-100, -31]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 135,
+      "locations": [-100, 31]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -81,
+      "locations": [112, -26]
+    },
+    {
+      "id": "RE3_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -81,
+      "locations": [106, -27]
+    },
+    {
+      "id": "RE4_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -81,
+      "locations": [100, -28]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-158, 2],
+      "length": 59,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-100, -31],
+      "length": 29.166651,
+      "width": 11.235035,
+      "angle": -135,
+      "contrailSize": 11.235035,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-100, 31],
+      "length": 29.166651,
+      "width": 11.235035,
+      "angle": 135,
+      "contrailSize": 11.235035,
+      "style": "VOW_REFIT"
+    }
+  ],
+  "bounds": [
+    147, -25,
+    14, -45,
+    -68, -44,
+    -144, -22,
+    -158, -9,
+    -158, 14,
+    -145, 26,
+    -96, 44,
+    -51, 48,
+    -9.5, 39.5,
+    -30, 30,
+    -18.5, -1.5,
+    14.5, 10,
+    126.5, 10,
+    130, -2,
+    147, -6
+  ]
+}

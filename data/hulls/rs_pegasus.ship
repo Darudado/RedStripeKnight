@@ -1,0 +1,132 @@
+{
+  "hullName": "Pegsus",
+  "hullId": "rs_pegasus",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/superfighter_Pegasus.png",
+  "style": "RS_TECH",
+  "height": 74,
+  "width": 63,
+  "center": [31.5, 37],
+  "collisionRadius": 45.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 38.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "armoredweapons",
+    "autorepair",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [14.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [14.5, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [6, -18.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [6, 18.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-2.5, 13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-21, -7],
+      "length": 16,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-21, 7],
+      "length": 16,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-18.5, -16.5],
+      "length": 22,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-18.5, 16.5],
+      "length": 22,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-24, -26],
+      "length": 23,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-24, 26],
+      "length": 23,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 0,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -21, 7,
+    -23, 26.5,
+    13, 18.5,
+    6, 7.5,
+    31, 6.5,
+    31, -6.5,
+    6, -7.5,
+    13, -18.5,
+    -23, -26.5,
+    -21, -7,
+    -35, -0
+  ]
+}

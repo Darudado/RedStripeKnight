@@ -1,0 +1,14 @@
+{
+  "variantId": "rs_fiver_wingengineRight_Base",
+  "hullId": "rs_fiver_wingengineRight",
+  "displayName": "Base",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

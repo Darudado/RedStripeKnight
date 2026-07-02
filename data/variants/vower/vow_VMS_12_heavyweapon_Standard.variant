@@ -1,0 +1,49 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vow_VMS_12_heavyweapon",
+    "hullMods": [
+        "EnergyTargetCognetrix",
+        "VOW_AdditionalFluxDissipation",
+        "vow_VMS_12_arm_right_magena_Mode",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_VMS_12_heavyweapon_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "LEG_SOURCE": "salamanderpod",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "vow_VMS_12_arm_left_missile",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_KEP_11",
+                "WS0002": "cr_KEP_11",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "vow_VMS_12_arm_right_magena",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

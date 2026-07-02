@@ -1,0 +1,78 @@
+{
+  "hullName": "Sagittariusserpentarius",
+  "hullId": "rs_sagittariusserpentarius",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Sagittariusserpentarius.png",
+  "style": "RS_TECH",
+  "height": 68,
+  "width": 44,
+  "center": [22, 26],
+  "collisionRadius": 26,
+  "shieldCenter": [-7, -0],
+  "shieldRadius": 51.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersPlating",
+    "CrusadersCore",
+    "HiddenMissles",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, -5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-3, 7.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -14.5],
+      "length": 18.709999,
+      "width": 8.13,
+      "angle": -151.5,
+      "contrailSize": 8.13,
+      "style": "RS_REFIT"
+    },
+    {
+      "location": [-14, 14.5],
+      "length": 18.709999,
+      "width": 8.13,
+      "angle": 151.5,
+      "contrailSize": 8.13,
+      "style": "RS_REFIT"
+    }
+  ],
+  "bounds": [
+    26, -0,
+    41, -0,
+    41, -10,
+    25, -10,
+    6, -12,
+    -9, -21,
+    -13, -21,
+    -18, -14,
+    -21, -14,
+    -25, -6,
+    -17, -2,
+    -17, 2,
+    -24, 5,
+    -24, 11,
+    -13, 21,
+    -9, 21,
+    16, 7,
+    21, 7
+  ]
+}

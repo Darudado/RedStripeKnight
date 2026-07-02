@@ -1,0 +1,77 @@
+{
+  "hullName": "RX78_GP03_D_Rightmodule",
+  "hullId": "rs_RX78_GP03_D_Rightmodule",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Mobile_Armor/RX78_GP03D/RX_78_GP03_D_Rightmodule.png",
+  "style": "RS_MA_Module",
+  "height": 110,
+  "width": 80,
+  "center": [40, 55],
+  "collisionRadius": 83,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 71.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "Moci_SpecializedMobileArmor_module",
+    "reduced_explosion",
+    "MA_WeaponSwap"
+  ],
+  "weaponSlots": [
+    {
+      "id": "Missile_2",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [26, -17.5]
+    },
+    {
+      "id": "Missile_1",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [29, 15.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-27.5, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    34, -31,
+    34, -8,
+    41, -7,
+    43, -6,
+    43, -5,
+    48, -5,
+    48, -2,
+    36, -2,
+    35, -1,
+    30, 30,
+    -39, 30,
+    -40, 29,
+    -40, 2,
+    -39, 1,
+    -39, -10,
+    -41, -11,
+    -41, -22,
+    -39, -25,
+    -39, -31,
+    -35, -35,
+    34, -35,
+    35, -34,
+    35, -31
+  ]
+}

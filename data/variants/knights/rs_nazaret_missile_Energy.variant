@@ -1,0 +1,87 @@
+{
+    "displayName": "Energy",
+    "fluxCapacitors": 20,
+    "fluxVents": 25,
+    "quality": 1,
+    "goalVariant": true,
+    "hullId": "rs_nazaret_missile",
+    "permaMods": [],
+    "hullMods": [
+    "EnergyTargetCognetrix",
+    "rs_euthystopos_e_Mode1",
+    "rs_euthystopos_e_Mode2",
+    "turretgyros"
+  ],
+    "variantId": "rs_nazaret_missile_Energy",
+    "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MISSILE":"rs_Nazaret_missile"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "LEFT_LARGE_1_SOURCE": "cr_MEP_43",
+        "LEFT_MEDIUM_2_SOURCE": "cr_KEP_21",
+        "LEFT_MEDIUM_3_SOURCE": "cr_KEP_21",
+        "LEFT_MEDIUM_4_SOURCE": "heavyblaster",
+        "LEFT_MEDIUM_5_SOURCE": "cr_KEP_21",
+        "RIGHT_LARGE_1_SOURCE": "cr_MEP_43",
+        "RIGHT_MEDIUM_2_SOURCE": "cr_KEP_21",
+        "RIGHT_MEDIUM_3_SOURCE": "cr_KEP_21",
+        "RIGHT_MEDIUM_4_SOURCE": "heavyblaster",
+        "RIGHT_MEDIUM_5_SOURCE": "cr_KEP_21"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BACK_MEDIUM_1_SOURCE": "cr_EFlakT_69",
+        "FRONT_MEDIUM_1_SOURCE": "cr_EFlakT_69",
+        "LEFT_MEDIUM_1_SOURCE": "cr_EFlakT_69",
+        "LEFT_MEDIUM_6_SOURCE": "cr_EFlakT_69",
+        "RIGHT_MEDIUM_1_SOURCE": "cr_EFlakT_69",
+        "RIGHT_MEDIUM_6_SOURCE": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "LEFT_SMALL_1_SOURCE": "pdlaser",
+        "LEFT_SMALL_2_SOURCE": "pdlaser",
+        "LEFT_SMALL_3_SOURCE": "pdlaser",
+        "LEFT_SMALL_4_SOURCE": "pdlaser",
+        "LEFT_SMALL_5_SOURCE": "pdlaser",
+        "LEFT_SMALL_6_SOURCE": "mininglaser",
+        "LEFT_SMALL_7_SOURCE": "mininglaser",
+        "LEFT_SMALL_8_SOURCE": "pdlaser",
+        "LEFT_SMALL_9_SOURCE": "pdlaser",
+        "RIGHT_SMALL_1_SOURCE": "pdlaser",
+        "RIGHT_SMALL_2_SOURCE": "pdlaser",
+        "RIGHT_SMALL_3_SOURCE": "pdlaser",
+        "RIGHT_SMALL_4_SOURCE": "pdlaser",
+        "RIGHT_SMALL_5_SOURCE": "pdlaser",
+        "RIGHT_SMALL_6_SOURCE": "mininglaser",
+        "RIGHT_SMALL_7_SOURCE": "mininglaser",
+        "RIGHT_SMALL_8_SOURCE": "pdlaser",
+        "RIGHT_SMALL_9_SOURCE": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN_1": "rs_euthystopos_e",
+        "MAINGUN_2": "rs_euthystopos_e"
+      }
+    }
+  ],
+    "wings": [],
+    "modules": [],
+}

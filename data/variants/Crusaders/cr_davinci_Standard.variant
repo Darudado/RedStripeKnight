@@ -1,0 +1,61 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "cr_davinci",
+    "hullMods": [
+        "CR_ChargingRing",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "cr_davinci_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "cr_url_m",
+                "WS0009": "cr_url_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_MEP_15",
+                "WS0003": "cr_KEP_11",
+                "WS0002": "cr_MEP_15",
+                "WS0004": "cr_KEP_11",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "cr_EFlak_69",
+                "WS0005": "cr_EFlak_69",
+                "WS0007": "cr_EFlak_69",
+                "WS0006": "cr_EFlak_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_lapislull_launcher",
+                "WS0011": "cr_lapislull_launcher",
+            }
+        },
+    ],
+    "wings": [
+        "cr_FA1_wing",
+        "cr_FA2_wing",
+        "cr_FA2_wing",
+    ],
+    "modules": [],
+}

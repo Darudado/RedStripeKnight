@@ -1,0 +1,42 @@
+{
+  "variantId": "rs_Tr_3_Firesupport",
+  "hullId": "rs_Tr_3",
+  "displayName": "Firesupport",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "autorepair",
+    "Moci_SMA_LandingSequence",
+    "WeaponOverLoad"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "rs_Tr_3_arm_left_gun_Sabre"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "rs_Tr_3_arm_right_gun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_KEP_11",
+        "WS0002": "cr_KEP_11"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,60 @@
+{
+	"baseHullId":"rs_Tr_1_owsla",
+	"skinHullId":"rs_Tr_1_owsla_defense",
+	"hullName":"海兹尔-奥斯拉(巨神装备)",
+	"ARMBITpatibleWithBaseHull":false, # for the autofit dialog
+	"descriptionId":"rs_Tr_1_owsla",
+	"descriptionPrefix":"该型号为阵地作战进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"tags":[rs_praetorianorum_bp , auto_rec],
+	"tech":"红条近卫军团",
+	"fleetPoints":12,
+	"ordnancePoints":85,
+	"maxSpeed":65,
+	"maxflux":7200,
+	"fluxdissipation":525,
+	"suppliesToRecover":24,
+	"suppliesPerMonth":24,
+	"acceleration":50,
+	"deceleration":50,
+	"baseValueMult":1,
+	"systemId":"RS_FortressShieldStats",
+	"spriteName":"graphics/ships/Mobile_Armor/Tr1/body/Tr1_body.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+		"Rhongomyniad"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BODYARMOR",
+		"ARM_L",
+		"ARM_R",
+		"ARM_R_TYPE"
+	], 		# weapon slot ids
+	"builtInMods":[
+		"ImpregnableRampart"
+	],
+	"builtInWeapons":{
+	"BODYARMOR": "rs_Tr_1_bodyarmor_defense",
+    "BACKPACK": "rs_Tr_1_defense_backpack",
+	"ARM_L": "rs_Tr_1_arm_left",
+	"ARM_R": "rs_Tr_1_arm_gun_right",
+	"ARM_R_SOURCE": "rs_Tr_1_arm_right_gun_rifle",
+	"TITANSHOULDER_RIGHT": "rs_Tr_1_linebit_shoulder_right",
+	"TITANSHOULDER_LEFT": "rs_Tr_1_linebit_shoulder_left",
+	"LINK_RIGHT": "rs_Tr_1_linebit_link_right",
+	"LINK_LEFT": "rs_Tr_1_linebit_link_left",
+    "ARMBIT_R": "rs_Owsla_Arm_LinerBit_Control_R",
+    "ARMBIT_L": "rs_Owsla_Arm_LinerBit_Control_L"
+     },
+ 	"weaponSlotChanges":{
+		"ARM_R_SOURCE":{
+		  "type": "BUILT_IN",
+	   },
+		"ARMBIT_R":{
+		  "type": "BUILT_IN",
+	   },
+	   "ARMBIT_L":{
+		  "type": "BUILT_IN",
+	   },
+	},  
+}

@@ -1,0 +1,49 @@
+<component name="libraryTable">
+  <library name="MagicLib-Kotlin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MagicLib/jars/MagicLib-Kotlin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../MagicLib/jars/MagicLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/commons-compiler-jdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/commons-compiler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/fs.common_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/fs.sound_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/janino.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/log4j-1.2.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer.api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/xstream-1.4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LazyLib/jars/LazyLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LazyLib/jars/LazyLib-Kotlin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LazyLib/jars/LazyLib-Console.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Nexerelin/jars/ExerelinCore.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lunalib/jars/LunaLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lunalib/jars/Lunalib-Kotlin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lunalib/jars/fuzzywuzzy-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../GraphicsLib/jars/Graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BoxUtil/jars/BoxUtilMod.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Particle Engine/jars/ParticleEngine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../UnofficialNewGamePlus/jars/ungp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Industrial.Evolution4.1.b/jars/IndEvo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IndEvo/jars/IndEvo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../MagicLib/jars/MagicLib-Kotlin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../MagicLib/jars/MagicLib.jar!/" />
+      <root url="file://$PROJECT_DIR$/../MagicLib" />
+      <root url="file://$PROJECT_DIR$/../MagicLib/src" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer.api.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../LazyLib/jars/LazyLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LazyLib/jars/LazyLib-Kotlin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Nexerelin/jars/ExerelinCore.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lunalib/jars/LunaLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lunalib/jars/Lunalib-Kotlin.jar!/" />
+    </SOURCES>
+  </library>
+</component>

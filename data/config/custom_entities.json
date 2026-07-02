@@ -1,0 +1,77 @@
+{
+	"rs_oath_station":{
+		"defaultName":"誓约要塞", # used if name=null in addCustomEntity()
+		"defaultRadius":110, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/orbital.jpg",
+		"icon":"graphics/icons/station3.png",
+		"iconWidth":26,
+		"iconHeight":26,
+		"sprite":"graphics/stations/rsv_station.png",
+		"spriteWidth":120,
+		"spriteHeight":125,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+
+	"cr_gatehauler":{
+		"defaultName":"十字军计划附属星门搬运舰", # used if name=null in addCustomEntity()
+		"nameInText":"十字军计划附属星门搬运舰",
+		"aOrAn":"a",
+		"isOrAre":"is",
+		"defaultRadius":250, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"cr_gatehauler",
+		"interactionImage":"graphics/illustrations/gate_hauler1.jpg",
+		"icon":"graphics/icons/gate_hauler2.png",
+		"iconWidth":32,
+		"iconHeight":32,
+		"sprite":"graphics/stations/gate_hauler.png",
+		"spriteWidth":228,
+		"spriteHeight":384,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station","has_interaction_dialog"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+		#"pluginClass":"data.scripts.campaign.entity.xxx",
+	},
+
+	"rs_arxcaelestis":{
+		"defaultName":"星堡", # used if name=null in addCustomEntity()
+		"nameInText":"星堡",
+		"aOrAn":"an",
+		"isOrAre":"is",
+		"defaultRadius":250, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"rs_arxcaelestis",
+		"interactionImage":"graphics/illustrations/orbital_construction.jpg",
+		"icon":"graphics/icons/gate_hauler.png",
+		"iconWidth":48,
+		"iconHeight":48,
+		"sprite":"graphics/stations/RS_Gas_Station.png",
+		"spriteWidth":220,
+		"spriteHeight":400,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station","has_interaction_dialog"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+		#"pluginClass":"data.scripts.campaign.entity.xxx",
+	},
+}
+
+

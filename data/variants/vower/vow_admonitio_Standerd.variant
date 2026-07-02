@@ -1,0 +1,69 @@
+{
+    "displayName": "Standerd",
+    "fluxCapacitors": 12,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vow_admonitio",
+    "hullMods": [
+        "ControllingSystem_manned",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+        "VOW_AdditionalFluxDissipation",
+        "vow_admonitioA_selector",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_admonitio_Standerd",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "cr_url_m",
+                "WS0012": "cr_url_m",
+                "WS0002": "vow_Tonitruum_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "vow_Tonitruum_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "vow_Tonitruum_s",
+                "WS0006": "vow_Tonitruum_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vow_ligatio",
+                "WS0003": "vow_ligatio",
+                "WS0004": "vow_ligatio",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "vow_ligatio_s",
+                "WS0009": "vow_ligatio_s",
+                "WS0005": "vow_ligatio_s",
+            }
+        },
+    ],
+    "wings": [
+        "vow_boanerges_wing",
+        "vow_boanerges_wing",
+        "vow_elmo_wing",
+        "vow_elmo_wing",
+        "vow_uriel_wing",
+    ],
+    "modules": [],
+}

@@ -1,0 +1,18 @@
+{
+  "variantId": "rs_fiver_subwing_right_Base",
+  "hullId": "rs_fiver_subwing_right",
+  "displayName": "Base",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 9,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": [
+        "rs_Tr_3_wing",
+        "rs_appellatio_wing",
+        "rs_appellatio_wing",
+    ]
+}

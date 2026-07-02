@@ -1,0 +1,90 @@
+{
+  "hullName": "Boanerges",
+  "hullId": "vow_boanerges",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Boanerges.png",
+  "style": "VOW_TECH",
+  "height": 56,
+  "width": 42,
+  "center": [21, 28],
+  "collisionRadius": 31,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 31,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "Rhongomyniad",
+    "autorepair",
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "vow_Ignis_s",
+    "WS0002": "vow_ligatio_s",
+    "WS0003": "vow_ligatio_s"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16, -1]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-3, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-3, 12]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-20, -0],
+      "length": 23.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-12.5, 12],
+      "length": 12.5,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-12.5, -12],
+      "length": 12.5,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "VOW_REFIT"
+    }
+  ],
+  "bounds": [
+    -25, 6,
+    -5.5, 20.5,
+    21, 1,
+    21, -1,
+    -5.5, -20.5,
+    -25, -6
+  ]
+}

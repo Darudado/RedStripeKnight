@@ -1,0 +1,85 @@
+{
+  "hullName": "Fiver_engineRight",
+  "hullId": "rs_fiver_wingengineRight",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr5/Fiver/wings/Tr5_wingengine.png",
+  "style": "RS_TECH",
+  "height": 200,
+  "width": 90,
+  "center": [45, 100],
+  "collisionRadius": 89.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 89.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "Moci_IField",
+    "Tr_Moudle_Controlling",
+    "Tr_DesignFrame",
+    "Tr_SpecializedArmor",
+    "Moci_SpecializedMobileArmor_module",
+    "Fiver_ModuleEngineController"
+  ],
+  "builtInWeapons": {
+    "RE1_Right": "PC_engine",
+    "RE2_Right": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-79, -7.5]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-79, 7.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 7.5],
+      "length": 69,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "RS_REFIT"
+    },
+    {
+      "location": [-79, -7.5],
+      "length": 69,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "RS_REFIT"
+    }
+  ],
+  "bounds": [
+    -80, 13.5,
+    -79, 15,
+    -34, 27,
+    -25, 37,
+    -2, 38,
+    10, 37,
+    31, 33,
+    32, 24,
+    41, 18,
+    41, -18,
+    32, -24,
+    31, -33,
+    10, -37,
+    -2, -38,
+    -25, -37,
+    -34, -27,
+    -79, -15,
+    -80, -13.5
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "hullName": "VigiMalachim",
+  "hullId": "cr_vigimalachim",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Crusaders/VigilMalachim .png",
+  "style": "CR_TECH",
+  "height": 76,
+  "width": 68,
+  "center": [34, 38],
+  "collisionRadius": 39.5,
+  "shieldCenter": [-8.5, -0],
+  "shieldRadius": 49,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HiddenMissles",
+    "CrusadersPlating",
+    "CrusadersCore",
+    "EnergyTargetCognetrix",
+    "automated",
+    "Excalibur",
+    "MobileAssault"
+  ],
+  "builtInWeapons": {
+    "WS0003": "cr_eoswhisper",
+    "WS0004": "cr_eoswhisper",
+    "WS0005": "cr_eoswhisper",
+    "WS0006": "cr_LEA_26"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2, 10.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-2, -10.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 0,
+      "locations": [8, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 45,
+      "locations": [-18, 13.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": -45,
+      "locations": [-18, -13.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [23, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-38, -0],
+      "length": 15.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-27.5, 12.5],
+      "length": 13,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-27.5, -12.5],
+      "length": 13,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "CR_TECH"
+    }
+  ],
+  "bounds": [
+    38, -1,
+    -30, -24,
+    -38, -2,
+    -38, 2,
+    -30, 23,
+    38, 1
+  ]
+}

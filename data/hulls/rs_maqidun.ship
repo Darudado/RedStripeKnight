@@ -1,0 +1,236 @@
+{
+  "hullName": "RS Maqidun",
+  "hullId": "rs_maqidun",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dilion.png",
+  "style": "RS_TECH",
+  "height": 110,
+  "width": 150,
+  "center": [75, 51.5],
+  "collisionRadius": 84,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 83,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxshunt",
+    "CrusadersCore",
+    "CrusadersPlating",
+    "MobileAssault",
+    "ImpregnableRampart",
+    "advancedcore"
+  ],
+  "builtInWeapons": {
+    "LEFT1": "rs_Nazaret_weapon_m",
+    "LEFT2": "rs_Nazaret_weapon_s",
+    "RIGHT1": "rs_Nazaret_weapon_m",
+    "RIGHT2": "rs_Nazaret_weapon_s"
+  },
+  "weaponSlots": [
+    {
+      "id": "LEFT1_SOURCE",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 20,
+      "locations": [14, 39.5]
+    },
+    {
+      "id": "RIGHT1_SOURCE",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -20,
+      "locations": [14, -39.5]
+    },
+    {
+      "id": "RIGHT2_SOURCE",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -135,
+      "locations": [-6, -22]
+    },
+    {
+      "id": "LEFT2_SOURCE",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 135,
+      "locations": [-6, 22]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30.5, 38]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [32.5, 29]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [32.5, -29]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30.5, -38]
+    },
+    {
+      "id": "LEFT1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 20,
+      "locations": [14, 39.5]
+    },
+    {
+      "id": "RIGHT1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -20,
+      "locations": [14, -39.5]
+    },
+    {
+      "id": "LEFT2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 135,
+      "locations": [-6, 22]
+    },
+    {
+      "id": "RIGHT2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -135,
+      "locations": [-6, -22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-23, -24.5],
+      "length": 14.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-23, 24.5],
+      "length": 14.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-11, -42],
+      "length": 14.5,
+      "width": 6,
+      "angle": -145.5,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-11, 42],
+      "length": 14.5,
+      "width": 6,
+      "angle": 145.5,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [34, -29.5],
+      "length": 14.5,
+      "width": 6,
+      "angle": 0,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [34, 29.5],
+      "length": 14.5,
+      "width": 6,
+      "angle": -0,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [32, -57],
+      "length": 14.5,
+      "width": 6,
+      "angle": -37,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [32, 57],
+      "length": 14.5,
+      "width": 6,
+      "angle": 37,
+      "contrailSize": 6,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-29, 0],
+      "length": 19,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -27, -38,
+    -23, -37,
+    -19, -43.5,
+    -22, -52.5,
+    -15.5, -57,
+    6.5, -49.5,
+    18.5, -61.5,
+    24.5, -58.5,
+    26.5, -45.5,
+    30, -39,
+    35, -38,
+    35, 38,
+    30, 39,
+    26.5, 45.5,
+    24.5, 58.5,
+    18.5, 61.5,
+    6.5, 49.5,
+    -15.5, 57,
+    -22, 52.5,
+    -19, 43.5,
+    -23, 37,
+    -27, 38
+  ]
+}

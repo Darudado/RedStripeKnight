@@ -1,0 +1,82 @@
+{
+  "hullName": "Banshee_module1R",
+  "hullId": "cr_banshee_module1R",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Crusaders/yukikaze/RichathaoirnaBande/RichathaoirnaBande_Moudle1R.png",
+  "style": "CR_TECH",
+  "height": 110,
+  "width": 90,
+  "center": [45, 55],
+  "collisionRadius": 95,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 87,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "Rhongomyniad",
+    "advancedcore",
+    "never_detaches",
+    "reduced_explosion",
+    "CR_RichathaoirnaBandeSystem"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [24, 20]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -15,
+      "locations": [-8, 1]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -15,
+      "locations": [-28, -24]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -25,
+      "locations": [15, -3]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -25,
+      "locations": [-5, -24]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -42, -39,
+    2, -39,
+    51, 15,
+    52, 18,
+    52, 33,
+    46.5, 35,
+    19.5, 39,
+    13, 39,
+    -42, -9
+  ]
+}

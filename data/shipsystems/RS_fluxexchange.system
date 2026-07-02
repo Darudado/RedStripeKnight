@@ -1,0 +1,20 @@
+{
+	"id":"RS_fluxexchange",
+	"type":"STAT_MOD",
+	"aiType":"DAMPER_FIELD",
+	
+	"statsScript":"data.scripts.shipsystems.RS_fluxexchange",
+	
+	"runScriptWhileIdle":true,
+	
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"vic_FluxRaptur",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":2000,
+		"threatAmount":5000,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

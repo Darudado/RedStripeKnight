@@ -1,0 +1,29 @@
+{
+	"baseHullId":"rs_nazaret",
+	"skinHullId":"rs_nazaret_missile",
+	"hullName":"拿撒勒(导弹装配)",
+	"descriptionId":"rs_nazaret",
+	"descriptionPrefix":"将原本的飞行甲板与纳米工厂替换为一整套导弹发射系统，增加了舰船的持续作战能力",
+	"tags":[ "subflagship", " auto_rec"],
+	"tech":"红条近卫军团",
+	"fleetPoints":45,
+	"ordnancePoints":300,
+	"baseValueMult":1,
+	"spriteName":"graphics/ships/Ordo Praetorianorum/Nazaret/Nazaret.png",
+	"fighterBays":0,
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+	"CarrierSwitch",
+    "CelestiLockSystem"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+  "builtInWeapons": {
+    "MISSILE":"rs_Nazaret_missile",
+  },
+ 	"weaponSlotChanges":{
+		"MISSILE":{
+		  "type": "BUILT_IN",
+	   },
+	},  
+}

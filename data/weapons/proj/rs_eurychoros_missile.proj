@@ -1,0 +1,60 @@
+{
+	"id":"rs_eurychoros_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"onFireEffect":"com.fs.starfarer.api.impl.combat.dem.DEMEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+		#"circleRadius":[0,50],
+		#"angledApproachDist":[900,1200],
+		"minDelayBeforeTriggering":0,
+		"triggerDistance":[500,550],
+		"preferredMinFireDistance":[500,550],
+		"turnRateBoost":100,
+		#"turnRateMultOnSignal":0.05,
+		"targetingTime":1,
+		"firingTime":0.25,
+		"targetingLaserId":"rs_eurychoros_targetinglaser",
+		"targetingLaserFireOffset":[8, 0],
+		"payloadWeaponId":"rs_eurychoros_payload",
+		"targetingLaserRange":600,
+		"targetingLaserArc":10,
+		"bombPumped":false,
+		"snapFacingToTargetIfCloseEnough":true,
+		"fadeOutEngineWhenFiring":false;
+		"destroyMissleWhenDoneFiring":true,
+		"destroyedExplosionColor":[107,195,210,255],
+	},
+	"sprite":"graphics/missiles/missile_gorgon_dem.png",
+	"size":[11,20],	
+	"center":[5.5,10],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	#"destroyedExplosionColor":[150,255,150,255],  # when the missile is destroyed by damage
+	"explosionColor":[107,195,210,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":120, # purely visual	
+	"engineSpec":{"turnAcc":400,
+				  "turnRate":225,
+				  "acc":500,
+				  "dec":750},
+				  "armingTime":3,
+	"engineSlots":[{"id":"ES1",
+					"loc":[-13, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[33,103,120,255],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[35,105,120,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":7.0,
+				    "length":40.0,
+				    "angle":180.0},
+				    ]
+}

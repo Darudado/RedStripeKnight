@@ -1,0 +1,86 @@
+{
+  "variantId": "rs_credo_variant",
+  "hullId": "rs_credo",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_pyreticon_large",
+        "WS0013": "rs_pyreticon_medium",
+        "WS0014": "rs_pyreticon_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "devastator",
+        "WS0006": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "rs_petrarupt_b",
+        "WS0010": "rs_petrarupt_b"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "flak",
+        "WS0012": "dualflak",
+        "WS0015": "heavymg",
+        "WS0016": "heavymg",
+        "WS0017": "rs_aeriallavatio_medium",
+        "WS0018": "rs_aeriallavatio_medium",
+        "WS0019": "flak",
+        "WS0020": "flak",
+        "WS0037": "rs_aeriallavatio_medium",
+        "WS0038": "rs_aeriallavatio_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0021": "vulcan",
+        "WS0022": "vulcan",
+        "WS0023": "rs_aeriallavatio_small",
+        "WS0024": "rs_aeriallavatio_small",
+        "WS0025": "rs_aeriallavatio_small",
+        "WS0026": "rs_aeriallavatio_small",
+        "WS0027": "vulcan",
+        "WS0028": "vulcan",
+        "WS0029": "vulcan",
+        "WS0030": "vulcan",
+        "WS0031": "vulcan",
+        "WS0032": "vulcan",
+        "WS0033": "vulcan",
+        "WS0034": "vulcan",
+        "WS0035": "vulcan",
+        "WS0036": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

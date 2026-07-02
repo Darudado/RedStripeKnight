@@ -1,0 +1,111 @@
+{
+  "hullName": "Tr_4_bit_left",
+  "hullId": "rs_Tr_4_bit_left",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr4/bits/Tr4_linebit_left.png",
+  "style": "RS_TECH",
+  "height": 690,
+  "width": 240,
+  "center": [120, 345],
+  "collisionRadius": 215,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 215,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "Tr_Moudle_Controlling",
+    "Tr_DesignFrame",
+    "Tr_SpecializedArmor",
+    "PhaseDefenseUnit"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_Tr_4_bitbean"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [186, 40]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [63, 40],
+      "length": 75.5,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [63, 40],
+      "length": 62,
+      "width": 22,
+      "angle": 170,
+      "contrailSize": 22,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [63, 40],
+      "length": 62,
+      "width": 22,
+      "angle": -170,
+      "contrailSize": 22,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [63, 40],
+      "length": 52.199425,
+      "width": 22.200913,
+      "angle": 155,
+      "contrailSize": 22.200913,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [63, 40],
+      "length": 62,
+      "width": 22,
+      "angle": -170,
+      "contrailSize": 22,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    63, 68,
+    63, 13,
+    82, 6,
+    87, 6,
+    87, 9,
+    90, 9,
+    90, -3,
+    95, -8,
+    108, -8,
+    114, -4,
+    115.5, 2.5,
+    147.5, -14,
+    155, 16,
+    170, 18,
+    179, 20,
+    186, 24,
+    186, 56,
+    179, 60,
+    160, 64,
+    154.5, 64,
+    149, 94,
+    117, 78,
+    114, 80,
+    114, 84,
+    108, 88,
+    95, 88,
+    91, 85,
+    90, 83,
+    90, 71,
+    87, 71,
+    87, 74,
+    82, 74
+  ]
+}

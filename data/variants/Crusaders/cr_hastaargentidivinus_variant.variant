@@ -1,0 +1,54 @@
+{
+  "variantId": "cr_hastaargentidivinus_variant",
+  "hullId": "cr_hastaargentidivinus",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "ControllingSystem_auto",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_petrarupt",
+        "WS0002": "rs_petrarupt",
+        "WS0003": "cr_url_m",
+        "WS0004": "cr_url_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "cr_KEP_21",
+        "WS0006": "cr_KEP_21",
+        "WS0007": "cr_KEP_21",
+        "WS0011": "cr_LEA_17",
+        "WS0012": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_EFlakT_69",
+        "WS0009": "cr_EFlak_69",
+        "WS0010": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69",
+        "WS0016": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

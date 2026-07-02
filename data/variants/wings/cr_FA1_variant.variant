@@ -1,0 +1,31 @@
+{
+  "variantId": "cr_FA1_variant",
+  "hullId": "cr_FA1",
+  "displayName": "中型通用战斗机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_ballistic_40mm",
+        "WS0002": "cr_ballistic_40mm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_energy_60mm",
+        "WS0004": "cr_energy_60mm"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "rs_RX78_GP03D_Left_Bean",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.Moci_BeamEMP",
+  "everyFrameEffect":"data.scripts.weapons.BrustBeanEveryFrame",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/RX78_GP03D/RX_78_GP03_D_Lefthand.png",
+  "hardpointSprite": "",
+  "glowColor": [255,100,200,155],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    40,
+    -3
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor":[255,100,200,255],
+	"coreColor":[255,255,255,200],
+  "textureType": [
+    "graphics/fx/Moci_beam_fringe_2.png",
+    "graphics/fx/rot_beamcore.png"
+  ],
+  "textureScrollSpeed": 252,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "high_intensity_laser_loop"
+}

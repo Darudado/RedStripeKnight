@@ -1,0 +1,29 @@
+{
+	"abilities":{
+		"MobileArmmorGroundSupport":{
+			"name":"机动近地轨道支援",
+			"icon":"graphics/icons/groundbattle/MobileArmmorGroundSupport.png",
+			"plugin":"data.scripts.campaign.Intel.exerelin.MobileArmmorGroundSupport",
+			"sound":"nex_sfx_deciv_bomb",
+			"cooldown":2,
+			"cooldownGlobal":1,
+			"color":[255,35,35,255],
+			"order":6,
+		},
+
+
+		"RS_TacticalAcceleraterStrike":{
+			"name":"轨道加速器打击",
+			"icon":"graphics/icons/cargo/planetkiller.png",
+			"plugin":"data.scripts.campaign.Intel.exerelin.RS_TacticalAcceleraterStrike",
+			"sound":"nex_sfx_deciv_bomb",
+			"cooldown":3,
+			"cooldownGlobal":1,
+			"color":[255,64,64,255],
+			"order":7,
+		}
+
+	},
+
+
+}

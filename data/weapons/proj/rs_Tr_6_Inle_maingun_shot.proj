@@ -1,0 +1,18 @@
+{
+	"id":"rs_Tr_6_Inle_maingun_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.CrDisruptEffect",
+	"length":275.0,
+	"width":55,
+	"fadeTime":0.3,
+	"fringeColor":[125,0,155,180],
+	"coreColor":[225,100,255,255],
+	"textureType":["graphics/fx/rs_SKR_beamcore.png","graphics/fx/rs_SKR_beamcore.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+}

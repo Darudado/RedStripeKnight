@@ -1,0 +1,35 @@
+{
+	"baseHullId":"vow_VMS_12",
+	"skinHullId":"vow_VMS_12_heavyweapon",
+	"hullName":"特拉杰(重火力装备 )",
+	"incompatibleWithBaseHull":false, # for the autofit dialog
+	"descriptionId":"rs_Tr_1_owsla",
+	"descriptionPrefix":"该型号为火力打击进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"tags":[vownor_bp,auto_rec, codex_unlockable ,crusaders_ma],
+	"tech":"誓言者设计",
+	"fleetPoints":12,
+	"ordnancePoints":40,
+	"maxSpeed":90,
+	"acceleration":115,
+	"deceleration":25,
+	"suppliesToRecover":12,
+	"suppliesPerMonth":12,
+	"fluxdissipation":275,
+	"baseValueMult":1,
+	"systemId":"RS_WeaponOverloading",
+	"spriteName":"graphics/ships/Mobile_Armor/VMS_12/body/VMS_12_body.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+		"Excalibur"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BACKPACK"
+	], 		# weapon slot ids
+	"builtInMods":[
+		"Rhongomyniad"
+	],
+	"builtInWeapons":{
+    "BACKPACK": "vow_VMS_12_backpack_heavyweapon"
+     },
+}

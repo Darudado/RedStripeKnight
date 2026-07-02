@@ -1,0 +1,64 @@
+{
+  "id": "rs_dorne_launch",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_dorne_missile",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.RS_drone_missile",
+  "turretSprite": "",
+  "hardpointSprite": "graphics/weapons/BuiltIn/bethlehem_builtIn/drone_launcher.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    -13.5,
+    12.5,
+    0,
+    -10.5,
+    12.5,
+    12.5,
+    26,
+    -11,
+    38.5,
+    12.5,
+    51.5,
+    -12,
+    64.5,
+    12.5
+  ],
+  "hardpointAngleOffsets": [
+    -93,
+    -90,
+    -90,
+    -90,
+    -90,
+    -90,
+    -90
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  }
+}

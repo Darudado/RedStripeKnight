@@ -1,0 +1,67 @@
+{
+  "id": "vow_Sanctaferit_m",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "mountTypeOverride": "HYBRID",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.SanctaferitBeamEffect",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/Sanctaferit/Sanctaferit_m_turret.png",
+  "turretGlowSprite": "graphics/weapons/Sanctaferit/Sanctaferit_m_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/Sanctaferit/Sanctaferit_m_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/Sanctaferit/Sanctaferit_m_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    25,
+    25,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    27,
+    0,
+    24,
+    6.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    29,
+    0,
+    26,
+    6.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    175,
+    50,
+    50,
+    150
+  ],
+  "coreColor": [
+    255,
+    155,
+    155,
+    100
+  ],
+  "convergeOnPoint": true,
+  "width": 6,
+  "textureType": [
+    "graphics/fx/SCY_particuleFringe.png",
+    "graphics/fx/rs_SCY_GRRRbeam.png"
+  ],
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "guardian_pd_fire"
+}

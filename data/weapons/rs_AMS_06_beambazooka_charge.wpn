@@ -1,0 +1,60 @@
+{
+  "id": "rs_AMS_06_beambazooka_charge",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.Moci_BeamEMP",
+  "everyFrameEffect": "data.scripts.weapons.BrustBeanEveryFrame",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/Tr4/Rozet/arms/Tr4_arm_right_bazooka.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/Tr4/Rozet/arms/Tr4_arm_right_bazooka.png",
+  "glowColor": [
+    255,
+    100,
+    100,
+    235
+  ],
+  "hitGlowRadius": 350,
+  "turretOffsets": [
+    98,
+    -8
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    187,
+    -8
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [
+    255,
+    0,
+    0,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 45,
+  "textureType": LASER,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF,
+    FIGHTER,
+    ASTEROID
+  ],
+  "fireSoundTwo": "dragonfire_payload_fire"
+}

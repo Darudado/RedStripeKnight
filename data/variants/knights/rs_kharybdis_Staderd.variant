@@ -1,0 +1,62 @@
+{
+  "variantId": "rs_kharybdis_Staderd",
+  "hullId": "rs_kharybdis",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "turretgyros",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_scattercannon_L",
+        "WS0002": "rs_scattercannon_M"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_KEP_21",
+        "WS0004": "cr_KEP_21"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavyburst",
+        "WS0010": "pdlaser",
+        "WS0011": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "cr_EFlak_69",
+        "WS0009": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_appellatio_wing",
+    "rs_appellatio_wing",
+    "rs_disputatio_wing",
+    "rs_disputatio_wing"
+  ]
+}

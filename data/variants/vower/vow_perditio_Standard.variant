@@ -1,0 +1,88 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 8,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vow_perditio",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+        "VOW_AdditionalFluxDissipation",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_perditio_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0023": "cr_url_m",
+                "WS0022": "rs_petrarupt",
+                "WS0024": "cr_url_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vow_euthystopos_e",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vow_Sanctaferit_l",
+                "WS0002": "vow_Sanctaferit_l",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "vow_ligatio_s",
+                "WS0020": "vow_ligatio_s",
+                "WS0019": "vow_ligatio_s",
+                "WS0005": "vow_ligatio_s",
+                "WS0004": "guardian",
+                "WS0007": "vow_ligatio_s",
+                "WS0006": "vow_ligatio_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "vow_ligatio",
+                "WS0021": "vow_ligatio",
+                "WS0016": "vow_ligatio",
+                "WS0015": "vow_ligatio",
+                "WS0017": "vow_ligatio",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "vow_Tonitruum_s",
+                "WS0011": "vow_Tonitruum_s",
+                "WS0010": "vow_Tonitruum_s",
+                "WS0009": "vow_Tonitruum_s",
+                "WS0008": "vow_Tonitruum_s",
+                "WS0018": "vow_Sanctaferit_m",
+            }
+        },
+    ],
+    "wings": [
+        "vow_boanerges_wing",
+        "vow_boanerges_wing",
+        "vow_elmo_wing",
+        "vow_elmo_wing",
+        "vow_uriel_wing",
+    ],
+    "modules": [],
+}

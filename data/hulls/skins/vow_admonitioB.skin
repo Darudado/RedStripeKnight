@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_admonitio",
+    "skinHullId": "vow_admonitioB",
+    "hullName": "劝诫 (前线)",
+    "descriptionPrefix": "强化舰船正面作战能力。",
+    "descriptionId": "vow_admoniti",
+    "spriteName": "graphics/ships/Vower/Admonitio.png",
+    "removeBuiltInMods":[
+		
+	], 
+    "builtInMods":[
+		
+	],
+    "addHints": [
+        HIDE_IN_CODEX
+    ],
+    "systemId": "CR_PhaseboostDrive",
+    "weaponSlotChanges": {}
+}

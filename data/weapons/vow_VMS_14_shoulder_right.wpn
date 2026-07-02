@@ -1,0 +1,66 @@
+{
+  "id": "vow_VMS_14_shoulder_right",
+  "specClass": "beam",
+  "type": "DECORATIVE",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/VMS_14/shoulders/VMS_14_shoulder_right.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/VMS_14/shoulders/VMS_14_shoulder_right.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    5,
+    -9,
+    -1,
+    -12,
+    -5,
+    -11
+  ],
+  "turretAngleOffsets": [
+    -45,
+    -65,
+    -65
+  ],
+  "hardpointOffsets": [
+    5,
+    -9,
+    -1,
+    -12,
+    -5,
+    -11
+  ],
+  "hardpointAngleOffsets": [
+    -45,
+    -65,
+    -65
+  ],
+  "fringeColor": [
+    255,
+    0,
+    30,
+    255
+  ],
+  "coreColor": [
+    255,
+    10,
+    50,
+    155
+  ],
+  "width": 6,
+  "textureType": SMOOTH,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ]
+}

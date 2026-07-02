@@ -1,0 +1,74 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "rs_infernum",
+    "hullMods": [
+        "BallisticTargetCognetrix",
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "ControllingSystem_strike",
+        "magazines",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rs_infernum_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "rs_misericorde_large",
+                "WS0012": "rs_misericorde_large",
+                "WS0019": "rs_oeconomia_M",
+                "WS0020": "rs_oeconomia_M",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "rs_oeconomia_L",
+                "WS0009": "rs_oeconomia_L",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "flak",
+                "WS0008": "flak",
+                "WS0001": "vulcan",
+                "WS0002": "vulcan",
+                "WS0003": "vulcan",
+                "WS0004": "vulcan",
+                "WS0005": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0023": "rs_aeriallavatio_small",
+                "WS0022": "rs_aeriallavatio_small",
+                "WS0021": "rs_aeriallavatio_small",
+                "WS0016": "rs_aeriallavatio_small",
+                "WS0015": "rs_aeriallavatio_small",
+                "WS0018": "rs_aeriallavatio_small",
+                "WS0017": "rs_aeriallavatio_small",
+                "WS0014": "rs_aeriallavatio_small",
+                "WS0013": "rs_aeriallavatio_small",
+            }
+        },
+    ],
+    "wings": [
+        "rs_appellatio_wing",
+        "rs_appellatio_wing",
+        "rs_disputatio_wing",
+        "rs_disputatio_wing",
+    ],
+    "modules": [],
+}

@@ -1,0 +1,67 @@
+{
+  "variantId": "rs_Tr_6_haznthley_support",
+  "hullId": "rs_Tr_6_haznthley",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 2,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_EngineRegularBoost",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "Moci_SMA_LandingSequence",
+        "autorepair",
+        "stabilizedshieldemitter",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "SUBGUN": "rs_Tr_6_subgun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKWEAPON_L2_SOURCE": "rs_scindeterram",
+                "BACKWEAPON_R2_SOURCE": "rs_scindeterram",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "rs_Tr_6_arm_right_gun_rifle",
+                "ARM_L_SOURCE": "rs_Tr_6_arm_left_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKWEAPON_L1_SOURCE": "tachyonlance",
+                "BACKWEAPON_R1_SOURCE": "tachyonlance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+    ],
+  "modules": [
+    {
+      "GUNSHIELD_L": "rs_Tr_1_left_shield_Base"
+    },
+    {
+      "GUNSHIELD_R": "rs_Tr_1_right_shield_Base"
+    }
+  ],
+  "wings": []
+}

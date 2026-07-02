@@ -1,0 +1,68 @@
+{
+  "variantId": "rs_Tr_4_Dandelion_Standerd",
+  "hullId": "rs_Tr_4_Dandelion",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L": "rs_Dandelion_Arm_LinerBit_Control_L",
+        "ARM_R": "rs_Dandelion_Arm_LinerBit_Control_R"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "squall",
+        "WS0002": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003_SOURCE": "devastator",
+        "WS0006_SOURCE": "rs_aeriallavatio_medium",
+        "WS0007_SOURCE": "rs_aeriallavatio_medium",
+        "WS0008_SOURCE": "dualflak",
+        "WS0009_SOURCE": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004_SOURCE": "rs_oeconomia_L",
+        "WS0005_SOURCE": "rs_oeconomia_L"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "CRADLE": "rs_Tr_Ceadle_Base"
+    },
+    {
+      "ARM_WPR": "rs_Tr_4_bit_right_Base"
+    },
+    {
+      "ARM_WPL": "rs_Tr_4_bit_left_Base"
+    }
+  ],
+  "wings": [
+    "rs_falcoperegrinus_wing",
+    "rs_falcoperegrinus_wing",
+    "rs_confutatio_wing",
+    "rs_confutatio_wing"
+  ]
+}

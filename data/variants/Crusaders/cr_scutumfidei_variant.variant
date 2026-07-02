@@ -1,0 +1,65 @@
+{
+  "variantId": "cr_scutumfidei_variant",
+  "hullId": "cr_scutumfidei",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 13,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "ecm",
+    "ControllingSystem_auto",
+    "fluxcoil",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_MEP_15",
+        "WS0002": "cr_MEP_15",
+        "WS0003": "cr_MEP_15",
+        "WS0004": "cr_MEP_15",
+        "WS0007": "cr_MEP_15",
+        "WS0008": "cr_MEP_15",
+        "WS0011": "cr_KEP_11",
+        "WS0012": "cr_KEP_11",
+        "WS0013": "cr_KEP_11",
+        "WS0014": "cr_KEP_11"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "cr_lapislull_b",
+        "WS0020": "cr_lapislull_b"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "cr_EFlakT_69",
+        "WS0010": "cr_EFlak_69",
+        "WS0015": "cr_EFlak_69",
+        "WS0016": "cr_EFlak_69",
+        "WS0017": "cr_EFlak_69",
+        "WS0018": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0041": "typhoon",
+        "WS0042": "typhoon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

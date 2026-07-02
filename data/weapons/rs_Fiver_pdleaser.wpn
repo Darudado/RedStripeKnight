@@ -1,0 +1,66 @@
+{
+  "id": "rs_Fiver_pdleaser",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.PaladinEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "glowColor": [
+    225,
+    100,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    1.5,
+    0,
+    0,
+    1.5,
+    0,
+    -1.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    1.5,
+    0,
+    0,
+    1.5,
+    0,
+    -1.5
+  ],
+  "hardpointAngleOffsets": [
+   0,
+   0,
+   0
+  ],
+  "fringeColor": [
+    125,
+    0,
+    155,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 7,
+  "textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "pd_laser_loop"
+}

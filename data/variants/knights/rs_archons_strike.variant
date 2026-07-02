@@ -1,0 +1,82 @@
+{
+  "variantId": "rs_archons_strike",
+  "hullId": "rs_archons",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "armoredweapons",
+    "ControllingSystem_support",
+    "ControllingSystem_manned"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_sinfulplumage",
+        "WS0002": "rs_sinfulplumage"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hammerrack",
+        "WS0004": "hammerrack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "rs_misericorde_medium",
+        "WS0011": "rs_misericorde_medium",
+        "WS0012": "rs_misericorde_medium",
+        "WS0016": "rs_justiceconfessor_small",
+        "WS0017": "rs_justiceconfessor_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "rs_aeriallavatio_medium",
+        "WS0009": "rs_aeriallavatio_medium",
+        "WS0013": "rs_aeriallavatio_small",
+        "WS0014": "rs_aeriallavatio_small",
+        "WS0024": "rs_aeriallavatio_small",
+        "WS0025": "rs_aeriallavatio_small",
+        "WS0026": "rs_aeriallavatio_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "vulcan",
+        "WS0018": "vulcan",
+        "WS0019": "vulcan",
+        "WS0020": "vulcan",
+        "WS0021": "vulcan",
+        "WS0022": "vulcan",
+        "WS0023": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_sagittariusserpentarius_wing",
+    "rs_sagittariusserpentarius_wing",
+    "rs_sagittariusserpentarius_wing"
+  ]
+}

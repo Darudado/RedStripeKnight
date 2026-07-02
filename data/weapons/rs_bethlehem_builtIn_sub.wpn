@@ -1,0 +1,39 @@
+{
+  "id": "rs_bethlehem_builtIn_sub",
+  "specClass": "projectile",
+  "projectileSpecId": "KEP_21_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.scripts.weapons.RSWeaponFollowEffect",
+  "turretSprite": "graphics/weapons/BuiltIn/bethlehem_builtIn/rs_bethlehem_builtIn_sub.png",
+  "hardpointSprite": "graphics/weapons/BuiltIn/bethlehem_builtIn/rs_bethlehem_builtIn_sub.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    31,
+    1.5,
+    31,
+    -3.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    58.5,
+    1.5,
+    58.5,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  "fireSoundTwo": "KEP_fire"
+}

@@ -1,0 +1,88 @@
+{
+  "variantId": "rs_Tr_5_fiver_Standerd",
+  "hullId": "rs_Tr_5_fiver",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "EnergyTargetCognetrix",
+        "magazines",
+        "turretgyros",
+        "rs_Fiver_lanuch_assault_Mode"
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "RIGHTWINGC_R_SOURCE": "rs_Fiver_lanuch_right_assault",
+                "LEFTWINGC_L_SOURCE": "rs_Fiver_lanuch_left_assault",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001_SOURCE": "rs_scattercannon_L",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "rs_petrarupt",
+                "WS0008": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003_SOURCE": "cr_KEP_21",
+                "WS0004_SOURCE": "cr_KEP_21",
+                "WS0002_SOURCE": "cr_KEP_21",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005_SOURCE": "cr_EFlak_69",
+                "WS0006_SOURCE": "cr_EFlak_69",
+                "WS0007_SOURCE": "cr_EFlak_69",
+            }
+        },
+    ],
+  "modules": [
+    {
+      "RWING_R": "rs_Tr_5_mainwing_right_Base"
+    },
+    {
+      "LWING_L": "rs_Tr_5_mainwing_left_Base"
+    },
+    {
+      "LSWING_L": "rs_fiver_subwing_left_Base"
+    },
+    {
+      "RSWING_R": "rs_fiver_subwing_right_Base"
+    },
+    {
+      "RAWING_R": "rs_fiver_armowing_right_Base"
+    },
+    {
+      "LAWING_L": "rs_fiver_armowing_left_Base"
+    },
+    {
+      "wingEngineLeft": "rs_fiver_wingengineLeft_Base"
+    },
+    {
+      "wingEngineRight": "rs_fiver_wingengineRight_Base"
+    }
+  ],
+  "wings": [
+        "wasp_wing",
+    ]
+}

@@ -1,0 +1,66 @@
+{
+  "variantId": "rs_daturadiaboli_stander",
+  "hullId": "rs_daturadiaboli",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 27,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "advancedshieldemitter",
+    "eccm",
+    "fluxcoil",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_L_shockrepeater",
+        "WS0002": "rs_L_shockrepeater"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "gravitonbeam",
+        "WS0005": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "swarmer_fighter",
+        "WS0008": "swarmer_fighter",
+        "WS0015": "swarmer_fighter",
+        "WS0016": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdburst",
+        "WS0006": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0011": "pdlaser",
+        "WS0012": "pdlaser",
+        "WS0013": "pdlaser",
+        "WS0014": "pdlaser",
+        "WS0017": "pdlaser",
+        "WS0018": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xyphos_wing",
+    "xyphos_wing"
+  ]
+}

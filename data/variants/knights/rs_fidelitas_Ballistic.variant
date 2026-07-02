@@ -1,0 +1,66 @@
+{
+    "displayName": "Ballistic",
+    "fluxCapacitors": 20,
+    "fluxVents": 9,
+    "quality": 1,
+    "goalVariant": true,
+    "hullId": "rs_fidelitas",
+    "hullMods": [
+        "BallisticTargetCognetrix",
+        "fluxbreakers",
+        "magazines",
+        "rs_euthystopos_b_built_Mode",
+        "turretgyros",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "rs_fidelitas_Ballistic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAINGUN": "rs_euthystopos_b_built",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "rs_lasertorpedo",
+                "WS0011": "rs_petrarupt",
+                "WS0013": "rs_lasertorpedo",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003_SOURCE": "rs_oeconomia_M",
+                "WS0002_SOURCE": "rs_oeconomia_M",
+                "WS0006_SOURCE": "rs_oeconomia_M",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004_SOURCE": "dualflak",
+                "WS0005_SOURCE": "dualflak",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001_SOURCE": "rs_aeriallavatio_medium",
+                "WS0007_SOURCE": "rs_aeriallavatio_small",
+                "WS0008_SOURCE": "rs_aeriallavatio_small",
+                "WS0009_SOURCE": "rs_aeriallavatio_small",
+                "WS0010_SOURCE": "rs_aeriallavatio_small",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

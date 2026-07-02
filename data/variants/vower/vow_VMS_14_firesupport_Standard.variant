@@ -1,0 +1,74 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "vow_VMS_14_firesupport_d",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "autorepair",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_VMS_14_firesupport_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MISSILE_L": "swarmer",
+                "MISSILE_R": "swarmer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_FOLLOW": "vow_VMS_14_arm_cannon_right",
+                "ARM_R_SOURCE": "vow_Ignis_l",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKPACK_WEA_L": "vow_VMS_Hambrabi_cannon_left",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "vow_ligatio",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "SWL1": "vow_Sanctaferit_m",
+                "SWR1": "vow_Sanctaferit_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKPACK_WEA_R": "vow_VMS_Hambrabi_missile_right",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,76 @@
+{
+  "variantId": "cr_malakbinger_staderd",
+  "hullId": "cr_malakbinger",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 45,
+  "fluxVents": 14,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_EngineRegularBoost",
+        "CR_FighterProducingOverloading",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+        "advancedshieldemitter",
+        "armoredweapons",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "cr_frigate_launcher1",
+                "WS0002": "cr_frigate_launcher1",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_EFlakT_69",
+                "WS0011": "cr_EFlakT_69",
+                "WS0013": "cr_EFlakT_69",
+                "WS0010": "cr_EFlakT_69",
+                "WS0015": "cr_EFlak_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "cr_eoswhisper",
+                "WS0005": "cr_eoswhisper",
+                "WS0016": "cr_eoswhisper",
+                "WS0004": "cr_eoswhisper",
+                "WS0007": "cr_eoswhisper",
+                "WS0006": "cr_eoswhisper",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "cr_KEP_21",
+                "WS0008": "cr_LEA_17",
+            }
+        },
+    ],
+  "modules": [],
+  "wings": [
+        "cr_FA2_wing",
+        "cr_FA2_wing",
+        "cr_FA2_wing",
+        "cr_FFR31_wing",
+        "cr_FFR31_wing",
+        "cr_FFR31_wing",
+    ]
+}

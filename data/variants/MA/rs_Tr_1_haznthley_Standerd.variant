@@ -1,0 +1,70 @@
+{
+  "variantId": "rs_Tr_1_haznthley_Standerd",
+  "hullId": "rs_Tr_1_haznthley",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_EngineRegularBoost",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "Moci_SMA_LandingSequence",
+        "PolariphaseDrive",
+        "hardenedshieldemitter",
+        "magazines",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "rs_Tr_1_arm_right_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "rs_Tr_1_arm_left_gun_Sabre",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WEAPONLEFT_SOURCE": "rs_owsla_left_gun_rifle",
+                "WEAPONRIGHT_SOURCE": "rs_owsla_right_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKPACK_L_SOURCE": "hammerrack",
+                "BACKPACK_R_SOURCE": "hammerrack",
+            }
+        },
+    ],
+  "modules": [
+    {
+      "SHIELD_L": "rs_Tr_1_left_sabre_shield_Base"
+    },
+    {
+      "GUNSHIELD_R": "rs_Tr_1_right_shield_Base"
+    },
+    {
+      "GUNSHIELD_L": "rs_Tr_1_left_shield_Base"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,41 @@
+{
+  "variantId": "rs_XIV_Exousia_Left_Deck_Standerd",
+  "hullId": "rs_XIV_Exousia_Left_Deck",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "Moci_LandingBay",
+    "ControllingSystem_strike",
+    "autorepair",
+    "armoredweapons",
+    "turretgyros",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dualflak",
+        "WS0003": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_aeriallavatio_medium"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "perdition_wing",
+    "perdition_wing",
+    "perdition_wing"
+  ]
+}

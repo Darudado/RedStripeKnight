@@ -1,0 +1,51 @@
+{
+  "id": "cr_EFlakT_69",
+  "specClass": "projectile",
+  "projectileSpecId": "EFlak_69_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.scripts.weapons.MisericordeEffect",
+  "turretSprite": "graphics/weapons/Energy Flak/EFlakT_69_00.png",
+  "hardpointSprite": "graphics/weapons/Energy Flak/EFlakT_69_00.png",
+  "visualRecoil": 2,
+  "turretOffsets": [
+    10,
+    4,
+    10,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    15.5,
+    4,
+    15.5,
+    -4
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 2,
+  "frameRate": 20,
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 10,
+    "particleSizeMin": 7,
+    "particleSizeRange": 7,
+    "particleDuration": 0.2,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      255,
+      255,
+      175
+    ]
+  },
+  "fireSoundTwo": "cr_EFlak"
+}

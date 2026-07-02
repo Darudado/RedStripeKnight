@@ -1,0 +1,56 @@
+{
+  "variantId": "rs_behemoth_variant",
+  "hullId": "rs_behemoth",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dragonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0033": "sabot_single",
+        "WS0034": "sabot_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "cr_MEP_15",
+        "WS0003": "cr_MEP_15",
+        "WS0007": "cr_LEA_17",
+        "WS0008": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_EFlakT_69",
+        "WS0005": "cr_EFlak_69",
+        "WS0006": "cr_EFlak_69",
+        "WS0009": "cr_EFlak_69",
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

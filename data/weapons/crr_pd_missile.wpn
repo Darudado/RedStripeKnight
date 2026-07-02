@@ -1,0 +1,29 @@
+{
+  "id": "crr_pd_missile",
+  "specClass": "projectile",
+  "projectileSpecId": "pd_missile_proj",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "hardpointOffsets":[15, -4, 15, -2, 15, 2, 15, 4],
+	"turretOffsets":[10, -4, 10, -2, 10, 2, 10, 4],
+	"hardpointAngleOffsets":[-20, -10, 10, 20],
+	"turretAngleOffsets":[-20, -10, 10, 20],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "autocharge": true,
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "cloudParticleCount": 2,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 0.5,
+    "blowbackLength": 35,
+    "blowbackSpread": 35,
+    "particleColor": [100,165,255,75]
+  },
+  "fireSoundTwo": "swarmer_fire"
+}

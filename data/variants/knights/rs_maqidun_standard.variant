@@ -1,0 +1,43 @@
+{
+  "variantId": "rs_maqidun_standard",
+  "hullId": "rs_maqidun",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "rs_lasertorpedo_s",
+        "WS0006": "rs_lasertorpedo_s",
+        "WS0007": "rs_lasertorpedo_s",
+        "WS0008": "rs_lasertorpedo_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "LEFT1_SOURCE": "gravitonbeam",
+        "RIGHT1_SOURCE": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "LEFT2_SOURCE": "pdburst",
+        "RIGHT2_SOURCE": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

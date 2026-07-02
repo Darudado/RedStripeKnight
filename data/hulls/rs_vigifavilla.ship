@@ -1,0 +1,100 @@
+{
+  "hullName": "Vigifavilla",
+  "hullId": "rs_vigifavilla",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/CombatCarrier/VigilFavilla​.png",
+  "style": "RS_TECH",
+  "height": 64,
+  "width": 108,
+  "center": [54, 32],
+  "collisionRadius": 51,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 56.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "fluxshunt",
+    "no_weapon_flux",
+    "Excalibur"
+  ],
+  "builtInWeapons": {
+    "WS0001": "cr_LEA_51"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 130,
+      "angle": 0,
+      "locations": [7, 20]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 130,
+      "angle": -0,
+      "locations": [7, -20]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, -10.5],
+      "length": 13,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-17.5, 10.5],
+      "length": 13,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-17.5, -14.5],
+      "length": 13,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-17.5, 14.5],
+      "length": 13,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -21.5, -19,
+    -13, -35,
+    8, -43,
+    16, -13.5,
+    25, -8.5,
+    25, 8.5,
+    16, 13.5,
+    8, 43,
+    -13, 35,
+    -21.5, 19
+  ]
+}

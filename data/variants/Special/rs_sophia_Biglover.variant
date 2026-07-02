@@ -1,0 +1,59 @@
+{
+    "displayName": "Biglover",
+    "fluxCapacitors": 40,
+    "fluxVents": 12,
+    "goalVariant": false,
+    "hullId": "rs_sophia",
+    "hullMods": [
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "comp_storage",
+        "degraded_life_support",
+        "erratic_injector",
+        "faulty_auto",
+        "hardenedshieldemitter",
+        "increased_maintenance",
+        "shrouded_mantle",
+    ],
+    "permaMods": [
+        "BallisticTargetCognetrix",
+        "CR_ChargingRing",
+        "CR_carrier_strikecommand",
+        "PolariphaseDrive",
+        "automated",
+        "heavyarmor",
+    ],
+    "sMods": [
+        "BallisticTargetCognetrix",
+        "CR_ChargingRing",
+        "PolariphaseDrive",
+        "heavyarmor",
+    ],
+    "suppressedMods": [],
+    "variantId": "rs_sophia_Biglover",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "gauss",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0019": "rs_petrarupt",
+                "WS0018": "rs_petrarupt",
+            }
+        },
+    ],
+    "wings": [
+        "rs_aquilachrysaetos_wing",
+        "rs_aquilachrysaetos_wing",
+        "rs_aquilachrysaetos_wing",
+        "rs_aquilachrysaetos_wing",
+        "rs_aquilachrysaetos_wing",
+    ],
+    "modules": [],
+}

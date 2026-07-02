@@ -1,0 +1,98 @@
+{
+  "hullName": "Appellatio",
+  "hullId": "rs_appellatio",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Appellatio.png",
+  "style": "RS_TECH",
+  "height": 42,
+  "width": 38,
+  "center": [19, 20.5],
+  "collisionRadius": 22.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 21.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "autorepair",
+    "no_weapon_flux",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "WS0001": "gazer",
+    "WS0002": "swarmer",
+    "WS0003": "cr_EFlak_69",
+    "WS0004": "cr_EFlak_69"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [0.5, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -0,
+      "locations": [0.5, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [6.5, 5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -0,
+      "locations": [6.5, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15.5, -0],
+      "length": 24.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-14.5, 7],
+      "length": 18.5,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-14.5, -7],
+      "length": 18.5,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "DA_REFIT"
+    }
+  ],
+  "bounds": [
+    21.5, -0,
+    1.5, 19,
+    -20.5, 5,
+    -20.5, -5,
+    1.5, -19
+  ]
+}

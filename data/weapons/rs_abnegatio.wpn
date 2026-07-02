@@ -1,0 +1,40 @@
+{
+  "id": "rs_abnegatio",
+  "specClass": "projectile",
+  "projectileSpecId": "abnegatio_shot",
+  "type": "ENERGY",
+  "mountTypeOverride": "SYNERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/Abnegatio/Abnegatio_turret.png",
+  "hardpointSprite": "graphics/weapons/Abnegatio/Abnegatio_hardpoint.png",
+  "turretOffsets": [
+    22,
+    0,
+    22,
+    0,
+    22,
+    0
+  ],
+  "turretAngleOffsets": [
+    0,
+    15,
+    -15
+  ],
+  "hardpointOffsets": [
+    33.5,
+    0,
+    33.5,
+    0,
+    33.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    15,
+    -15
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "NONE",
+  "autocharge": true,
+  "fireSoundTwo": "shock_repeater_fire"
+}

@@ -1,0 +1,52 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vow_piafides",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_FighterProducingOverloading",
+        "ControllingSystem_manned",
+        "ControllingSystem_strike",
+        "vow_piafidesB_selector",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_piafides_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "salamanderpod",
+                "WS0006": "heatseeker",
+                "WS0007": "heatseeker",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "cr_url_m",
+                "WS0008": "rs_lasertorpedo_s",
+                "WS0009": "rs_lasertorpedo_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vow_ligatio_s",
+                "WS0003": "vow_ligatio_s",
+                "WS0001": "vow_ligatio_s",
+            }
+        },
+    ],
+    "wings": [
+        "vow_seraphim_wing",
+        "vow_elmo_wing",
+        "vow_elmo_wing",
+    ],
+    "modules": [],
+}

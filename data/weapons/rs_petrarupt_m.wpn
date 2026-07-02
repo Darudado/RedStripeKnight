@@ -1,0 +1,42 @@
+{
+  "id": "rs_petrarupt_m",
+  "specClass": "projectile",
+  "projectileSpecId": "cr_petrarupt_mrm",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/rs_petrarupt_mrm_launcher_turret_base.png",
+  "hardpointSprite": "graphics/weapons/rs_petrarupt_mrm_launcher_hardpoint_base.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    17.5,
+    4,
+    17.5,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    27,
+    4,
+    27,
+    -4
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  "fireSoundTwo": "dragonfire_fire"
+}

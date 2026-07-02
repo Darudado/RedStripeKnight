@@ -1,0 +1,251 @@
+{
+  "hullName": "MSA0011(Bst)303E_MatthiolaIncana",
+  "hullId": "rs_MSA0011(Bst)303E",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Mobile_Armor/MSA-0011(Bst)303E/MSA-0011(Bst)303E_Body.png",
+  "style": "RS_MA_Module",
+  "height": 90,
+  "width": 50,
+  "center": [25, 45],
+  "collisionRadius": 79.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 71.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "MSA0011Bst303E_Controlling",
+    "SPAutomated",
+    "Excalibur",
+    "MSA0011Bst303E_ModuleController",
+    "HiddenMissles",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour"
+  ],
+  "builtInWeapons": {
+    "Hipgun_FOLLOW": "rs_MSA0011(Bst)303E_Hipgun",
+    "WS0004": "rs_MSA0011(Bst)303E_Rifle",
+    "WS0005": "rs_MSA0011(Bst)303E_Left",
+    "WS0006": "dengineL_hiden",
+    "WS0007": "rs_MSA0011(Bst)303E_Bean",
+    "WS0008": "rs_MSA0011(Bst)303E_Maingun",
+    "WS0009": "dengineR_hiden",
+    "WS0010": "rs_MSA0011(Bst)303E_Head",
+    "WS0013": "rs_MSA0011(Bst)303E_Shoulder",
+    "WS0014": "rs_MSA0011(Bst)303E_Support",
+    "WS0015": "rs_MSA001(Bst)303E_Radia"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-31.5, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-31.5, -22]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-85, 0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -13,
+      "locations": [-31, -43],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": 0,
+      "locations": [-8, 28.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [23, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [21.5, -28],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-28, -0]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-33, 25.5]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-33, -25.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-39.5, -0],
+      "renderOrderMod": 50
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-67, -0],
+      "renderOrderMod": 40
+    },
+    {
+      "id": "Hipgun_FOLLOW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8.5, 20.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-59.5, 19.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "Hipgun_SOURCE",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8.5, 20.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [5.5, 8]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [5.5, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26.5, -18.5],
+      "length": 7.955833,
+      "width": 7.798647,
+      "angle": -132.5,
+      "contrailSize": 7.798647,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-26.5, 18.5],
+      "length": 7.955833,
+      "width": 7.798647,
+      "angle": 132.5,
+      "contrailSize": 7.798647,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-38.5, 0],
+      "length": 19.5,
+      "width": 47,
+      "angle": 180,
+      "contrailSize": 47,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    -55.5, 9.5,
+    -42, 49,
+    -33, 61,
+    -30.5, 61,
+    -25.5, 53,
+    -21, 47,
+    -20.5, 27.5,
+    -27, 19,
+    -21, 18,
+    7, 13,
+    42, 5,
+    38, 5,
+    36, 2,
+    36, -2,
+    38, -5,
+    42, -5,
+    7, -13,
+    -21, -18,
+    -27, -19,
+    -20.5, -27.5,
+    -21, -47,
+    -25.5, -53,
+    -30.5, -61,
+    -33, -61,
+    -42, -49,
+    -55.5, -9.5
+  ]
+}

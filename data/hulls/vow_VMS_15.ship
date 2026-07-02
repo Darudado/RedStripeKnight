@@ -1,0 +1,378 @@
+{
+  "hullName": "VMS_15",
+  "hullId": "vow_VMS_15",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Mobile_Armor/VMS_15/body/VMS_15_body.png",
+  "style": "RS_MA_Module",
+  "height": 110,
+  "width": 100,
+  "center": [50, 55],
+  "collisionRadius": 89.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 89.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "Tr_DesignFrame",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour",
+    "Excalibur",
+    "vow_VMS_15_system",
+    "VOW_FluxExtendTendency",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "ARM_L": "vow_VMS_15_arm_left",
+    "ARM_L_TYPE": "vow_VMS_15_arm_smg_left",
+    "ARM_R": "vow_VMS_15_arm_right",
+    "ARM_R_SOURCE": "vow_VMS_15_arm_right_gun",
+    "BODY": "vow_VMS_15_body",
+    "HEAD": "vow_VMS_15_head",
+    "HEAD_SOURCE": "rs_Tr_head_vulcan",
+    "LE1_Left": "rs_subengine",
+    "LE5_Left": "PC_engine",
+    "LEG": "vow_VMS_15_legs",
+    "MISSILE": "vow_VMS_15_backmissile",
+    "RE1_Right": "rs_subengine",
+    "RE5_Right": "PC_engine",
+    "SHOULDER_L": "vow_VMS_15_shoulder_left",
+    "SHOULDER_R": "vow_VMS_15_shoulder_right",
+    "SHOULDERe_L": "vow_VMS_15_shoulderEngine_left",
+    "SHOULDERe_R": "vow_VMS_15_shoulderEngine_right",
+    "subENGINE": "vow_VMS_15_shoulderEngine"
+  },
+  "weaponSlots": [
+    {
+      "id": "HEAD",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 6
+    },
+    {
+      "id": "BODY",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "LEG",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "ARM_R",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": 0,
+      "locations": [1, -22],
+      "renderOrderMod": 3
+    },
+    {
+      "id": "ARM_L",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 25,
+      "locations": [1, 22],
+      "renderOrderMod": 3
+    },
+    {
+      "id": "SHOULDER_R",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2, -22],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "SHOULDER_L",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-2, 22],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "subENGINE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3.5, -0],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "SHOULDERe_A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-36, -0],
+      "renderOrderMod": 25
+    },
+    {
+      "id": "BACKPACK_WEA_R",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 0,
+      "locations": [-60, -40],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "BACKPACK_WEA_L",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": -0,
+      "locations": [-60, 40],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "HEAD_SOURCE",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "ARM_L_TYPE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 25,
+      "locations": [1, 22],
+      "renderOrderMod": 4
+    },
+    {
+      "id": "ARM_R_SOURCE",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": 0,
+      "locations": [1, -22]
+    },
+    {
+      "id": "ARM_L_SOURCE",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 25,
+      "locations": [1, 22]
+    },
+    {
+      "id": "RE4_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-29.5, -24]
+    },
+    {
+      "id": "LE4_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-29.5, 24]
+    },
+    {
+      "id": "RE5_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 140,
+      "locations": [-25.5, -15]
+    },
+    {
+      "id": "LE5_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -140,
+      "locations": [-25.5, 15]
+    },
+    {
+      "id": "SHOULDERe_RW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -127,
+      "locations": [-23.5, -31.5]
+    },
+    {
+      "id": "SHOULDERe_LW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 127,
+      "locations": [-23.5, 31.5]
+    },
+    {
+      "id": "SHOULDERe_R",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3.5, -26],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "SHOULDERe_L",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-3.5, 26],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -25,
+      "locations": [8.5, -8]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 25,
+      "locations": [8.5, 8]
+    },
+    {
+      "id": "MISSILE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-26, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "MISSILE_SOURCE",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-26, -0]
+    },
+    {
+      "id": "SWR1",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-10, -26]
+    },
+    {
+      "id": "SWL1",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-10, 26]
+    },
+    {
+      "id": "sub_MISSILE_R",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1, -11]
+    },
+    {
+      "id": "sub_MISSILE_L",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [1, 11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [8.5, -8],
+      "length": 17.337111,
+      "width": 8.10546,
+      "angle": -25,
+      "contrailSize": 8.10546,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [8.5, 8],
+      "length": 17.337111,
+      "width": 8.10546,
+      "angle": 25,
+      "contrailSize": 8.10546,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-24, -0],
+      "length": 44,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    -46.5, 2.5,
+    -29.5, 33,
+    14.5, 45,
+    21, 23,
+    16, 3,
+    16, -3,
+    21, -23,
+    14.5, -45,
+    -29.5, -33,
+    -46.5, -2.5
+  ]
+}

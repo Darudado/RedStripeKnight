@@ -1,0 +1,40 @@
+{
+  "variantId": "rs_MA_01_Strike",
+  "hullId": "rs_MA_01",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "armoredweapons",
+    "Moci_SMA_LandingSequence"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN": "rs_dsintegratorbean"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_LEFT_FOLLOW": "rs_misericorde_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_RIGHT_FOLLOW": "rs_aeriallavatio_medium"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

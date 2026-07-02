@@ -1,0 +1,61 @@
+{
+  "id": "rs_Tr_6_arm_left_gun_rifle",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.Tr6_RifleBeanEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/Tr6/Woundwort/arms/Tr6_arm_gun_Left.png",
+  "turretGlowSprite": "graphics/ships/Mobile_Armor/Tr6/Woundwort/arms/Tr6_arm_gun_Left_glow.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/Tr6/Woundwort/arms/Tr6_arm_gun_Left.png",
+  "hardpointGlowSprite": "graphics/ships/Mobile_Armor/Tr6/Woundwort/arms/Tr6_arm_gun_Left_glow.png",
+  "glowColor": [
+    195,
+    175,
+    45,
+    175
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    128.5,
+    10.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    200,
+    10.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    195,
+    170,
+    35,
+    225
+  ],
+  "coreColor": [
+    195,
+    140,
+    50,
+    255
+  ],
+  "width": 20,
+  "textureType": [
+    "graphics/fx/goatbeamfringec3.png",
+    "graphics/fx/goatbeamfringec3.png"
+  ],
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "high_intensity_laser_loop"
+}

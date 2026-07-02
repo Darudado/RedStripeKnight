@@ -1,0 +1,66 @@
+{
+  "variantId": "rs_Tr_2_Owsal_Standerd",
+  "hullId": "rs_Tr_2_Owsal",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "auxiliarythrusters",
+    "armoredweapons",
+    "autorepair",
+    "Moci_SMA_LandingSequence",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MAINGUN": "rs_Tr_2_BL_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BACKGUN_L": "rs_owsla_left_gun_rifle",
+        "BACKGUN_R": "rs_owsla_right_gun_rifle"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "squall",
+        "WS0002": "cr_url_m",
+        "WS0003": "cr_url_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "HEAD_SOURCE": "rs_Tr_head_vulcan",
+        "TL_SOURCE": "cr_EFlak_69",
+        "TR_SOURCE": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "BACKPACK_MODULE": "rs_Tr_2_Owsal_backpack_Base"
+    }
+  ],
+  "wings": []
+}

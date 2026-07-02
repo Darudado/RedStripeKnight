@@ -1,0 +1,59 @@
+{
+  "id": "vow_ligatio",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.scripts.weapons.vow_DisruptEffect",
+  "collisionClass": "NONE",
+  "collisionClassByFighter": "NONE",
+  "turretSprite": "graphics/weapons/Ligatio/Ligatio_turret.png",
+  "turretGlowSprite": "graphics/weapons/Ligatio/Ligatio_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/Ligatio/Ligatio_hadrpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/Ligatio/Ligatio_hadrpoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    100,
+    100,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    10,
+    -2,
+    10,
+    2
+  ],
+  "turretAngleOffsets": [
+    -20,
+    20
+  ],
+  "hardpointOffsets": [
+    13.5,
+    -2,
+    13.5,
+    2
+  ],
+  "hardpointAngleOffsets": [
+    -20,
+    20
+  ],
+  "fringeColor": [
+    255,
+    191,
+    21,
+    125
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 7.5,
+  "textureType": [
+    "graphics/fx/goatbeamfringec3.png",
+    "graphics/fx/rs_ac_beam_core.png"
+  ],
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 1
+}

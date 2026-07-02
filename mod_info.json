@@ -1,0 +1,20 @@
+{
+  "id":"Red_stripe",
+	"name":"红条骑士团",
+	"author":" 百里连山，知足常乐，忧尘，aylott，手电筒_FW，Remington",
+	"version":"0.8",
+        "totalConversion":"false",
+        "utility":"false",
+	"description":"一群从黑暗中存活的人们是如何挣扎求生的" ,
+	"gameVersion":"0.98",
+	"dependencies": [
+    {"id": "lw_lazylib", "name": "LazyLib"},
+    {"id": "MagicLib", "name": "MagicLib"},
+    {"id": "shaderLib", "name": "GraphicLib"},
+    { "id": "lunalib","name": "LunaLib"},
+    { "id": "BoxUtil","name": "BoxUtil"},
+    ],
+  "modPlugin":"data.scripts.RSModPlugin",
+	"jars": ["jars/Red Stripe.jar"],
+	
+}

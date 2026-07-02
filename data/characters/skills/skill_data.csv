@@ -1,0 +1,4 @@
+id,name,order,tier,reqPoints,reqPointsPerExtraSkill,description,author,combat officer,admiral,admin,tags,icon,
+# LEADERSHIP,,,,,,,,,,,,,
+GeniusCommand,指挥艺术,1500,3,0,,大兵团作战永远是战争指挥中的最高论题。在真正优秀的将领手下，军团会如同舞台剧上的演员一般舞动——这本身就是一种艺术。,"Commodore Jensulte of the Hegemony Navy, ~c82",TRUE,,,"npc_only, player_only",graphics/icons/skills/fighter_uplink2.png,
+rs_polarized_armor,偏相装甲,1500,3,0,,"The pre-Collapse manuals say never to do this. ... No, I don't know. Haven't had any problems so far.","engineering chief Kasi Thea-Radiative, hidden holocam interview",TRUE,,,"npc_only, player_only",graphics/icons/skills/polarized_armor.png,

@@ -1,0 +1,149 @@
+id,trigger,conditions,script,text,options,notes
+greetingRSFriendly,OpenCommLink,"$faction.id == red_stripe
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","投影中 $personName 行了一个标准的军礼，""身份确认， $theFaction 的朋友。有什么需要帮忙的吗?""
+OR
+""已确认身份，我的朋友。最近过的怎么样？""
+OR
+""欢迎光临! 亲爱的朋友。祝你的前程被真理照亮！""",,
+greetingRSHostileWeaker,OpenCommLink,"$faction.id == red_stripe
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""这是 $theFaction 的领土，我们用汗水建设她，也会用鲜血守卫她。"" $heOrShe $personRank  $personName 的投影让你感到不安。
+OR
+ $personRank 的表现干练，""你既然做出决定，便请准备好赴死。""",cutCommLink:切断通讯链接,
+greetingRSHostileWeakerDefiant,OpenCommLink,"$faction.id == red_stripe
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""你正在对 $theFaction 的正当权利造成危害，请立即停止行动并降下护盾，否则我们有权采取正当防卫措施。""
+OR
+""这里是 $theFaction ，我已向友方单位请求支援，你部应立刻停止对我单位的攻击""  $personRank $personName 严正地向你宣告。
+OR
+肃杀之意几乎要从通讯投影中溢出，""决不后退，不惜代价! """,cutCommLink:切断通讯链接,
+greetingRSHostileStronger,OpenCommLink,"$faction.id == red_stripe
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""今天就是你和可观测宇宙说再见的日子了。"" $personName 没有表现出任何紧张情绪。
+OR
+""不用多说什么。战士渴望着功勋，而 $theFaction 不会在乎你的遗言。""
+OR
+""肃清愚昧。"" 这位军官甚至不愿意多看你一眼就单方面切断了连线。",cutCommLink:切断通讯链接,
+greetingRSTOffNormal,OpenCommLink,"$faction.id == red_stripe
+!$isHostile
+!$player.transponderOn
+$entity.relativeStrength >= 0",,"""立刻打开应答器并表明身份！否则我部将依法实行执法权。""","turnOnTransponder:开启通讯器
+cutCommLink:切断通讯链接",
+greetingRSTOffWeaker,OpenCommLink,"$faction.id == red_stripe
+!$isHostile
+!$player.transponderOn
+$entity.relativeStrength < 0",,"""你不应在我部辖区内躲藏，否则我依法维护 $theFaction 的合法权益。""
+OR
+""光明正大者才不屑于性虫鼠之举！""","turnOnTransponder:开启通讯器
+cutCommLink:切断通讯链接",
+greetingRSNeutral,OpenCommLink,"$faction.id == red_stripe
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions"," $personName 打开了一套记录设备，""独立舰长，请配合我进行合法性检查?""
+OR
+""身份确认。请申报你的入境目的，并配合我们进行货物检查。""
+OR
+""武装舰队临时通行证确认有效。为确保您在 $theFaction 实控星系内的合法权利不受侵害，请将航线信息即使同步于指定频段。""",,
+,,,,,,
+relLevelNeutralRS,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,红条骑士团 正如她一如既往地，以必须的谨慎、合适的热情与必然的审慎对待你的请求。在不违反当地法律、不对 红条骑士团 及其属民的合法权利造成侵害时你几乎是畅通无阻的，不过也仅限于此。,,
+relLevelFavorableRS,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,你被 红条骑士团 的官方智囊判定为为品德优秀且拥有一定的合作价值，意味着你在出入辖区和跨境贸易上具有一定便利，也代表着能接触到 红条骑士团 军用市场里的部分非管制商品。部分少壮激进分子也收敛了对你的敌视，开始将你认作实现星域复兴伟业的可靠一员。,,
+relLevelWelcomingRSNoComm,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,你对于 红条骑士团 价值观念的认同赢得了他们中大部分人的好感与尊重，即使没有成文的法律条约，你也拥有近似于 外籍军官 的待遇。你的合作价值被进一步认可，你本人也被智囊团判断为 域外友好实体，你可以以 红条骑士团 朋友的身份获得一些不应在星域中流通的管制物品。,,
+relLevelWelcomingRSComm,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == red_stripe
+$player.commissionFactionId == red_stripe score:1000",FireAll RelLevelMoreDescription,你对于 红条骑士团 价值观念的认同赢得了他们中大部分人的好感与尊���，在成文的法律条约下你几乎拥有近似于 近卫军团军官 的良好待遇。你的合作价值被进一步认可，你本人也被智囊团判断为 域外友好实体，你可以以 红条骑士团 朋友的身份获得一些不应在星域中流通的管制物品。,,
+relLevelFriendlyRS,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,你被 红条骑士团 的决策层与领导班子认为是可信的域外实体，是骑士团可信赖的朋友。在不损害骑士团合法权利的情况下你的利益会被优先考虑，你将有资格使用近卫军团现役的高级武装，你与骑士团的合作天平也会向你的利益所倾斜。,,
+relLevelCooperativeRS,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,红条骑士团 视你为可以托付后背的忠实朋友，骑士团对你将不存在任何秘密，你的权限在某种情况下等同于教宗，近卫军团也在一定程度下能够接受你的调遣，你将有资格使用骑士团武装力量现役或是尚未服役的最顶尖武器。但是这也意味着在未来的某一天你将与骑士团共同面对某些他们无法独自面对的重大威胁。,,
+relLevelSuspiciousRS,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,骑士团行政机构仍在依法维护你在 红条骑士团 辖区内的合法权利，但他们对你的怀疑写在了除了脸上的一切地方，你已经能明显感觉到他们愈发严苛的态度和愈来愈多看似不必要的怀疑。纵然骑士团的公开市场依旧向你开放，但你已经预料到在可见的未来官方执法机构对你的关注会更加频繁。,,
+relLevelInhospitableRS,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,骑士团武装力量 已经将你列为潜在敌人，执法舰队会实时更新并追查你的行踪。骑士团行政机构 将你列入实体制裁名单，密切审核与你有关的每一笔交易并对开始对你进行隐性制裁。在骑士团的辖区内你总觉得身边多了几双眼睛，你觉得不安全。,,
+relLevelHostileRS,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,你已无法公开、合法地进入 红条骑士团 的正规市场。你已被红条骑士团武装力量列入地对实体清单，近卫军团批准了对你的不设限武力升级许可，如果你在骑士团辖区内被识别就会遭到骑士团武装力量的全力追剿直至你的旗舰被摧毁。,,
+relLevelVengefulRS,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == red_stripe",FireAll RelLevelMoreDescription,你被 红条骑士团 决策层判断为必须除掉的敌人，近卫军团每时每刻都在以你为假想敌进行针对训练，抹除你的物理存在将成为骑士团武装力量在未来一段时间内的最大关注点。似乎就连那位长不视事的教宗也在你的通缉令上做出了加急处理的批语。,,
+relLevelRSCelestite,RelLevelMoreDescription,"$faction.id == red_stripe
+$global.RS_MissionManager_Stage == finale",,你是 红条骑士团 的伟大朋友，是骑士团人民的英雄。在你的帮助下，骑士团在危机中得以幸免，你的名字将被记录在教科书中供后世学习。,,
+,,,,,,
+flavorTextMarketRSPlanet1,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == red_stripe
+$market.id == RS_planet1_market","AddText ""你很难在如今的星域中看到这样一处福地，你能感受到满溢在空气中的活力与希望。这里的人们将这片土地和自己都保护得很好。"" marketFlavorTextColor
+AddText ""行政机构工作人员正在核验你的市场准入资格，在快速而系统的手续办理完毕后你被允许在开放市场进行交易。"" marketFlavorTextColor",,,
+flavorTextMarketRSPlanet2,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == red_stripe
+$market.id == RS_planet2_market","AddText ""从踏入空港的一刻开始，你便注意到了这座殖民地人们的匆忙：他们似乎都表现得目标明确、行色匆匆。你将这份观察暂时抛向脑后，开始办理市场准入手续"" marketFlavorTextColor
+",,,
+flavorTextMarketRSPlanet3,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == red_stripe
+$market.id == RS_planet3_market","AddText ""这座建立在气态巨行星上的殖民地在靠港时便给你留下了严谨的印象，似乎此处的基层官员都是受过良好科学教育的。舷窗外可以看到那座巨大的星堡遮住了大半太阳。"" marketFlavorTextColor
+",,,
+flavorTextMarketRS2,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == red_stripe
+$market.id == rs_arxcaelestis_battlestation_market","AddText ""无论从外面抑或是这座巨大堡垒的内部来看，这都是一处毋庸置疑的军事重地；或者说相对于骑士团其它殖民地常见的军民两用设施来说，这座堡垒限得更为纯粹。也不知道是不是近朱者赤的缘故，这里的军官也总带着一股学者的味道。"" marketFlavorTextColor
+",,,
+,,,,,,
+RS_Komet_Greeting1,PickGreeting,$id == rs_Komet,"ShowPersonVisual
+FireAll PopulateOptions","红条骑士团 的徽标在片刻闪烁后转变成为了一位年轻少女的投影。她以清澈而略带好奇的眼神望向你。
+""你好！是 $playerName 指挥官吗？有什么是我能帮到你的？这位声名远扬的指挥官~""",,
+RS_Komet_Greeting2,PickGreeting,"$id == rs_Komet score:100
+$player.commissionFactionId == red_stripe","ShowPersonVisual
+FireAll PopulateOptions","你看到她在投影中的身影以某种轻快的手势向你打着招呼
+""哟~ $playerName 指挥官~，今天要做些什么跟我说一声吧~""",,
+RS_Komet_Pop_Chat,PopulateOptions,$id == rs_Komet score:100,,接下来你想要：,"RS_Komet_Chat_Open:闲聊
+RS_KometBounty:清扫失控自动化单元
+RS_HullTrad:客制化舰船购买",
+RS_BPExchange_Option,PopulateOptions,"$id == rs_Komet score:100
+RSBluePrintExchange hasOption",,,RS_BPExchange_start:用舰船交换蓝图,
+RS_Komet_Chat_Act,DialogOptionSelected,$option == RS_Komet_Chat_Open,,"她的喜悦之情溢于言表
+""好啊好啊~ 指挥官~，准备聊些什么？只要能把我从这种暗无天日的文书工作里面拖出来你就是我的救星！！""","RS_Komet_Faction:聊聊骑士团
+RS_Komet_egnumDei:聊聊RegnumDei星系
+RS_Komet_Personal:聊聊她自己
+RS_Komet_Chat_Back:没什么，我想我得回去了",
+RS_Komet_Chat_Faction,DialogOptionSelected,$option == RS_Komet_Faction,,"她处理文书的动作顿了一顿，抬头看向你
+""你要问我这个，虽然我也不懂什么大道理，但我觉得我们这的人们过的都挺幸福的，我也交到了不少朋友呢~""","RS_Komet_RegnumDei:聊聊RegnumDei星系
+RS_Komet_Personal:聊聊她自己
+RS_Komet_Chat_Back:没事了，我想我得回去了",
+RS_Komet_Chat_RegnumDei,DialogOptionSelected,$option == RS_Komet_RegnumDei,,"她坐的笔直，似乎是想通过体态向你传递她的决心
+""我是不太懂那些政治啦算计啦之类的，但是我知道我迄今为止的生活是怎么来的。这里的人们对我有恩，我就应该尽我所能。""","RS_Komet_Faction:聊聊骑士团
+RS_Komet_Personal:聊聊她自己
+RS_Komet_Chat_Back:没事了，我想我得回去了",
+RS_Komet_Chat_Personal,DialogOptionSelected,$option == RS_Komet_Personal,,"她偏了偏脑袋，似乎在思考什么
+""喜欢的颜色？那当然是红色啦！不不不，不是像血色那样中二的理由，只是你看，红色很有速度感吧，飞在天上如一根红线划破宇宙，很帅吧~""","RS_Komet_Faction:聊聊骑士团
+RS_Komet_egnumDei:聊聊RegnumDei星系
+RS_Komet_Chat_Back:没事了，我想我得回去了",
+RS_Komet_Chat_Back_Act,DialogOptionSelected,$option == RS_Komet_Chat_Back,FireAll PopulateOptions,"投影中活力十足的少女正朝你挥手
+""一路顺风~，$playerName 指挥官。要记得给我带些伴手礼哦~。""",,
+RS_KometBounty,DialogOptionSelected,$option == RS_KometBounty,"SetOptionColor RSContactBounty_docket ""175,0,0,255""","""真不知道又是哪位心高气傲的探险家捅了篓子，最近它们的动作是越来越频繁了，我每天有一半的工作量是拜它们所赐啊>.<""",RSContactBounty_docket:询问她是否需要帮助,
+,,,,,,
+#Custom military bounty,,,,,,
+RSMilitaryCustomBounty_mission_1,DialogOptionSelected,"!RSdataMapRead ""RS_ContactBounty"" true
+$option == RSContactBounty_docket",,,RSMilitaryCustomBounty_1:询问她具体情况,
+RSMilitaryCustomBounty_mission_2,DialogOptionSelected,$option == RSMilitaryCustomBounty_1,,"""好哦~如果指挥官愿意帮忙的话就太好了~"" 她的兴奋溢于言表，但是很快被严肃覆盖 ""不过指挥官，这算一个挺麻烦的活计，我先跟你说明白""",RSMilitaryCustomBounty_2:我能够做些什么,
+RSMilitaryCustomBounty_mission_3,DialogOptionSelected,$option == RSMilitaryCustomBounty_2,,"""内容很简单直接，到这里，清理一批自动化舰队，除此之外没有任何限制"" 她向你的Tripad发送了一条信息，指向了一个偏远的星系，但是没有其他内容。",RSMilitaryCustomBounty_3:你们能够掌握这批无人舰队的具体信息吗？,
+RSMilitaryCustomBounty_mission_4,DialogOptionSelected,$option == RSMilitaryCustomBounty_3,,"你可以明显地观察到她的失落""虽然很不想承认，现在我们还搞不清楚它们的舰队构成；但是有一点可以确定：它们行为古怪，实力强劲"" 她吐了吐舌头，表露出一丝担忧 ""指挥官，我建议你谨慎考虑哦~""","RSMilitaryCustomBounty_1_1:接受
+RSMilitaryCustomBounty_1_2:下次吧",
+RSMilitaryCustomBounty_mission_5,DialogOptionSelected,$option == RSMilitaryCustomBounty_1_2,FireAll DialogOptionSelected,,100:defaultLeave:离开,
+RSMilitaryCustomBounty_mission_6,DialogOptionSelected,$option == RSMilitaryCustomBounty_1_1,"RSAddInteractionScript ""RSContactBounty""
+RSmpaPut ""RS_ContactBounty"" true",,100:defaultLeave:离开,
+,,,,,,
+#Custom BluePrint exchange,,,,,,
+#RS_BPExchange_Start,DialogOptionSelected,$option == RS_BPExchange_start,RSBluePrintExchange getExchangeOptions,,,
+#RS_BPExchange_PickOption,DialogOptionSelected,"Nex_OptionStartsWith ""RS_BPE_pick_""","RSBluePrintExchange previewExchange
+AddText ""\""确认交换? 该舰船将被移除并给予对应蓝图.\""""
+SetShortcut RS_BPExchange_back ""ESCAPE""",,"RS_BPExchange_confirm:确认交换
+RS_BPExchange_back:返回",
+#RS_BPExchange_Confirm,DialogOptionSelected,$option == RS_BPExchange_confirm,"RSBluePrintExchange confirmExchange
+FireAll PopulateOptions",交换完成。,,
+#RS_BPExchange_Back,DialogOptionSelected,$option == RS_BPExchange_back,FireAll PopulateOptions,,,
+#RS_BPExchange_Return,DialogOptionSelected,$option == RS_BPE_return,FireAll PopulateOptions,,,
+,,,,,,
+#Custom Hull Trad,,,,,,
+#RS_BuyHullOption,PopulateOptions,$id == rs_Komet,,,RS_HullTrad:客制化舰船购买,
+RS_HullTrad,DialogOptionSelected,$option == RS_HullTrad,"RSCommand ""showBuyHullMemberPanel""",,100:defaultLeave:离开,
+,,,,,,
+,,,,,,

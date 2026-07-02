@@ -1,0 +1,15 @@
+{
+    "id":"CR_AuroraUtrennyaya",
+    "type":"STAT_MOD",
+    "aiType":"DAMPER_FIELD",
+
+    "statsScript":"data.scripts.shipsystems.CR_AuroraUtrennyaya",
+
+    "useSound":"system_high_energy_focus_activate",
+    "deactivateSound":"system_high_energy_focus_deactivate",
+
+    "outOfUsesSound":"gun_out_of_ammo",
+    "loopSound":"system_high_energy_focus_loop",
+	"aiHints":{
+	},	
+}

@@ -1,0 +1,53 @@
+{
+  "variantId": "rs_AMS_06_Standerd",
+  "hullId": "rs_AMS_06",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "CR_ChargingRing",
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "autorepair",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "HEAD_SOURCE": "rs_Tr_head_vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "rs_Tr_1_arm_left_gun_Sabre"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_FOLLOW": "rs_AMS_06_beambazooka_brust"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "heavyblaster"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SHIELD_L": "rs_Tr_1_left_sabre_shield_Base"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,106 @@
+{
+  "hullName": "fiver_subwing_left",
+  "hullId": "rs_fiver_subwing_left",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr5/Fiver/wings/Tr5_subwing_left.png",
+  "style": "RS_MA_Module",
+  "height": 540,
+  "width": 120,
+  "center": [60, 270],
+  "collisionRadius": 290,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 290,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CarrierSwitch",
+    "CelestiLockSystem",
+    "CrusadersCore",
+    "Moci_IField",
+    "Tr_DesignFrame",
+    "Tr_Moudle_Controlling",
+    "Moci_SpecializedMobileArmor_module",
+    "OpenPort"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -186, -16,
+        -186, -20
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -80, -16,
+        -80, -20
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        33, -7,
+        13, -7
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        33, -29,
+        13, -29
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    156, -10,
+    156, -26,
+    152, -28,
+    66, -42,
+    15, -42,
+    12, -43,
+    4, -50,
+    -6, -56,
+    -36, -56,
+    -38, -53,
+    -43, -46,
+    -258, -30,
+    -264, -26,
+    -264, -22,
+    -261, -22,
+    -261, -14,
+    -264, -14,
+    -264, -10,
+    -258, -6,
+    -44, 10,
+    -38, 17,
+    -36, 20,
+    -6, 20,
+    1, 16,
+    11, 7,
+    14, 6,
+    64, 6,
+    75, 5,
+    152, -8
+  ]
+}

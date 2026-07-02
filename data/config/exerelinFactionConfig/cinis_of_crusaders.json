@@ -1,0 +1,62 @@
+{
+    "playableFaction":false,
+    "corvusCompatible":true,
+    "hostileToAll":2,	# no need, just use pirate logic? idk
+    "pirateFaction":true,
+    "showIntelEvenIfDead":true,
+    
+    "rebelFleetSuffix":"Heretics",
+
+    "difficultyString":"hard",
+	
+	#"factionConditionSubplugin":"exerelin.campaign.econ.faction.OutlawFCSubplugin",
+    
+    "marketSpawnWeight":1,
+
+    "startRelationships":{ "luddic_church":-0.5, "tritachyon":-0.8, "pirates":-0.42, "cabal":-0.8, "red_stripe":-0.59 , "red_stripe_vower":-0.59 },
+    "minRelationships":{ "red_stripe":-0.59 , "red_stripe_vower":-0.59 },
+    "maxRelationships":{ "tritachyon":-0.51, "remnant":0.31 },
+    
+    "vengeanceLevelNames":["Excommunication", "Interdiction", "Jihad"],
+    "vengeanceFleetNames":["Evangelists", "Inquisition", "Crusade"],
+    "vengeanceFleetNamesSingle":["Evangelists", "an Inquisition", "a Crusade Fleet"],
+    
+    "specialForcesMaxFleets":0,
+    
+    "alignments":{
+        "corporate":-1,
+        "hierarchical":-0.5,
+        "militarist":1,
+    },
+    "diplomacyTraits":["paranoid", "foreverwar",  "anarchist"],
+    "morality":"evil",
+    
+    "freeMarket":true,
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9
+    },
+    
+    "startShipsSolo":[["cr_hastadiparaoxa_variant"]],
+    "startShipsCombatSmall":[["cr_raffaello_variant", "cr_raffaello_variant", "cr_theosolaceon_variant"]],
+    "startShipsCombatLarge":[["cr_scutumfidei_varian", "cr_hastadiparaoxa_variant", "cr_theosolaceon_variant"]],
+    "startShipsCarrierSmall":[["cr_malakbinger_variant", "cr_dogamtiapalatine_variant", "cr_hastadiparaoxa_variant"]],
+    
+    "startSpecialItems":[
+        [["cr_normalweapon_package", ""]]
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]}
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"CR_Defense", "mult":1}
+    ],
+    
+    "industrySpawnMults":{
+        "orbitalworks":1,
+        "CR_Defense":1
+    }
+}

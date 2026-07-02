@@ -1,0 +1,243 @@
+{
+  "hullName": "Yukikaze",
+  "hullId": "cr_yukikaze",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Crusaders/yukikaze/Yukikaze.png",
+  "style": "CR_TECH",
+  "height": 180,
+  "width": 150,
+  "center": [75, 90],
+  "collisionRadius": 105.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 94.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "Yukikaze",
+    "YukikazeTargeting",
+    "CrusadersCore",
+    "CrusadersPlating",
+    "SPAutomated",
+    "Excalibur"
+  ],
+  "builtInWeapons": {
+    "WS0001": "cr_candordivinus",
+    "WS0002": "cr_TerrorIudicii",
+    "WS0006": "cr_ignisdei",
+    "WS0010": "cr_yukikaze_frontwingL",
+    "WS0011": "cr_yukikaze_frontwingR",
+    "WS0012": "cr_yukikaze_mainwingL",
+    "WS0013": "cr_yukikaze_mainwingR"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [50.5, 5]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-4, -25.5],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-4, 25.5],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-17.5, -47.5],
+      "renderOrderMod": 40
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-17.5, 47.5],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [50.5, -5]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [50.5, 5]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [11.5, 18.5]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [11.5, -18.5],
+      "renderOrderMod": 45
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-37.5, 44],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-37.5, -44],
+      "renderOrderMod": 50
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-15.5, -53.5],
+      "renderOrderMod": 60
+    },
+    {
+      "id": "WS0014",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-15.5, 53.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-56, -2.5],
+      "length": 17.5,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-56, 2.5],
+      "length": 17.5,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-74, -13],
+      "length": 28.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-74, 13],
+      "length": 28.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "CR_TECH"
+    }
+  ],
+  "bounds": [
+    -55, 6,
+    -63, 6,
+    -74, 12,
+    -65, 18,
+    -68, 26,
+    -57, 39,
+    -50, 33,
+    -46, 33,
+    -13, 65,
+    -9, 62,
+    -9, 48,
+    -20, 38,
+    -21, 29,
+    14, 11.5,
+    29, 11,
+    35, 7,
+    46, 7,
+    62, 6,
+    81, 3,
+    85, 1,
+    85, -1,
+    81, -3,
+    62, -6,
+    46, -7,
+    35, -7,
+    29, -11,
+    14, -11.5,
+    -21, -29,
+    -20, -38,
+    -9, -48,
+    -9, -62,
+    -13, -65,
+    -46, -33,
+    -50, -33,
+    -57, -39,
+    -68, -26,
+    -65, -18,
+    -74, -12,
+    -63, -6,
+    -55, -6
+  ]
+}

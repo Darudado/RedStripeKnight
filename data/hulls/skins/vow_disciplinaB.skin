@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_disciplina",
+    "skinHullId": "vow_disciplinaB",
+    "hullName": "管教 (游击)",
+    "descriptionPrefix": "将舰船的武器增幅系统替换为动力舱能源增幅，强化舰船机动性。",
+    "descriptionId": "vow_disciplina",
+    "spriteName": "graphics/ships/Vower/Disciplina.png",
+    "removeBuiltInMods":[
+		"Rhongomyniad"
+	], 
+    "builtInMods":[
+		"Excalibur"
+	],
+    "addHints": [
+        HIDE_IN_CODEX
+    ],
+    "systemId": "CR_PhaseDrift",
+    "weaponSlotChanges": {}
+}

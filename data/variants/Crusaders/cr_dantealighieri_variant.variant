@@ -1,0 +1,79 @@
+{
+  "variantId": "cr_dantealighieri_variant",
+  "hullId": "cr_dantealighieri",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 26,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_MEP_43",
+                "WS0003": "cr_SEHP_38",
+                "WS0002": "cr_SEHP_38",
+                "WS0007": "mininglaser",
+                "WS0006": "mininglaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "cr_LEA_17",
+                "WS0010": "cr_LEA_17",
+                "WS0009": "cr_LEA_17",
+                "WS0008": "cr_LEA_17",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0019": "rs_petrarupt",
+                "WS0018": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_EFlak_69",
+                "WS0013": "cr_EFlak_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "cr_EFlakT_69",
+                "WS0004": "cr_EFlakT_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "mininglaser",
+                "WS0015": "mininglaser",
+                "WS0016": "mininglaser",
+                "WS0017": "mininglaser",
+            }
+        },
+    ],
+  "modules": [],
+  "wings": [
+        "cr_FA2_wing",
+        "cr_FA2_wing",
+    ]
+}

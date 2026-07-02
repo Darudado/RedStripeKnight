@@ -1,0 +1,39 @@
+{
+  "id": "rs_Ludiciumaccelerator_main",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_Ludiciumaccelerator_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "",
+  "turretGlowSprite": "",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "glowColor":[175,90,90,225],
+	"darkCore":false,
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [175,90,90,190]
+  },
+  "fireSoundTwo": "LEA_fire"
+}

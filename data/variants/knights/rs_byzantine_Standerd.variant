@@ -1,0 +1,78 @@
+{
+  "variantId": "rs_byzantine_Standerd",
+  "hullId": "rs_byzantine",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "automated",
+    "armoredweapons",
+    "EnergyTargetCognetrix",
+    "ControllingSystem_manned",
+    "ControllingSystem_support"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "MainGun": "rs_proorizo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002_SOURCE": "heavyburst",
+        "WS0003_SOURCE": "heavyburst",
+        "WS0004_SOURCE": "heavyburst",
+        "WS0005_SOURCE": "heavyburst",
+        "WS0006_SOURCE": "heavyburst",
+        "WS0007_SOURCE": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008_SOURCE": "pdlaser",
+        "WS0009_SOURCE": "pdlaser",
+        "WS0010_SOURCE": "pdlaser",
+        "WS0011_SOURCE": "pdlaser",
+        "WS0012_SOURCE": "pdlaser",
+        "WS0013_SOURCE": "pdlaser",
+        "WS0014_SOURCE": "pdlaser",
+        "WS0015_SOURCE": "pdlaser",
+        "WS0022_SOURCE": "pdlaser",
+        "WS0023_SOURCE": "pdlaser"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "AROMR_LEFT": "rs_byzantine_armor_left_Standerd"
+    },
+    {
+      "ARMOR_RIGHT": "rs_byzantine_armor_right_Standerd"
+    },
+    {
+      "ENGINE_RIGHT": "rs_byzantine_engine_right_Standerd"
+    },
+    {
+      "ENGINE_LEFT": "rs_byzantine_engine_left_Standerd"
+    },
+    {
+      "DECK_LEFT": "rs_byzantine_left_deck_Standerd"
+    },
+    {
+      "DECK_RIGHT": "rs_byzantine_right_deck_Standerd"
+    }
+  ],
+  "wings": [
+    "rs_buboscandiacus_wing",
+    "rs_buboscandiacus_wing"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "variantId": "rs_judex_variant",
+  "hullId": "rs_judex",
+  "displayName": "标准",
+  "goalVariant": true,
+  "fluxCapacitors": 27,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "advancedshieldemitter",
+    "fluxcoil",
+    "hardenedshieldemitter",
+    "eccm",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "squall",
+        "WS0006": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "plasma",
+        "WS0002": "plasma",
+        "WS0003": "plasma",
+        "WS0004": "plasma"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyburst",
+        "WS0008": "heavyburst",
+        "WS0009": "heavyburst",
+        "WS0010": "heavyburst",
+        "WS0015": "heavyburst",
+        "WS0016": "heavyburst",
+        "WS0017": "heavyburst",
+        "WS0018": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "gravitonbeam",
+        "WS0012": "gravitonbeam",
+        "WS0013": "gravitonbeam",
+        "WS0014": "gravitonbeam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

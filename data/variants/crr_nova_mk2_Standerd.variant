@@ -1,0 +1,58 @@
+{
+    "displayName": "Standerd",
+    "fluxCapacitors": 39,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "crr_nova_mk2",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "crr_nova_mk2_Standerd",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "autopulse",
+                "WS 001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "dragon",
+                "WS 009": "dragon",
+                "WS 006": "dragon",
+                "WS 007": "dragon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "cr_KEP_11",
+                "WS 012": "cr_KEP_11",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "phasebeam",
+                "WS 005": "phasebeam",
+            }
+        },
+    ],
+    "wings": [
+        "wasp_wing",
+        "wasp_wing",
+    ],
+    "modules": [],
+}

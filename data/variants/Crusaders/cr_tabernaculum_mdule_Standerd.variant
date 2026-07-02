@@ -1,0 +1,31 @@
+{
+  "variantId": "cr_tabernaculum_mdule_Standerd",
+  "hullId": "cr_tabernaculum_mdule",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "CR_FighterProducingOverloading",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_frigate_launcher1",
+        "WS0002": "cr_frigate_launcher1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "cr_FFR31_wing",
+    "cr_FFR31_wing",
+    "cr_FA2_wing",
+    "cr_FA2_wing"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+	"baseHullId":"rs_infernum",
+	"skinHullId":"rs_liliumcandidum",
+	"hullName":"白花",
+	"descriptionId":"rs_infernum",
+	"descriptionPrefix":"黑渊 的姊妹舰。替换了原先的瞬时引擎爆发，取而代之的是一套大型护盾稳定系统，并将原先的实弹武器接口改为了一系列能量武器接口",
+	"tags":[ "sp" ],
+	"tech":"红条近卫军团",
+	"ordnancePoints":335,
+	"maxSpeed":55,
+	"systemId":"RS_FortressShieldStats",
+	"spriteName":"graphics/ships/Ordo Praetorianorum/Special/LiliumCandidum.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+    "ImpregnableRampart"
+	], 		
+	"builtInMods":[
+    "Excalibur",
+],
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+ 	"weaponSlotChanges":{
+		"WS0007":{
+		  "type": "ENERGY",
+	   },
+	   "WS0008":{
+		  "type": "ENERGY",
+	   },
+	   "WS0013":{
+		  "type": "ENERGY",
+	   },
+	   "WS0014":{
+		  "type": "ENERGY",
+	   },
+	   "WS0015":{
+		  "type": "ENERGY",
+	   },
+	   "WS0016":{
+		  "type": "ENERGY",
+	   },
+	   "WS0017":{
+		  "type": "ENERGY",
+	   },
+	   "WS0018":{
+		  "type": "ENERGY",
+	   },
+	   "WS0019":{
+		  "type": "ENERGY",
+	   },
+	   "WS0020":{
+		  "type": "ENERGY",
+	   },
+	   "WS0021":{
+		  "type": "ENERGY",
+	   },
+	   "WS0022":{
+		  "type": "ENERGY",
+	   },
+	   "WS0023":{
+		  "type": "ENERGY",
+	   },
+	},  
+}

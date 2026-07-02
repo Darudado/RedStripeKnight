@@ -1,0 +1,216 @@
+{
+  "hullName": "XIV_Exousia_Left_Engne",
+  "hullId": "rs_XIV_Exousia_Left_Engine",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/XIV-Exousia/Exousia_Left_Engine.png",
+  "style": "DA_REFIT",
+  "height": 340,
+  "width": 180,
+  "center": [67, 307],
+  "collisionRadius": 325.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 307,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fourteenth",
+    "XIV_LinkedHull",
+    "CarrierSwitch",
+    "CelestiLockSystem",
+    "CrusadersCore",
+    "CrusadersPlating",
+    "PennaVelox",
+    "reduced_explosion",
+    "advancedcore"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "PC_engine",
+    "LE2_Left": "PC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 115,
+      "locations": [-33.5, 5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 180,
+      "locations": [-103, 6]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 180,
+      "locations": [-50.5, -73]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-98, -77]
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-139, 34]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -46, -15,
+        -91, -15
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -46, -38,
+        -91, -38
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -208, -38,
+        -173.5, -38
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -208, -15,
+        -172.5, -15
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-98, -77],
+      "length": 110.5,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-139, 34],
+      "length": 110.5,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    -25, 62,
+    -13, 31,
+    -10, 31,
+    8, -5,
+    8, -9,
+    2, -13,
+    2, -24,
+    -1, -30,
+    -1, -38,
+    6.5, -45,
+    14, -47,
+    18, -59,
+    18, -64,
+    15, -72,
+    6, -72,
+    4, -70,
+    1, -70,
+    -4, -74,
+    -6, -78,
+    -15, -83,
+    -26, -92,
+    -29, -92,
+    -38, -106,
+    -66, -106,
+    -69, -101,
+    -77, -101,
+    -77, -96,
+    -89, -96,
+    -89, -93,
+    -98, -93,
+    -98, -60,
+    -89, -60,
+    -89, -57,
+    -78, -57,
+    -78, -59,
+    -64, -59,
+    -64, -56,
+    -62, -54,
+    -56, -54,
+    -56, -49,
+    -60, -49,
+    -60, -46,
+    -63, -46,
+    -66, -49,
+    -139, -49,
+    -139, -46,
+    -295, -46,
+    -297, -37,
+    -297, -30,
+    -286, -25,
+    -269, -20,
+    -247, -15,
+    -213, -9,
+    -192.5, -6,
+    -157, -4,
+    -122, 6,
+    -120, 6,
+    -120, 8,
+    -118, 8,
+    -118, 14,
+    -130, 14,
+    -130, 17,
+    -139, 17,
+    -139, 50,
+    -105, 50,
+    -105, 54,
+    -103, 56,
+    -77, 56,
+    -70, 49,
+    -56, 49,
+    -56, 58,
+    -36.5, 60
+  ]
+}

@@ -1,0 +1,18 @@
+{
+	"id":"rs_gauss_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":180.0,
+	"width":20,
+	"fadeTime":0.3,
+	"fringeColor":[135,40,110,255],
+	"coreColor":[175, 90, 90, 190],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

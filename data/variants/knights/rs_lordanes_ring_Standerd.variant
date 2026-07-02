@@ -1,0 +1,33 @@
+{
+  "variantId": "rs_lordanes_ring_Standerd",
+  "hullId": "rs_lordanes_ring",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shockrepeater",
+        "WS0002": "shockrepeater",
+        "WS0003": "shockrepeater",
+
+      }
+    },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+        "WS0004": "cr_lapislull_launcher",
+        "WS0005": "cr_lapislull_launcher"
+            }
+        }
+  ],
+  "modules": [],
+  "wings": []
+}

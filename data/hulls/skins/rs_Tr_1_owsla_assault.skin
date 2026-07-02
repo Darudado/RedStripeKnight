@@ -1,0 +1,60 @@
+{
+	"baseHullId":"rs_Tr_1_owsla",
+	"skinHullId":"rs_Tr_1_owsla_assault",
+	"hullName":"海兹尔-奥斯拉(突击装备 )",
+	"incompatibleWithBaseHull":false, # for the autofit dialog
+	"descriptionId":"rs_Tr_1_owsla",
+	"descriptionPrefix":"该型号为突击作战进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"tags":[rs_praetorianorum_bp , auto_rec],
+	"tech":"红条近卫军团",
+	"fleetPoints":12,
+	"ordnancePoints":100,
+	"maxSpeed":95,
+	"acceleration":115,
+	"deceleration":115,
+	"suppliesToRecover":24,
+	"suppliesPerMonth":24,
+	"maxflux":7700,
+	"fluxdissipation":390,
+	"baseValueMult":1,
+	"spriteName":"graphics/ships/Mobile_Armor/Tr1/body/Tr1_body.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[
+		"Rhongomyniad"
+	], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BODYARMOR",
+		"ARM_L",
+		"ARM_L_TYPE",
+		"ARM_R",
+		"ARM_R_TYPE"
+	], 		# weapon slot ids
+	"builtInMods":[
+		"Excalibur"
+	],
+	"builtInWeapons":{
+	"ARM_L": "rs_Tr_1_arm_shield_left",
+	"ARM_R": "rs_Tr_1_arm_gun_right",
+	"ARM_L_SOURCE": "rs_Tr_1_arm_left_gun_Sabre",
+	"ARM_R_SOURCE": "rs_Tr_1_arm_right_gun_rifle",
+	"BODYARMOR": "rs_Tr_1_bodyarmor_assault",
+    "BACKPACK": "rs_Tr_1_assault_backpack",
+    "WEAPONRIGHT": "rs_owsla_missile_right",
+    "WEAPONLEFT": "rs_owsla_missile_left"
+     },
+ 	"weaponSlotChanges":{
+		"ARM_R_SOURCE":{
+		  "type": "BUILT_IN",
+	   },
+	   "ARM_L_SOURCE":{
+		  "type": "BUILT_IN",
+	   },
+		"WEAPONRIGHT_SOURCE":{
+		  "type": "MISSILE",
+	   },
+	   "WEAPONLEFT_SOURCE":{
+		  "type": "MISSILE",
+	   },
+	},  
+}

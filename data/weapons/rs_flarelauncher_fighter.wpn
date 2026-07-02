@@ -1,0 +1,31 @@
+{
+	"id":"rs_flarelauncher_fighter",
+	"specClass":"projectile",
+	"type":"SYSTEM",
+	"size":"SMALL",
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"hardpointOffsets":[0, 0],
+	"turretOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"barrelMode": "ALTERNATING",
+	"interruptibleBurst":false,
+    "animationType": "MUZZLE_FLASH",
+    "muzzleFlashSpec": {
+    "length": 15,
+    "spread": 7,
+    "particleSizeMin": 0.2,
+    "particleSizeRange": 10,
+    "particleDuration": 0.25,
+    "particleCount": 25,
+    "particleColor": [
+      165,
+      225,
+      185,
+      200
+    ]
+  },
+	"projectileSpecId":"rs_flare_standard",
+	"fireSoundTwo":"system_flare_launcher_active",
+}

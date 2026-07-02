@@ -1,0 +1,34 @@
+{
+  "variantId": "rs_XIV_Exousia_Right_Engine_Standerd",
+  "hullId": "rs_XIV_Exousia_Right_Engine",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ControllingSystem_strike",
+    "Moci_LandingBay",
+    "armoredweapons",
+    "ecm",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dualflak",
+        "WS0002": "dualflak",
+        "WS0003": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing",
+    "broadsword_wing"
+  ]
+}

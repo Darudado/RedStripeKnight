@@ -1,0 +1,51 @@
+{
+  "id": "rs_RX78_GP03D_arm_Left_gun_rifle",
+  "specClass": "projectile",
+  "projectileSpecId": "FA_78_3_gun_rifle_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "",
+  "turretGlowSprite": "",
+  "turretGunSprite": "graphics/ships/Mobile_Armor/RX78_GP03D/RX_78_2_arm_left_gun_rifle.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "",
+  "hardpointGunSprite": "graphics/ships/Mobile_Armor/RX78_GP03D/RX_78_2_arm_left_gun_rifle.png",
+  "glowColor": [
+    255,
+    155,
+    150,
+    255
+  ],
+  "visualRecoil": 2,
+  "turretOffsets": [
+    67,
+    1.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    101.5,
+    1.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      224,
+      56,
+      142,
+      255
+    ]
+  },
+  "fireSoundTwo": "kinetic_blaster_fire"
+}

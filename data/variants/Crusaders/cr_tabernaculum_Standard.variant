@@ -1,0 +1,111 @@
+{
+  "variantId": "cr_tabernaculum_Standard",
+  "hullId": "cr_tabernaculum",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0036": "rs_petrarupt",
+                "WS0037": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0035": "gazer",
+                "WS0038": "gazer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_MEP_43",
+                "WS0002": "cr_MEP_43",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "cr_LEA_51",
+                "WS0004": "cr_LEA_51",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "cr_KEP_21",
+                "WS0006": "cr_KEP_21",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0023": "pdlaser",
+                "WS0034": "pdlaser",
+                "WS0022": "pdlaser",
+                "WS0033": "pdlaser",
+                "WS0014": "pdlaser",
+                "WS0025": "pdlaser",
+                "WS0013": "pdlaser",
+                "WS0024": "pdlaser",
+                "WS0030": "pdlaser",
+                "WS0021": "pdlaser",
+                "WS0032": "pdlaser",
+                "WS0020": "pdlaser",
+                "WS0031": "pdlaser",
+                "WS0019": "pdlaser",
+                "WS0016": "pdlaser",
+                "WS0027": "pdlaser",
+                "WS0015": "pdlaser",
+                "WS0026": "pdlaser",
+                "WS0018": "pdlaser",
+                "WS0029": "pdlaser",
+                "WS0017": "pdlaser",
+                "WS0028": "pdlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_EFlakT_69",
+                "WS0011": "cr_EFlakT_69",
+                "WS0010": "cr_EFlakT_69",
+                "WS0009": "cr_EFlakT_69",
+                "WS0008": "cr_EFlakT_69",
+                "WS0007": "cr_EFlakT_69",
+            }
+        },
+    ],
+  "modules": [
+    {
+      "Modue": "cr_tabernaculum_mdule_Standerd"
+    }
+  ],
+  "wings": [
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FA1_wing",
+        "cr_FFR31MR_wing",
+        "cr_FFR31MR_wing",
+    ]
+}

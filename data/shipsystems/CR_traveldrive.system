@@ -1,0 +1,37 @@
+{
+	"id":"CR_traveldrive",
+	"type":"ENGINE_MOD",
+	"aiType":"NONE",
+	
+	"statsScript":"data.scripts.shipsystems.CR_traveldrive",
+
+	
+	"engineActivateHiddenNozzles":false,
+	"engineGlowColor":[255,255,255,0],
+	"engineGlowContrailColor":[0,0,0,0],
+	"engineGlowMaxBlend":1,
+	"engineGlowLengthMult":1.75,
+	"engineGlowWidthMult":1,
+	"engineGlowGlowMult":1,
+	
+	"jitterUnderColor":[0,157,255,155],
+	"jitterUnderCopies":25,
+	"jitterUnderMinRange":0,
+	"jitterUnderRange":7,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	#"useSound":"system_travel_drive_activate",
+	"loopSound":"system_travel_drive_loop",
+	#"deactivateSound":"system_travel_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"averageSpeedIncrease":600,
+	}
+}

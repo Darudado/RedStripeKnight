@@ -1,0 +1,276 @@
+{
+	id:"cinis_of_crusaders",
+	"displayName":"十字军余孽",
+	"displayNameWithArticle":"十字军余孽",
+	"displayNameLong":"十字军计划遗弃舰队",
+	"displayNameLongWithArticle":"十字军计划遗弃舰队",
+	"entityNamePrefix":"",
+	"personNamePrefix":"",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"are",
+	
+	"logo":"graphics/factions/cinis_of_crusaders.png",
+	"crest":"graphics/factions/crest_cinis_of_crusaders.png",
+	"shipNamePrefix":"CR",
+	
+	"color":[100,100,100,255],
+	"baseUIColor":[155,155,155,255],
+	#"darkUIColor":[31,94,112,175],
+	#"gridUIColor":[70,200,255,75],
+	
+	"showInIntelTab":true,
+	
+	"shipNameSources":{
+		"DERELICT_DRONE":1,
+		
+	},
+	"names":{
+		"ai":1,
+		"old english":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{"crusaders":1,
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["crusaders"],
+		"hulls":[
+		],
+	},
+	"knownShips":{
+		"tags":["crusaders"],
+		"hulls":[
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["crusaders"],
+		"hulls":[
+		],
+	},
+	"knownFighters":{
+		"tags":["crusaders"],
+		"fighters":[
+		],
+	},
+	"priorityFighters":{
+		"tags":[ "crusaders" ],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["crusaders" , "fighter"],
+		"weapons":[
+			"vulcan",
+			"flak",
+			"dualflak",
+			"gauss",
+			"devastator",
+			"reaper",
+			"atropos",
+			"atropos_single",
+			"hammer",
+			"hammer_single",
+			"swarmer",
+			"annihilator",
+			"heatseeker",
+			"harpoon",
+			"harpoon_single",
+			"sabot",
+			"sabot_single",
+			"harpoonpod",
+			"breachpod",
+			"sabotpod",
+			"salamanderpod",
+			"annihilatorpod",
+			"pilum",
+			"typhoon",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"hammerrack",
+			"mininglaser",
+			"pdlaser",
+			"lrpdlaser",
+			"miningblaster",
+			"plasma",
+		],
+	},
+	"priorityWeapons":{
+		"tags":["crusaders"],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "crusaders"],
+		"hullMods":[
+			"CR_Circumvenire",
+			"advancedshieldemitter", # accelerated
+			"advancedoptics",
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"heavyarmor",
+			"insulatedengine",
+			"pointdefenseai",
+			"nav_relay",
+			"fluxbreakers",
+			"solar_shielding",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+		],
+	},
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":3,
+		"phaseShips":1,
+		
+		"officerQuality":2,
+		"shipQuality":3,
+		"numShips":4,
+		
+		"shipSize":3,
+		
+		"aggression":5,
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":1,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"officer_management",
+			"coordinated_maneuvers",
+			"fighter_doctrine",
+			"electronic_warfare",
+		],
+	},
+	"shipRoles":{
+		"crusadersMothership":{
+			"cr_theosphany_variant":5,
+			"station_derelict_survey_mothership_Standard":4,
+			"cr_vigimalachim_variant":7,
+		},
+		"crusadersSurveyship5":{
+			"cr_malakbinger_variant":5,
+			"cr_theonova_variant":5,
+			"cr_scutumfidei_variant":5,
+
+		},
+		"crusadersSurveyprobe5":{
+			"cr_dogamtiapalatine_variant":5,
+			"cr_theosolaceon_variant":5,
+			"cr_hastadiparaoxa_variant":5,
+		},
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		#"encounter_hostile":"music_default_encounter_hostile",
+		"theme":"music_none",
+		"market_neutral":"music_none",
+		"market_hostile":"music_none",
+		"market_friendly":"music_none",
+		"encounter_neutral":"music_none",
+		"encounter_hostile":"music_none",
+		"encounter_friendly":"music_none",
+	},
+	#"internalComms":"hegemony_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_ai1b.png",
+			"graphics/portraits/portrait_ai2b.png",
+			"graphics/portraits/portrait_ai3b.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_ai1b.png",
+			"graphics/portraits/portrait_ai2b.png",
+			"graphics/portraits/portrait_ai3b.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		},
+		"posts":{
+			"stationCommander":{"name":"管理中枢"},
+			"baseCommander":{"name":"指挥中枢"},
+			"fleetCommander":{"name":"舰队指挥"},
+		},
+	},
+	"custom":{
+		"engageWhenEvenStrength":true,
+		"offersCommissions":false,
+		"engagesInHostilities":true, # 是否敌对时主动攻击
+		"buysAICores":true, # 是否收购ai核心
+		"AICoreValueMult":1, # 收购ai核心的价格倍率，1就是默认，2就是翻倍，允许小数
+		"AICoreRepMult":0,
+		"decentralized":true, 
+		"ignoreTradeWithEnemiesForReputation":true,
+		"patrolsHaveNoPatrolMemoryKey":true,
+		"postsNoBounties":true,
+		"pirateBehavior":true,
+		"offerMissionsWhenHostile":false,
+		"allowsTransponderOffTrade":true, 
+		"fightToTheLast":true, # Changed to false so it is easier to farm a Mothership. I view it as the Strategic AI in charge of the fleet isn't ruthless and knows that the drones should retreat if badly outmatched.
+		"makesPirateBases":true,
+		"hostilityImpactOnGrowth":true,
+		"simulatorData":{
+			"showInSimulator":true,
+			"standardAICores":true,
+			"includeCivShipsWithFaction":true,
+		},
+		"pirateBaseStationTypes":{
+			"orbitalstation_high":10,
+			"battlestation_high":6,
+			"starfortress_high":3,
+		},
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":true,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},
+	"fleetTypeNames":{
+    "trade": "节点",
+    "smallTrader": "支点",
+    "tradeLiner": "终端",
+	
+    "patrolSmall": "漏点",
+    "patrolMedium": "破点",
+    "patrolLarge": "断点",
+	
+    "inspectionFleet": "审查系统",
+	
+    "mercScout": "自查系统",
+    "mercBountyHunter": "紊流",
+    "mercPrivateer": "层流",
+    "mercPatrol": "激流",
+    "mercArmada": "湍流",
+	
+    "taskForce": "查杀系统",
+	
+	"foodReliefFleet":"救援终端",
+	},
+},

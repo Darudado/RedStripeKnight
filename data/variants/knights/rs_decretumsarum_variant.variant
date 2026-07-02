@@ -1,0 +1,87 @@
+{
+  "variantId": "rs_decretumsarum_variant",
+  "hullId": "rs_decretumsarum",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0039": "rs_petrarupt",
+        "WS0040": "rs_petrarupt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_MEP_15",
+        "WS0002": "cr_MEP_15",
+        "WS0003": "cr_MEP_15",
+        "WS0004": "cr_MEP_15",
+        "WS0005": "cr_MEP_15",
+        "WS0006": "cr_MEP_15",
+        "WS0015": "irpulse",
+        "WS0016": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "cr_LEA_17",
+        "WS0024": "cr_LEA_17",
+        "WS0025": "cr_LEA_17",
+        "WS0026": "cr_LEA_17",
+        "WS0033": "cr_LEA_17",
+        "WS0034": "cr_LEA_17",
+        "WS0035": "cr_LEA_17",
+        "WS0036": "cr_LEA_17",
+        "WS0037": "cr_LEA_17",
+        "WS0038": "cr_LEA_17"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "cr_EFlakT_69",
+        "WS0008": "cr_EFlakT_69",
+        "WS0009": "cr_EFlakT_69",
+        "WS0010": "cr_EFlakT_69",
+        "WS0011": "cr_EFlak_69",
+        "WS0012": "cr_EFlak_69",
+        "WS0013": "cr_EFlak_69",
+        "WS0014": "cr_EFlak_69",
+        "WS0017": "cr_EFlak_69",
+        "WS0018": "cr_EFlak_69",
+        "WS0019": "cr_EFlak_69",
+        "WS0020": "cr_EFlak_69",
+        "WS0021": "cr_EFlak_69",
+        "WS0022": "cr_EFlak_69",
+        "WS0027": "pdlaser",
+        "WS0028": "pdlaser",
+        "WS0029": "pdlaser",
+        "WS0030": "pdlaser",
+        "WS0031": "pdlaser",
+        "WS0032": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_griffon_wing",
+    "rs_griffon_wing",
+    "rs_griffon_wing",
+    "rs_griffon_wing"
+  ]
+}

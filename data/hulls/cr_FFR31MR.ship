@@ -1,0 +1,149 @@
+{
+  "hullName": "FFR31M",
+  "hullId": "cr_FFR31MR",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/FFR-31MR.png",
+  "style": "CR_TECH",
+  "height": 60,
+  "width": 42,
+  "center": [21, 30],
+  "collisionRadius": 35.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 32,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "assault_package",
+    "autorepair"
+  ],
+  "builtInWeapons": {
+    "WS0007": "cr_FFR-31MR_Top",
+    "WS0008": "TVC_engine",
+    "WS0009": "TVC_engine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [5, -3]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [5, 3]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-6, 9],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6, -9],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-9, 13],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-9, -13],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-12.5, -0],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 180,
+      "locations": [-26, -6.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -180,
+      "locations": [-26, 6.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26, -6.5],
+      "length": 21.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-26, 6.5],
+      "length": 21.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "CR_TECH"
+    }
+  ],
+  "bounds": [
+    -26, 11,
+    -18, 9,
+    -15, 18,
+    -11, 18,
+    0, 5,
+    6, 5,
+    29, 1,
+    29, -1,
+    6, -5,
+    0, -5,
+    -11, -18,
+    -15, -18,
+    -18, -9,
+    -26, -11
+  ]
+}

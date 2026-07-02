@@ -1,0 +1,104 @@
+{
+  "variantId": "rs_Tr_6_Inle_Standerd",
+  "hullId": "rs_Tr_6_Inle",
+  "displayName": "Standerd",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "EnergyTargetCognetrix",
+        "rs_Inle_lanuch_assault_Mode",
+        "stabilizedshieldemitter",
+        "turretgyros",
+    ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAINGUN": "rs_Tr_6_Inle_maingun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "LEFTWINGC_L_SOURCE": "rs_Fiver_lanuch_left_assault",
+                "RIGHTWINGC_R_SOURCE": "rs_Fiver_lanuch_right_assault",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "rs_petrarupt",
+                "WS0009": "rs_petrarupt",
+                "WS0014": "rs_petrarupt",
+                "WS0015": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001_SOURCE": "rs_scattercannon_L",
+                "WS0010_SOURCE": "rs_scattercannon_L",
+                "WS0011_SOURCE": "rs_scattercannon_L",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002_SOURCE": "cr_KEP_21",
+                "WS0003_SOURCE": "cr_KEP_21",
+                "WS0004_SOURCE": "cr_KEP_21",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012_SOURCE": "cr_EFlakT_69",
+                "WS0013_SOURCE": "cr_EFlakT_69",
+            }
+        },
+    ],
+  "modules": [
+    {
+      "RAWING_R": "rs_fiver_armowing_right_Base"
+    },
+    {
+      "RWING_R": "rs_Tr_5_mainwing_right_Base"
+    },
+    {
+      "LWING_L": "rs_Tr_5_mainwing_left_Base"
+    },
+    {
+      "CRADLE": "rs_Tr_Ceadle_Base"
+    },
+    {
+      "LAWING_L": "rs_fiver_armowing_left_Base"
+    },
+    {
+      "RSWING_R": "rs_fiver_subwing_right_Base"
+    },
+    {
+      "LSWING_L": "rs_fiver_subwing_left_Base"
+    },
+    {
+      "wingEngineRight": "rs_fiver_wingengineRight_Base"
+    },
+    {
+      "wingEngineLeft": "rs_fiver_wingengineLeft_Base"
+    }
+  ],
+  "wings": [
+        "wasp_wing",
+        "wasp_wing",
+        "rs_disputatio_wing",
+        "rs_disputatio_wing",
+    ]
+}

@@ -1,0 +1,105 @@
+{
+  "hullName": "FFR31",
+  "hullId": "cr_FFR31",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/FFR-31.png",
+  "style": "CR_TECH",
+  "height": 50,
+  "width": 38,
+  "center": [19, 25],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "armoredweapons",
+    "assault_package",
+    "autorepair",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "WS0005": "cr_FFR-31_Top"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [5, -4]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [5, 4]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-11, 8.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-11, -8.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-13.5, -0],
+      "renderOrderMod": 10
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-21, -6],
+      "length": 10.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-21, 6],
+      "length": 10.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "CR_TECH"
+    }
+  ],
+  "bounds": [
+    -21, 8,
+    -16, 15,
+    -13, 15,
+    -8, 6,
+    20, 1,
+    20, -1,
+    -8, -6,
+    -13, -15,
+    -16, -15,
+    -21, -8
+  ]
+}

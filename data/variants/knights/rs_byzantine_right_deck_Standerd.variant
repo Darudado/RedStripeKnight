@@ -1,0 +1,63 @@
+{
+  "variantId": "rs_byzantine_right_deck_Standerd",
+  "hullId": "rs_byzantine_right_deck",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons",
+    "defensive_targeting_array",
+    "fluxbreakers",
+    "ControllingSystem_support"
+  ],
+  "sMods": [
+    "CR_EngineRegularBoost",
+    "CR_ImprovedWeaponControlling"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001_SOURCE": "rs_pyreticon_large",
+        "WS0002_SOURCE": "rs_pyreticon_large",
+        "WS0003_SOURCE": "rs_pyreticon_large"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004_SOURCE": "cr_KEP_21",
+        "WS0005_SOURCE": "cr_KEP_21",
+        "WS0008_SOURCE": "cr_KEP_21",
+        "WS0009_SOURCE": "cr_MEP_04",
+        "WS0010_SOURCE": "cr_MEP_04",
+        "WS0011_SOURCE": "cr_MEP_04",
+        "WS0012_SOURCE": "cr_MEP_04",
+        "WS0013_SOURCE": "cr_MEP_04"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006_SOURCE": "cr_EFlakT_69",
+        "WS0007_SOURCE": "cr_EFlakT_69",
+        "WS0014_SOURCE": "pdlaser",
+        "WS0015_SOURCE": "pdlaser",
+        "WS0016_SOURCE": "cr_MEP_04"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_sagittariusserpentarius_wing",
+    "rs_sagittariusserpentarius_wing",
+    "rs_sagittariusserpentarius_wing"
+  ]
+}

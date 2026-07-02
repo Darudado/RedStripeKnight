@@ -1,0 +1,81 @@
+{
+  "hullName": "Confutatio",
+  "hullId": "rs_confutatio",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Confutatio.png",
+  "style": "RS_TECH",
+  "height": 42,
+  "width": 38,
+  "center": [19, 25],
+  "collisionRadius": 23,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "no_weapon_flux",
+    "autorepair",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "WS0001": "gazer",
+    "WS0002": "gazer",
+    "WS0003": "rs_fighter_annihilator_sp",
+    "WS0004": "rs_fighter_annihilator_sp"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, 9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [3, -8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2, 7]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-2, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, -0],
+      "length": 45,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    10, -19,
+    15, -0,
+    10, 19,
+    -22, -0
+  ]
+}

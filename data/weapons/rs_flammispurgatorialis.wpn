@@ -1,0 +1,53 @@
+{
+  "id": "rs_flammispurgatorialis",
+  "specClass": "projectile",
+  "projectileSpecId": "flammispurgatorialis_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/FlammisPurgatorialis.png",
+  "hardpointSprite": "graphics/weapons/FlammisPurgatorialis.png",
+  "turretOffsets": [
+    11,
+    0,
+    11,
+    -2.5,
+    11,
+    2.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    18.5,
+    0,
+    18.5,
+    2.5,
+    18.5,
+    -2.5
+  ],
+  "hardpointAngleOffsets": [
+    -3.5,
+    0,
+    0
+  ],
+  "barrelMode": "DUAL",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 95,
+    "spread": 10,
+    "particleSizeMin": 5,
+    "particleSizeRange": 22,
+    "particleDuration": 0.4,
+    "particleCount": 8,
+    "particleColor": [
+      228,
+      140,
+      46,
+      180
+    ]
+  },
+  "fireSoundTwo": "devastator_fire"
+}

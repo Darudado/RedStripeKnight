@@ -1,0 +1,68 @@
+{
+    "displayName": "Biglover",
+    "fluxCapacitors": 30,
+    "fluxVents": 17,
+    "goalVariant": false,
+    "hullId": "cr_theosolaceon",
+    "hullMods": [
+        "ControllingSystem_manned",
+        "advancedoptics",
+        "comp_storage",
+        "degraded_life_support",
+        "erratic_injector",
+        "faulty_auto",
+        "hardenedshieldemitter",
+        "increased_maintenance",
+        "shrouded_mantle",
+        "stabilizedshieldemitter",
+        "targetingunit",
+    ],
+    "permaMods": [
+        "CR_ChargingRing",
+        "MilitarySpecialized",
+        "PolariphaseDrive",
+        "heavyarmor",
+    ],
+    "sMods": [
+        "CR_ChargingRing",
+        "MilitarySpecialized",
+        "PolariphaseDrive",
+        "heavyarmor",
+    ],
+    "suppressedMods": [],
+    "variantId": "cr_theosolaceon_Biglover",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "cr_nimbusrend_m",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "cr_lapislull_b",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "cr_EFlak_69",
+                "WS0004": "cr_EFlak_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "cr_eoswhisper",
+                "WS0009": "cr_eoswhisper",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

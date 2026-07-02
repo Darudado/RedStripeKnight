@@ -1,0 +1,67 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 39,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "vow_disciplina",
+    "hullMods": [
+        "CR_ChargingRing",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "EnergyTargetCognetrix",
+        "VOW_AdditionalFluxDissipation",
+        "vow_disciplinaA_selector",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_disciplina_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "rs_lasertorpedo",
+                "WS0015": "rs_lasertorpedo",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vow_Sanctaferit_l",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vow_Tonitruum_m",
+                "WS0005": "vow_Tonitruum_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "vow_Tonitruum_s",
+                "WS0007": "vow_Tonitruum_s",
+                "WS0006": "vow_Tonitruum_s",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "vow_ligatio_s",
+                "WS0011": "vow_ligatio_s",
+                "WS0002": "vow_ligatio",
+                "WS0010": "vow_ligatio_s",
+                "WS0009": "vow_ligatio_s",
+                "WS0008": "vow_ligatio_s",
+                "WS0004": "vow_ligatio_s",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

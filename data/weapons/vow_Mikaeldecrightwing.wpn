@@ -1,0 +1,40 @@
+{
+	"id":"vow_Mikaeldecrightwing",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"DECORATIVE",
+	"size":"SMALL",
+	"showDamageWhenDecorative":true,
+	"collisionClass": "RAY",
+    "collisionClassByFighter": "RAY_FIGHTER",
+	"turretSprite":"graphics/ships/Vower/Mikael/Decleftwing.png",
+	"hardpointSprite":"graphics/ships/Vower/Mikael/Decrightwing.png",	
+	"everyFrameEffect":"data.scripts.weapons.DecorativewingEffect",
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],	
+	"glowColor": [255,255,255,255],
+	"fringeColor": [
+    255,
+    0,
+    30,
+    255
+  ],
+  "coreColor": [
+    255,
+    10,
+    50,
+    155
+  ],
+	"width":6.0,
+	"textureType":SMOOTH,
+	"textureScrollSpeed":1.0,
+	"pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ]	
+}

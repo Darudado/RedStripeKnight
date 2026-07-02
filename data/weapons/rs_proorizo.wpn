@@ -1,0 +1,42 @@
+{
+	"id":"rs_proorizo",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+    "everyFrameEffect":"data.scripts.weapons.ProorizoEveryFrameEffect",
+	"turretSprite":"",
+	"turretGunSprite":"",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGunSprite":"",
+	"hardpointGlowSprite":"",
+	"visualRecoil":0,
+	"turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+	"barrelMode":"ALTERNATING",
+	"glowColor":[175,90,90,185],
+	"darkCore":true,
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":80.0,
+					   "spread":35.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":50.0,
+					   "particleDuration":0.35,
+					   "particleCount":20,
+					   "particleColor":[200, 0, 10,255]},
+	"autocharge":false,
+	"projectileSpecId":"rs_proorizo_shot",
+
+}

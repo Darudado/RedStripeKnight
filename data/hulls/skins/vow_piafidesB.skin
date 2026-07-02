@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_piafides",
+    "skinHullId": "vow_piafidesB",
+    "hullName": "虔信 (游击)",
+    "descriptionPrefix": "将舰船的空管系统替换为能源网络，强化舰船机动性。",
+    "descriptionId": "vow_piafides",
+    "spriteName": "graphics/ships/Vower/Piafides.png",
+    "removeBuiltInMods":[
+		
+	], 
+    "builtInMods":[
+		
+	],
+    "addHints": [
+        HIDE_IN_CODEX
+    ],
+    "systemId": "CR_PhaseVerbJet",
+    "weaponSlotChanges": {}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cr_frigate_launcher1",
+  "specClass": "projectile",
+  "projectileSpecId": "cr_frigate_launcher1_proj",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.CR_VigilMalachimFrigateLauncherEveryFrameEffect",
+  "turretSprite": "",
+  "hardpointSprite": "",
+	"renderHints":[RENDER_LOADED_MISSILES],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "NONE"
+}

@@ -1,0 +1,85 @@
+{
+  "variantId": "rs_bethlehem_Elite",
+  "hullId": "rs_bethlehem",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "CR_ChargingRing",
+        "CR_FighterProducingOverloading",
+        "ControllingSystem_auto",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+    ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "guardian",
+        "WS0010": "guardian",
+        "WS0011": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_EFlakT_69",
+        "WS0004": "cr_EFlakT_69",
+        "WS0005": "cr_EFlakT_69",
+        "WS0006": "cr_EFlakT_69",
+        "WS0007": "cr_EFlakT_69",
+        "WS0008": "cr_EFlak_69",
+        "WS0021": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "pdburst",
+        "WS0013": "pdburst",
+        "WS0014": "pdlaser",
+        "WS0015": "pdlaser",
+        "WS0016": "pdlaser",
+        "WS0017": "pdlaser",
+        "WS0018": "pdlaser",
+        "WS0019": "pdlaser",
+        "WS0020": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_dorne_launch"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+        "rs_appellatio_wing",
+        "rs_appellatio_wing",
+        "rs_falcoperegrinus_wing",
+        "rs_falcoperegrinus_wing",
+        "rs_gypsfulvus_wing",
+        "rs_gypsfulvus_wing",
+        "rs_gypsfulvus_wing",
+        "rs_gypsfulvus_wing",
+        "rs_appellatio_wing",
+    ]
+}

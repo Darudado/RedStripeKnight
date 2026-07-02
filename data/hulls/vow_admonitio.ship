@@ -1,0 +1,354 @@
+{
+  "hullName": "Admonitio",
+  "hullId": "vow_admonitio",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Vower/Admonitio.png",
+  "style": "VOW_TECH",
+  "height": 490,
+  "width": 150,
+  "center": [75, 245],
+  "collisionRadius": 273,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 273,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HiddenMissles",
+    "CrusadersCore",
+    "VOW_DesignSystem",
+    "CrusadersPlating",
+    "CelestiLockSystem",
+    "CarrierSwitch",
+    "VOW_AdmonitioSystem",
+    "SPAutomated",
+    "PennaVelox"
+  ],
+  "builtInWeapons": {
+    "LE1_Left": "dengineL_hiden",
+    "LE2_Left": "dengineL_hiden",
+    "LE3_Left": "dengineL_hiden",
+    "LE4_Left": "dengineL_hiden",
+    "RE1_Right": "PC_turnengine",
+    "RE2_Right": "PC_turnengine",
+    "RE3_Right": "PC_turnengine",
+    "RE4_Right": "PC_turnengine"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 25,
+      "locations": [-37, 26]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 25,
+      "locations": [11, 26]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -20,
+      "locations": [-81, -30]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-125, 49]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 25,
+      "locations": [40, 26]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [-14, 3]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -65,
+      "locations": [35, -20]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -35,
+      "locations": [88, -22]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -45,
+      "locations": [-37, -65]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-170, 3]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-11.5, 40]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [72.5, 42]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -110,
+      "locations": [-113.5, -54]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -110,
+      "locations": [-120, -53]
+    },
+    {
+      "id": "RE3_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -110,
+      "locations": [-125.5, -52]
+    },
+    {
+      "id": "RE4_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -110,
+      "locations": [-131, -49]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 82,
+      "locations": [135, 37]
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 82,
+      "locations": [129, 38]
+    },
+    {
+      "id": "LE3_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 82,
+      "locations": [123, 39]
+    },
+    {
+      "id": "LE4_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 82,
+      "locations": [117, 40]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        148, 19,
+        142.5, 19
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        135, 19,
+        126.5, 19
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        111.5, 19,
+        95, 19
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        75, 19,
+        58.5, 19
+      ]
+    },
+    {
+      "id": "LB 5",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        49, 15,
+        43, 9
+      ]
+    },
+    {
+      "id": "LB 6",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        36, 3.5,
+        42, -6
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-240, 3],
+      "length": 102.5,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-113.5, -54],
+      "length": 14.43,
+      "width": 3.83,
+      "angle": -110,
+      "contrailSize": 3.83,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-120, -53],
+      "length": 14.43,
+      "width": 3.83,
+      "angle": -110,
+      "contrailSize": 3.83,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-125.5, -52],
+      "length": 14.43,
+      "width": 3.83,
+      "angle": -110,
+      "contrailSize": 3.83,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-131, -49],
+      "length": 14.43,
+      "width": 3.83,
+      "angle": -110,
+      "contrailSize": 3.83,
+      "style": "VOW_REFIT"
+    }
+  ],
+  "bounds": [
+    171, 33,
+    55.5, 51.5,
+    -115, 73,
+    -148, 73,
+    -244, 17,
+    -244, -11,
+    -160, -60,
+    -146, -47,
+    -100, -58,
+    -72, -45,
+    -41, -73,
+    -33, -73,
+    -29, -61,
+    -59.5, -32.5,
+    -52.5, -20,
+    77, -26,
+    84, -33,
+    92.5, -33,
+    101, -20.5,
+    165.5, -19.5,
+    165, -2
+  ]
+}

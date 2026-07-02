@@ -1,0 +1,26 @@
+{
+  "variantId": "rs_Tr_5_mainwing_left_Base",
+  "hullId": "rs_Tr_5_mainwing_left",
+  "displayName": "Base",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_Fiver_pdleaser",
+        "WS0002": "rs_Fiver_pdleaser",
+        "WS0003": "rs_Fiver_pdleaser",
+        "WS0004": "rs_Fiver_pdleaser",
+        "WS0005": "rs_Fiver_pdleaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

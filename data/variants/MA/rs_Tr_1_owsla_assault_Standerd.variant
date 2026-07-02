@@ -1,0 +1,54 @@
+{
+    "displayName": "Standerd",
+    "fluxCapacitors": 19,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "rs_Tr_1_owsla_assault",
+    "hullMods": [
+        "eccm",
+        "armoredweapons",
+        "EnergyTargetCognetrix",
+        "stabilizedshieldemitter",
+        "Moci_SMA_LandingSequence",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rs_Tr_1_owsla_assault_Standerd",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WEAPONRIGHT_SOURCE": "rs_petrarupt",
+                "WEAPONLEFT_SOURCE": "rs_petrarupt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "rs_Tr_1_arm_right_gun_rifle",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "rs_Tr_1_arm_left_gun_Sabre",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"SHIELD_L": "rs_Tr_1_left_sabre_shield_Base"},
+    ],
+}

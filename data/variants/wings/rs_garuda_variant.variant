@@ -1,0 +1,31 @@
+{
+  "variantId": "rs_garuda_variant",
+  "hullId": "rs_garuda",
+  "displayName": "中型无人支援机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_pyreticon_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_aeriallavatio_small"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

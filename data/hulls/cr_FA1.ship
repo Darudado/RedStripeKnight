@@ -1,0 +1,82 @@
+{
+  "hullName": "FA1",
+  "hullId": "cr_FA1",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/FA1.png",
+  "style": "CR_TECH",
+  "height": 50,
+  "width": 44,
+  "center": [22, 25],
+  "collisionRadius": 31,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "armoredweapons",
+    "autorepair"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-5, 11.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-5, -11.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-3, 15.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-3, -15.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-19, -0],
+      "length": 14.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "CR_TECH"
+    }
+  ],
+  "bounds": [
+    -21, 7,
+    -11, 16,
+    -2, 16,
+    -7, 7,
+    22, 1,
+    22, 1,
+    22, -1,
+    22, -1,
+    -7, -7,
+    -2, -16,
+    -11, -16,
+    -21, -7
+  ]
+}

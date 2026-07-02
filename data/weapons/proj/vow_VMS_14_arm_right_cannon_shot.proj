@@ -1,0 +1,60 @@
+{
+	"id":"vow_VMS_14_arm_right_cannon_shot",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"onHitEffect":"data.scripts.weapons.RS_EmpArcDisruptOnhit",
+	"sprite":"graphics/missiles/shell_hellbore.png",
+	"size":[8,20],	
+	"center":[4,10],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[75,70,225,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":350, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":135,
+					 "coreRadius":45, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":200,
+					 "particleColor":[75,35,215,255],
+					 "explosionColor":[95,60,195,215],
+					 "detailedExplosionFlashColorFringe":[255,100,100,255],
+					 "detailedExplosionFlashRadius":500,
+					 "useDetailedExplosion":true
+					 },
+	"flameoutTime":3, # total time from flameout to full fadeout
+	"armingTime":0.1,
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":1, # fadeout duration					 
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  #"acc":35,
+				  "acc":500,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10, 0],
+					#"loc":[-14, 0],
+				    #"style":"TORPEDO",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[75,75,225,255],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":0.5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[95,60,195,175],
+						"glowSizeMult":2.5,
+						"glowAlternateColor":[55,55,255,215],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":10.0,
+				    "angle":180.0}]
+}

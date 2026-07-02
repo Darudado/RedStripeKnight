@@ -1,0 +1,76 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "vow_VMS_15_assault_d",
+    "hullMods": [
+        "CR_ImprovedWeaponControlling",
+        "EnergyTargetCognetrix",
+        "VOW_AdditionalFluxDissipation",
+        "autorepair",
+        "magazines",
+        "missleracks",
+        "vow_VMS_15_assault_selector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "vow_VMS_15_assault_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_R_SOURCE": "vow_VMS_15_arm_right_gun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD_SOURCE": "rs_Tr_head_vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BACKPACK_WEA_L": "vow_VMS_Hambrabi_missile_left",
+                "BACKPACK_WEA_R": "vow_VMS_Hambrabi_missile_right",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "SWL1": "cr_url_m",
+                "SWR1": "cr_url_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "sub_MISSILE_L": "reaper",
+                "sub_MISSILE_R": "reaper",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "ARM_L_SOURCE": "vow_Sanctaferit_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MISSILE_SOURCE": "salamanderpod",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

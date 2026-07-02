@@ -1,0 +1,30 @@
+{
+  "variantId": "rs_aquilachrysaetos_variant",
+  "hullId": "rs_aquilachrysaetos",
+  "displayName": "攻击无人机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_aeriallavatio_small",
+        "WS0002": "rs_justiceconfessor_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

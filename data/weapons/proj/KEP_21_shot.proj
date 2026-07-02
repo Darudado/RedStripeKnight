@@ -1,0 +1,20 @@
+{
+	"id":"KEP_21_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.SEHPEffect",
+	"hitGlowRadius":55,
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":125.0,
+	"width":25,
+	"fadeTime":0.3,
+	"fringeColor":[3,205,255,75],
+	"coreColor":[0,165,235,175],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/KEP_shell.png"
+}

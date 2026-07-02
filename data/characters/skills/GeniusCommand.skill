@@ -1,0 +1,18 @@
+{
+	"id":"GeniusCommand",
+	"governingAptitude":"leadership",
+	"compressHullmods":false,
+	"scope":"PILOTED_SHIP",
+	"effectGroups":[
+		{
+			"name":"Level 1",
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"data.scripts.skills.GeniusCommand$Level0"},
+				{"type":"SHIP", "script":"data.scripts.skills.GeniusCommand$Level1"},
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"data.scripts.skills.GeniusCommand$Level2"},
+			]
+		},
+	],
+}

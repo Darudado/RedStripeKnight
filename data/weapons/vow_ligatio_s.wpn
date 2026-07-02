@@ -1,0 +1,62 @@
+{
+  "id": "vow_ligatio_s",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.GravitonBeamEffect",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 550,
+  "turretSprite": "graphics/weapons/Ligatio/Ligatio_s_turret.png",
+  "turretGlowSprite": "graphics/weapons/Ligatio/Ligatio_s_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/Ligatio/Ligatio_s_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/Ligatio/Ligatio_s_hardpoint_glow.png",
+  "glowColor": [
+    25,
+    215,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    8,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    11,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    5,
+    135,
+    175,
+    255
+  ],
+  "coreColor": [
+    200,
+    225,
+    255,
+    255
+  ],
+  "width": 6,
+  "textureType": [
+    "graphics/fx/goatbeamfringec3.png",
+    "graphics/fx/rs_ac_beam_core.png"
+  ],
+  "textureScrollSpeed": 260,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "graviton_beam_loop"
+}

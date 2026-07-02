@@ -1,0 +1,25 @@
+{
+	"id":"rs_viadivina_glow",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"DECORATIVE",
+	"size":"SMALL",
+	"everyFrameEffect":"data.scripts.weapons.LEDEffect",
+	
+	"numFrames":3,
+	"frameRate":10,
+    "showDamageWhenDecorative":false,
+	"renderBelowAllWeapons":true,	
+	"turretSprite":"graphics/ships/ViaDivina/Viadivina_LED00.png",
+	"hardpointSprite":"graphics/ships/ViaDivina/Viadivina_LED00.png",
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],	
+	"fringeColor":[255,255,255,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[173,14,14,255],
+	"width":5,
+	"textureType":ROUGH,
+	"textureScrollSpeed":64,
+	"pixelsPerTexel":1.0,	
+}

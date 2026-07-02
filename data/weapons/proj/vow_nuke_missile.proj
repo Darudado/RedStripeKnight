@@ -1,0 +1,82 @@
+{
+	"id":"vow_nuke_missile",
+	"specClass":"missile",	
+	"onHitEffect":"data.scripts.weapons.VOW_NukeOnhit",	
+	"missileType":"ROCKET",
+	#"missileType":"MIRV",
+	"sprite":"graphics/missiles/nuke.png",
+	"size":[14,64],	
+	"center":[7,32],
+	"collisionRadius":80,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[239,150,240,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":750, # purely visual
+	"flameoutTime":1.0, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"explosionSpec":{   "duration":0.1f, # not visual
+                        "radius":500,
+                        "coreRadius":300, # full damage within core radius
+                        "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+                        "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+                        "particleSizeMin":5.0,
+                        "particleSizeRange":6.0,
+                        "particleDuration":2,
+                        "particleCount":200,
+                        "particleColor":[255,40,115,255]},
+	"maxFlightTime":12,
+	"engineSpec":{ "turnAcc":1000,
+				   "turnRate":50,
+				   "acc":50,
+				   "dec":100},	  
+	"engineSlots":[{"id":"ES1",
+					"loc":[-20, 0],
+				     "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[239,150,240,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[255,75,120,125],
+						"glowSizeMult":2.0,
+						"glowAlternateColor":[239,150,110,255],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":15.0,
+				    "length":140.0,
+				    "angle":180.0}],
+					
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":300,
+					"splitRangeRange":50,
+					"minTimeToSplit":5,
+					"canSplitEarly":false,
+					"splitSound":"devastator_explosion",
+					"numShots":15,
+					"damage":500,
+					"emp":1500,
+					"damageType":HIGH_EXPLOSIVE,
+					"hitpoints":200,
+					"arc":90,
+					"spreadInaccuracy":0,
+					"evenSpread":true,
+					"spreadSpeed":200,
+					"spreadSpeedRange":120,
+					"projectileSpec":"bbplus_exocet_collider_rift_mine",
+					"smokeSpec":{"particleSizeMin":20.0,
+								 "particleSizeRange":24.0,
+								 "cloudParticleCount":16,
+								 "cloudDuration":1.5,
+								 "cloudRadius":32.0,
+								 "blowbackParticleCount":12,
+								 "blowbackDuration":1.0,
+								 "blowbackLength":16.0,
+								 "blowbackSpread":8.0,
+								 "particleColor":[239,150,240,155]}
+					}		
+}

@@ -1,0 +1,44 @@
+{
+  "id": "cr_lapislull_bl",
+  "specClass": "projectile",
+  "projectileSpecId": "cr_lapislull_mirv",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    3,
+    0,
+    9.5,
+    -10.5,
+    10,
+    10,
+    3,
+    -21.5,
+    3,
+    21.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  "fireSoundTwo": "cr_url_fire"
+}

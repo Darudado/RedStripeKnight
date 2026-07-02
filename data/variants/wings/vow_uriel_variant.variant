@@ -1,0 +1,45 @@
+{
+  "variantId": "vow_uriel_variant",
+  "hullId": "vow_uriel",
+  "displayName": "重型突击炮艇",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vow_ligatio"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vow_Ignis_s",
+        "WS0003": "vow_Ignis_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vow_Tonitruum_s",
+        "WS0005": "vow_ligatio_s",
+        "WS0006": "vow_Tonitruum_s",
+        "WS0007": "vow_ligatio_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

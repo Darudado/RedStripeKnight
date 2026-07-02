@@ -1,0 +1,51 @@
+{
+  "variantId": "cr_hastadiparaoxa_variant",
+  "hullId": "cr_hastadiparaoxa",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "PolariphaseDrive",
+    "fluxcoil",
+    "ControllingSystem_auto",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "cr_LEA_51"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_LEA_26",
+        "WS0002": "cr_LEA_26",
+        "WS0003": "cr_LEA_26"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "cr_EFlak_69",
+        "WS0005": "cr_EFlak_69",
+        "WS0006": "cr_EFlak_69",
+        "WS0007": "cr_EFlak_69",
+        "WS0008": "cr_EFlak_69",
+        "WS0009": "cr_EFlak_69",
+        "WS0010": "cr_EFlak_69",
+        "WS0011": "cr_EFlak_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

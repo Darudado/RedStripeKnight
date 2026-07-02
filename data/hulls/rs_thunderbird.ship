@@ -1,0 +1,175 @@
+{
+  "hullName": "Thunderbird",
+  "hullId": "rs_thunderbird",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Thunderbird.png",
+  "style": "RS_TECH",
+  "height": 70,
+  "width": 120,
+  "center": [60, 35],
+  "collisionRadius": 77,
+  "shieldCenter": [-23, -0],
+  "shieldRadius": 70.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "ImpregnableRampart",
+    "armoredweapons",
+    "automated",
+    "HiddenMissles",
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_oeconomia_M",
+    "WS0002": "cr_KEP_11",
+    "WS0003": "cr_KEP_11",
+    "WS0004": "cr_EFlak_69",
+    "WS0005": "cr_EFlak_69",
+    "WS0006": "irpulse",
+    "WS0007": "irpulse"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [21, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [16, 12]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [10, -22]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [10, 22]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, -33.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9, 33.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [1, -38],
+      "length": 16,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [1, 38],
+      "length": 16,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [0, -40],
+      "length": 16,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [0, 40],
+      "length": 16,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-1, -42],
+      "length": 16,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-1, 42],
+      "length": 16,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-2, -44],
+      "length": 16,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-2, 44],
+      "length": 16,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    -6.5, 15.5,
+    -29.5, 25,
+    -18, 54,
+    3, 55.5,
+    28, 3,
+    28, -3,
+    3, -55.5,
+    -18, -54,
+    -29.5, -25,
+    -6.5, -15.5
+  ]
+}

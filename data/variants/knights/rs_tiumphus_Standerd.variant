@@ -1,0 +1,78 @@
+{
+  "variantId": "rs_tiumphus_Standerd",
+  "hullId": "rs_tiumphus",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 9,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "ControllingSystem_strike",
+    "CR_carrier_strikecommand",
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_scattercannon_L",
+        "WS0002": "rs_scattercannon_L"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "cr_KEP_21"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "cr_EFlakT_69",
+        "WS0007": "cr_EFlakT_69",
+        "WS0012": "cr_EFlakT_69",
+        "WS0013": "cr_EFlakT_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "heavyburst",
+        "WS0011": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdlaser",
+        "WS0005": "pdlaser",
+        "WS0006": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0014": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0022": "rs_petrarupt_b",
+        "WS0023": "rs_petrarupt_b"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_confutatio_wing",
+    "rs_confutatio_wing",
+    "rs_appellatio_wing",
+    "rs_appellatio_wing"
+  ]
+}

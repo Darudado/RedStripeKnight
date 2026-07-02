@@ -1,0 +1,60 @@
+{
+  "id": "vow_VMS_15_arm_right_gun",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.RS_ReHazemaingunEveryFrameEffect",
+  "beamEffect": "data.scripts.weapons.Moci_VOW_Magnum_BeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Mobile_Armor/VMS_15/arms/VMS_15_arm_right_MainGun.png",
+  "hardpointSprite": "graphics/ships/Mobile_Armor/VMS_15/arms/VMS_15_arm_right_MainGun.png",
+  "glowColor": [
+    185,
+    45,
+    23,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    123,
+    -5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    198,
+    -5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    255,
+    25,
+    100,
+    255
+  ],
+  "coreColor": [
+    245,
+    15,
+    15,
+    205
+  ],
+  "width": 20,
+  "textureType": [
+    "graphics/fx/rot_beamcore.png",
+    "graphics/fx/goatbeamfringec3.png"
+  ],
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "high_intensity_laser_loop"
+}

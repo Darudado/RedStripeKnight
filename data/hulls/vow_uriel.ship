@@ -1,0 +1,161 @@
+{
+  "hullName": "Uriel",
+  "hullId": "vow_uriel",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/Uriel.png",
+  "style": "VOW_TECH",
+  "height": 44,
+  "width": 90,
+  "center": [45, 22],
+  "collisionRadius": 50,
+  "shieldCenter": [-23.5, -0],
+  "shieldRadius": 50,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "ImpregnableRampart",
+    "HiddenMissles",
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "vow_ligatio",
+    "WS0002": "vow_Ignis_s",
+    "WS0003": "vow_Ignis_s",
+    "WS0004": "vow_Tonitruum_s",
+    "WS0005": "vow_ligatio_s",
+    "WS0006": "vow_Tonitruum_s",
+    "WS0007": "vow_ligatio_s"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4.5, 22.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [4.5, -22.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [2, -27.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-1, -32.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [2, 27.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-1, 32.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-9, -20.5],
+      "length": 16.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-9, 20.5],
+      "length": 16.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-10, -28],
+      "length": 16.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-10, 28],
+      "length": 16.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "VOW_REFIT"
+    },
+    {
+      "location": [-11, -35],
+      "length": 16.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "VOW_TECH"
+    },
+    {
+      "location": [-11, 35],
+      "length": 16.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "VOW_TECH"
+    }
+  ],
+  "bounds": [
+    -10.5, 39.5,
+    -2.5, 40,
+    16, 3.5,
+    16, -3.5,
+    -2.5, -40,
+    -10.5, -39.5
+  ]
+}

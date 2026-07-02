@@ -1,0 +1,321 @@
+{
+  "hullName": "Cyprpedium",
+  "hullId": "rs_SDA_MA",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Mobile_Armor/SDA_MA/SDA_MA_Body.png",
+  "style": "RS_MA_Module",
+  "height": 150,
+  "width": 150,
+  "center": [75, 79],
+  "collisionRadius": 36.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 31.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CyprpediumECM",
+    "ImpregnableRampart",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour",
+    "MilitarySpecialized",
+    "HiddenMissles"
+  ],
+  "builtInWeapons": {
+    "FIXEDGUN_LEFT": "rs_SDA_MA_FixedGun_Left",
+    "FIXEDGUN_RIGHT": "rs_SDA_MA_FixedGun_Right",
+    "Head_SOURCE": "rs_SDA_MA_Head",
+    "LE1_Left": "PC_engine",
+    "MISSILE_LEFT": "rs_SDA_MA_Missiles_Left",
+    "MISSILE_RIGHT": "rs_SDA_MA_Missiles_Right",
+    "RADAR": "rs_SDA_MA_Radia",
+    "RE1_Right": "PC_engine",
+    "RingGun_B_LEFT": "rs_SDA_MA_RingGun",
+    "RingGun_B_RIGHT": "rs_SDA_MA_RingGun",
+    "RingGun_F_LEFT": "rs_SDA_MA_RingGun",
+    "RingGun_F_RIGHT": "rs_SDA_MA_RingGun",
+    "SHOULDER": "rs_SDA_MA_Shoulder",
+    "WINGS": "rs_SDA_MA_Wings"
+  },
+  "weaponSlots": [
+    {
+      "id": "Head_SOURCE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [7, -0],
+      "renderOrderMod": 15
+    },
+    {
+      "id": "RingGun_F_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -45,
+      "locations": [9.5, -7],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "RingGun_F_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 45,
+      "locations": [9.5, 7],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "RingGun_B_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -135,
+      "locations": [-13.5, -6.5],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "RingGun_B_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 135,
+      "locations": [-13.5, 6.5],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "MISSILE_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-16, 13.5],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "MISSILE_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-16, -13.5],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "FIXEDGUN_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10.5, -20.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "FIXEDGUN_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [10.5, 20.5],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "SHOULDER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-1.5, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "RADAR",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-14, -8],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WINGS",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-27, -0.5],
+      "renderOrderMod": 15
+    },
+    {
+      "id": "FIXEDGUN_LEFT_FOLLOW",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [10.5, 20.5]
+    },
+    {
+      "id": "FIXEDUN_RIGHT_FOLLOW",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [10.5, -20.5]
+    },
+    {
+      "id": "RingGun_F_RIGHT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -47.5,
+      "locations": [34.5, -33.5]
+    },
+    {
+      "id": "RingGun_F_LEFT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 47.5,
+      "locations": [34.5, 33.5]
+    },
+    {
+      "id": "RingGun_B_RIGHT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -135,
+      "locations": [-38.5, -33]
+    },
+    {
+      "id": "RingGun_B_LEFT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 135,
+      "locations": [-38.5, 33]
+    },
+    {
+      "id": "MISSILE_RIGHT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-11.5, -13.5]
+    },
+    {
+      "id": "MISSILE_LEFT_FOLLOW",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-11.5, 13.5]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-12, -14.5]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-12, 14.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, -0],
+      "length": 20.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-12, -14.5],
+      "length": 15,
+      "width": 8,
+      "angle": -143,
+      "contrailSize": 8,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-12, 14.5],
+      "length": 15,
+      "width": 8,
+      "angle": 143,
+      "contrailSize": 8,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-12, -14.5],
+      "length": 15,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DA_TECH"
+    },
+    {
+      "location": [-12, 14.5],
+      "length": 15,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "DA_TECH"
+    }
+  ],
+  "bounds": [
+    -19.5, 8.5,
+    -19.5, 17.5,
+    -12.5, 22.5,
+    -21, 32,
+    -15.5, 40,
+    -3, 26.5,
+    5, 33.5,
+    7.5, 33.5,
+    16, 23,
+    9, 20,
+    9, 14,
+    21, 4,
+    21, -4,
+    9, -14,
+    9, -20,
+    16, -23,
+    7.5, -33.5,
+    5, -33.5,
+    -3, -26.5,
+    -15.5, -40,
+    -21, -32,
+    -12.5, -22.5,
+    -19.5, -17.5,
+    -19.5, -8.5,
+    -15.5, -6.5,
+    -15.5, 6.5
+  ]
+}

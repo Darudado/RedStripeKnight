@@ -1,0 +1,173 @@
+{
+  "combatSmallForSmallFleet": {
+	  "rs_nuo_standard":3,
+	  "rs_wu_standard":3,
+  },
+  "combatSmall": {
+	  "rs_nuo_standard":3,
+	  "rs_wu_standard":3,
+
+    "rs_avaritia_variant":5,
+    "rs_archons_strike":5,
+    "rs_livoroculorum_variant":5,
+
+    "vow_VMS_12_heavyweapon_Standard":5,
+    "vow_VMS_12_Standard":5,
+
+    "vow_VMS_14_Standard":4,
+    "vow_VMS_14_firesupport_Standard":3,
+    "vow_VMS_14_assault_Standard":3,
+
+    "vow_VMS_15_Standard":2,
+    "vow_VMS_15_assault_Standard":1,
+
+    "rs_MA_01_Standerd":5,
+    "rs_MA_01_Strike":5,
+    "rs_SDA_MA_variant":3,
+    "rs_TMA_MA_Strike":4,
+
+    "rs_AMS_06_Standerd":10,
+
+    "cr_raffaello_variant":10,
+  },
+  "combatMedium": {
+    "rs_leviathan_variant":6,
+    "rs_behemoth_variant":6,
+    "rs_cerberus_variant":4,
+    "rs_scylla_variant":5,
+    "cr_theosolaceon_variant":8,
+    "cr_hastadiparaoxa_variant":6,
+    "cr_gladiusargentidivinmus_variant":4,
+    
+    "crr_apex_mk2_Remnants":6,
+    "crr_aurora_Standerd":6,
+  },
+  "combatLarge": {
+	"rs_xun_standard":4,
+  "rs_constantia_attack":4,
+  "vow_disciplina_Standard":5,
+  "cr_theonova_variant":8,
+  "cr_scutumfidei_variant":6,
+  "cr_hastaargentidivinus_variant":6,
+  },
+  "combatCapital": {
+	  "rs_credo_variant":5,
+	  "rs_zanmei_standard":2,
+	  
+	  "rs_praecepta_variant":7,
+
+    "rs_viadivina_FireSupport":2,
+
+
+    "crr_nova_mk2_Remnants":6,
+    "crr_nova_mk2_Standerd":6,
+    "crr_mathew_variant":8,
+    
+    "rs_constantia_defense":4,
+    "rs_archons_strike":4,
+    "rs_archons_standard":4,
+    "rs_rexlignorum_variant":3,
+    "rs_decretumsarum_variant":3,
+
+    "rs_bethlehem_Elite":1,
+    "rs_nazaret_Energy":1,
+    "rs_nazaret_Ballistc":1,
+    "rs_nazaret_missile_Energy":1,
+    "rs_nazaret_missile_Ballistic":1,
+
+    "vow_castigatio_Standard":3,
+    "vow_castigatioB_Standard":3,
+    "vow_perditio_Standard":1,
+
+    "rs_vincere_variant":3,
+    
+
+    "cr_dantealighieri_variant":5,
+    "cr_michaelangelus_Standerd":4,
+    "cr_michaelangelus_Elite":4,
+    "cr_tabernaculum_Standard":4,
+    "cr_theosphany_variant":6,
+
+    "rs_judex_variant":3,
+
+    "rs_XIV_Exousia_Standerd":3,
+
+    "rs_infernum_Standard":0,
+    "rs_liliumcandidum_Standard":0,
+    
+  },
+  "combatFreighterSmall": {
+  },
+  "combatFreighterMedium": {
+  },
+  "combatFreighterLarge": {
+	  
+  },
+  "civilianRandom": {
+  },
+  "carrierSmall": {
+	  "rs_superbia_variant":5,
+  },
+  "carrierMedium": {
+    "cr_dogamtiapalatine_variant":2,
+    "cr_dogamtiapalatine_standerd":2,
+    "cr_dogamtiapalatine_defense":2,
+    "cr_davinci_Standard":6,
+    "vow_piafides_Standard":6,
+    "rs_typhaon_variant":6,
+  },
+  "carrierLarge": {
+    "cr_malakbinger_variant":4,
+    "cr_malakbinger_staderd":4,
+    "rs_sophia_variant":4,
+    "vow_admonitio_Standerd":4,
+   
+  },
+  "phaseSmall": {
+  },
+  "phaseMedium": {
+    "vow_tentatio_Standard":3,
+  },
+  "phaseLarge": {
+  },
+  "phaseCapital": {
+  },
+  "freighterSmall": {
+  },
+  "freighterMedium": {
+	  "rs_huo_standard":10,
+  },
+  "freighterLarge": {
+  },
+  "tankerSmall": {
+  },
+  "tankerMedium": {
+  
+  },
+  "tankerLarge": {
+	  "rs_you_standard":10,
+  },
+  "personnelSmall": {
+  },
+  "personnelMedium": {
+  
+  },
+  "personnelLarge": {
+  },
+  "linerSmall": {
+  },
+  "linerMedium": {
+  },
+  "linerLarge": {
+  },
+  "tug": {
+  },
+  "crig": {
+  },
+  "utility": {
+  },
+  "orbitalStationLowTech": {
+  },
+  "battlestationLowTech": {
+  },
+}

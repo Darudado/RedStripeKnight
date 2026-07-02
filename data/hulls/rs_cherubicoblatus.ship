@@ -1,0 +1,181 @@
+{
+  "hullName": "Cherubicoblatus",
+  "hullId": "rs_cherubicoblatus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/tank/CherubicOblatus.png",
+  "style": "RS_TECH",
+  "height": 93,
+  "width": 58,
+  "center": [29, 46.5],
+  "collisionRadius": 59.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 60,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersPlating",
+    "CrusadersCore",
+    "HiddenMissles",
+    "SPAutomated",
+    "MA_WeaponSwap"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [3, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [29.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 200,
+      "angle": 90,
+      "locations": [23.5, 22.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 200,
+      "angle": -90,
+      "locations": [23.5, -22.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HIDDEN",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-36, -20.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HIDDEN",
+      "arc": 200,
+      "angle": -180,
+      "locations": [-36, 20.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-9.5, -22.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-9.5, 22.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-15.5, -22.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-15.5, 22.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -7.5],
+      "length": 30,
+      "width": 10,
+      "angle": 174,
+      "contrailSize": 30,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-31, 7.5],
+      "length": 30,
+      "width": 10,
+      "angle": -174,
+      "contrailSize": 30,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-46, -20.5],
+      "length": 22,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-46, 20.5],
+      "length": 22,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    45.5, 5,
+    45.5, -5,
+    43.5, -11,
+    42.5, -11,
+    42.5, -13,
+    44.5, -13,
+    45.5, -14,
+    45.5, -26,
+    43.5, -28,
+    -45.5, -28,
+    -46.5, -27,
+    -46.5, -14,
+    -45.5, -13,
+    -30.5, -13,
+    -31.5, -11,
+    -31.5, -3,
+    -28.5, -2,
+    -28.5, 2,
+    -31.5, 3,
+    -31.5, 11,
+    -28.5, 13,
+    -45.5, 13,
+    -46.5, 14,
+    -46.5, 27,
+    -45.5, 28,
+    43.5, 28,
+    45.5, 26,
+    45.5, 14,
+    44.5, 13,
+    42.5, 13,
+    42.5, 11,
+    43.5, 11
+  ]
+}

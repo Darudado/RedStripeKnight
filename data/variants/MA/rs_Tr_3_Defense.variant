@@ -1,0 +1,43 @@
+{
+  "variantId": "rs_Tr_3_Defense",
+  "hullId": "rs_Tr_3",
+  "displayName": "Defense",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "autorepair",
+    "Moci_SMA_LandingSequence",
+    "PhaseDefenseUnit",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_L_SOURCE": "rs_Tr_3_arm_left_gun_Sabre"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "ARM_R_SOURCE": "rs_Tr_3_arm_right_gun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "swarmer_fighter",
+        "WS0002": "swarmer_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

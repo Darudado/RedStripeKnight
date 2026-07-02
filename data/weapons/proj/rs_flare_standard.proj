@@ -1,0 +1,45 @@
+{
+	"id":"rs_flare_standard",
+	"specClass":"missile",	
+	"missileType":"FLARE_SEEKER",
+	"sprite":"graphics/missiles/bomblet1.png",
+	"size":[6,6],	
+	"center":[3,3],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[245,90,95,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+	#"collisionClassAfterFlameout":"MISSILE_NO_FF",
+	"behaviorSpec":{"behavior":"CUSTOM",
+					"effectRange":300,
+					"effectChance":0.1,
+				   },	
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":400,
+				  "acc":150,
+				  "dec":0},
+	"engineSlots":[
+					{"id":"ES1",
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+				    "styleSpec":{
+                        "mode":"QUAD_STRIP",
+                        "engineColor":[242,90,95,255],
+                        "contrailDuration":2.5,
+                        "contrailWidthMult":2,
+                        "contrailWidthAddedFractionAtEnd":2,
+                        "contrailMinSeg":15,
+                        "contrailMaxSpeedMult":.0,
+                        "contrailAngularVelocityMult":0.5,
+                        "contrailSpawnDistMult":1,
+                        "contrailColor":[194,49,49,75],
+                        "type":"GLOW"
+                    },
+				    "width":4.0,
+				    "length":25.0,
+				    "angle":180.0},
+				   ]
+}

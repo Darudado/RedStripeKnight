@@ -1,0 +1,39 @@
+{
+  "variantId": "rs_RX78_GP03_D_variant",
+  "hullId": "rs_RX78_GP03_D",
+  "displayName": "Test",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_RX78_GP03D_Maingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "rs_RX78_GP03D_Head"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0002": "rs_RX78_GP03D_ISheld_variant"
+    },
+    {
+      "WS0005": "rs_RX78_GP03_D_Leftmodule_variant"
+    },
+    {
+      "WS0004": "rs_RX78_GP03_D_Rightmodule_variant"
+    }
+  ],
+  "wings": []
+}

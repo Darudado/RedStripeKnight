@@ -1,0 +1,76 @@
+{
+    "name": "守望者",
+    "personalities": [
+        "reckless",
+    ],
+    "gender": [
+        "f",
+    ],
+    "chance": 1,
+    "talkativeness": 1,
+    "categoryTags": [
+        "special",
+    ],
+    "lines": {
+        "retreat": [
+            {
+                "text": "机体状态不佳，暂时撤退。",
+            },
+        ],
+        "out_of_missiles": [
+            {
+                "text": "弹舱耗尽。",
+            },
+        ],
+        "engaged": [
+            {
+                "text": "敌方单位进入警戒范围，准备接触。",
+            },
+        ],
+        "need_help": [
+            {
+                "text": "需要援助。",
+            },
+        ],
+        "pursuing": [
+            {
+                "text": "进行追击。",
+            },
+        ],
+        "running": [
+            {
+                "text": "暂时脱离接触",
+            },
+        ],
+        "hull_90": [
+            {
+                "text": "遭受强烈火力打击。",
+            },
+        ],
+        "hull_50": [
+            {
+                "text": "产生结构损伤。",
+            },
+        ],
+        "hull_30": [
+            {
+                "text": "机体损伤严重。",
+            },
+        ],
+        "overload": [
+            {
+                "text": "电网过载，请求脱离接触",
+            },
+        ],
+        "death": [
+            {
+                "text": "机体作战效能已损失。",
+            },
+        ],
+        "victory": [
+            {
+                "text": "暂时击退敌方单位，需要进一步评估作战效果。",
+            },
+        ],
+    },
+}

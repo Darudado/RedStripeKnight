@@ -1,0 +1,43 @@
+{
+  "variantId": "rs_Tr_1_LinerBit_arm_L_Base",
+  "hullId": "rs_Tr_1_LinerBit_arm_L",
+  "displayName": "Base",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_owsla_arm_bit_beam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_owsla_arm_bit_beam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "rs_owsla_arm_bit_beam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rs_owsla_arm_bit_beam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

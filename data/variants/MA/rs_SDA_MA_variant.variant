@@ -1,0 +1,51 @@
+{
+  "variantId": "rs_SDA_MA_variant",
+  "hullId": "rs_SDA_MA",
+  "displayName": "ECCM",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "armoredweapons",
+    "Moci_SMA_LandingSequence"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "RingGun_F_LEFT_FOLLOW": "cr_LEA_26",
+        "RingGun_F_RIGHT_FOLLOW": "cr_LEA_26"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "MISSILE_LEFT_FOLLOW": "pilum",
+        "MISSILE_RIGHT_FOLLOW": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "FIXEDGUN_LEFT_FOLLOW": "cr_EFlak_69",
+        "FIXEDUN_RIGHT_FOLLOW": "cr_EFlak_69"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "RingGun_B_LEFT_FOLLOW": "cr_EFlakT_69",
+        "RingGun_B_RIGHT_FOLLOW": "cr_EFlakT_69"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

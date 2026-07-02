@@ -1,0 +1,19 @@
+{
+    "baseHullId": "vow_piafides",
+    "skinHullId": "vow_piafidesC",
+    "hullName": "虔信 (货运)",
+    "descriptionId": "vow_piafides",
+    "descriptionPrefix": "将舰船的部分空间用于运载货物。",
+    "spriteName": "graphics/ships/Vower/Piafides.png",
+    "removeBuiltInMods":[
+		"PennaVelox"
+	], 
+    "builtInMods":[
+		"ImpregnableRampart"
+	],
+    "addHints": [
+        HIDE_IN_CODEX,CIVILIAN
+    ],
+    "systemId": "RS_FortressShieldStats",
+    "weaponSlotChanges": {}
+}

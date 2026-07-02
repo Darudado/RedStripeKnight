@@ -1,0 +1,48 @@
+{
+    "displayName": "Standerd",
+    "fluxCapacitors": 16,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "crr_aurora",
+    "hullMods": [
+        "armoredweapons",
+        "autorepair",
+        "fluxbreakers",
+        "safetyoverrides",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "crr_aurora_Standerd",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "sabotpod",
+                "WS0005": "sabotpod",
+                "WS0010": "gorgon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "phasebeam",
+                "WS0002": "ionpulser",
+                "WS0006": "heavyblaster",
+            }
+        },
+    ],
+    "wings": [
+        "wasp_wing",
+    ],
+    "modules": [],
+}

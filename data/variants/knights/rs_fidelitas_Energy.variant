@@ -1,0 +1,66 @@
+{
+    "displayName": "Energy",
+    "fluxCapacitors": 15,
+    "fluxVents": 7,
+    "quality": 1,
+    "goalVariant": true,
+    "hullId": "rs_fidelitas",
+    "hullMods": [
+        "EnergyTargetCognetrix",
+        "armoredweapons",
+        "fluxbreakers",
+        "rs_dsintegratorbean_L_Mode",
+        "turretgyros",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "rs_fidelitas_Energy",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAINGUN": "rs_dsintegratorbean_L",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "rs_lasertorpedo",
+                "WS0011": "rs_petrarupt",
+                "WS0013": "rs_lasertorpedo",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003_SOURCE": "cr_KEP_21",
+                "WS0002_SOURCE": "cr_KEP_21",
+                "WS0006_SOURCE": "cr_KEP_21",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004_SOURCE": "cr_EFlakT_69",
+                "WS0005_SOURCE": "cr_EFlakT_69",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001_SOURCE": "rs_scattercannon_M",
+                "WS0007_SOURCE": "cr_EFlak_69",
+                "WS0008_SOURCE": "cr_EFlak_69",
+                "WS0009_SOURCE": "cr_EFlak_69",
+                "WS0010_SOURCE": "pdlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

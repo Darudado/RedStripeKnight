@@ -1,0 +1,4 @@
+name,id,planetary,decivRemove,script,desc,icon,order
+第二近卫军团锚地,RS_GuardFleet2_sub,,TRUE,data.campaign.econ.Guardfleet2,$market 作为红条骑士团第二近卫军团锚地，维持着一支强大的近卫舰队。,graphics/icons/markets/ice_world_wide.png,10
+十字军防御系统,CR_Defense,,TRUE,data.scripts.campaign.econ.CR_Defense,该地属于遗落的十字军自动防御系统中的节点。本地船员、陆战队员、器官的需求降为零且产出减半，消除食品、毒品的需求，同时提高当地的稳定性。,graphics/icons/markets/ice_world_wide.png,140.26
+,,,,,,,

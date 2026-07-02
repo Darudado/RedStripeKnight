@@ -1,0 +1,64 @@
+{
+  "id": "rs_Lordanes_missile",
+  "specClass": "projectile",
+  "projectileSpecId": "rs_eurychoros_missile",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.scripts.weapons.Nazaret_missileAnimEffect",
+  "turretSprite": "graphics/ships/Ordo Praetorianorum/Lordanes/Missile/Lordanes_missile_00.png",
+  "hardpointSprite": "graphics/ships/Ordo Praetorianorum/Lordanes/Missile/Lordanes_missile_00.png",
+  "turretOffsets": [
+    3.5,
+    4.5,
+    -4.5,
+    4.5,
+    -4.5,
+    -4.5,
+    3.5,
+    -4.5
+  ],
+  "turretAngleOffsets": [
+    90,
+    90,
+    90,
+    90
+  ],
+  "hardpointOffsets": [
+    8.5,
+    5,
+    0.5,
+    5,
+    0.5,
+    -5,
+    8.5,
+    -5
+  ],
+  "hardpointAngleOffsets": [
+    90,
+    90,
+    90,
+    90
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "numFrames": 13,
+  "frameRate": 8,
+  "smokeSpec": {
+    "particleSizeMin": 5,
+    "particleSizeRange": 10,
+    "cloudParticleCount": 9,
+    "cloudDuration": 1,
+    "cloudRadius": 20,
+    "blowbackParticleCount": 7,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      200,
+      200,
+      200,
+      100
+    ]
+  },
+  "fireSoundTwo": "pilum_lrm_fire"
+}

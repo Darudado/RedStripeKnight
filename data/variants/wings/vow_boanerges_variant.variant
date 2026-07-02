@@ -1,0 +1,30 @@
+{
+  "variantId": "vow_boanerges_variant",
+  "hullId": "vow_boanerges",
+  "displayName": "破交无人战斗机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vow_Ignis_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vow_ligatio_s",
+        "WS0003": "vow_ligatio_s"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

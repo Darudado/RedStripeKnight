@@ -1,0 +1,74 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 13,
+    "fluxVents": 35,
+    "goalVariant": true,
+    "hullId": "rs_liliumcandidum",
+    "hullMods": [
+        "CR_EngineRegularBoost",
+        "CR_ImprovedWeaponControlling",
+        "ControllingSystem_manned",
+        "ControllingSystem_strike",
+        "EnergyTargetCognetrix",
+        "magazines",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rs_liliumcandidum_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "cr_MEP_43",
+                "WS0011": "cr_MEP_43",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "cr_SEHP_38",
+                "WS0010": "cr_SEHP_38",
+                "WS0007": "cr_KEP_21",
+                "WS0008": "cr_KEP_21",
+                "WS0019": "rs_scattercannon_M",
+                "WS0020": "rs_scattercannon_M",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdlaser",
+                "WS0002": "pdlaser",
+                "WS0003": "pdlaser",
+                "WS0004": "pdlaser",
+                "WS0005": "pdlaser",
+                "WS0006": "pdlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0023": "cr_EFlak_69",
+                "WS0022": "cr_EFlak_69",
+                "WS0021": "cr_EFlak_69",
+                "WS0016": "cr_EFlak_69",
+                "WS0015": "cr_EFlak_69",
+                "WS0018": "cr_EFlak_69",
+                "WS0017": "cr_EFlak_69",
+                "WS0014": "cr_EFlak_69",
+                "WS0013": "cr_EFlak_69",
+            }
+        },
+    ],
+    "wings": [
+        "rs_disputatio_wing",
+        "rs_disputatio_wing",
+        "rs_disputatio_wing",
+        "rs_disputatio_wing",
+    ],
+    "modules": [],
+}

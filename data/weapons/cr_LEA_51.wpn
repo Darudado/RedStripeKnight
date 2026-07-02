@@ -1,0 +1,39 @@
+{
+  "id": "cr_LEA_51",
+  "specClass": "projectile",
+  "projectileSpecId": "LEA_51_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/LEA/LEA_51_t.png",
+  "turretGlowSprite": "graphics/weapons/LEA/LEA_51_GLOW_t.png",
+  "hardpointSprite": "graphics/weapons/LEA/LEA_51.png",
+  "hardpointGlowSprite": "graphics/weapons/LEA/LEA_51_GLOW.png",
+  "turretOffsets": [
+    56,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    58.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "glowColor":[175,90,90,225],
+	"darkCore":false,
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [175,90,90,190]
+  },
+  "fireSoundTwo": "LEA_fire"
+}

@@ -1,0 +1,15 @@
+{
+	"id":"rs_euthystopos_e_VT_shot",
+	"specClass":"projectile",
+	"spawnType":"PLASMA",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.VTemparcEffect",
+	"width":75.0,
+	"fadeTime":0.5,
+	"fringeColor":[255,200,100,255],
+	"coreColor":[255,150,50,175],
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+}

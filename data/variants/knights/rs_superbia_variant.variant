@@ -1,0 +1,65 @@
+{
+  "variantId": "rs_superbia_variant",
+  "hullId": "rs_superbia",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 11,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_aeriallavatio_medium",
+        "WS0004": "rs_aeriallavatio_small",
+        "WS0005": "rs_aeriallavatio_small",
+        "WS0006": "rs_aeriallavatio_small",
+        "WS0007": "rs_aeriallavatio_small",
+        "WS0008": "rs_aeriallavatio_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rs_lasertorpedo_s",
+        "WS0003": "rs_lasertorpedo_s"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_griffon_wing",
+    "rs_griffon_wing"
+  ]
+}

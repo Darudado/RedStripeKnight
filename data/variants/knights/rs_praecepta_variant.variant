@@ -1,0 +1,72 @@
+{
+  "variantId": "rs_praecepta_variant",
+  "hullId": "rs_praecepta",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "BallisticTargetCognetrix",
+    "ControllingSystem_strike",
+    "armoredweapons",
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rs_justiceconfessor_large",
+        "WS0002": "rs_justiceconfessor_large",
+        "WS0003": "rs_justiceconfessor_large",
+        "WS0004": "rs_justiceconfessor_large"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "rs_misericorde_medium",
+        "WS0008": "rs_misericorde_medium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "flak",
+        "WS0006": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "vulcan",
+        "WS0012": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "vulcan",
+        "WS0016": "vulcan",
+        "WS0017": "vulcan",
+        "WS0018": "vulcan",
+        "WS0019": "vulcan",
+        "WS0020": "vulcan",
+        "WS0021": "vulcan",
+        "WS0022": "vulcan",
+        "WS0023": "vulcan",
+        "WS0024": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rs_garuda_wing",
+    "rs_garuda_wing",
+    "rs_garuda_wing",
+    "rs_garuda_wing"
+  ]
+}

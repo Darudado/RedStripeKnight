@@ -1,0 +1,30 @@
+{
+  "variantId": "rs_falcoperegrinus_variant",
+  "hullId": "rs_falcoperegrinus",
+  "displayName": "中型无人空优机",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_EFlak_69",
+        "WS0003": "fragbomb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,390 @@
+{
+  "hullName": "Tr_6_Woundwort_Haznthley",
+  "hullId": "rs_Tr_6_haznthley",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Mobile_Armor/Tr6/Woundwort/body/Tr6_body.png",
+  "style": "RS_MA_Module",
+  "height": 110,
+  "width": 80,
+  "center": [40, 55],
+  "collisionRadius": 82.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 82.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "MilitarySpecialized",
+    "Moci_RS_GNShield",
+    "Moci_SpecializedMobileArmour",
+    "Rhongomyniad",
+    "HiddenMissles",
+    "Tr_DesignFrame",
+    "Tr6_Haznthley_system"
+  ],
+  "builtInWeapons": {
+    "ARM_L": "rs_Tr_6_arm_left_weapon",
+    "ARM_L_SOURCE": "rs_Tr_6_arm_left_gun_rifle",
+    "ARM_R": "rs_Tr_6_arm_right",
+    "ARM_R_SOURCE": "rs_Tr_6_arm_right_gun_rifle",
+    "BACKPACK": "rs_Tr_6_haznthley_backpack",
+    "BACKWEAPON_L1": "rs_Tr_6_haznthley_WEAPON_L_TYPE",
+    "BACKWEAPON_L2": "rs_Tr_6_haznthley_WEAPON_L_TYPE",
+    "BACKWEAPON_R1": "rs_Tr_6_haznthley_WEAPON_R_TYPE",
+    "BACKWEAPON_R2": "rs_Tr_6_haznthley_WEAPON_R_TYPE",
+    "BODY": "rs_Tr_6_body",
+    "BODYARMOR": "rs_Tr_6_bodyarmor",
+    "ENGINE": "rs_Tr_6_haznthley_enginepack",
+    "HEAD": "rs_Tr_6_head",
+    "HEAD_SOURCE": "rs_Tr_head_vulcan",
+    "LE1_Left": "PC_turnengine",
+    "LE2_Left": "PC_engine",
+    "LEG": "rs_Tr_6_legs",
+    "RE1_Right": "PC_turnengine",
+    "RE2_Right": "PC_engine",
+    "SHOULDER": "rs_Tr_6_shoulder",
+    "SHOULDERARMOR": "rs_Tr_6_shoulderarmor",
+    "SUBGUN": "rs_Tr_6_subgun"
+  },
+  "weaponSlots": [
+    {
+      "id": "BODY",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1.5, -0],
+      "renderOrderMod": 3
+    },
+    {
+      "id": "LEG",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2.5, -0],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "HEAD",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [1.5, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "HEAD_SOURCE",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [1.5, -0]
+    },
+    {
+      "id": "SHOULDER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [1.5, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "BODYARMOR",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1.5, -0],
+      "renderOrderMod": 8
+    },
+    {
+      "id": "SHOULDERARMOR",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1.5, -0],
+      "renderOrderMod": 8
+    },
+    {
+      "id": "ARM_R",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -30,
+      "locations": [1, -18],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "ARM_L",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [1, 18],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "ARM_R_SOURCE",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -30,
+      "locations": [1, -18]
+    },
+    {
+      "id": "ARM_L_SOURCE",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [1, 18]
+    },
+    {
+      "id": "RE1_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -100,
+      "locations": [-3.5, -21]
+    },
+    {
+      "id": "LE1_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 100,
+      "locations": [-3.5, 21]
+    },
+    {
+      "id": "SUBGUN",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16.5, -0]
+    },
+    {
+      "id": "ENGINE",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-44.5, -0.5],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "BACKPACK",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10.5, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "BACKWEAPON_R1_SOURCE",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": 0,
+      "locations": [7, -73],
+      "renderOrderMod": 7
+    },
+    {
+      "id": "BACKWEAPON_L1_SOURCE",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": -0,
+      "locations": [7, 73],
+      "renderOrderMod": 7
+    },
+    {
+      "id": "BACKWEAPON_R2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": 0,
+      "locations": [-19, -86],
+      "renderOrderMod": 4
+    },
+    {
+      "id": "BACKWEAPON_L2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": -0,
+      "locations": [-19, 86],
+      "renderOrderMod": 4
+    },
+    {
+      "id": "BACKWEAPON_R2_SOURCE",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": 0,
+      "locations": [-6, -107]
+    },
+    {
+      "id": "BACKWEAPON_L2_SOURCE",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": -0,
+      "locations": [-6, 107]
+    },
+    {
+      "id": "BACKWEAPON_R1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": 0,
+      "locations": [-8.5, -53.5],
+      "renderOrderMod": 7
+    },
+    {
+      "id": "BACKWEAPON_L1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": -0,
+      "locations": [-8.5, 53.5],
+      "renderOrderMod": 7
+    },
+    {
+      "id": "LE2_Left",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": 145,
+      "locations": [-60, 54]
+    },
+    {
+      "id": "RE2_Right",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 4,
+      "angle": -145,
+      "locations": [-60, -54]
+    },
+    {
+      "id": "GUNSHIELD_R",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-21, -62]
+    },
+    {
+      "id": "GUNSHIELD_L",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-21, 62]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-3.5, -21],
+      "length": 16.855894,
+      "width": 18.42594,
+      "angle": -100,
+      "contrailSize": 18.42594,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-3.5, 21],
+      "length": 16.855894,
+      "width": 18.42594,
+      "angle": 100,
+      "contrailSize": 18.42594,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-60, 54],
+      "length": 61.329918,
+      "width": 21.226524,
+      "angle": 145,
+      "contrailSize": 21.226524,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-60, -54],
+      "length": 61.329918,
+      "width": 21.226524,
+      "angle": -145,
+      "contrailSize": 21.226524,
+      "style": "DA_REFIT"
+    },
+    {
+      "location": [-12, -0],
+      "length": 61,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    -42.5, -2,
+    -31.5, -22,
+    -65.5, -42.5,
+    -65.5, -47.5,
+    -55, -62.5,
+    -12, -69,
+    18.5, -51,
+    18.5, -34.5,
+    8.5, -28,
+    14.5, -16,
+    26.5, -12,
+    26.5, -9,
+    11.5, -8,
+    19.5, -4,
+    19.5, 4,
+    11.5, 8,
+    26.5, 9,
+    26.5, 12,
+    14.5, 16,
+    8.5, 28,
+    18.5, 34.5,
+    18.5, 51,
+    -12, 69,
+    -55, 62.5,
+    -65.5, 47.5,
+    -65.5, 42.5,
+    -31.5, 22,
+    -42.5, 2
+  ]
+}

@@ -1,0 +1,43 @@
+{
+	"id":"TVC_engine",
+	"specClass":"beam",
+	"type":"DECORATIVE",
+	"size":"SMALL",
+    "collisionClass": "RAY",
+    "collisionClassByFighter": "RAY_FIGHTER",
+	"showDamageWhenDecorative":true,
+	"renderBelowAllWeapons":true,
+	 "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"everyFrameEffect":"data.scripts.weapons.TVCEngine",
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],	
+	 "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+	
+	"width":10,
+	"textureType":ROUGH,
+	"textureScrollSpeed":64,
+	
+	#"renderHints":["RENDER_ADDITIVE"],
+	
+	"pixelsPerTexel":1.0,	
+}

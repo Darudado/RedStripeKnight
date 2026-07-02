@@ -1,0 +1,72 @@
+{
+  "variantId": "cr_theonova_variant",
+  "hullId": "cr_theonova",
+  "displayName": "Standerd",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "EnergyTargetCognetrix",
+    "PolariphaseDrive",
+    "ecm",
+    "ControllingSystem_auto",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "cr_nimbusrend"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "cr_lapislull_b",
+        "WS0021": "cr_lapislull_b"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "cr_LEA_26",
+        "WS0016": "cr_LEA_26",
+        "WS0017": "cr_LEA_26",
+        "WS0018": "cr_LEA_26"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "cr_EFlakT_69",
+        "WS0013": "cr_EFlakT_69",
+        "WS0014": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cr_eoswhisper",
+        "WS0002": "cr_eoswhisper",
+        "WS0003": "cr_eoswhisper",
+        "WS0004": "cr_eoswhisper",
+        "WS0005": "cr_EFlak_69",
+        "WS0006": "cr_EFlak_69",
+        "WS0007": "cr_EFlak_69",
+        "WS0008": "cr_EFlak_69",
+        "WS0009": "cr_eoswhisper",
+        "WS0010": "cr_eoswhisper",
+        "WS0011": "cr_eoswhisper"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

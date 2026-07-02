@@ -1,0 +1,87 @@
+{
+  "hullName": "FA2",
+  "hullId": "cr_FA2",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/FA2.png",
+  "style": "CR_TECH",
+  "height": 60,
+  "width": 36,
+  "center": [18, 30],
+  "collisionRadius": 27.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 23.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "autorepair",
+    "HiddenMissles"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -0,
+      "locations": [2, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-12.5, -9]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-12.5, 9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22, -0],
+      "length": 11,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "CR_TECH"
+    },
+    {
+      "location": [-18, -8],
+      "length": 8,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "CR_REFIT"
+    },
+    {
+      "location": [-18, 8],
+      "length": 8,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "CR_REFIT"
+    }
+  ],
+  "bounds": [
+    -20, 10,
+    -14, 14,
+    -7, 7,
+    1.5, 6.5,
+    19, 1,
+    19, -1,
+    1.5, -6.5,
+    -7, -7,
+    -14, -14,
+    -20, -10
+  ]
+}

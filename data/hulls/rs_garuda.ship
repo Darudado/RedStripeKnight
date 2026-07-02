@@ -1,0 +1,71 @@
+{
+  "hullName": "Garuda",
+  "hullId": "rs_garuda",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/wings/support-normal_Garuda.png",
+  "style": "RS_TECH",
+  "height": 56,
+  "width": 60,
+  "center": [30, 28],
+  "collisionRadius": 34.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 38,
+  "viewOffset": 0,
+  "builtInMods": [
+    "CrusadersCore",
+    "CrusadersPlating",
+    "HiddenMissles",
+    "Rhongomyniad",
+    "no_weapon_flux",
+    "targetingunit"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rs_pyreticon_medium"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-1.5, -4.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26, 6.5],
+      "length": 17.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "RS_TECH"
+    },
+    {
+      "location": [-26, -6.5],
+      "length": 17.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "RS_TECH"
+    }
+  ],
+  "bounds": [
+    4.5, -26.5,
+    -25.5, -9.5,
+    -25.5, 9.5,
+    4.5, 26.5,
+    19, 15.5,
+    18, -5.5
+  ]
+}
