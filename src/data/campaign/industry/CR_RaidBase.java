@@ -712,7 +712,7 @@ public class CR_RaidBase extends BaseIndustry implements EconomyTickListener, Ra
                     }
 
                     if (Global.getSettings().getModManager().isModEnabled("alcoholism")) {
-                        String h2 = StringHelper.getAbsPercentStringV2(this.getAlcoholBonus());
+                        String h2 = StringHelper.getAbsPercentString(this.getAlcoholBonus(), true);
                         tooltip.addPara(this.getString(12).replace("$bonusPercent", h2), 10.0F, Misc.getPositiveHighlightColor(), h2 + "%");
                     }
                 }

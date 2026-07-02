@@ -7,7 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="MagicLib-Kotlin" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -42,24 +41,6 @@
           <root url="jar://$MODULE_DIR$/../LazyLib-3.0.0/jars/LazyLib.jar!/" />
           <root url="jar://$MODULE_DIR$/../LazyLib-3.0.0/jars/LazyLib.jar!/" />
         </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../IndEvo/jars/IndEvo.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../zz BoxUtil-1.2.2/jars/BoxUtilMod.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
@@ -116,6 +97,20 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../starsector-core" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../starsector-core" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
