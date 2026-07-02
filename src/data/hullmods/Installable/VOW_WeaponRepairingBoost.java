@@ -173,18 +173,18 @@ public class VOW_WeaponRepairingBoost extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         float pad = 10f;
         float padS = 2f;
-        tooltip.addPara("武器维修时间缩短 %s " , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
-        tooltip.addPara("武器修复后  %s 秒内冷却速率提高  %s " , padS, Misc.getHighlightColor(), String.format("%.1f", BONUS_TIME),(int) BONUS_LEVEL + "%");
-        tooltip.addPara("武器恢复时根据尺寸回复舰船结构：小型+" + (int) HEAL_SMALL + "，中型+" + (int) HEAL_MEDIUM + "，大型+" + (int) HEAL_LARGE, pad);
-        tooltip.addPara("但是武器后坐力增加 %s " , padS, Misc.getNegativeHighlightColor(),(int) RECOIL_BONUS + "%");
+        tooltip.addPara("Weapon repair time reduced by %s" , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
+        tooltip.addPara("After the weapon is repaired, the cooldown rate increases by %s for %s seconds." , padS, Misc.getHighlightColor(), String.format("%.1f", BONUS_TIME),(int) BONUS_LEVEL + "%");
+        tooltip.addPara("When weapons are restored, ship structure is restored according to size: Small +" + (int) HEAL_SMALL + ", medium+" + (int) HEAL_MEDIUM + ", large+" + (int) HEAL_LARGE, pad);
+        tooltip.addPara("But weapon recoil increases by %s" , padS, Misc.getNegativeHighlightColor(),(int) RECOIL_BONUS + "%");
     }
 
 
     public void addSModEffectSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec, boolean isForBuildInList) {
         float pad = 10f;
         float padS = 2f;
-        tooltip.addPara("武器生命值额外减少 " , pad, Misc.getNegativeHighlightColor(), (int) WEAPON_HEALTH_PENALTY + "%");
-        tooltip.addPara("但武器维修时间缩短 " , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
+        tooltip.addPara("Weapon HP reduced additionally" , pad, Misc.getNegativeHighlightColor(), (int) WEAPON_HEALTH_PENALTY + "%");
+        tooltip.addPara("However, weapon maintenance time is shortened" , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
     }
 
     @Override
@@ -199,8 +199,8 @@ public class VOW_WeaponRepairingBoost extends BaseHullMod {
 
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "舰船不存在";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+        if (ship == null) return "The ship does not exist";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
         return null;
     }
 

@@ -724,9 +724,9 @@ public class CR_RaidBase extends BaseIndustry implements EconomyTickListener, Ra
     protected void addAlphaCoreDescription(TooltipMakerAPI tooltip, Industry.AICoreDescriptionMode mode) {
         float opad = 10.0F;
         Color highlight = Misc.getHighlightColor();
-        String pre = "目前已被分配的 阿尔法级 AI 核心. ";
+        String pre = "Currently assigned Alpha level AI cores.";
         if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
-            pre = "阿尔法级 AI 核心. ";
+            pre = "Alpha level AI core.";
         }
 
         String[] highlights = this.getHighlightsString(13);
@@ -745,9 +745,9 @@ public class CR_RaidBase extends BaseIndustry implements EconomyTickListener, Ra
     protected void addBetaCoreDescription(TooltipMakerAPI tooltip, Industry.AICoreDescriptionMode mode) {
         float opad = 10.0F;
         Color highlight = Misc.getHighlightColor();
-        String pre = "目前已被分配的 贝塔级 AI 核心. ";
+        String pre = "Currently allocated beta AI cores.";
         if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
-            pre = "贝塔级 AI 核心. ";
+            pre = "Beta-level AI core.";
         }
 
         String[] highlights = this.getHighlightsString(14);
@@ -766,9 +766,9 @@ public class CR_RaidBase extends BaseIndustry implements EconomyTickListener, Ra
     protected void addGammaCoreDescription(TooltipMakerAPI tooltip, Industry.AICoreDescriptionMode mode) {
         float opad = 10.0F;
         Color highlight = Misc.getHighlightColor();
-        String pre = "目前已被分配的 伽马级 AI 核心. ";
+        String pre = "Currently assigned gamma level AI cores.";
         if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
-            pre = "伽马级 AI 核心. ";
+            pre = "Gamma-level AI core.";
         }
 
         String[] highlights = this.getHighlightsString(15);

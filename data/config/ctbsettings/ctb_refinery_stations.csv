@@ -1,4 +1,4 @@
 FactionID,number
-#如果你需要让你自己的势力在幸存者建立空间站后获得晶矿精炼站，在这里写下势力id,精炼站数量
-#玩家会在后期任务中获得一个空间站，除非需要更多，否则不需要填player,
+"#If you need to let your own force get the crystal ore refining station after the survivors build the space station, write the force id here",Number of refining stations
+"#Players will get a space station in the later missions, unless they need more, there is no need to fill in the player",
 red_stripe,1

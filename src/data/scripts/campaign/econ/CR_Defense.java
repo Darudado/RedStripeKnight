@@ -28,19 +28,19 @@ public class CR_Defense extends BaseMarketConditionPlugin {
     }
 
     public void apply(String id) {
-        this.market.getStability().modifyFlat(id, 3.0F, "十字军防御系统");
+        this.market.getStability().modifyFlat(id, 3.0F, "Crusade Defense System");
 
         for(Industry industry : this.market.getIndustries()) {
-            removeDemand(industry, "crew", id, "AI系统");
-            removeDemand(industry, "marines", id, "AI系统");
-            removeDemand(industry, "organs", id, "AI系统");
-            removeDemand(industry, "food", id, "AI系统");
-            removeDemand(industry, "drugs", id, "AI系统");
-            removeSupply(industry, "crew", id, "AI系统");
-            removeSupply(industry, "marines", id, "AI系统");
-            removeSupply(industry, "organs", id, "AI系统");
-            removeSupply(industry, "domestic_goods", id, "AI系统");
-            removeSupply(industry, "luxury_goods", id, "AI系统");
+            removeDemand(industry, "crew", id, "AI system");
+            removeDemand(industry, "marines", id, "AI system");
+            removeDemand(industry, "organs", id, "AI system");
+            removeDemand(industry, "food", id, "AI system");
+            removeDemand(industry, "drugs", id, "AI system");
+            removeSupply(industry, "crew", id, "AI system");
+            removeSupply(industry, "marines", id, "AI system");
+            removeSupply(industry, "organs", id, "AI system");
+            removeSupply(industry, "domestic_goods", id, "AI system");
+            removeSupply(industry, "luxury_goods", id, "AI system");
         }
 
     }

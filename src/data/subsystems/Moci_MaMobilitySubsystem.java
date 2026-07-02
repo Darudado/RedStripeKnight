@@ -579,22 +579,22 @@ public class Moci_MaMobilitySubsystem extends MagicSubsystem {
 
     @Override
     public String getDisplayText() {
-        return "喷气背包";
+        return "jetpack";
     }
 
     @Override
     public String getBriefText() {
-        return "大幅提高速度";
+        return "Dramatically improve speed";
     }
 
     @Override
     public String getStateText() {
         return switch (state) {
-            case READY -> "就绪";
-            case IN -> "启动中";
-            case ACTIVE -> "增强中";
-            case OUT -> "结束中";
-            case COOLDOWN -> "冷却中";
+            case READY -> "ready";
+            case IN -> "Starting";
+            case ACTIVE -> "Enhanced";
+            case OUT -> "Ending";
+            case COOLDOWN -> "Cooling down";
         };
     }
 
@@ -604,7 +604,7 @@ public class Moci_MaMobilitySubsystem extends MagicSubsystem {
             float effectLevel = getEffectLevel();
             int currentSpeed = (int) (maxSpeedBonus * effectLevel);
             int currentAccel = (int) (maxAccelerationBonus * effectLevel);
-            return String.format("速度+ %s 机动+ %s", currentSpeed, currentAccel);
+            return String.format("Speed ​​+ %s Maneuver + %s", currentSpeed, currentAccel);
         }
         return null;
     }

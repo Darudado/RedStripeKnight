@@ -14,7 +14,7 @@ public class GeniusCommand  {
     public static class Level0 implements ShipSkillEffect {
         @Override
         public String getEffectDescription(float level) {
-            return "减少舰队整体部署点需求 " + FLEET_DP_REDUCTION + "%";
+            return "Reduce overall fleet deployment point requirements" + FLEET_DP_REDUCTION + "%";
         }
 
         @Override
@@ -75,7 +75,7 @@ public class GeniusCommand  {
 
         @Override
         public String getEffectDescription(float level) {
-            return "座舰减免 " + OFFICER_SHIP_DP_REDUCTION + "% 部署点需求";
+            return "Ship exemption" + OFFICER_SHIP_DP_REDUCTION + "% Deployment point requirements";
         }
 
         @Override
@@ -107,7 +107,7 @@ public class GeniusCommand  {
 
         @Override
         public String getEffectDescription(float level) {
-            return "提升全舰队25%辐能消散速率，并减少25%战机整备效率";
+            return "Increase the radiant energy dissipation rate of the entire fleet by 25% and reduce fighter aircraft maintenance efficiency by 25%";
         }
 
         @Override

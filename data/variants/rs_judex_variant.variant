@@ -1,7 +1,7 @@
 {
   "variantId": "rs_judex_variant",
   "hullId": "rs_judex",
-  "displayName": "标准",
+  "displayName": "standard",
   "goalVariant": true,
   "fluxCapacitors": 27,
   "fluxVents": 20,

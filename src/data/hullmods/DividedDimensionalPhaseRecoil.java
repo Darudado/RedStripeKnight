@@ -558,11 +558,11 @@ public class DividedDimensionalPhaseRecoil extends BaseHullMod implements HullMo
         float opad = 10f;
         Color h = Misc.getHighlightColor();
 
-        tooltip.addPara("不同于传统的相位线圈，十字军计划中使用的分布式维度差相位线圈更像是将舰船挤入P空间与现实空间之间的夹缝；在某种程度上，这艘舰船可以说是短暂地消失了，只是依旧能够被观察，也能够回到现实空间。", opad, h);
-        tooltip.addPara("自然地，近乎于铤而走险的做法换取了足够的回报，同时也需要一定的代价，最直接的结果就是：纵使用上了远超正常数量的相位线圈与高效能的分布式设计，整套系统的冷却时间依旧长得令人发指。", opad, h);
-        tooltip.addPara("于是乎，只有经验丰富的指挥官或是高级ai核心能够较好地驾驭这头猛兽。", opad, h);
-        tooltip.addPara("相位结束时会释放剧烈的维度回弹，产生强烈的视觉扰动和能量释放效果。相位期间舰体会产生多层次的残影和抖动效果。", opad, Misc.getPositiveHighlightColor());
-        tooltip.addPara("并非沉入P空间，而是null吗？也许只有能够明晰宇宙脉动的生命才能够将这种技术发挥到极致吧————来自某一份损坏的档案。", opad, h);
+        tooltip.addPara("Different from traditional phase coils, the distributed dimensional difference phase coil used in the Crusade Project is more like squeezing the ship into the gap between P space and real space; to a certain extent, the ship can be said to have disappeared briefly, but it can still be observed and return to real space.", opad, h);
+        tooltip.addPara("Naturally, the almost desperate approach paid off, but it also required a certain price. The most direct result is that even though a far larger than normal number of phase coils and a high-efficiency distributed design are used, the cooling time of the entire system is still outrageously long.", opad, h);
+        tooltip.addPara("Therefore, only experienced commanders or advanced AI cores can better control this beast.", opad, h);
+        tooltip.addPara("At the end of the phase, a violent dimensional rebound will be released, resulting in strong visual disturbance and energy release effects. During the phase, the ship's hull will produce multi-layered afterimages and jitter effects.", opad, Misc.getPositiveHighlightColor());
+        tooltip.addPara("Is it not sinking into P space, but null? Perhaps only beings who can understand the pulse of the universe can use this technology to its extreme——from a certain damaged file.", opad, h);
     }
     private void cleanupDeadShips() {
         lastPhaseState.entrySet().removeIf(entry -> !entry.getKey().isAlive());

@@ -73,29 +73,29 @@ public class Moci_MaRepairBayHullModEffect extends BaseHullMod {
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
         if (ship == null) {
-            return "舰船为空";
+            return "Ship is empty";
         }
         
         if (ship.getHullSpec() == null) {
-            return "舰船规格为空";
+            return "Ship specification is empty";
         }
         
         // 检查舰体级别
         ShipAPI.HullSize hullSize = ship.getHullSpec().getHullSize();
         if (hullSize == ShipAPI.HullSize.FRIGATE || hullSize == ShipAPI.HullSize.FIGHTER) {
-            return "舰体级别必须为巡洋舰及以上";
+            return "The hull level must be cruiser or above";
         }
         
         // 检查飞行甲板
         if (ship.getHullSpec().getFighterBays() <= 0) {
-            return "舰船必须拥有飞行甲板";
+            return "Ships must have a flight deck";
         }
         
         // 检查非内置甲板
         int totalFighterBays = ship.getHullSpec().getFighterBays();
         int builtInWings = ship.getHullSpec().getBuiltInWings().size();
         if (totalFighterBays <= builtInWings) {
-            return "舰船必须拥有非内置的飞行甲板";
+            return "Ships must have a non-built-in flight deck";
         }
         
         return null;

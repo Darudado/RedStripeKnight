@@ -1,7 +1,7 @@
 {
   "variantId": "vow_elmo_variant",
   "hullId": "vow_elmo",
-  "displayName": "制空截击机",
+  "displayName": "air superiority interceptor",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

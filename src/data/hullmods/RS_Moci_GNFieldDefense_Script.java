@@ -664,22 +664,22 @@ public class RS_Moci_GNFieldDefense_Script implements DamageTakenModifier, Advan
                     if (shield.isRestarting()) {
                         // 正在充能
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("充能中 %.0f%%", shield.getShieldLevel() * 100), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Charging %.0f%%", shield.getShieldLevel() * 100), true);
                     } else {
                         // 重启延迟
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("重启中 %.1fs", shield.getRestartTimeRemaining()), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Restarting %.1fs", shield.getRestartTimeRemaining()), true);
                     }
                 } else if (shield.getShieldLevel() > 0.05f) {
                     Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                            "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
+                            "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
                             String.format("%.0f%%", shield.getShieldLevel() * 100), false);
                 } else {
                     Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                            "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                            "护盾耗尽", true);
+                            "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                            "Shield depleted", true);
                 }
             }
             return;
@@ -704,17 +704,17 @@ public class RS_Moci_GNFieldDefense_Script implements DamageTakenModifier, Advan
                     if (shield.isRestarting()) {
                         // 正在充能
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("充能中 %.0f%%", shield.getShieldLevel() * 100), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Charging %.0f%%", shield.getShieldLevel() * 100), true);
                     } else {
                         // 重启延迟
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("重启中 %.1fs", shield.getRestartTimeRemaining()), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Restarting %.1fs", shield.getRestartTimeRemaining()), true);
                     }
                 } else {
                     Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                            "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
+                            "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
                             String.format("%.0f%%", shield.getShieldLevel() * 100), false);
                 }
             }
@@ -723,17 +723,17 @@ public class RS_Moci_GNFieldDefense_Script implements DamageTakenModifier, Advan
                 if (shield.isShieldBroken()) {
                     if (shield.isRestarting()) {
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("充能中 %.0f%%", shield.getShieldLevel() * 100), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Charging %.0f%%", shield.getShieldLevel() * 100), true);
                     } else {
                         Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                                "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                                String.format("重启中 %.1fs", shield.getRestartTimeRemaining()), true);
+                                "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                                String.format("Restarting %.1fs", shield.getRestartTimeRemaining()), true);
                     }
                 } else {
                     Global.getCombatEngine().maintainStatusForPlayerShip("GN_FieldDefense",
-                            "graphics/icons/hullsys/fortress_shield.png", "GN力场防御",
-                            "关闭", true);
+                            "graphics/icons/hullsys/fortress_shield.png", "GN force field defense",
+                            "closure", true);
                 }
             }
         }

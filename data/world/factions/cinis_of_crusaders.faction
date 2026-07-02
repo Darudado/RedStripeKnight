@@ -1,9 +1,9 @@
 {
 	id:"cinis_of_crusaders",
-	"displayName":"十字军余孽",
-	"displayNameWithArticle":"十字军余孽",
-	"displayNameLong":"十字军计划遗弃舰队",
-	"displayNameLongWithArticle":"十字军计划遗弃舰队",
+	"displayName":"Remnants of the Crusades",
+	"displayNameWithArticle":"Remnants of the Crusades",
+	"displayNameLong":"Crusader Plan Abandoned Fleet",
+	"displayNameLongWithArticle":"Crusader Plan Abandoned Fleet",
 	"entityNamePrefix":"",
 	"personNamePrefix":"",
 	"personNamePrefixAOrAn":"a",
@@ -213,9 +213,9 @@
 		"ranks":{
 		},
 		"posts":{
-			"stationCommander":{"name":"管理中枢"},
-			"baseCommander":{"name":"指挥中枢"},
-			"fleetCommander":{"name":"舰队指挥"},
+			"stationCommander":{"name":"Management Center"},
+			"baseCommander":{"name":"Command Center"},
+			"fleetCommander":{"name":"Fleet Command"},
 		},
 	},
 	"custom":{
@@ -253,24 +253,24 @@
 		},
 	},
 	"fleetTypeNames":{
-    "trade": "节点",
-    "smallTrader": "支点",
-    "tradeLiner": "终端",
+    "trade": "Node",
+    "smallTrader": "Fulcrum",
+    "tradeLiner": "Terminal",
 	
-    "patrolSmall": "漏点",
-    "patrolMedium": "破点",
-    "patrolLarge": "断点",
+    "patrolSmall": "Scout Node",
+    "patrolMedium": "Interdictor Node",
+    "patrolLarge": "Suppressor Node",
 	
-    "inspectionFleet": "审查系统",
+    "inspectionFleet": "Audit System",
 	
-    "mercScout": "自查系统",
-    "mercBountyHunter": "紊流",
-    "mercPrivateer": "层流",
-    "mercPatrol": "激流",
-    "mercArmada": "湍流",
+    "mercScout": "Self-Checking System",
+    "mercBountyHunter": "Turbulent Flow",
+    "mercPrivateer": "Laminar Flow",
+    "mercPatrol": "Torrent",
+    "mercArmada": "Turbulence",
 	
-    "taskForce": "查杀系统",
+    "taskForce": "Antivirus System",
 	
-	"foodReliefFleet":"救援终端",
+	"foodReliefFleet":"Rescue Terminal",
 	},
 },

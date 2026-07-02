@@ -150,8 +150,8 @@ public class MSA0011Bst303E_ModuleController extends BaseHullMod {
 
     @Override
     public String getDescriptionParam(int index, HullSize hullSize) {
-        if (index == 0) return "机翼模块";
-        if (index == 1) return "动态调整";
+        if (index == 0) return "wing module";
+        if (index == 1) return "Dynamic adjustment";
         return null;
     }
 

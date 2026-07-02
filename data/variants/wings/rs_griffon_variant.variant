@@ -1,7 +1,7 @@
 {
   "variantId": "rs_griffon_variant",
   "hullId": "rs_griffon",
-  "displayName": "重型无人战斗机",
+  "displayName": "Heavy UAV",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

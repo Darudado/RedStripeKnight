@@ -23,10 +23,10 @@ public class ControllingSystem extends BaseHullMod {
                 && !ship.getCaptain().isDefault()
                 && !ship.getCaptain().getMemoryWithoutUpdate().getBoolean("$rs_regardAsAI")
                 && !ship.getCaptain().getMemoryWithoutUpdate().getBoolean("$rs_aiCompatibleForOfficer")) {
-            return "必须先取消指派军官或AI核心"; // 军官相关的提示
+            return "The officer or AI core must first be unassigned"; // 军官相关的提示
         } else {
             // 舰队组成不满足要求的提示
-            return !hasEnoughNoAIShip(ship) ? "舰队中至少需要一艘载人舰船" : super.getCanNotBeInstalledNowReason(ship, marketOrNull, mode);
+            return !hasEnoughNoAIShip(ship) ? "At least one manned ship is required in the fleet" : super.getCanNotBeInstalledNowReason(ship, marketOrNull, mode);
         }
     }
 

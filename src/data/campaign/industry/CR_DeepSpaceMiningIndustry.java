@@ -97,11 +97,11 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
         // 更新供应和需求
         if (isFunctional()) {
             // 基础小行星开采供应（来自第一个代码）
-            supply(Commodities.ORE, MathUtils.getRandomNumberInRange(3, 8), "小行星开采");
-            supply(Commodities.RARE_ORE, MathUtils.getRandomNumberInRange(2, 6), "小行星开采");
-            supply(Commodities.VOLATILES, MathUtils.getRandomNumberInRange(2, 6), "小行星开采");
-            supply(Commodities.ORGANICS, MathUtils.getRandomNumberInRange(1, 4), "小行星开采");
-            supply(Commodities.FUEL, MathUtils.getRandomNumberInRange(1, 3), "小行星开采");
+            supply(Commodities.ORE, MathUtils.getRandomNumberInRange(3, 8), "Asteroid mining");
+            supply(Commodities.RARE_ORE, MathUtils.getRandomNumberInRange(2, 6), "Asteroid mining");
+            supply(Commodities.VOLATILES, MathUtils.getRandomNumberInRange(2, 6), "Asteroid mining");
+            supply(Commodities.ORGANICS, MathUtils.getRandomNumberInRange(1, 4), "Asteroid mining");
+            supply(Commodities.FUEL, MathUtils.getRandomNumberInRange(1, 3), "Asteroid mining");
 
             // 添加对勘探舰队的支持需求（综合两个代码的需求）
             demand(Commodities.SUPPLIES, 2);
@@ -505,8 +505,8 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
 
         // 根据目标类型设置舰队名称
         String fleetName = custom.targetType.equals("ASTEROID") ?
-                "小行星开采舰队 - " + market.getName() :
-                "行星勘探舰队 - " + market.getName();
+                "Asteroid Mining Fleet -" + market.getName() :
+                "Planetary Exploration Fleet -" + market.getName();
         fleet.setName(fleetName);
 
         // 添加记忆标记
@@ -535,7 +535,7 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
             fleet.addScript(new ExpeditionAssignmentAIV4(fleet, route, custom));
         } else {
             // 如果目标为空，让舰队立即返回
-            fleet.addAssignment(FleetAssignment.ORBIT_PASSIVE, market.getPrimaryEntity(), 1f, "紧急返回");
+            fleet.addAssignment(FleetAssignment.ORBIT_PASSIVE, market.getPrimaryEntity(), 1f, "emergency return");
             fleet.getMemoryWithoutUpdate().set("$CR_emergency_return", true);
         }
 
@@ -649,7 +649,7 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
         String currentAction = fleet.getCurrentAssignment().getActionText();
 
         return (currentAssignment == FleetAssignment.ORBIT_PASSIVE &&
-                currentAction != null && currentAction.contains("卸载资源")) ||
+                currentAction != null && currentAction.contains("Unload resources")) ||
                 // 或者检查舰队内存中的状态
                 fleet.getMemoryWithoutUpdate().getBoolean("$cr_deepspace_returned");
     }
@@ -903,31 +903,31 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
         if (tooltip != null) {
             tooltip.addSpacer(10f);
 
-            tooltip.addPara("深空采矿作业结合了小行星开采和行星勘探功能。派遣的舰队会前往附近星系的小行星带或资源丰富的行星进行资源采集。" +
+            tooltip.addPara("Deep space mining operations combine asteroid mining and planetary exploration capabilities. The dispatched fleet will go to the asteroid belt or resource-rich planets in nearby systems to collect resources." +
                             "\n\n" +
-                            "舰队规模取决于殖民地规模，同时派遣的舰队数量也受殖民地规模限制。" +
+                            "The size of the fleet depends on the size of the colony, and the number of fleets sent is also limited by the size of the colony." +
                             "\n\n" +
-                            "从舰队卸载的资源可为殖民地供应约" + (int)lastingTime + "天。舰队将前往市场所在星系" + (int)EXPEDITION_RANGE_LY + "光年半径内的系统进行勘探。",
+                            "Resources unloaded from the fleet can supply a colony with approx." + (int)lastingTime + "sky. The fleet will head to the system where the market is located" + (int)EXPEDITION_RANGE_LY + "Exploration of systems within a light-year radius.",
                     0f, Misc.getTextColor(), Misc.getHighlightColor(),
-                    "" + (int)lastingTime, "" + (int)EXPEDITION_RANGE_LY + "光年");
+                    "" + (int)lastingTime, "" + (int)EXPEDITION_RANGE_LY + "light years");
 
             // 显示活跃的勘探舰队
             int activeExpeditions = getActiveExpeditionCount();
             int maxExpeditions = getMaxExpeditions();
-            tooltip.addPara("活跃勘探舰队: " + activeExpeditions + " / " + maxExpeditions,
+            tooltip.addPara("Active Exploration Fleet:" + activeExpeditions + " / " + maxExpeditions,
                     Misc.getHighlightColor(), 10f);
 
             // 显示最近的勘探结果
             if (!expeditionResults.isEmpty()) {
                 tooltip.addSpacer(5f);
-                tooltip.addPara("最近的勘探结果:", Misc.getTextColor(), 0f);
+                tooltip.addPara("Recent exploration results:", Misc.getTextColor(), 0f);
 
                 int count = 0;
                 for (int i = expeditionResults.size() - 1; i >= 0 && count < 3; i--, count++) {
                     ExpeditionFleetResults result = expeditionResults.get(i);
-                    String typeText = result.targetType.equals("ASTEROID") ? "小行星带" : "行星";
-                    tooltip.addPara("- " + (result.planet != null ? result.planet.getName() : "未知目标") +
-                                    " (" + typeText + "): " + (int)result.resourcesGained + " 资源单位",
+                    String typeText = result.targetType.equals("ASTEROID") ? "asteroid belt" : "planet";
+                    tooltip.addPara("- " + (result.planet != null ? result.planet.getName() : "unknown target") +
+                                    " (" + typeText + "): " + (int)result.resourcesGained + "resource unit",
                             Misc.getGrayColor(), 0f);
                 }
             }
@@ -985,12 +985,12 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
 
     @Override
     public String getCurrentName() {
-        return "深空采矿作业";
+        return "deep space mining operations";
     }
 
     @Override
     public String getUnavailableReason() {
-        return "需要玩家控制的殖民地和合适的勘探目标";
+        return "Requires player-controlled colonies and suitable exploration targets";
     }
 
     // 其他事件方法保持空实现...
@@ -1141,11 +1141,11 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
         private void giveEmergencyReturnAssignments() {
             fleet.clearAssignments();
             SectorEntityToken source = route.getMarket().getPrimaryEntity();
-            fleet.addAssignment(FleetAssignment.ORBIT_PASSIVE, source, 1f, "紧急返回（数据丢失）");
+            fleet.addAssignment(FleetAssignment.ORBIT_PASSIVE, source, 1f, "Emergency return (data loss)");
             fleet.getMemoryWithoutUpdate().set("$CR_emergency_return", true);
 
             // 直接触发返回处理
-            fleet.addAssignment(FleetAssignment.GO_TO_LOCATION_AND_DESPAWN, source, 1000f, "紧急返回完成");
+            fleet.addAssignment(FleetAssignment.GO_TO_LOCATION_AND_DESPAWN, source, 1000f, "Emergency return completed");
         }
 
         @Override
@@ -1163,20 +1163,20 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
 
             if (TRAVEL_TO_TARGET_STAGE.equals(stage)) {
                 if (customData != null && customData.targetType.equals("ASTEROID")) {
-                    return "前往小行星带 " + name;
+                    return "Heading to the asteroid belt" + name;
                 } else {
-                    return "前往行星 " + name;
+                    return "Go to planet" + name;
                 }
             } else if (EXPLORATION_STAGE.equals(stage)) {
                 if (customData != null && customData.targetType.equals("ASTEROID")) {
-                    return "在小行星带 " + name + " 开采资源";
+                    return "in the asteroid belt" + name + "Extract resources";
                 } else {
-                    return "在行星 " + name + " 进行勘探";
+                    return "on planet" + name + "conduct exploration";
                 }
             } else if (RETURN_STAGE.equals(stage)) {
-                return "返回 " + market.getName();
+                return "return" + market.getName();
             } else if (UNLOAD_STAGE.equals(stage)) {
-                return "在 " + market.getName() + " 卸载资源";
+                return "exist" + market.getName() + "Unload resources";
             }
 
             return null;
@@ -1209,7 +1209,7 @@ public class CR_DeepSpaceMiningIndustry extends BaseIndustry implements RouteMan
                     // 中断当前任务，立即返回
                     fleet.clearAssignments();
                     SectorEntityToken source = route.getMarket().getPrimaryEntity();
-                    fleet.addAssignment(FleetAssignment.GO_TO_LOCATION, source, 1000f, "紧急返回");
+                    fleet.addAssignment(FleetAssignment.GO_TO_LOCATION, source, 1000f, "emergency return");
                     fleet.getMemoryWithoutUpdate().set("$CR_emergency_return", true);
                 }
             }

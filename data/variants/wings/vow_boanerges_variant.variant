@@ -1,7 +1,7 @@
 {
   "variantId": "vow_boanerges_variant",
   "hullId": "vow_boanerges",
-  "displayName": "破交无人战斗机",
+  "displayName": "Unmanned fighters",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

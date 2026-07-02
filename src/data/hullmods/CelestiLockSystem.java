@@ -39,39 +39,39 @@ public class CelestiLockSystem extends BaseHullMod {
         float pad = 2f;
 
         //title
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
         if(ship != null && ship.getVariant().hasHullMod("CR_carrier_strikecommand")){
-            tooltip.addPara("空域管制系统调整为突击模式", opad, green);
-            tooltip.addPara("提升舰载机补充速率: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("增加舰载机作战半径: %s", pad, green, Misc.getRoundedValue(90.0F) + "%");
-            tooltip.addPara("增加舰载机机动性: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("增加舰载机武器伤害: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("增加飞行员损失: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("增加战机受到伤害: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("减少舰载机武器射程: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Airspace control system adjusted to assault mode", opad, green);
+            tooltip.addPara("Increase carrier-based aircraft replenishment rate: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Increase carrier-based aircraft combat radius: %s", pad, green, Misc.getRoundedValue(90.0F) + "%");
+            tooltip.addPara("Increase carrier-based aircraft mobility: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Increase carrier-based aircraft weapon damage: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Increase pilot losses: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Increase the damage taken by fighter planes: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Reduce carrier aircraft weapon range: %s", pad, red, Misc.getRoundedValue(10.0F) + "%");
 
         }
         if(ship != null && ship.getVariant().hasHullMod("CR_carrier_supportcommand")){
-            tooltip.addPara("空域管制系统调整为支援模式", opad, green);
-            tooltip.addPara("提升舰载机补充速率: %s", pad, green, Misc.getRoundedValue(20.0F) + "%");
-            tooltip.addPara("减少飞行员损失: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
-            tooltip.addPara("增加舰载机武器射程: %s", pad, green, Misc.getRoundedValue(75.0F) + "%");
-            tooltip.addPara("减少舰载机收到伤害: %s", pad, green, Misc.getRoundedValue(20.0F) + "%");
-            tooltip.addPara("减少舰载机作战半径: %s", pad, red, Misc.getRoundedValue(90.0F) + "%");
+            tooltip.addPara("Airspace control system adjusted to support mode", opad, green);
+            tooltip.addPara("Increase carrier-based aircraft replenishment rate: %s", pad, green, Misc.getRoundedValue(20.0F) + "%");
+            tooltip.addPara("Reduce pilot losses: %s", pad, green, Misc.getRoundedValue(10.0F) + "%");
+            tooltip.addPara("Increase carrier aircraft weapon range: %s", pad, green, Misc.getRoundedValue(75.0F) + "%");
+            tooltip.addPara("Reduce damage received by carrier-based aircraft: %s", pad, green, Misc.getRoundedValue(20.0F) + "%");
+            tooltip.addPara("Reduce carrier-based aircraft combat radius: %s", pad, red, Misc.getRoundedValue(90.0F) + "%");
         }
 
         if (ship != null && ship.getVariant() != null) {
             if (ship.getVariant().getFittedWings().isEmpty()) {
                 //no wing fitted
                 tooltip.addPara(
-                        "未安装战机"
+                        "No fighter installed"
                         , 10
                         , HL
                 );
             } else if (noFightersAndIntercptors(ship.getVariant())) {
                 //no wanzer wings installed
                 tooltip.addPara(
-                        "未适配安装战机"
+                        "Not adapted to install fighter aircraft"
                         , 10
                         , HL
                 );
@@ -81,10 +81,10 @@ public class CelestiLockSystem extends BaseHullMod {
 
                 if (!FightersAndIntercptors.isEmpty()) {
                     tooltip.addPara(
-                            "以下战机联队获得}一架额外舰载机:"
+                            "The following fighter wings receive an additional carrier aircraft:"
                             , 10
                             , HL
-                            , "一架额外舰载机"
+                            , "One additional carrier-based aircraft"
                     );
 
                     tooltip.setBulletedListMode("    - ");
@@ -99,7 +99,7 @@ public class CelestiLockSystem extends BaseHullMod {
                     tooltip.setBulletedListMode(null);
 
                     // 添加debuff说明
-                    tooltip.addPara("整备速率调整:", 10, HL, "整备速率调整");
+                    tooltip.addPara("Maintenance rate adjustment:", 10, HL, "Maintenance rate adjustment");
                     tooltip.setBulletedListMode("    - ");
 
                     // 计算各类型联队的debuff
@@ -116,8 +116,8 @@ public class CelestiLockSystem extends BaseHullMod {
                 }
             }
 
-            tooltip.addSectionHeading("后备甲板", Alignment.MID, opad);
-            tooltip.addPara("在舰船整备率低于 %s 后，舰载纳米工厂会进行一次超载立刻恢复编队并将整备率调整至 %s " , pad, red, Misc.getRoundedValue(30.0F) + "%" ,Misc.getRoundedValue(70.0F) + "%");
+            tooltip.addSectionHeading("rear deck", Alignment.MID, opad);
+            tooltip.addPara("After the ship's readiness rate falls below %s, the shipboard nanofactory will perform an overload and immediately restore the formation and adjust the ship's readiness rate to %s." , pad, red, Misc.getRoundedValue(30.0F) + "%" ,Misc.getRoundedValue(70.0F) + "%");
 
         }
     }
@@ -229,10 +229,10 @@ public class CelestiLockSystem extends BaseHullMod {
     // 根据联队飞机数量获取debuff描述文本
     private String getDebuffTextForWingSize(int numFighters) {
         return switch (numFighters) {
-            case 1 -> "整备下降速率提升20%";
-            case 2 -> "整备下降速率提升10%";
-            case 6 -> "无额外舰载机，无debuff";
-            default -> "无debuff";
+            case 1 -> "Maintenance descent rate increased by 20%";
+            case 2 -> "Maintenance descent rate increased by 10%";
+            case 6 -> "No additional carrier-based aircraft, no debuffs";
+            default -> "No debuff";
         };
     }
 
@@ -300,10 +300,10 @@ public class CelestiLockSystem extends BaseHullMod {
 
                 String status = "BackUpDeck";
                 boolean penalty = false;
-                if (fired) status = "就绪";
+                if (fired) status = "ready";
                 Global.getCombatEngine().maintainStatusForPlayerShip("cr_bdeck",
                         Global.getSettings().getSpriteName("ui", "backup_deck"),
-                        "后备甲板", status, penalty);
+                        "rear deck", status, penalty);
             }
         }
     }

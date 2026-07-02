@@ -1,7 +1,7 @@
 {
   "variantId": "vow_uriel_variant",
   "hullId": "vow_uriel",
-  "displayName": "重型突击炮艇",
+  "displayName": "heavy assault gunship",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

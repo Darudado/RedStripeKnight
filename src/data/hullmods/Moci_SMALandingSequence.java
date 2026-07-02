@@ -66,7 +66,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
     private static final String TEXT_ID = "Moci_LandingSequence";
     private static final String MECH_TURRET_TEXT_ID = "Moci_MechTurretAI";
     private static final String LOG_PREFIX = "[MOCI_REFIT_ROUTE] ";
-    private static final String WINGMAN_LOG_PREFIX = "[僚机整备] ";
+    private static final String WINGMAN_LOG_PREFIX = "[Wingman preparation]";
     private static final float REFIT_SEARCH_INTERVAL_MIN = 0.8f;
     private static final float REFIT_SEARCH_INTERVAL_MAX = 1.25f;
     private static final float FULL_MAP_REFIT_SEARCH_DISTANCE = 10000f;
@@ -276,8 +276,8 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         String searchDistanceText = String.format("%.0f", maxSearchDistance);
 
         Global.getLogger(Moci_SMALandingSequence.class).debug(
-                ship.getName() + " 搜索着陆点，着陆原因: " + (isAmmoRefit ? "弹药不足" : "血量/CR不足") +
-                        "，最大搜索距离: " + searchDistanceText
+                ship.getName() + "Search landing site, reason for landing:" + (isAmmoRefit ? "Not enough ammunition" : "Insufficient HP/CR") +
+                        ", the maximum search distance:" + searchDistanceText
         );
 
         // 遍历所有友军舰船
@@ -296,8 +296,8 @@ public class Moci_SMALandingSequence extends BaseHullMod {
                 distanceRejectedCount++;
                 incrementReasonCount(rejectReasons, "distance_limit");
                 Global.getLogger(Moci_SMALandingSequence.class).debug(
-                        ship.getName() + " 跳过距离过远的航母: " + s.getName() +
-                                " (距离: " + String.format("%.0f", currDist) + " > 限制: " + searchDistanceText + ")"
+                        ship.getName() + "Skip a carrier that is too far away:" + s.getName() +
+                                "(distance:" + String.format("%.0f", currDist) + "> Limitations:" + searchDistanceText + ")"
                 );
                 continue;
             }
@@ -316,20 +316,20 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         }
 
         String summary = carrier != null
-                ? "搜:中 母=" + carrier.getName()
-                : "搜:空 因=" + formatRejectReasons(rejectReasons);
+                ? "Search: middle mother=" + carrier.getName()
+                : "Search: empty because =" + formatRejectReasons(rejectReasons);
         ship.setCustomData(WINGMAN_REFIT_PENDING_SEARCH_TEXT_KEY, summary);
 
         if(carrier == null) {
             Global.getLogger(Moci_SMALandingSequence.class).debug(
-                    ship.getName() + " 未找到可用的着陆点 (搜索距离限制: " + searchDistanceText + ")"
+                    ship.getName() + "No available landing site found (search distance limit:" + searchDistanceText + ")"
             );
             return null;
         }
 
         Global.getLogger(Moci_SMALandingSequence.class).debug(
-                ship.getName() + " 找到着陆目标: " + carrier.getName() +
-                        " (得分: " + String.format("%.0f", score) + ")"
+                ship.getName() + "Find the landing target:" + carrier.getName() +
+                        "(Score:" + String.format("%.0f", score) + ")"
         );
 
         // 返回找到的航母的空闲修理舱
@@ -476,7 +476,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         // 如果所有主武器都打空，使用全图搜索距离
         if (allMainWeaponsEmpty) {
             Global.getLogger(Moci_SMALandingSequence.class).debug(
-                    ship.getName() + " 所有主武器打空，使用全图搜索距离: " + FULL_MAP_REFIT_SEARCH_DISTANCE
+                    ship.getName() + "All main weapons are empty, use the whole map search distance:" + FULL_MAP_REFIT_SEARCH_DISTANCE
             );
             return FULL_MAP_REFIT_SEARCH_DISTANCE;
         }
@@ -494,7 +494,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         // 如果没有弹药为0的非主武器，使用基础距离
         if (emptyNonMainWeaponCount == 0) {
             Global.getLogger(Moci_SMALandingSequence.class).debug(
-                    ship.getName() + " 没有空弹药非主武器，使用基础搜索距离: " + baseDistance
+                    ship.getName() + "Non-primary weapons without empty ammo, use basic search distance:" + baseDistance
             );
             return baseDistance;
         }
@@ -503,8 +503,8 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         float maxDistance = baseDistance + (emptyNonMainWeaponCount * distancePerWeapon);
 
         Global.getLogger(Moci_SMALandingSequence.class).debug(
-                ship.getName() + " 距离计算: 基础" + baseDistance + " + " +
-                        emptyNonMainWeaponCount + "个空弹药非主武器×" + distancePerWeapon + " = " + maxDistance
+                ship.getName() + "Distance Calculation: Basics" + baseDistance + " + " +
+                        emptyNonMainWeaponCount + "empty ammo non-main weapon ×" + distancePerWeapon + " = " + maxDistance
         );
 
         return maxDistance;
@@ -544,7 +544,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         if (bay.getLocation() != null) {
             ship.setCustomData(LAST_LANDING_LOCATION_KEY, new org.lwjgl.util.vector.Vector2f(bay.getLocation()));
         }
-        logRouteEvent(ship, "记录降落记忆。carrier=" + bay.getShip().getName()
+        logRouteEvent(ship, "Record landing memory. carrier=" + bay.getShip().getName()
                 + ", bay=" + bay.getSlotId());
     }
 
@@ -631,7 +631,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
 
     private static String formatRejectReasons(Map<String, Integer> rejectReasons) {
         if (rejectReasons == null || rejectReasons.isEmpty()) {
-            return "无";
+            return "None";
         }
         StringBuilder builder = new StringBuilder();
         boolean first = true;
@@ -647,25 +647,25 @@ public class Moci_SMALandingSequence extends BaseHullMod {
 
     private static String toShortRejectReason(String reason) {
         if ("distance_limit".equals(reason)) {
-            return "超距";
+            return "Over distance";
         }
         if ("not_repair_carrier".equals(reason)) {
-            return "非整备";
+            return "Not under maintenance";
         }
         if ("no_vacancy".equals(reason)) {
-            return "无位";
+            return "No place";
         }
         if ("carrier_phased".equals(reason)) {
-            return "相位";
+            return "Phase";
         }
         if ("carrier_dead".equals(reason)) {
-            return "已毁";
+            return "Destroyed";
         }
         if ("repair_script_missing".equals(reason)) {
-            return "无脚本";
+            return "no script";
         }
         if ("carrier_null".equals(reason)) {
-            return "空";
+            return "Empty";
         }
         return reason;
     }
@@ -757,18 +757,18 @@ public class Moci_SMALandingSequence extends BaseHullMod {
 
         Object reason = ship.getCustomData().get("Moci_NeedsRefitReason");
         if ("HULL_AND_CR".equals(reason)) {
-            return "血CR";
+            return "Blood CR";
         }
         if ("HULL_LOW".equals(reason)) {
-            return "血";
+            return "Hull";
         }
         if ("CR_LOW".equals(reason)) {
             return "CR";
         }
         if ("AMMO".equals(reason)) {
-            return "弹";
+            return "Ammo";
         }
-        return "无";
+        return "None";
     }
 
     private static float getCRRefitThreshold(ShipAPI ship) {
@@ -882,8 +882,8 @@ public class Moci_SMALandingSequence extends BaseHullMod {
                 ship.setCustomData("Moci_NeedsRefitReason", "CR_LOW");
             }
             logWingmanNeedChanged(ship, getRefitReasonSummary(ship),
-                    "需修 原=" + getRefitReasonSummary(ship)
-                            + " 血=" + String.format("%.2f", ship.getHullLevel())
+                    "Needs repair original=" + getRefitReasonSummary(ship)
+                            + "blood =" + String.format("%.2f", ship.getHullLevel())
                             + " CR=" + String.format("%.2f", ship.getCurrentCR()));
             return true;
         }
@@ -928,7 +928,7 @@ public class Moci_SMALandingSequence extends BaseHullMod {
         }
 
         Global.getLogger(Moci_SMALandingSequence.class).debug(
-                ship.getName() + " 最大武器尺寸: " + largestWeaponSize
+                ship.getName() + "Maximum weapon size:" + largestWeaponSize
         );
 
         // 统计主武器（最大尺寸的有限弹药武器）的弹药情况
@@ -1011,23 +1011,23 @@ public class Moci_SMALandingSequence extends BaseHullMod {
             ship.setCustomData("Moci_AllMainWeaponsEmpty", allMainWeaponsEmpty);
 
             Global.getLogger(Moci_SMALandingSequence.class).debug(
-                    ship.getName() + " 需要弹药补给 - 主武器数量: " + mainWeaponCount +
-                            ", 低弹药主武器: " + mainWeaponLowAmmo +
-                            ", 空弹药主武器: " + mainWeaponEmpty +
-                            ", 空弹药非主武器数量: " + emptyNonMainWeaponCount +
-                            ", 所有主武器打空: " + allMainWeaponsEmpty
+                    ship.getName() + "Ammo supply required - Number of primary weapons:" + mainWeaponCount +
+                            ", low ammo primary weapon:" + mainWeaponLowAmmo +
+                            ", blank ammunition main weapon:" + mainWeaponEmpty +
+                            ", Blank Ammo Number of Non-Main Weapons:" + emptyNonMainWeaponCount +
+                            ", all main weapons empty:" + allMainWeaponsEmpty
             );
             Float emptyAt = ship.getCustomData().get(MAIN_AMMO_EMPTY_AT_KEY) instanceof Float
                     ? (Float) ship.getCustomData().get(MAIN_AMMO_EMPTY_AT_KEY) : null;
-            String timeText = emptyAt != null ? String.format("%.2f", emptyAt) : "无";
-            String ammoState = allMainWeaponsEmpty ? "弹尽" : "弹低";
+            String timeText = emptyAt != null ? String.format("%.2f", emptyAt) : "None";
+            String ammoState = allMainWeaponsEmpty ? "run out of bullets" : "low bounce";
             logWingmanNeedChanged(ship, ammoState,
-                    "需修 原=弹"
-                            + (allMainWeaponsEmpty ? "尽" : "低")
-                            + " 尺=" + largestWeaponSize
-                            + " 主=" + mainWeaponCount
-                            + " 空=" + mainWeaponEmpty
-                            + " 时=" + timeText);
+                    "Needs repair original = bullet"
+                            + (allMainWeaponsEmpty ? "Exhaust" : "Low")
+                            + "ruler =" + largestWeaponSize
+                            + "main=" + mainWeaponCount
+                            + "empty =" + mainWeaponEmpty
+                            + "time =" + timeText);
         } else {
             // 不需要修理时清除标记
             ship.setCustomData("Moci_EmptyNonLargestWeapons", 0);

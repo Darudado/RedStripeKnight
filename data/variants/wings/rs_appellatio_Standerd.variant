@@ -1,7 +1,7 @@
 {
   "variantId": "rs_appellatio_Standerd",
   "hullId": "rs_appellatio",
-  "displayName": "中型战斗轰炸机",
+  "displayName": "medium fighter bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

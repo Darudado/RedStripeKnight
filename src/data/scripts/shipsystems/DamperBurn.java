@@ -143,7 +143,7 @@ public class DamperBurn extends BaseShipSystemScript {
             ShipSystemAPI system = getDamper(ship);
             if (system != null) {
                 float percent = (1.0F - mult) * effectLevel * 100.0F;
-                Global.getCombatEngine().maintainStatusForPlayerShip(this.STATUSKEY1, system.getSpecAPI().getIconSpriteName(), system.getDisplayName(), Math.round(percent) + "% 降低受到的伤害", false);
+                Global.getCombatEngine().maintainStatusForPlayerShip(this.STATUSKEY1, system.getSpecAPI().getIconSpriteName(), system.getDisplayName(), Math.round(percent) + "% Reduce damage taken", false);
             }
         }
         CombatEngineAPI engine = Global.getCombatEngine();
@@ -387,7 +387,7 @@ public class DamperBurn extends BaseShipSystemScript {
                         this.STATUSKEY2,
                         ship.getSystem().getSpecAPI().getIconSpriteName(),
                         ship.getSystem().getDisplayName(),
-                        "防壁加压，受到伤害极大降低",
+                        "The wall is pressurized and the damage taken is greatly reduced.",
                         false
                 );
             } else if (ship.getVariant().hasHullMod("WeaponOverLoad")) {
@@ -437,14 +437,14 @@ public class DamperBurn extends BaseShipSystemScript {
                         this.STATUSKEY4,
                         ship.getSystem().getSpecAPI().getIconSpriteName(),
                         ship.getSystem().getDisplayName(),
-                        "装填系统超载",
+                        "Loading system overloaded",
                         false
                 );
                 Global.getCombatEngine().maintainStatusForPlayerShip(
                         this.STATUSKEY5,  // 使用不同的STATUSKEY避免冲突
                         ship.getSystem().getSpecAPI().getIconSpriteName(),
                         ship.getSystem().getDisplayName(),
-                        "武器膛压超限",
+                        "Weapon chamber pressure exceeds limit",
                         false
                 );
             //}
@@ -529,7 +529,7 @@ public class DamperBurn extends BaseShipSystemScript {
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
         if (index == 0) {
-            return new StatusData("提高引擎出力", false);
+            return new StatusData("Increase engine output", false);
         }
         return null;
     }

@@ -289,11 +289,11 @@ public class RSContactBounty extends BaseIntelPlugin {
         if (!active || system == null) return;
         Color h = Misc.getHighlightColor();
         if (state == State.stage_1) {
-            info.addPara("前往 " + system.getName(), initPad, tc, h);
+            info.addPara("Go to" + system.getName(), initPad, tc, h);
         } else if (state == State.stage_2) {
-            info.addPara("击败 " + (target != null ? target.getName() : "目标舰队"), initPad, tc, h);
+            info.addPara("beat" + (target != null ? target.getName() : "target fleet"), initPad, tc, h);
         } else if (state == State.stage_3) {
-            info.addPara("任务完成", initPad, tc, h);
+            info.addPara("Mission accomplished", initPad, tc, h);
         }
     }
 
@@ -306,9 +306,9 @@ public class RSContactBounty extends BaseIntelPlugin {
     }
 
     @Override
-    public String getSmallDescriptionTitle() { return "失控无人舰队清理"; }
+    public String getSmallDescriptionTitle() { return "Cleanup of out-of-control drone fleet"; }
     @Override
-    public String getName() { return "失控无人舰队清理"; }
+    public String getName() { return "Cleanup of out-of-control drone fleet"; }
     @Override
     public FactionAPI getFactionForUIColors() {
         return super.getFactionForUIColors();
@@ -318,21 +318,21 @@ public class RSContactBounty extends BaseIntelPlugin {
     public void createSmallDescription(TooltipMakerAPI info, float width, float height) {
         if (!active) return;
         Color h = Misc.getHighlightColor();
-        info.addSectionHeading("任务简报", Alignment.MID, 3f);
-        info.addPara("有报告称在星域边缘出没着一支失控的无人舰队舰队，找到并摧毁它们。", 10f);
+        info.addSectionHeading("mission briefing", Alignment.MID, 3f);
+        info.addPara("There are reports of a fleet of out-of-control drones at the edge of the Sector. Find and destroy them.", 10f);
         if (state == State.stage_1) {
-            info.addPara("目标星系：%s", 3f, h, system.getName());
+            info.addPara("Target galaxy: %s", 3f, h, system.getName());
         } else if (state == State.stage_2) {
-            info.addPara("正在 " + (planet != null ? planet.getName() : "目标地点") + " 附近交战", 3f, h);
-            info.addPara("预估玩家舰队强度：%s 点 | 奖励：%s 星币", 3f, h,
+            info.addPara("are" + (planet != null ? planet.getName() : "Target location") + "Fighting nearby", 3f, h);
+            info.addPara("Estimated player fleet strength: %s points | Reward: %s star coins", 3f, h,
                     "" + (int)playerpower, Misc.getWithDGS(credits));
             if (target != null && !target.isEmpty()) {
                 info.addShipList(6, 2, width/6f - 3f, Color.WHITE,
                         target.getMembersWithFightersCopy(), 10f);
             }
         } else if (state == State.stage_3) {
-            info.addPara("赏金已发放：%s 星币", 3f, h, Misc.getWithDGS(credits));
-            info.addPara("残骸中有独特的舰船可供打捞。", 3f);
+            info.addPara("Bounty distributed: %s Star Coins", 3f, h, Misc.getWithDGS(credits));
+            info.addPara("There are unique ships in the wreckage that can be salvaged.", 3f);
         }
     }
 
@@ -344,7 +344,7 @@ public class RSContactBounty extends BaseIntelPlugin {
     @Override
     public Set<String> getIntelTags(SectorMapAPI map) {
         Set<String> tags = super.getIntelTags(map);
-        tags.add("清理失控无人舰队");
+        tags.add("Clean up the out-of-control drone fleet");
         return tags;
     }
 

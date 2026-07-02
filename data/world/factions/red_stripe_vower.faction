@@ -9,8 +9,8 @@
 	"secondaryUIColor":[243,243,243,255],
     "secondarySegments":3,
 	
-	"displayName":"红条誓言者",
-	"displayNameWithArticle":"红条誓言者",
+	"displayName":"Red Stripe Oathkeeper",
+	"displayNameWithArticle":"Red Stripe Oathkeeper",
 	"logo":"graphics/factions/rs_vower_flag.png",
 	"crest":"graphics/factions/crest_rs_vower_flag.png",
 	"shipNamePrefix":"RVS",
@@ -224,14 +224,14 @@
 	},
 	"ranks":{
 		"ranks":{
-			"factionLeader":{"name":"新主"},
-			"spaceCommander":{"name":"指挥官"},
+			"factionLeader":{"name":"New Sovereign"},
+			"spaceCommander":{"name":"Commander"},
 		},
 		"posts":{
-			"factionLeader":{"name":"新主"},
-			"patrolCommander":{"name":"巡逻队指挥官"},
-			"fleetCommander":{"name":"舰队指挥官"},
-			"baseCommander":{"name":"基地指挥官"},
+			"factionLeader":{"name":"New Sovereign"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
 		},
 	},
 	"custom":{
@@ -255,25 +255,25 @@
 		},
 	},
 	"fleetTypeNames":{
-    "trade": "予求",
-    "smallTrader": "交易",
-    "tradeLiner": "求索",
+    "trade": "Requisition Fleet",
+    "smallTrader": "Merchant",
+    "tradeLiner": "Seeker",
 	
-    "patrolSmall": "奉献",
-    "patrolMedium": "追随",
-    "patrolLarge": "誓言",
+    "patrolSmall": "Devoted",
+    "patrolMedium": "Followers",
+    "patrolLarge": "Oathkeepers",
 	
-    "inspectionFleet": "审查",
+    "inspectionFleet": "Inspection Fleet",
 	
-    "mercScout": "誓言",
-    "mercBountyHunter": "判决",
-    "mercPrivateer": "追随",
-    "mercPatrol": "奉献",
-    "mercArmada": "奉献",
+    "mercScout": "Oathkeeper",
+    "mercBountyHunter": "Judicator",
+    "mercPrivateer": "Followers",
+    "mercPatrol": "Devoted",
+    "mercArmada": "Devoted Armada",
 	
-    "taskForce": "追缉",
+    "taskForce": "Pursuit Force",
 	
-	"foodReliefFleet":"恩慈",
+	"foodReliefFleet":"Mercy Fleet",
 	},
 	
 	

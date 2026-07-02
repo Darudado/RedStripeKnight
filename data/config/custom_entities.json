@@ -1,6 +1,6 @@
 {
 	"rs_oath_station":{
-		"defaultName":"誓约要塞", # used if name=null in addCustomEntity()
+		"defaultName":"Oath Keep", # used if name=null in addCustomEntity()
 		"defaultRadius":110, # used if radius<0 in addCustomEntity()
 		"customDescriptionId":"orbital_station_default",
 		"interactionImage":"graphics/illustrations/orbital.jpg",
@@ -22,8 +22,8 @@
 	},
 
 	"cr_gatehauler":{
-		"defaultName":"十字军计划附属星门搬运舰", # used if name=null in addCustomEntity()
-		"nameInText":"十字军计划附属星门搬运舰",
+		"defaultName":"Stargate transport ship attached to Project Crusader", # used if name=null in addCustomEntity()
+		"nameInText":"Stargate transport ship attached to Project Crusader",
 		"aOrAn":"a",
 		"isOrAre":"is",
 		"defaultRadius":250, # used if radius<0 in addCustomEntity()
@@ -48,8 +48,8 @@
 	},
 
 	"rs_arxcaelestis":{
-		"defaultName":"星堡", # used if name=null in addCustomEntity()
-		"nameInText":"星堡",
+		"defaultName":"Star Castle", # used if name=null in addCustomEntity()
+		"nameInText":"Star Castle",
 		"aOrAn":"an",
 		"isOrAre":"is",
 		"defaultRadius":250, # used if radius<0 in addCustomEntity()

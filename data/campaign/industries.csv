@@ -1,10 +1,10 @@
 id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
-CR_Defense,十字军自动防御系统,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.CRAutoControlSystem,自动复制十字军计划制式自动舰船的军事设施，赋予了所处实体强大的空间防御能力。,4100,EXTREME
-CR_DeepSpaceMiningIndustry,十字军深空采矿系统,90,60,,14,,,"unraidable,structure",,graphics/icons/industry/high_command.png,data.campaign.industry.CR_DeepSpaceMiningIndustry,深空采矿系统，以自律舰队开采35光年内所有星系的可能矿产资源，为母舰提供源源不断的工业原材料。,4100,EXTREME
+CR_Defense,Crusade Automated Defense System,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.CRAutoControlSystem,Military facilities that automatically replicate the Crusader Plan standard automatic ships give the entity where they are located powerful space defense capabilities.,4100,EXTREME
+CR_DeepSpaceMiningIndustry,Crusade Deep Space Mining System,90,60,,14,,,"unraidable,structure",,graphics/icons/industry/high_command.png,data.campaign.industry.CR_DeepSpaceMiningIndustry,"The deep space mining system uses autonomous fleets to mine possible mineral resources in all galaxies within 35 light years, providing the mothership with a steady stream of industrial raw materials.",4100,EXTREME
 ,,,,,,,,,,,,,,
-RS_Guardfleet1,红条骑士团第一近卫军团锚地,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet1,维系了一支专注星系防御且包含了骑士团武装力量旗舰的近卫军舰队。,4000,EXTREME
-RS_Guardfleet2,红条骑士团第二近卫军团锚地,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet2,维系了一支极其强大的近卫军舰队。,4000,EXTREME
-RS_Guardfleet3,红条骑士团第三近卫军团锚地,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet3,维系了一支极其强大的近卫军舰队；一支以实验性装备的列装为主要任务的强大军事舰队。,4000,EXTREME
+RS_Guardfleet1,Red Stripe Knights 1st Guard Regiment Anchorage,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet1,Maintains a Guard fleet dedicated to system defense and containing the flagship of the Order's armed forces.,4000,EXTREME
+RS_Guardfleet2,Red Stripe Knights 2nd Guard Regiment Anchorage,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet2,Maintained an extremely powerful Guards fleet.,4000,EXTREME
+RS_Guardfleet3,Red Stripe Knights 3rd Guard Regiment Anchorage,90,60,,14,,,"unraidable,military, structure",,graphics/icons/industry/high_command.png,data.campaign.industry.Guardfleet3,It maintains an extremely powerful Guards fleet; a powerful military fleet whose main task is to install experimental equipment.,4000,EXTREME
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,

@@ -1,7 +1,7 @@
 {
   "variantId": "rs_buboscandiacus_variant",
   "hullId": "rs_buboscandiacus",
-  "displayName": "重型无人支援炮艇",
+  "displayName": "Heavy unmanned support gunboat",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

@@ -1749,7 +1749,7 @@ public class Guardfleetmanager{
     private static List<String> startingAbilities = null;
     public static CampaignFleetAPI createGaurdFleet(String factionId, String fleetType, MarketAPI market) {
         FactionAPI faction = Global.getSector().getFaction(factionId);
-        String fleetName = faction.getFleetTypeName(fleetType)+ "骠骑";
+        String fleetName = faction.getFleetTypeName(fleetType)+ "hussar";
         CampaignFleetAPI fleet = Global.getFactory().createEmptyFleet(factionId, fleetName, true);
         fleet.getMemoryWithoutUpdate().set("$RS_GuardFleet", fleetType);
 
@@ -1776,7 +1776,7 @@ public class Guardfleetmanager{
 
     public static CampaignFleetAPI createFlgeFleet(String factionId, String fleetType, MarketAPI market) {
         FactionAPI faction = Global.getSector().getFaction(factionId);
-        String fleetName = faction.getFleetTypeName(fleetType)+ "金吾";
+        String fleetName = faction.getFleetTypeName(fleetType)+ "Kingo";
         CampaignFleetAPI fleet = Global.getFactory().createEmptyFleet(factionId, fleetName, true);
         fleet.getMemoryWithoutUpdate().set("$RS_FlagFleet", fleetType);
 

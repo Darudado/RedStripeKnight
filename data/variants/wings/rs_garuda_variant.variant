@@ -1,7 +1,7 @@
 {
   "variantId": "rs_garuda_variant",
   "hullId": "rs_garuda",
-  "displayName": "中型无人支援机",
+  "displayName": "medium unmanned support fighters",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

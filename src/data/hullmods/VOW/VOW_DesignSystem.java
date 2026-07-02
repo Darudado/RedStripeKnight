@@ -69,7 +69,7 @@ public class VOW_DesignSystem extends BaseHullMod implements HullModFleetEffect 
         if (mult <= 0.0F) {
             fleet.getDetectedRangeMod().unmodifyMult(MOD_KEY);
         } else {
-            fleet.getDetectedRangeMod().modifyMult(MOD_KEY, mult, "舰队中携带的誓言者舰船");
+            fleet.getDetectedRangeMod().modifyMult(MOD_KEY, mult, "Oathkeeper ships carried in the fleet");
         }
 
     }

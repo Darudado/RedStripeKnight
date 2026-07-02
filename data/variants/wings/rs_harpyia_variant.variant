@@ -1,7 +1,7 @@
 {
   "variantId": "rs_harpyia_variant",
   "hullId": "rs_harpyia",
-  "displayName": "超重型寻猎机",
+  "displayName": "super heavy hunting machine",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

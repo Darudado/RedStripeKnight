@@ -180,34 +180,34 @@ public class CR_Retinere extends BaseHullMod {
         Color h = Misc.getHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("对舰船进行特定升级的强化套件，每艘舰船只能安装一种特殊强化套件", opad, h);
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
+        tooltip.addPara("Enhancement kits that provide specific upgrades to ships. Each ship can be equipped with a special enhancement kit.", opad, h);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
 
-        tooltip.addPara("非导弹武器射速 %s ，辐能消耗增加 %s 。", pad, bad, "减半","150%");
-        tooltip.addPara("导弹武器弹容和弹药回复速率 %s 。", pad, bad, "减半");
+        tooltip.addPara("Non-missile weapon fire rate %s, radiation consumption increased by %s.", pad, bad, "halved","150%");
+        tooltip.addPara("Missile weapon capacity and ammunition recovery rate %s.", pad, bad, "halved");
 
         // 护盾减伤
-        tooltip.addPara("护盾受到的伤害减少 %s。", pad, h, "5%");
+        tooltip.addPara("Shield takes %s less damage.", pad, h, "5%");
         // 友方硬辐能耗散比例加成
-        tooltip.addPara("每艘距离 %s 单位内的友方舰船使硬辐能耗散比例提高 %s，最高 %s。", pad, h,
+        tooltip.addPara("Each friendly ship within %s units increases the hard radiation dissipation ratio by %s, up to a maximum of %s.", pad, h,
                 String.valueOf((int) ALLY_RANGE), "10%", "50%");
         // 战斗耗散速率加成
-        tooltip.addPara("战斗中每秒提高总辐能耗散速率 %s，最高 %s。", pad, h,
+        tooltip.addPara("Increases the total radiation dissipation rate by %s per second during combat, up to a maximum of %s.", pad, h,
                 (int) COMBAT_BONUS_PER_SECOND + "%", (int) MAX_COMBAT_BONUS + "%");
         // 脱战效果
-        tooltip.addPara("脱离战斗 %s 秒后，每秒增加 %s 最大容量的软辐能；过载时则每秒减少等量软辐能。", pad, h,
+        tooltip.addPara("After being out of combat for %s seconds, the maximum capacity of soft radiation will be increased by %s per second; when overloaded, the soft radiation will be reduced by the same amount per second.", pad, h,
                 String.valueOf((int) OUT_OF_COMBAT_DELAY), "9%");
         // 战斗状态判定
-        tooltip.addPara("战斗状态由开火或受到攻击判定，持续 %s 秒。", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
+        tooltip.addPara("Combat status is determined by firing or being attacked and lasts for %s seconds.", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
 
-        tooltip.addPara("按住 %s 以查看详细机制", opad, h, "F3");
+        tooltip.addPara("Press and hold %s to view detailed mechanics", opad, h, "F3");
 
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addSectionHeading("详细机制", Alignment.MID, opad);
+            tooltip.addSectionHeading("Detailed mechanism", Alignment.MID, opad);
             //tooltip.addPara("硬辐能耗散比例：舰船耗散辐能时，该比例的耗散将用于减少硬辐能。", pad);
-            tooltip.addPara("战斗状态判定：舰船武器开火或受到伤害后的 %s 秒内视为战斗中，在此期间累积战斗耗散加成。", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
-            tooltip.addPara("脱战计时器：脱离战斗后开始计时，%s 秒后开始增加软辐能。若舰船过载，则停止计时并开始减少软辐能。", pad, h, String.valueOf((int) OUT_OF_COMBAT_DELAY));
-            tooltip.addPara("所有加成均为独立乘算，且战斗耗散加成在脱离战斗后立即移除。", pad);
+            tooltip.addPara("Combat status determination: The ship is considered to be in combat within %s seconds after its weapons fire or receive damage, during which the combat dissipation bonus is accumulated.", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
+            tooltip.addPara("Out-of-combat timer: Starts counting after leaving combat, and starts increasing soft radiation after %s seconds. If the ship is overloaded, the timer will be stopped and the soft radiation energy will be reduced.", pad, h, String.valueOf((int) OUT_OF_COMBAT_DELAY));
+            tooltip.addPara("All bonuses are independently multiplied, and combat dissipation bonuses are removed immediately after leaving combat.", pad);
         }
     }
 
@@ -221,12 +221,12 @@ public class CR_Retinere extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if (ship.getShield() == null) return "船只没有护盾";
-        if(ship.getVariant().hasHullMod("CR_Circumvenire")) return "舰船系统已被覆写";
-        if(ship.getVariant().hasHullMod("CR_Votum")) return "舰船系统已被覆写";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
-        if(ship.isStationModule()) return "不能安装于舰船模块上";
+        if (ship == null) return "ship does not exist";
+        if (ship.getShield() == null) return "The ship has no shields";
+        if(ship.getVariant().hasHullMod("CR_Circumvenire")) return "Ship systems have been overwritten";
+        if(ship.getVariant().hasHullMod("CR_Votum")) return "Ship systems have been overwritten";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
+        if(ship.isStationModule()) return "Cannot be installed on ship modules";
         return null;
     }
 

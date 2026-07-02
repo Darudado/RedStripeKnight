@@ -1,8 +1,8 @@
 {
     "baseHullId": "vow_admonitio",
     "skinHullId": "vow_admonitioB",
-    "hullName": "劝诫 (前线)",
-    "descriptionPrefix": "强化舰船正面作战能力。",
+    "hullName": "Admonishment (Frontline)",
+    "descriptionPrefix": "Strengthen the ship's frontal combat capabilities.",
     "descriptionId": "vow_admoniti",
     "spriteName": "graphics/ships/Vower/Admonitio.png",
     "removeBuiltInMods":[

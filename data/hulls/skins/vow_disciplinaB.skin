@@ -1,8 +1,8 @@
 {
     "baseHullId": "vow_disciplina",
     "skinHullId": "vow_disciplinaB",
-    "hullName": "管教 (游击)",
-    "descriptionPrefix": "将舰船的武器增幅系统替换为动力舱能源增幅，强化舰船机动性。",
+    "hullName": "Discipline (guerrilla)",
+    "descriptionPrefix": "Replace the ship's weapon amplification system with a power cabin energy amplification system to enhance the ship's maneuverability.",
     "descriptionId": "vow_disciplina",
     "spriteName": "graphics/ships/Vower/Disciplina.png",
     "removeBuiltInMods":[

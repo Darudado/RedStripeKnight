@@ -87,28 +87,28 @@ public class CR_Votum extends BaseHullMod {
         Color h = Misc.getHighlightColor();
         Color bad =Misc.getNegativeHighlightColor();
 
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
 
         float rangeCap = getRangeCap(hullSize);
         //tooltip.addPara("受到的导弹伤害减免 %s。", 5f, h, "25%");
         //tooltip.addPara("受到攻击为非导弹武器时：", opad, h);
-        tooltip.addPara("舰船射程上限锁定为 %s ,但是舰船加速性能提升 %s 最高速度提升 %s ", 5f, bad, String.valueOf((int) rangeCap),"30%","10%");
-        tooltip.addPara("舰船辐能容量减少 %s ", 5f, bad, "30%");
-        tooltip.addPara("当攻击者距离本舰超过 %s 单位时，触发远距离伤害衰减：", 5f, h, String.valueOf((int) rangeCap));
-        tooltip.addPara("基础伤害减免 %s。", 5f, h, "75%");
-        tooltip.addPara("每超出 %s 单位，伤害减免额外提高 %s。", 5f, h, String.valueOf((int) STEP_DISTANCE), "5%");
-        tooltip.addPara("最高可减免 %s 伤害（完全免疫）。", 5f, h, "100%");
-        tooltip.addPara(" %s 舰船进行强制排散。", 5f, bad, "禁止");
-        tooltip.addPara("你将 %s 。", 5f,  bad, "无法后退");
+        tooltip.addPara("The upper limit of the ship's range is locked at %s, but the ship's acceleration performance is improved by %s and its maximum speed is increased by %s.", 5f, bad, String.valueOf((int) rangeCap),"30%","10%");
+        tooltip.addPara("Ship radiation capacity reduced by %s", 5f, bad, "30%");
+        tooltip.addPara("When the attacker is more than %s units away from the ship, long-range damage falloff is triggered:", 5f, h, String.valueOf((int) rangeCap));
+        tooltip.addPara("Base damage reduction %s.", 5f, h, "75%");
+        tooltip.addPara("Damage reduction increases by an additional %s per unit beyond %s.", 5f, h, String.valueOf((int) STEP_DISTANCE), "5%");
+        tooltip.addPara("Can reduce up to %s damage (completely immune).", 5f, h, "100%");
+        tooltip.addPara("%s ship is forced to disperse.", 5f, bad, "prohibit");
+        tooltip.addPara("You will %s.", 5f,  bad, "Can't go back");
 
-        tooltip.addPara("按住 %s 查看详细说明", opad, h, "F3");
+        tooltip.addPara("Press and hold %s to view detailed instructions", opad, h, "F3");
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addSectionHeading("详细机制", Alignment.MID, opad);
-            tooltip.addPara("射程上限与舰船规模对应关系：", 5f);
-            tooltip.addPara("计算方式：", 5f);
-            tooltip.addPara("  减伤比例 = min(1.0, 0.75 + 0.05 × floor((距离 - 上限)/150))", 3f);
-            tooltip.addPara("  实际承受伤害 = 原伤害 × (1 - 减伤比例)", 3f);
-            tooltip.addPara("注意：只对超出射程上限的攻击生效，距离未超上限时无影响。", 5f);
+            tooltip.addSectionHeading("Detailed mechanism", Alignment.MID, opad);
+            tooltip.addPara("The corresponding relationship between the upper limit of range and ship size:", 5f);
+            tooltip.addPara("Calculation method:", 5f);
+            tooltip.addPara("Damage reduction ratio = min(1.0, 0.75 + 0.05 × floor((distance - upper limit)/150))", 3f);
+            tooltip.addPara("Actual damage taken = original damage × (1 - damage reduction ratio)", 3f);
+            tooltip.addPara("Note: It only takes effect on attacks that exceed the upper limit of the range. It has no effect if the distance does not exceed the upper limit.", 5f);
         }
     }
 
@@ -179,11 +179,11 @@ public class CR_Votum extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if(ship.getVariant().hasHullMod("CR_Circumvenire")) return "舰船系统已被覆写";
-        if(ship.getVariant().hasHullMod("CR_Retinere")) return "舰船系统已被覆写";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
-        if(!(ship.getParentStation() == null)) return "不能安装于舰船模块上";
+        if (ship == null) return "ship does not exist";
+        if(ship.getVariant().hasHullMod("CR_Circumvenire")) return "Ship systems have been overwritten";
+        if(ship.getVariant().hasHullMod("CR_Retinere")) return "Ship systems have been overwritten";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
+        if(!(ship.getParentStation() == null)) return "Cannot be installed on ship modules";
         return null;
     }
 

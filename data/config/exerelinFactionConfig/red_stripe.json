@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"骑士团",
+    "rebelFleetSuffix":"Knights",
     
     "directoryUseShortName":true,
 
@@ -21,8 +21,8 @@
     },
 	"diplomacyTraits":["paranoid", "stalwart",  "law_and_order", "envious"],
     
-    "vengeanceLevelNames":["审查"],
-    "vengeanceFleetNames":["巡察组"],
+    "vengeanceLevelNames":["Inspection"],
+    "vengeanceFleetNames":["Inspection Team"],
 	
 	"startShipsSolo":[
 	  ["rs_789_standard"]

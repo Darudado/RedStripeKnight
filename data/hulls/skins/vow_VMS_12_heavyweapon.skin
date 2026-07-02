@@ -1,12 +1,12 @@
 {
 	"baseHullId":"vow_VMS_12",
 	"skinHullId":"vow_VMS_12_heavyweapon",
-	"hullName":"特拉杰(重火力装备 )",
+	"hullName":"Traj (heavy firepower equipment)",
 	"incompatibleWithBaseHull":false, # for the autofit dialog
 	"descriptionId":"rs_Tr_1_owsla",
-	"descriptionPrefix":"该型号为火力打击进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"descriptionPrefix":"This model has special modifications for fire strikes. In this way, the aircraft will exhibit different performance than before.",
 	"tags":[vownor_bp,auto_rec, codex_unlockable ,crusaders_ma],
-	"tech":"誓言者设计",
+	"tech":"oath taker design",
 	"fleetPoints":12,
 	"ordnancePoints":40,
 	"maxSpeed":90,

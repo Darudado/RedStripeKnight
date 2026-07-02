@@ -201,15 +201,15 @@ public class SpecializedMobileArmor_module extends BaseLogisticsHullMod {
         Color good = Misc.getPositiveHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("属于特殊设计的 %s ，其战斗表现有别于正常舰船模块。", opad, h, "特装机动装甲模块(SMAM)");
-        tooltip.addPara("为追求极致的机动火力投送，SMAM在设计上就具有极强的机动能力，不会受到碰撞与殉爆伤害。", pad, h);
+        tooltip.addPara("%s is a specially designed ship module whose combat performance is different from that of normal ship modules.", opad, h, "Specialized Mobile Armor Module (SMAM)");
+        tooltip.addPara("In order to pursue the ultimate mobile firepower delivery, SMAM is designed to have extremely strong maneuverability and will not be harmed by collisions and explosions.", pad, h);
 
-        tooltip.addSectionHeading("重点防护", com.fs.starfarer.api.ui.Alignment.MID, opad);
-        tooltip.addPara("武器和引擎受到的伤害减少 %s 。", pad, good, (int)(WEAPON_ENGINE_DAMAGE_REDUCTION * 100f) + "%");
-        tooltip.addPara("受到的EMP伤害减少 %s 。", pad, good, (int)(EMP_DAMAGE_REDUCTION * 100f) + "%");
+        tooltip.addSectionHeading("Key protection", com.fs.starfarer.api.ui.Alignment.MID, opad);
+        tooltip.addPara("Weapons and engines take %s less damage.", pad, good, (int)(WEAPON_ENGINE_DAMAGE_REDUCTION * 100f) + "%");
+        tooltip.addPara("EMP damage taken reduced by %s.", pad, good, (int)(EMP_DAMAGE_REDUCTION * 100f) + "%");
 
-        tooltip.addSectionHeading("幅能系统", com.fs.starfarer.api.ui.Alignment.MID, opad);
-        tooltip.addPara("舰船的 %s 会在本体与各个模块之间 %s ，自动平衡各部分的幅能等级。", pad, h, "幅能", "实时共享");
+        tooltip.addSectionHeading("amplitude energy system", com.fs.starfarer.api.ui.Alignment.MID, opad);
+        tooltip.addPara("The ship's %s will automatically balance the energy level of each part between the main body and each module %s.", pad, h, "Amplitude energy", "Share in real time");
     }
 
 }

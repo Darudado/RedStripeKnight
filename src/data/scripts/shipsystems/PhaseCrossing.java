@@ -402,7 +402,7 @@ public class PhaseCrossing extends BaseShipSystemScript {
                     this.STATUSKEY,
                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                     ship.getSystem().getDisplayName(),
-                    "受到伤害极大降低",
+                    "Greatly reduced damage taken",
                     false
             );
             elapsed += amount;

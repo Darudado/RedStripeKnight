@@ -70,21 +70,21 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY1,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "最大航速提升75节",
+                                "Maximum speed increased by 75 knots",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY2,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "时间流速上升75%",
+                                "Time flow rate increased by 75%",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY3,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "机动性能增强",
+                                "Enhanced maneuverability",
                                 false
                         );
                     }
@@ -100,21 +100,21 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY1,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "最大航速提升50节",
+                                "Maximum speed increased by 50 knots",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY2,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "机动性能增强",
+                                "Enhanced maneuverability",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY3,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "护盾减伤25%",
+                                "Shield reduces damage by 25%",
                                 false
                         );
                     }
@@ -133,28 +133,28 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY1,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "最大航速提升50节",
+                                "Maximum speed increased by 50 knots",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY2,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "机动性能增强",
+                                "Enhanced maneuverability",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY3,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "非导弹武器射速增加75%",
+                                "Non-missile weapon fire rate increased by 75%",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY4,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "非导弹武器辐能需求降低50%",
+                                "Non-missile weapon radiation requirements reduced by 50%",
                                 false
                         );
                     }
@@ -183,28 +183,28 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY1,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "最大航速提升100节",
+                                "Maximum speed increased by 100 knots",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY2,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "机动性能增强",
+                                "Enhanced maneuverability",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY3,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "非导弹武器射速增加10%",
+                                "Non-missile weapon fire rate increased by 10%",
                                 false
                         );
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 this.STATUSKEY4,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "非导弹武器辐能需求降低10%",
+                                "Non-missile weapon radiation requirements reduced by 10%",
                                 false
                         );
                     }

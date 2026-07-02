@@ -141,7 +141,7 @@ public class Moci_Module_Drone extends BaseLogisticsHullMod {
 					if ((projectile.getCollisionRadius() - explosionRadius) == 0) {
 						// 殉爆伤害减免
 						damage.getModifier().modifyMult(this.getClass().getName(), 0f);
-						return "殉爆免疫";
+						return "Explosive Immunity";
 					}
 				}
 			}
@@ -150,7 +150,7 @@ public class Moci_Module_Drone extends BaseLogisticsHullMod {
 			if (param == null && damage.getType() == DamageType.KINETIC) {
 				// 碰撞伤害减免
 				damage.getModifier().modifyMult(this.getClass().getName(), 0f);
-				return "碰撞免疫";
+				return "collision immunity";
 			}
 
 			return null;

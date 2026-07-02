@@ -232,8 +232,8 @@ public class ReparingCarrier extends BaseHullMod {
             deckText.append(capacity);
         }
 
-        String title = "战机战备";
-        String main = "甲板后备战机数量：" + deckText;
+        String title = "fighter aircraft combat readiness";
+        String main = "Number of reserve fighters on deck:" + deckText;
         engine.maintainStatusForPlayerShip(
                 STATUS_KEY_PREFIX + ship.getId(),
                 "graphics/icons/hullsys/targeting_feed.png",
@@ -248,10 +248,10 @@ public class ReparingCarrier extends BaseHullMod {
         float pad = 10f;
         Color h = Misc.getHighlightColor();
 
-        tooltip.addSectionHeading("航空母舰调度指挥", Color.ORANGE, Color.BLACK, Alignment.MID, 15f);
-        tooltip.addPara("为每个甲板提供独立的机库容量，容量为战机编队数量3倍。", pad);
-        tooltip.addPara("战机损失时可立即从机库补充。", pad);
-        tooltip.addPara("容量会随时间自动恢复，恢复速度为战机整备速度2倍。", pad, h);
+        tooltip.addSectionHeading("Aircraft carrier dispatch and command", Color.ORANGE, Color.BLACK, Alignment.MID, 15f);
+        tooltip.addPara("Each deck is provided with independent hangar capacity, with a capacity three times the number of fighter aircraft formations.", pad);
+        tooltip.addPara("When fighter aircraft are lost, they can be replenished immediately from the hangar.", pad);
+        tooltip.addPara("The capacity will automatically recover over time, and the recovery speed is twice the speed of fighter aircraft maintenance.", pad, h);
     }
 
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {

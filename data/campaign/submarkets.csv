@@ -1,2 +1,2 @@
 id,name,faction,desc,script,icon,order
-RS_OrdoPraetorianorumMarket,近卫军管控市场,red_stripe,骑士团官方为友善个体或势力提供的管控市场，出售部分现役军用武装,data.campaign.submarket.OrdoPraetorianorumMarket,,0
+RS_OrdoPraetorianorumMarket,Guard-Controlled Market,red_stripe,"A controlled market officially provided by the Knights for friendly individuals or forces, selling some of the active military weapons.",data.campaign.submarket.OrdoPraetorianorumMarket,,0

@@ -1,7 +1,7 @@
 {
   "variantId": "rs_pegasus_variant",
   "hullId": "rs_pegasus",
-  "displayName": "超重型歼击机",
+  "displayName": "super heavy fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

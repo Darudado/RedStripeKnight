@@ -1,9 +1,9 @@
 {
     "baseHullId": "vow_admonitio",
     "skinHullId": "vow_admonitioC",
-    "hullName": "劝诫 (货运)",
+    "hullName": "Admonition (Freight)",
     "descriptionId": "vow_admonitio",
-    "descriptionPrefix": "将舰船的部分空间用于运载货物。",
+    "descriptionPrefix": "Use part of the ship's space to carry cargo.",
     "spriteName": "graphics/ships/Vower/Admonitio.png",
     "removeBuiltInMods":[
 		"PennaVelox"

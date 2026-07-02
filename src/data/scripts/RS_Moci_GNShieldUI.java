@@ -306,7 +306,7 @@ public class RS_Moci_GNShieldUI extends BaseEveryFrameCombatPlugin {
         GL11.glLoadIdentity();
         
         // 渲染完整文本 "力场：开启" 或 "力场：关闭"
-        String text = isOn ? "力场：开启" : "力场：关闭";
+        String text = isOn ? "Force Field: On" : "Force Field: Off";
         float fontSize = labelFont.getBaseHeight();
         float charX = x - 1f;
         float charY = y + fontSize;

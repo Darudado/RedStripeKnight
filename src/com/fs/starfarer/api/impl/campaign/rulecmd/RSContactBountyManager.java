@@ -28,7 +28,7 @@ public class RSContactBountyManager extends BaseCustomBountyCreator {
     }
 
     public String getBountyNamePostfix(HubMissionWithBarEvent mission, CustomBountyCreator.CustomBountyData data) {
-        return " - 遗弃的十字军计划失控单元";
+        return "- Abandoned Crusader Plan runaway unit";
     }
 
     public String getIconName() {

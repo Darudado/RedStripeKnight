@@ -225,9 +225,9 @@ public class CR_StructureUpgrading extends BaseHullMod {
 
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "舰船不存在";
+        if (ship == null) return "The ship does not exist";
         if (!ship.getVariant().hasHullMod("CrusadersCore"))
-            return "需要安装能量核心（CrusadersCore）";
+            return "Requires installation of energy core (CrusadersCore)";
         return null;
     }
 
@@ -248,17 +248,17 @@ public class CR_StructureUpgrading extends BaseHullMod {
         float pads = 10f;
         float pad = 5f;
         // 基础效果概述
-        tooltip.addPara("通过液态金属堆叠和能量场约束技术，强化舰船装甲但会对护盾系统造成额外负担。", pads);
-        tooltip.addPara("在战斗中受损装甲能够被舰体其它完好处装甲补足。", pad);
+        tooltip.addPara("Through liquid metal stacking and energy field confinement technology, the ship armor is strengthened but will cause additional burden on the shield system.", pads);
+        tooltip.addPara("Armor damaged during battle can be replaced by other intact armor on the hull.", pad);
         // 动态机制标题
-        tooltip.addSectionHeading("应急装甲补偿", Alignment.MID, pads);
+        tooltip.addSectionHeading("emergency armor compensation", Alignment.MID, pads);
         // 触发条件
-        tooltip.addPara("当单次装甲损失超过 %s 或任意装甲格被完全摧毁时，触发应急再生程序。", pad, Misc.getHighlightColor(), "150");
-        tooltip.addPara("程序启动后，舰船将进入 %s 的“偏相代偿”状态，该状态下：", pad, Misc.getHighlightColor(), "2秒");
-        tooltip.addPara("时间流速提升至 %s。", pad, Misc.getHighlightColor(), "200%");
-        tooltip.addPara("受到的装甲与船体伤害降低 %s。", pad, Misc.getHighlightColor(), "75%");
-        tooltip.addPara("程序结束后，所有装甲格将被修复至不低于最大单格装甲 %s 的平均值。", pad, Misc.getHighlightColor(), "40%");
-        tooltip.addPara("应急再生拥有 %s 的冷却时间，冷却期间无法再次触发。", pad, Misc.getHighlightColor(), "5秒");
+        tooltip.addPara("When a single armor loss exceeds %s or any armor grid is completely destroyed, the emergency regeneration program is triggered.", pad, Misc.getHighlightColor(), "150");
+        tooltip.addPara("After the program is started, the ship will enter the \"phase bias compensation\" state of %s. In this state:", pad, Misc.getHighlightColor(), "2 seconds");
+        tooltip.addPara("Time flow rate increased to %s.", pad, Misc.getHighlightColor(), "200%");
+        tooltip.addPara("Armor and hull damage taken reduced by %s.", pad, Misc.getHighlightColor(), "75%");
+        tooltip.addPara("After the program ends, all armor cells will be repaired to an average value no less than the maximum single cell armor %s.", pad, Misc.getHighlightColor(), "40%");
+        tooltip.addPara("Emergency Regeneration has a %s cooldown and cannot be triggered again during the cooldown period.", pad, Misc.getHighlightColor(), "5 seconds");
     }
 
 }

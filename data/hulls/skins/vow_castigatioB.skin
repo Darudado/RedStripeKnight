@@ -1,8 +1,8 @@
 {
     "baseHullId": "vow_castigatio",
     "skinHullId": "vow_castigatioB",
-    "hullName": "责罚 (前线)",
-    "descriptionPrefix": "将舰船的动力舱能源增幅卸除改为舰船能量网络冗余，强化舰船抗压能力。",
+    "hullName": "Punishment (Frontline)",
+    "descriptionPrefix": "Remove the energy amplification of the ship's power cabin and replace it with the ship's energy network redundancy to enhance the ship's ability to withstand pressure.",
     "descriptionId": "vow_disciplina",
     "spriteName": "graphics/ships/Vower/Castigatio.png",
     "removeBuiltInMods":[

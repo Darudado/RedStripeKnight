@@ -1,7 +1,7 @@
 {
   "variantId": "rs_vigifavilla_variant",
   "hullId": "rs_vigifavilla",
-  "displayName": "重型无人支援机",
+  "displayName": "Heavy unmanned support fighters",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

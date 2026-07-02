@@ -1,7 +1,7 @@
 {
   "variantId": "cr_FA1_variant",
   "hullId": "cr_FA1",
-  "displayName": "中型通用战斗机",
+  "displayName": "medium general purpose fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

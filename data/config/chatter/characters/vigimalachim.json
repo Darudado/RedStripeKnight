@@ -1,5 +1,5 @@
 {
-    "name": "守望者",
+    "name": "watchman",
     "personalities": [
         "reckless",
     ],
@@ -14,62 +14,62 @@
     "lines": {
         "retreat": [
             {
-                "text": "机体状态不佳，暂时撤退。",
+                "text": "The machine is in poor condition and temporarily retreats.",
             },
         ],
         "out_of_missiles": [
             {
-                "text": "弹舱耗尽。",
+                "text": "The bomb bay is exhausted.",
             },
         ],
         "engaged": [
             {
-                "text": "敌方单位进入警戒范围，准备接触。",
+                "text": "Enemy units enter the alert range and prepare for contact.",
             },
         ],
         "need_help": [
             {
-                "text": "需要援助。",
+                "text": "Need assistance.",
             },
         ],
         "pursuing": [
             {
-                "text": "进行追击。",
+                "text": "Conduct pursuit.",
             },
         ],
         "running": [
             {
-                "text": "暂时脱离接触",
+                "text": "temporary disengagement",
             },
         ],
         "hull_90": [
             {
-                "text": "遭受强烈火力打击。",
+                "text": "Under heavy fire.",
             },
         ],
         "hull_50": [
             {
-                "text": "产生结构损伤。",
+                "text": "Cause structural damage.",
             },
         ],
         "hull_30": [
             {
-                "text": "机体损伤严重。",
+                "text": "The body was seriously damaged.",
             },
         ],
         "overload": [
             {
-                "text": "电网过载，请求脱离接触",
+                "text": "The power grid is overloaded and requires disengagement.",
             },
         ],
         "death": [
             {
-                "text": "机体作战效能已损失。",
+                "text": "The combat effectiveness of the airframe has been lost.",
             },
         ],
         "victory": [
             {
-                "text": "暂时击退敌方单位，需要进一步评估作战效果。",
+                "text": "To temporarily repel enemy units, the combat effectiveness needs to be further evaluated.",
             },
         ],
     },

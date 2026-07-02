@@ -497,7 +497,7 @@ public class PhaseboostDrive extends BaseShipSystemScript {
                             this.STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "时间流速改变",
+                            "Time flow rate changes",
                             false
                     );
                 } else {
@@ -506,7 +506,7 @@ public class PhaseboostDrive extends BaseShipSystemScript {
                             this.STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "时间流速改变",
+                            "Time flow rate changes",
                             false
                     );
                 }
@@ -525,8 +525,8 @@ public class PhaseboostDrive extends BaseShipSystemScript {
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.WEAPONKEY3,
                             "graphics/icons/hullsys/ammo_feeder.png", // 可以使用合适的图标
-                            "武器过载",
-                            "能量与实弹武器伤害 +" + (int) WEAPON_OVERLOAD_DAMAGE_BONUS + "%",
+                            "weapon overload",
+                            "Energy and live weapon damage +" + (int) WEAPON_OVERLOAD_DAMAGE_BONUS + "%",
                             false
                     );
                 }
@@ -596,7 +596,7 @@ public class PhaseboostDrive extends BaseShipSystemScript {
     public String getInfoText(ShipSystemAPI system, ShipAPI ship) {
         if (ship != null) {
             if (ship.getEngineController().isFlamedOut()) {
-                return "助动启动";  // 引擎熄火时显示
+                return "Assisted start";  // 引擎熄火时显示
             }
         }
         return null;

@@ -198,8 +198,8 @@ public class BethlehemSystem extends BaseHullMod {
             deckText.append(capacity);
         }
 
-        String title = "战机战备";
-        String main = "甲板后备战机数量：" + deckText;
+        String title = "fighter aircraft combat readiness";
+        String main = "Number of reserve fighters on deck:" + deckText;
         engine.maintainStatusForPlayerShip(
                 STATUS_KEY_PREFIX + ship.getId(),
                 "graphics/icons/hullsys/targeting_feed.png",
@@ -222,7 +222,7 @@ public class BethlehemSystem extends BaseHullMod {
             MagicSubsystemsManager.addSubsystemToShip(ship, Subsystem);
         } catch (Exception e) {
             // 记录错误日志，便于调试
-            Global.getLogger(this.getClass()).error("添加子系统失败: " + e.getMessage(), e);
+            Global.getLogger(this.getClass()).error("Failed to add subsystem:" + e.getMessage(), e);
         }
     }
 
@@ -297,18 +297,18 @@ public class BethlehemSystem extends BaseHullMod {
         Color gray = Misc.getGrayColor();
         Color postive = Misc.getPositiveHighlightColor();
 
-        tooltip.addPara("舰载机整备时间 %s", pad, postive, "-10%");
+        tooltip.addPara("Carrier-based aircraft maintenance time %s", pad, postive, "-10%");
 
-        tooltip.addSectionHeading("管制网络", Alignment.MID, pad);//页眉
-        tooltip.addPara("母舰于 %s 码范围内构建管制网络,范围内的舰载机将获得以下加成:", pad, highlight, "2000");
-        tooltip.addPara("%s 造成的伤害 ", pad, postive, "+5%");
-        tooltip.addPara("%s 受到的伤害 ", pad, postive, "-5%");
-        tooltip.addPara("%s 舰载机返航速度 ", pad, postive, "+100%");
+        tooltip.addSectionHeading("regulatory network", Alignment.MID, pad);//页眉
+        tooltip.addPara("The mothership builds a control network within the %s code range, and the carrier-based aircraft within the range will receive the following bonuses:", pad, highlight, "2000");
+        tooltip.addPara("Damage caused by %s", pad, postive, "+5%");
+        tooltip.addPara("Damage taken by %s", pad, postive, "-5%");
+        tooltip.addPara("%s Carrier-based aircraft return speed", pad, postive, "+100%");
 
-        tooltip.addSectionHeading("备用机库", Alignment.MID, pad);
-        tooltip.addPara("每个飞行甲板拥有相当于编制数 %s 的后备战机储备", pad, highlight, "2.5倍");
-        tooltip.addPara("战机损失时立即从储备中补充，无需等待整备", pad);
-        tooltip.addPara("储备耗尽后以 %s 基础整备时间的速度恢复储备（最低 %s 秒/架）", pad, highlight, "175%", "0.1");
+        tooltip.addSectionHeading("Spare hangar", Alignment.MID, pad);
+        tooltip.addPara("Each flight deck has a reserve of reserve fighter aircraft equivalent to the establishment number %s", pad, highlight, "2.5 times");
+        tooltip.addPara("When a fighter aircraft is lost, it is immediately replenished from the reserve without waiting for refurbishment.", pad);
+        tooltip.addPara("After the reserve is exhausted, the reserve will be restored at a rate of %s basic preparation time (minimum %s seconds/frame)", pad, highlight, "175%", "0.1");
     }
 
 }

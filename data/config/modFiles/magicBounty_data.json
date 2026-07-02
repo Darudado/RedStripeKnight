@@ -9,12 +9,12 @@
         },
 
 
-        "job_name": "追剿",
-        "job_description": "你听闻红条骑士团正在大张旗鼓地悬赏一个叛徒——他曾是一名隶属于骑士团海军工程院的高级军官——但这一切在他窃取了一艘骑士团的实验性主力舰叛逃后都成为了泡影。有小道消息称他曾是畏于骑士团威慑而投诚的海盗，在这之前他劫掠无算，可是在被俘后却极尽谄媚之能事，甚至供出了道上很多兄弟。这样看来他也算是回归老本行了，前提是他真能活下来。", # 默认：空白。选择任务后显示的详细描述。                                                       
-        "job_comm_reply": "操！怎么净踏马是不要命的蠢货啊？老子凭本事拿的能让你们这些瘪三抢了去？麻痹的我让你飞起来！", 
-        "job_intel_success": "一艘令人印象深刻的主力舰，敏捷、致命、令人神往。但你知道这样的尤物绝非简简单单就能制造的。也许是时候拜访一下这位尤物的家长了。",
-        "job_intel_failure": "你低估了这名尤物的能力——她可不是娇弱的温室花朵，她是你所见过的最致命的武器。", 
-        "job_intel_expired": "你竟然让这样的人渣逃出生天，你觉得自己应该反思最近的过失。", 
+        "job_name": "Pursuit and suppression",
+        "job_description": "You heard that the Knights of the Red Stripe were placing a bounty on a traitor with great fanfare - he was once a high-ranking officer affiliated with the Order's Naval Engineering Academy - but it all came to nothing after he stole one of the Order's experimental capital ships and defected. There are rumors that he was once a pirate who surrendered due to the intimidation of the Knights. Before that, he had no luck in plundering, but after being captured, he was extremely flattering and even betrayed many of his brothers. In this way, it seems that he has returned to his old profession, provided that he can really survive.", # 默认：空白。选择任务后显示的详细描述。                                                       
+        "job_comm_reply": "Hold! Why is Jing Ta Ma such a fool who doesn't care about his life? How can I let you bastards snatch away what I have obtained based on my ability? Paralyzed, I let you fly!", 
+        "job_intel_success": "An impressive capital ship, agile, deadly and captivating. But you know that such a beauty cannot be made simply. Maybe it's time to pay a visit to this stunner's parents.",
+        "job_intel_failure": "You've underestimated what this beauty is capable of - she's no delicate hothouse flower, she's the deadliest weapon you've ever seen.", 
+        "job_intel_expired": "You actually let such a scumbag escape. You think you should reflect on your recent mistakes.", 
         "job_forFaction": "red_stripe", # 默认：无派系。注意：除非设置“job_reputation_reward”为0，成功完成任务将使关系提升5点。
         "job_credit_reward": 1000000, # 默认：无信用奖励。成功完成时奖励的信用点数。
         "job_reward_scaling": 1.0, # 默认：无缩放/加成。基于舰队点数的额外奖励，计算公式为：设定值 ×（悬赏舰队FP超过基础FP的部分）。
@@ -48,7 +48,7 @@
 				# exact: “目标位于Y星系的X附近。”并在酒吧对话中显示星图
 		"job_show_arrow": false, # 默认：false。是否在情报地图上显示从起点指向目标的箭头。仅在合理情况下启用以符合原版设计。
         "job_difficultyDescription": "auto",  # 默认：自动显示难度描述。"none": 不显示，"auto": 任务板自动描述危险程度，其他文本：直接显示该文本。
-        "job_pick_option": "这个人渣的下场与你无关，但这名尤物值得你一试，不是吗？", # 默认："接受任务"。选择后接受任务的选项文本。
+        "job_pick_option": "The fate of this scumbag has nothing to do with you, but this beauty is worth a try, isn't it?", # 默认："accept task"。选择后接受任务的选项文本。
 
         "target_importantPersonId": "your_important_person_id_optional", # 默认：无。用于悬赏指挥官的重要人物ID。若设置，将覆盖其他指挥官设置。
         "target_first_name":"Firstname", # 默认：根据派系随机选择。
@@ -90,7 +90,7 @@
 
         #目标舰队
 
-        "fleet_name":"丧家之犬", # 默认：无名称。
+        "fleet_name":"bereaved dog", # 默认：无名称。
         "fleet_faction": "pirates", # 必填。派系ID，来自Factions类或自定义派系ID。
         "fleet_flagship_variant":"rs_revelatio_Bounty", 
         "fleet_flagship_name":"Flagship", 

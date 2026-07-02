@@ -87,7 +87,7 @@ public class RS_Moci_GNFieldDefenseUI extends BaseEveryFrameCombatPlugin {
                 // 使用MagicLib绘制界面状态条（带数值，显示在玩家面板上）
                 org.magiclib.util.MagicUI.drawInterfaceStatusBar(playerShip, shieldLevel, null, null,
                     shieldExtra / (shieldExtra + shieldCap),
-                    "力场值",
+                    "force field value",
                     (int) (shieldCurrent + shieldExtra));
             }
         }
@@ -431,7 +431,7 @@ public class RS_Moci_GNFieldDefenseUI extends BaseEveryFrameCombatPlugin {
         GL11.glLoadIdentity();
         
         // 渲染完整文本 "力场 重启中 X.Xs"
-        String text = String.format("力场  重启中 %.1fs", restartTime);
+        String text = String.format("Force field restarting %.1fs", restartTime);
         float fontSize = labelFont.getBaseHeight();
         float charX = x - 1f;
         float charY = y + fontSize;
@@ -499,7 +499,7 @@ public class RS_Moci_GNFieldDefenseUI extends BaseEveryFrameCombatPlugin {
         GL11.glLoadIdentity();
         
         // 逐字符渲染 "力场"
-        String text = "力场";
+        String text = "force field";
         float fontSize = labelFont.getBaseHeight();
         float charX = x - 1f;  // 左移 1px
         float charY = y + fontSize;

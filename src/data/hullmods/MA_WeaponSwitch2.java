@@ -669,8 +669,8 @@ public class MA_WeaponSwitch2 extends BaseHullMod {
                                     // 移除被轮替的武器（防止重复）
                                     Global.getSector().getPlayerFleet().getCargo().removeStack(stack);
                                     Global.getLogger(this.getClass()).info(
-                                            "武器切换系统：清理玩家仓库中的轮替武器 " + weaponId +
-                                                    " (配置: " + modId + ")");
+                                            "Weapon switching system: Clean up rotating weapons in player inventory" + weaponId +
+                                                    "(Configuration:" + modId + ")");
                                     break; // 找到匹配的前缀后跳出内层循环
                                 }
                             }

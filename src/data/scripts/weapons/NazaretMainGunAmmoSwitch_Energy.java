@@ -186,11 +186,11 @@ public class NazaretMainGunAmmoSwitch_Energy implements EveryFrameWeaponEffectPl
 
         // 显示当前弹药类型（仅玩家舰船）
         if (isPlayerShip) {
-            String ammoType = useHE ? "电弧近炸弹" : "阳电子冲击弹";
+            String ammoType = useHE ? "Arc proximity bomb" : "positron impact bomb";
             engine.maintainStatusForPlayerShip(STATUS_KEY,
                     "graphics/icons/hullsys/ammo_feeder.png",
                     weapon.getDisplayName() + ": " + ammoType,
-                    "按B键切换弹药",
+                    "Press the B button to switch ammunition",
                     false);
         }
     }

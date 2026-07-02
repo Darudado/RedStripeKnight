@@ -134,8 +134,8 @@ public class CR_ImprovedWeaponControlling extends BaseHullMod {
 
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "舰船不存在";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "仅能在拥有能量核心的舰船上安装";
+        if (ship == null) return "The ship does not exist";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Can only be installed on ships with energy cores";
         return null;
     }
 
@@ -145,12 +145,12 @@ public class CR_ImprovedWeaponControlling extends BaseHullMod {
         Color h = Misc.getHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addSectionHeading("额外效果", Alignment.MID, opad);
+        tooltip.addSectionHeading("Extra effects", Alignment.MID, opad);
         // 动态后坐力减免描述（注意所有 % 都转义为 %%）
-        tooltip.addPara("武器持续开火时，每秒降低后坐力 " + String.format("%.0f", FIRE_RATE_PER_SECOND) + "%%" +
-                "，最多叠加 " + String.format("%.0f", MAX_FIRE_RATE_BONUS) + " 秒（共 " +
+        tooltip.addPara("When the weapon is continuously fired, the recoil is reduced every second." + String.format("%.0f", FIRE_RATE_PER_SECOND) + "%%" +
+                ", at most superimposed" + String.format("%.0f", MAX_FIRE_RATE_BONUS) + "seconds (total" +
                 String.format("%.0f", FIRE_RATE_PER_SECOND * MAX_FIRE_RATE_BONUS) + "%%）。", pad, h);
-        tooltip.addPara("停止开火 " + String.format("%.0f", RESET_DELAY) + " 秒后加成归零。", pad, h);
+        tooltip.addPara("stop firing" + String.format("%.0f", RESET_DELAY) + "The bonus will return to zero after seconds.", pad, h);
     }
 
 }

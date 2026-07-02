@@ -159,7 +159,7 @@ public class SpecializedMobileArmor extends BaseLogisticsHullMod {
                 MagicSubsystemsManager.addSubsystemToShip(ship, Subsystem);
             } catch (Exception e) {
                 // 记录错误日志，便于调试
-                Global.getLogger(this.getClass()).error("添加子系统失败: " + e.getMessage(), e);
+                Global.getLogger(this.getClass()).error("Failed to add subsystem:" + e.getMessage(), e);
             }
         }
 
@@ -197,7 +197,7 @@ public class SpecializedMobileArmor extends BaseLogisticsHullMod {
                     if ((projectile.getCollisionRadius() - explosionRadius) == 0) {
                         // 殉爆伤害减免
                         damage.getModifier().modifyMult(this.getClass().getName(), 0f);
-                        return "机动装甲殉爆防护";
+                        return "Mobile armor explosion protection";
                     }
                 }
             }
@@ -206,7 +206,7 @@ public class SpecializedMobileArmor extends BaseLogisticsHullMod {
             if (param == null && damage.getType() == DamageType.KINETIC) {
                 // 碰撞伤害减免
                 damage.getModifier().modifyMult(this.getClass().getName(), 0f);
-                return "机动装甲碰撞防护";
+                return "Mobile armor collision protection";
             }
 
             return null;
@@ -440,47 +440,47 @@ public class SpecializedMobileArmor extends BaseLogisticsHullMod {
         Color good = Misc.getPositiveHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("这种舰船作为一种独特的设计类型， %s 的战斗表现与通常的舰船有所不同。", pad, h, "特装机动装甲(SMA)");
+        tooltip.addPara("As a unique design type of ship, %s's combat performance is different from ordinary ships.", pad, h, "Specialized Mobile Armor (SMA)");
 
-        tooltip.addPara("机体框架中内置了 %s ，在有 %s 驾驶时能大幅度提高机体性能。", pad, h, "精神力操纵框架", "机师");
+        tooltip.addPara("%s is built into the body frame, which can greatly improve the performance of the body when driven by %s.", pad, h, "Mental Manipulation Framework", "pilot");
 
-        tooltip.addPara("为追求极致的机动火力投送，SMA在设计上就具有极强的机动能力，不会受到碰撞与殉爆伤害。", pad, h);
+        tooltip.addPara("In order to pursue the ultimate mobile firepower delivery, the SMA is designed to have extremely strong maneuverability and will not be harmed by collisions and explosions.", pad, h);
 
-        tooltip.addPara("由于各子系统已经专门特化，无法进行安全协议超弛改装。", pad, h);
+        tooltip.addPara("Since each subsystem has been specially specialized, security protocol override modification cannot be performed.", pad, h);
 
-        tooltip.addPara("在登陆作战中能提供 %s 的战力支援。", pad, h, "75");
+        tooltip.addPara("Can provide %s combat support during landing operations.", pad, h, "75");
 
         // 防护能力
-        tooltip.addSectionHeading("重点防护", com.fs.starfarer.api.ui.Alignment.MID, pad);
+        tooltip.addSectionHeading("Key protection", com.fs.starfarer.api.ui.Alignment.MID, pad);
 
-        tooltip.addPara("武器和引擎受到的伤害减少 %s 。", pad, good, (int)(WEAPON_ENGINE_DAMAGE_REDUCTION * 100f) + "%");
+        tooltip.addPara("Weapons and engines take %s less damage.", pad, good, (int)(WEAPON_ENGINE_DAMAGE_REDUCTION * 100f) + "%");
 
-        tooltip.addPara("受到的EMP伤害减少 %s 。", pad, good, (int)(EMP_DAMAGE_REDUCTION * 100f) + "%");
+        tooltip.addPara("EMP damage taken reduced by %s.", pad, good, (int)(EMP_DAMAGE_REDUCTION * 100f) + "%");
         // 幅能系统
-        tooltip.addSectionHeading("幅能系统", com.fs.starfarer.api.ui.Alignment.MID, pad);
+        tooltip.addSectionHeading("amplitude energy system", com.fs.starfarer.api.ui.Alignment.MID, pad);
 
-        tooltip.addPara("获得 %s 的在展开护盾时耗散 %s 能力。", pad, new Color[]{good, h}, (int)HARD_FLUX_DISSIPATION + "%","硬幅能");
+        tooltip.addPara("Gained %s ability to dissipate %s when shield is deployed.", pad, new Color[]{good, h}, (int)HARD_FLUX_DISSIPATION + "%","Hard amplitude");
 
-        tooltip.addPara("舰船的 %s 会在本体与各个模块之间 %s ，自动平衡各部分的幅能等级。", pad, h, "幅能", "实时共享");
+        tooltip.addPara("The ship's %s will automatically balance the energy level of each part between the main body and each module %s.", pad, h, "Amplitude energy", "Share in real time");
 
 
         // 感知系统
-        tooltip.addSectionHeading("感知系统", com.fs.starfarer.api.ui.Alignment.MID, pad);
-        tooltip.addPara("传感器信号降低 %s 。", pad, good, (int)((1f - SENSOR_PROFILE_MULT) * 100f) + "%");
-        tooltip.addPara("在拥有军官驾驶时战场视野提高 %s 。", pad, good, (int)SIGHT_RANGE_BONUS + "%");
+        tooltip.addSectionHeading("Perception system", com.fs.starfarer.api.ui.Alignment.MID, pad);
+        tooltip.addPara("Sensor signal decreased by %s.", pad, good, (int)((1f - SENSOR_PROFILE_MULT) * 100f) + "%");
+        tooltip.addPara("Battlefield vision is increased by %s when piloted by an officer.", pad, good, (int)SIGHT_RANGE_BONUS + "%");
 
         // 军官要求
-        tooltip.addSectionHeading("舰船特性", com.fs.starfarer.api.ui.Alignment.MID, pad);
-        tooltip.addPara("无军官驾驶时最大战备值减少 %s 。", pad, bad, (int)(NO_OFFICER_CR_PENALTY * 100f) + "%");
-        tooltip.addPara("无军官驾驶时战备值衰减速率增加 %s 。", pad, bad, (int)(CR_DECAY_MULT * 100f) + "%");
+        tooltip.addSectionHeading("Ship characteristics", com.fs.starfarer.api.ui.Alignment.MID, pad);
+        tooltip.addPara("Maximum combat readiness is reduced by %s when piloting without an officer.", pad, bad, (int)(NO_OFFICER_CR_PENALTY * 100f) + "%");
+        tooltip.addPara("The combat readiness value decay rate increases by %s when piloted without an officer.", pad, bad, (int)(CR_DECAY_MULT * 100f) + "%");
 
-        tooltip.addSectionHeading("精神力操纵框架", com.fs.starfarer.api.ui.Alignment.MID, pad);
-        tooltip.addSectionHeading("战术系统启动时激活以下效果", new Color(151, 255, 0,255), new Color(160, 255, 0,50), Alignment.MID, opad); // 与其他元素之间的间距
-        tooltip.addPara("- 舰船的最大速度提高 %s 点", pad, good, (int)(SPEED_BONUS) + "%");
-        tooltip.addPara("- 舰船的 %s 大幅提升", pad, good, "机动性");
+        tooltip.addSectionHeading("Mental Manipulation Framework", com.fs.starfarer.api.ui.Alignment.MID, pad);
+        tooltip.addSectionHeading("The following effects are activated when the tactical system is activated", new Color(151, 255, 0,255), new Color(160, 255, 0,50), Alignment.MID, opad); // 与其他元素之间的间距
+        tooltip.addPara("- The maximum speed of the ship is increased by %s points", pad, good, (int)(SPEED_BONUS) + "%");
+        tooltip.addPara("- The ship's %s has been greatly increased", pad, good, "flexibility");
 
-        tooltip.addSectionHeading("安装了该船插的机动兵器可以降落在常规舰船上进行整备", Alignment.MID, opad);
-        tooltip.addPara("按住F3以查看详细机制", pad, good);
+        tooltip.addSectionHeading("Mobile weapons installed with this ship can be landed on conventional ships for maintenance.", Alignment.MID, opad);
+        tooltip.addPara("Hold F3 to view detailed mechanics", pad, good);
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
             tooltip.addSectionHeading(Moci_TextLoader.getText(TEXT_ID, "description.ai_heading"), com.fs.starfarer.api.ui.Alignment.MID, pad);
 
@@ -510,9 +510,9 @@ public class SpecializedMobileArmor extends BaseLogisticsHullMod {
         }
 
         if (!ship.getCaptain().isDefault()) {
-            tooltip.addPara("该舰船已有军官，可以获得上述效果。", opad, good);
+            tooltip.addPara("The ship already has an officer and can obtain the above effects.", opad, good);
         } else {
-            tooltip.addPara("该舰船没有军官，无法激活精神感应框架系统。", opad, Misc.getNegativeHighlightColor());
+            tooltip.addPara("The ship has no officers and cannot activate the telepathic frame system.", opad, Misc.getNegativeHighlightColor());
         }
 
     }

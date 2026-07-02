@@ -2,11 +2,11 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"寻誓着",
+    "rebelFleetSuffix":"Oathkeepers",
     
     "directoryUseShortName":true,
 
-    "difficultyString":"艰难",
+    "difficultyString":"difficult",
     
     "marketSpawnWeight":0.5,
 
@@ -25,8 +25,8 @@
     },
 	"diplomacyTraits":["stalwart", "dislikes_ai", "anarchist"],
     
-    "vengeanceLevelNames":["审判"],
-    "vengeanceFleetNames":["裁判庭"],
+    "vengeanceLevelNames":["Trial"],
+    "vengeanceFleetNames":["Tribunal"],
 	
 	"startShipsSolo":[
 	  ["vow_VMS_15_Standard"]

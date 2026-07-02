@@ -162,26 +162,26 @@ public class CrusadersCore extends BaseHullMod {
         if(!(ship == null)){
             if (ship.getVariant().hasHullMod("CrusadersPlating")) {
                 Color h = Misc.getPositiveHighlightColor();
-                tooltip.addPara("该舰船拥有使用基于辐能容量生成的覆盖于舰体表面的防御镀层", opad, h);
-                tooltip.addPara("根据船体规模与辐能容量提供总量 %s 的 %s 镀层", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize)), "类装甲");
-                tooltip.addPara("镀层在线时可减少舰体受到的伤害，并拥有EMP伤害减免", pad, h);
-                tooltip.addPara("由于镀层的支持，舰体装甲增加 %s ，但降低 %s 减伤", pad, h, 40 +"%",(1-ARMOR_MULT)*100+"%");
-                tooltip.addSectionHeading("按住F3以查看详细机制", Alignment.MID, opad);
+                tooltip.addPara("The ship has a defensive plating covering the surface of the ship based on radiation capacity.", opad, h);
+                tooltip.addPara("Provides a total of %s of %s plating based on hull size and radiation capacity", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize)), "Armor-like");
+                tooltip.addPara("When the plating is online, it can reduce the damage taken by the ship and has EMP damage reduction.", pad, h);
+                tooltip.addPara("Due to plating support, hull armor increased by %s, but damage reduction decreased by %s", pad, h, 40 +"%",(1-ARMOR_MULT)*100+"%");
+                tooltip.addSectionHeading("Hold F3 to view detailed mechanics", Alignment.MID, opad);
                 if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-                    tooltip.addPara("不受击的 %s 秒后，镀层会以 %s 单位每秒的速度恢复", pad, h, "2", "10");
-                    tooltip.addPara("一旦镀层瓦解，镀层回充至 %s 时重启", pad, h, String.valueOf(Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * THRESHOLD_RECOVERY)));
-                    tooltip.addPara("过载或主动排散时镀层效果减半", pad, h);
-                    tooltip.addPara("降低船体受到的 %s 光束伤害与 %s 能量伤害", pad, h,"25"+ "%","15"+ "%");
-                    tooltip.addPara("单次伤害超过 %s 时，镀层将减免 %s ", pad, h,"750", "50"+ "%");
-                    tooltip.addPara("主动排散时，每排散 %s 单位辐能可恢复 %s 镀层容量", pad, Misc.getHighlightColor(), "25", "1单位");
-                    tooltip.addPara("舰船过载时将以 %s 单位每秒的速度破坏镀层", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * OVERLOAD_DEGRADE));
-                    tooltip.addPara("在 %s 战备值以下，镀层将会部分失活", pad, h, Math.round(40.0F) + "%");
-                    tooltip.addPara("镀层避免日冕造成的损害", pad, h);
-                    tooltip.addPara("且镀层发生装置固定了舰船的护盾发生器，使之不能被任何形式修改", pad, h);
+                    tooltip.addPara("After %s seconds without being hit, the plating will regenerate at a rate of %s units per second", pad, h, "2", "10");
+                    tooltip.addPara("Once the plating collapses, restart when the plating recharges to %s", pad, h, String.valueOf(Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * THRESHOLD_RECOVERY)));
+                    tooltip.addPara("The coating effect is halved when overloaded or actively dissipated.", pad, h);
+                    tooltip.addPara("Reduces %s beam damage and %s energy damage taken by the hull", pad, h,"25"+ "%","15"+ "%");
+                    tooltip.addPara("When a single damage exceeds %s, the plating will be reduced by %s", pad, h,"750", "50"+ "%");
+                    tooltip.addPara("When actively dissipating, %s of coating capacity can be restored for each %s unit of radiant energy dissipated.", pad, Misc.getHighlightColor(), "25", "1 unit");
+                    tooltip.addPara("When the ship is overloaded, the plating will be destroyed at a rate of %s units per second", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * OVERLOAD_DEGRADE));
+                    tooltip.addPara("Below %s readiness value, the plating will be partially deactivated", pad, h, Math.round(40.0F) + "%");
+                    tooltip.addPara("Coating avoids damage caused by corona", pad, h);
+                    tooltip.addPara("And the plating generator fixes the ship's shield generator so that it cannot be modified in any way.", pad, h);
                 }
 
-                tooltip.addSectionHeading("不兼容性", Alignment.MID, opad);
-                tooltip.addPara("按住F4以查看舰船不兼容的船插", pad, h);
+                tooltip.addSectionHeading("Incompatibility", Alignment.MID, opad);
+                tooltip.addPara("Hold down F4 to view the ship's incompatible ship plugs", pad, h);
                 if (Keyboard.isKeyDown(Keyboard.KEY_F4)) {
                     for (String modId : UNAPPLIED_MOD_IDS) {
                         tooltip.addPara(getHullModName(modId), 2f, highlight);
@@ -191,9 +191,9 @@ public class CrusadersCore extends BaseHullMod {
 
             if (ship.getVariant().hasHullMod("Moci_RS_GNShield")) {
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/hullmods/CrusadersPlating.png", 35f);
-                imageText.addPara("对舰船的护盾系统进行了大刀阔斧的修改：", pad);
-                imageText.addPara("将舰船护盾替换为严密贴合舰船表面的形态", pad, highlight);
-                imageText.addPara("使舰船在护盾展开时的受击概率极大下降", pad, highlight);
+                imageText.addPara("The ship's shield system has been significantly modified:", pad);
+                imageText.addPara("Replace the ship's shields with ones that closely fit the ship's surface", pad, highlight);
+                imageText.addPara("Greatly reduces the probability of the ship being hit when the shield is deployed.", pad, highlight);
                 //imageText.addPara("但使得一些舰体升级难以进行，不兼容 %s ", pad, Color.red ,"扩展发射架");
                 tooltip.addImageWithText(15f);
             }
@@ -203,35 +203,35 @@ public class CrusadersCore extends BaseHullMod {
             Color h = Misc.getHighlightColor();
             //tooltip.addSectionHeading("舰船核心架构", Alignment.MID, opad);
             if (ship.getVariant().hasHullMod("ImpregnableRampart")) {
-                tooltip.addSectionHeading("坚壁自适应防御架构", Alignment.MID, opad);
+                tooltip.addSectionHeading("Hard wall adaptive defense architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/fortress_shield.png", 35f);
-                imageText.addPara("该舰船拥有独特的框架系统：", pad);
-                imageText.addPara("随着舰船辐能水平提高，电网系统能加压护盾以提升护盾效能", pad, h);
-                imageText.addPara("但使得一些舰体升级难以进行，不兼容 %s ", pad, Color.red ,"扩展发射架");
+                imageText.addPara("The ship has a unique frame system:", pad);
+                imageText.addPara("As the ship's radiation level increases, the power grid system can pressurize the shield to increase shield effectiveness.", pad, h);
+                imageText.addPara("However, it makes it difficult to upgrade some hulls and is not compatible with %s", pad, Color.red ,"Extended launcher");
                 tooltip.addImageWithText(15f);
             }
             if (ship.getVariant().hasHullMod("PennaVelox")) {
-                tooltip.addSectionHeading("迅羽自适应航空管制架构", Alignment.MID, opad);
+                tooltip.addSectionHeading("Xunyu adaptive air traffic control architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/reserve_deployment.png", 35f);
-                imageText.addPara("该舰船拥有独特的框架系统：", pad);
-                imageText.addPara("随着舰船辐能水平提高，能源系统将提升整备系统能耗以提升效率", pad, h);
-                imageText.addPara("但以减少 %s 舰载机结构强度与增加 %s 舰载机受到伤害为代价", pad, Color.red ,"50%","25%");
+                imageText.addPara("The ship has a unique frame system:", pad);
+                imageText.addPara("As the radiation level of the ship increases, the energy system will increase the energy consumption of the maintenance system to improve efficiency.", pad, h);
+                imageText.addPara("However, this is at the expense of reducing the hull strength of %s carrier-based aircraft and increasing the damage suffered by %s carrier-based aircraft.", pad, Color.red ,"50%","25%");
                 tooltip.addImageWithText(15f);
             }
             if (ship.getVariant().hasHullMod("Rhongomyniad")) {
-                tooltip.addSectionHeading("终灭自适应武器校正架构", Alignment.MID, opad);
+                tooltip.addSectionHeading("Terminal Adaptive Weapon Correction Architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/ammo_feeder.png", 35f);
-                imageText.addPara("该舰船拥有独特的框架系统：", pad);
-                imageText.addPara("随着舰船辐能水平提高，能源系统会加压舰载武器系统以强化武器毁伤表现", pad, Color.red);
-                imageText.addPara("但增加 %s 护盾维持成本", pad, Color.red ,"50%");
+                imageText.addPara("The ship has a unique frame system:", pad);
+                imageText.addPara("As the ship's radiation level increases, the energy system will pressurize the ship's weapon systems to enhance weapon damage performance.", pad, Color.red);
+                imageText.addPara("But increases %s shield maintenance cost", pad, Color.red ,"50%");
                 tooltip.addImageWithText(15f);
             }
             if (ship.getVariant().hasHullMod("Excalibur")) {
-                tooltip.addSectionHeading("胜誓自适应能量配送架构", Alignment.MID, opad);
+                tooltip.addSectionHeading("Victory Adaptive Energy Distribution Architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                imageText.addPara("该舰船拥有独特的框架系统：", pad);
-                imageText.addPara("随着舰船辐能水平提高，能源系统会加压舰载动力系统以加速舰船时间与机动能力", pad, Color.red);
-                imageText.addPara("但增加 %s 舰船受到伤害，护盾则额外受到 %s 伤害", pad, Color.red ,"25%","35%");
+                imageText.addPara("The ship has a unique frame system:", pad);
+                imageText.addPara("As the ship's radiation level increases, the energy system will pressurize the ship's power system to accelerate the ship's time and maneuverability", pad, Color.red);
+                imageText.addPara("However, the ship will receive %s more damage, and the shield will receive an additional %s damage.", pad, Color.red ,"25%","35%");
                 tooltip.addImageWithText(15f);
             }
         }
@@ -257,15 +257,15 @@ public class CrusadersCore extends BaseHullMod {
     private String getHullModName(String modId) {
         // 这里可以添加更完整的名称映射
         return switch (modId) {
-            case "high_scatter_amp" -> "高效散射器";
-            case "shield_shunt" -> "护盾分流";
-            case "frontshield" -> "固化护盾";
-            case "frontemitter" -> "定向护盾发生器";
-            case "adaptiveshields" -> "全角护盾";
-            case "extendedshieldemitter" -> "拓展护盾";
-            case "unstable_injector" -> "不稳定推进器";
-            case "additional_berthing" -> "拓展宿舍";
-            case "safetyoverrides" -> "安全协议超弛";
+            case "high_scatter_amp" -> "Highly efficient diffuser";
+            case "shield_shunt" -> "Shield diversion";
+            case "frontshield" -> "solidified shield";
+            case "frontemitter" -> "Directional shield generator";
+            case "adaptiveshields" -> "Full-width shield";
+            case "extendedshieldemitter" -> "Expand shield";
+            case "unstable_injector" -> "unstable thruster";
+            case "additional_berthing" -> "Expand dormitory";
+            case "safetyoverrides" -> "Security protocol override";
             default -> modId;
         };
     }

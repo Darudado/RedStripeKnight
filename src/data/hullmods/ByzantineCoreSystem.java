@@ -57,7 +57,7 @@ public class ByzantineCoreSystem extends BaseHullMod {
             MagicSubsystemsManager.addSubsystemToShip(ship, Subsystem);
         } catch (Exception e) {
             // 记录错误日志，便于调试
-            Global.getLogger(this.getClass()).error("添加子系统失败: " + e.getMessage(), e);
+            Global.getLogger(this.getClass()).error("Failed to add subsystem:" + e.getMessage(), e);
         }
     }
 
@@ -144,23 +144,23 @@ public class ByzantineCoreSystem extends BaseHullMod {
         com.fs.starfarer.api.util.Misc.getHighlightColor();
         com.fs.starfarer.api.util.Misc.getPositiveHighlightColor();
 
-        tooltip.addPara("拜占庭的核心指挥系统能够完美协调舰队作战，整合了先进的传感器网络和指挥控制协议。", pads);
+        tooltip.addPara("Byzantine's core command system perfectly coordinates fleet operations and integrates advanced sensor networks and command and control protocols.", pads);
 
-        tooltip.addPara("**舰队指挥系统:**", pads);
-        tooltip.addPara("传感器视野范围 +%s", pad,
+        tooltip.addPara("**Fleet Command System:**", pads);
+        tooltip.addPara("Sensor field of view +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "1500");
-        tooltip.addPara("- 自身存活时，%s范围内的友军舰船获得：", pad);
-        tooltip.addPara(" 辐能耗散 +%s", pad,
+        tooltip.addPara("- When you are alive, all friendly ships within %s will get:", pad);
+        tooltip.addPara("Radiant energy dissipation +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "10%");
-        tooltip.addPara(" 硬辐能耗散能力 +%s", pad,
+        tooltip.addPara("Hard Radiant Energy Dissipation Capacity +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "5%");
 
-        tooltip.addPara("**集成子系统:众志行征**", pads);
-        tooltip.addPara("搭载拜占庭支援子系统，提供额外的战术能力", pad);
-        tooltip.addPara("提升750/1500/2500单位距离内友方单位 +%s / +%s / +%s的机动能力与舰载机整备速率", pad,
+        tooltip.addPara("**Integrated subsystem: united will and march**", pads);
+        tooltip.addPara("Equipped with Byzantine support subsystem to provide additional tactical capabilities", pad);
+        tooltip.addPara("Improves the maneuverability and carrier aircraft readiness rate of friendly units within 750/1500/2500 units by +%s / +%s / +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "30%","20%","10%");
 
-        tooltip.addPara("该指挥系统通过先进的数据链和战术网络，显著提升整个舰队的作战效率和生存能力。",
+        tooltip.addPara("This command system significantly improves the combat efficiency and survivability of the entire fleet through advanced data links and tactical networks.",
                 com.fs.starfarer.api.util.Misc.getGrayColor(), pads);
     }
 }

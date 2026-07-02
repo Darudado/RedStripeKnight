@@ -32,10 +32,10 @@ public class CR_ChargingRing extends BaseHullMod {
     // 内部数据类
     public static class ChargingRingData {
         public enum State {
-            READY("Ready", "系统准备就绪", 0f),
-            CHARGING("充能中", "护盾充能... %s%%", 1f),
-            ACTIVE("激活", "护盾爆发！ %s秒", 0.1f),
-            COOLDOWN("冷却", "系统冷却... %s秒", COOLDOWN_DURATION);
+            READY("Ready", "System is ready", 0f),
+            CHARGING("Charging", "Shield recharging... %s%%", 1f),
+            ACTIVE("activation", "The shield explodes! %s seconds", 0.1f),
+            COOLDOWN("cool down", "System cooling... %s seconds", COOLDOWN_DURATION);
 
             public final String statusTitle;
             public final String statusDesc;
@@ -409,9 +409,9 @@ public class CR_ChargingRing extends BaseHullMod {
             switch (state) {
                 case READY:
                     if (cooldownStarted) {
-                        description = "冷却中...";
+                        description = "Cooling down...";
                     } else {
-                        description = "等待辐能达到65%";
+                        description = "Wait for radiation to reach 65%";
                     }
                     break;
                 case CHARGING:
@@ -419,7 +419,7 @@ public class CR_ChargingRing extends BaseHullMod {
                     description = String.format(state.statusDesc, String.format("%.0f%%", chargePercent));
                     break;
                 case ACTIVE:
-                    description = "护盾爆发中！";
+                    description = "The shield is exploding!";
                     break;
                 case COOLDOWN:
                     float remaining = state.timeNeededToNextState - elapsed;
@@ -501,13 +501,13 @@ public class CR_ChargingRing extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         float pads = 10f;
         float pad = 2f;
-        tooltip.addPara("经过特殊调整的能源系统自动爆发性耗散电网废热", Misc.getHighlightColor(), pads);
+        tooltip.addPara("Specially tuned energy systems automatically and explosively dissipate grid waste heat", Misc.getHighlightColor(), pads);
 
-        tooltip.addSectionHeading("能量爆发", Alignment.MID, pads);
-        tooltip.addPara("在辐能水平大于 %s 且护盾开启时自动触发", pad, Misc.getHighlightColor(), "65%");
-        tooltip.addPara("对护盾朝向方向释放能量冲击，造成伤害并击退敌方单位 ", new Color(150, 200, 255, 255), pads);
-        tooltip.addPara("并散耗舰船 %s 辐能 ", pad, Misc.getHighlightColor(), "25%");
-        tooltip.addPara("系统拥有30秒冷却时间，冷却期间关闭护盾不会重置计时", Misc.getHighlightColor(), pad);
+        tooltip.addSectionHeading("energy burst", Alignment.MID, pads);
+        tooltip.addPara("Automatically triggered when radiation level is greater than %s and shield is on", pad, Misc.getHighlightColor(), "65%");
+        tooltip.addPara("Releases an energy blast in the direction of the shield, causing damage and knocking back enemy units.", new Color(150, 200, 255, 255), pads);
+        tooltip.addPara("And dissipate %s of the ship's radiation energy", pad, Misc.getHighlightColor(), "25%");
+        tooltip.addPara("The system has a 30-second cooldown. Turning off the shield during the cooldown period will not reset the timer.", Misc.getHighlightColor(), pad);
     }
 
     @Override
@@ -523,9 +523,9 @@ public class CR_ChargingRing extends BaseHullMod {
 
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if (ship.getShield() == null) return "船只没有护盾";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+        if (ship == null) return "ship does not exist";
+        if (ship.getShield() == null) return "The ship has no shields";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
         return null;
     }
 }

@@ -23,12 +23,12 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.initFleet(FleetSide.PLAYER, "RS", FleetGoal.ATTACK, false, 5);
 		api.initFleet(FleetSide.ENEMY, "LP", FleetGoal.ATTACK, true, 5);
 
-		api.setFleetTagline(FleetSide.PLAYER, "骑士团清剿舰队");
-		api.setFleetTagline(FleetSide.ENEMY, "左径基地及其防御力量");
+		api.setFleetTagline(FleetSide.PLAYER, "Knights destroy fleet");
+		api.setFleetTagline(FleetSide.ENEMY, "Zuojing base and its defense forces");
 
-		api.addBriefingItem("不留活口");
-		api.addBriefingItem("不存怜悯");
-		api.addBriefingItem("机动兵器威力强大，但是相对脆弱，谨慎使用");
+		api.addBriefingItem("No one left alive");
+		api.addBriefingItem("no mercy");
+		api.addBriefingItem("Mobile weapons are powerful, but relatively fragile, so use them with caution");
 
 
 		api.addToFleet(FleetSide.PLAYER, "rs_tiumphus_Standerd", FleetMemberType.SHIP, "Pax", true);

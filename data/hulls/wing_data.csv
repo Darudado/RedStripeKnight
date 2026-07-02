@@ -1,32 +1,32 @@
 id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
-rs_vigifavilla_wing,rs_vigifavilla_variant,"no_drop, no_sell, stay_in_front_of_ship, fighter,rapid_reform, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing, restricted,attact_at_an_angle",5,0,12,100,BOX,0,2000,400,1,SUPPORT,无人支援机,25,1000000,,,,,,,,,,,,,
-rs_drone_fighter_wing,rs_drone_fighter_variant,"no_drop, no_sell, fighter,rapid_reform, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing, restricted,attact_at_an_angle，, independent_of_carrier",5,0,1,100,V,4000,650,,1,FIGHTER,无人攻击机,5,1000000,,,,,,,,,,,,,
+rs_vigifavilla_wing,rs_vigifavilla_variant,"no_drop, no_sell, stay_in_front_of_ship, fighter,rapid_reform, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing, restricted,attact_at_an_angle",5,0,12,100,BOX,0,2000,400,1,SUPPORT,unmanned support fighters,25,1000000,,,,,,,,,,,,,
+rs_drone_fighter_wing,rs_drone_fighter_variant,"no_drop, no_sell, fighter,rapid_reform, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing, restricted,attact_at_an_angle，, independent_of_carrier",5,0,1,100,V,4000,650,,1,FIGHTER,unmanned attack aircraft,5,1000000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rs_garuda_wing,rs_garuda_variant,"support3, fighter, rs_bp, rare_bp, hist1t, merc,  auto_fighter,attact_at_an_angle",3,0.4,7,22,V,0,500,,2,SUPPORT,中型无人支援机,18,10000,,,,,,,,,,,,,2.1
-rs_griffon_wing,rs_griffon_variant,"fighter4, fighter, rs_bp, merc,auto_fighter,attact_at_an_angle",1,0.5,6,15,BOX,4000,500,,2,FIGHTER,重型无人战斗机,15,6000,,,,,,,,,,,,,1.1
-rs_aquilachrysaetos_wing,rs_aquilachrysaetos_variant," rs_bp, fighter, fighter5, auto_fighter, merc,attact_at_an_angle",2,0.5,6,14,BOX,4000,500,,3,FIGHTER,中型无人战斗机,5,6000,,,,,,,,,,,,,23.1
-rs_buboscandiacus_wing,rs_buboscandiacus_variant,"support3, fighter, rs_shiyan_bp, hist1t, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing,attact_at_an_angle",3,0.3,8,25,BOX,0,750,,1,SUPPORT,重型无人支援炮艇,25,12000,,,,,,,,,,,,,24.1
-rs_falcoperegrinus_wing,rs_falcoperegrinus_variant," rs_shiyan_bp, fighter, fighter5, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",2,0.4,7,16,V,4500,500,,4,FIGHTER,无人空优战斗机,7,7500,,,,,,,,,,,,,25.1
-rs_gypsfulvus_wing,rs_gypsfulvus_variant," rs_shiyan_bp, fighter, fighter5, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",2,0.4,7,20,V,4000,500,,2,FIGHTER,重型无人战斗机,16,8500,,,,,,,,,,,,,26.1
-rs_sagittariusserpentarius_wing,rs_sagittariusserpentarius_variant,"support3, fighter, rs_shiyan_bp, hist1t, merc, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",3,0.3,8,20,V,4000,750,,2,SUPPORT,先进中型无人支援机,15,9000,,,,,,,,,,,,,27.1
-rs_pegasus_wing,rs_pegasus_variant,"fighter4, fighter, rs_shiyan_bp, attact_at_an_angle, rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,9,16,BOX,4000,800,,1,FIGHTER,重型歼击机,28,13500,,,,,,,,,,,,,28.1
-rs_harpyia_wing,rs_harpyia_variant,"fighter4, fighter, rs_shiyan_bp, attact_at_an_angle, rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,9,20,V,4000,750,,1,FIGHTER,重型寻猎机,25,12500,,,,,,,,,,,,,29.1
-rs_thunderbird_wing,rs_thunderbird_wing,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,15,40,BOX,5000,1000,750,1,FIGHTER,超重型炮艇,40,70500,,,,,,,,,,,,,4
+rs_garuda_wing,rs_garuda_variant,"support3, fighter, rs_bp, rare_bp, hist1t, merc,  auto_fighter,attact_at_an_angle",3,0.4,7,22,V,0,500,,2,SUPPORT,medium unmanned support fighters,18,10000,,,,,,,,,,,,,2.1
+rs_griffon_wing,rs_griffon_variant,"fighter4, fighter, rs_bp, merc,auto_fighter,attact_at_an_angle",1,0.5,6,15,BOX,4000,500,,2,FIGHTER,Heavy UAV,15,6000,,,,,,,,,,,,,1.1
+rs_aquilachrysaetos_wing,rs_aquilachrysaetos_variant," rs_bp, fighter, fighter5, auto_fighter, merc,attact_at_an_angle",2,0.5,6,14,BOX,4000,500,,3,FIGHTER,medium unmanned fighters,5,6000,,,,,,,,,,,,,23.1
+rs_buboscandiacus_wing,rs_buboscandiacus_variant,"support3, fighter, rs_shiyan_bp, hist1t, auto_fighter, leader_no_swarm,  wingmen_no_swarm, match_leader_facing,attact_at_an_angle",3,0.3,8,25,BOX,0,750,,1,SUPPORT,Heavy unmanned support gunboat,25,12000,,,,,,,,,,,,,24.1
+rs_falcoperegrinus_wing,rs_falcoperegrinus_variant," rs_shiyan_bp, fighter, fighter5, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",2,0.4,7,16,V,4500,500,,4,FIGHTER,Unmanned air superiority fighter,7,7500,,,,,,,,,,,,,25.1
+rs_gypsfulvus_wing,rs_gypsfulvus_variant," rs_shiyan_bp, fighter, fighter5, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",2,0.4,7,20,V,4000,500,,2,FIGHTER,Heavy UAV,16,8500,,,,,,,,,,,,,26.1
+rs_sagittariusserpentarius_wing,rs_sagittariusserpentarius_variant,"support3, fighter, rs_shiyan_bp, hist1t, merc, auto_fighter,attact_at_an_angle ,rs_praetorianorum_bp",3,0.3,8,20,V,4000,750,,2,SUPPORT,Advanced medium-sized unmanned support fighters,15,9000,,,,,,,,,,,,,27.1
+rs_pegasus_wing,rs_pegasus_variant,"fighter4, fighter, rs_shiyan_bp, attact_at_an_angle, rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,9,16,BOX,4000,800,,1,FIGHTER,heavy fighter,28,13500,,,,,,,,,,,,,28.1
+rs_harpyia_wing,rs_harpyia_variant,"fighter4, fighter, rs_shiyan_bp, attact_at_an_angle, rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,9,20,V,4000,750,,1,FIGHTER,Heavy hunting machine,25,12500,,,,,,,,,,,,,29.1
+rs_thunderbird_wing,rs_thunderbird_wing,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,15,40,BOX,5000,1000,750,1,FIGHTER,super heavy gunboat,40,70500,,,,,,,,,,,,,4
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rs_disputatio_wing,rs_disputatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp, auto_fighter",3,0.3,7,14,BOX,4000,600,,3,INTERCEPTOR,高速多用途战斗机,10,20000,,,,,,,,,,,,,1
-rs_appellatio_wing,rs_appellatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.25,10,18,V,4000,1000,,2,FIGHTER,战斗轰炸机,15,25000,,,,,,,,,,,,,2
-rs_confutatio_wing,rs_confutatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,15,22,V,5000,1000,1000,2,BOMBER,重型战斗轰炸机,20,27500,,,,,,,,,,,,,3
-rs_Tr_3_wing,rs_Tr_3_Defense_wing,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp, auto_fighter",3,0.1,15,45,BOX,5000,1000,750,1,FIGHTER,无人机动装甲,35,77500,,,,,,,,,,,,,4
+rs_disputatio_wing,rs_disputatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp, auto_fighter",3,0.3,7,14,BOX,4000,600,,3,INTERCEPTOR,high speed multi-role fighter,10,20000,,,,,,,,,,,,,1
+rs_appellatio_wing,rs_appellatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.25,10,18,V,4000,1000,,2,FIGHTER,fighter bomber,15,25000,,,,,,,,,,,,,2
+rs_confutatio_wing,rs_confutatio_Standerd,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp",3,0.2,15,22,V,5000,1000,1000,2,BOMBER,heavy fighter bomber,20,27500,,,,,,,,,,,,,3
+rs_Tr_3_wing,rs_Tr_3_Defense_wing,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,rs_praetorianorum_bp, auto_fighter",3,0.1,15,45,BOX,5000,1000,750,1,FIGHTER,Drone moving armor,35,77500,,,,,,,,,,,,,4
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vow_elmo_wing,vow_elmo_variant,"interceptor3, interceptor, auto_fighter,rapid_reform,vownor_bp",1,0.75,5,5,V,3000,500,,5,INTERCEPTOR,无人制空截击机,3,4155,,,,,,,,,,,,,
-vow_boanerges_wing,vow_boanerges_variant,"vownor_bp, fighter, fighter5, auto_fighter,attact_at_an_angle",2,0.5,7,15,V,4000,500,,2,FIGHTER,无人破交战斗机,10,8250,,,,,,,,,,,,,26.1
-vow_uriel_wing,vow_uriel_variant,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,vownor_bp",2,0.2,15,30,BOX,5000,1000,750,1,FIGHTER,重型突击炮艇,30,40500,,,,,,,,,,,,,4
-vow_seraphim_wing,vow_seraphim_variant,"bomber6,fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm , vownor_bp",2,0.1,15,35,BOX,5000,3000,750,1,BOMBER,重型战斗轰炸机,35,40500,,,,,,,,,,,,,4
+vow_elmo_wing,vow_elmo_variant,"interceptor3, interceptor, auto_fighter,rapid_reform,vownor_bp",1,0.75,5,5,V,3000,500,,5,INTERCEPTOR,unmanned air interceptor,3,4155,,,,,,,,,,,,,
+vow_boanerges_wing,vow_boanerges_variant,"vownor_bp, fighter, fighter5, auto_fighter,attact_at_an_angle",2,0.5,7,15,V,4000,500,,2,FIGHTER,Unmanned combat fighter,10,8250,,,,,,,,,,,,,26.1
+vow_uriel_wing,vow_uriel_variant,"fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm ,vownor_bp",2,0.2,15,30,BOX,5000,1000,750,1,FIGHTER,heavy assault gunship,30,40500,,,,,,,,,,,,,4
+vow_seraphim_wing,vow_seraphim_variant,"bomber6,fighter4, fighter , rapid_reform, leader_no_swarm, wingmen_no_swarm , vownor_bp",2,0.1,15,35,BOX,5000,3000,750,1,BOMBER,heavy fighter bomber,35,40500,,,,,,,,,,,,,4
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cr_FA1_wing,cr_FA1_variant,"fighter4, fighter, hist1t, auto_fighter,attact_at_an_angle,crusaders",3,0.5,7,12,V,5000,500,,2,FIGHTER,中型无人战斗机,14,12000,,,,,,,,,,,,,
-cr_FA2_wing,cr_FA2_variant,"interceptor3, interceptor, auto_fighter,crusaders",3,0.5,6,10,V,3000,500,,3,INTERCEPTOR,轻型无人截击机,7,10000,,,,,,,,,,,,,
-cr_FFR31_wing,cr_FFR31_variant,"interceptor3, interceptor, auto_fighter,crusaders",3,0.4,7,15,V,3000,500,,2,INTERCEPTOR,重型无人截击机,10,20000,,,,,,,,,,,,,
-cr_FFR31MR_wing,cr_FFR31MR_variant,"fighter4, fighter, hist1t, auto_fighter,attact_at_an_angle,crusaders",3,0.3,8,20,V,5000,500,,1,FIGHTER,重型无人战斗机,25,30000,,,,,,,,,,,,,
+cr_FA1_wing,cr_FA1_variant,"fighter4, fighter, hist1t, auto_fighter,attact_at_an_angle,crusaders",3,0.5,7,12,V,5000,500,,2,FIGHTER,medium unmanned fighters,14,12000,,,,,,,,,,,,,
+cr_FA2_wing,cr_FA2_variant,"interceptor3, interceptor, auto_fighter,crusaders",3,0.5,6,10,V,3000,500,,3,INTERCEPTOR,Light unmanned interceptor aircraft,7,10000,,,,,,,,,,,,,
+cr_FFR31_wing,cr_FFR31_variant,"interceptor3, interceptor, auto_fighter,crusaders",3,0.4,7,15,V,3000,500,,2,INTERCEPTOR,Heavy unmanned interceptor aircraft,10,20000,,,,,,,,,,,,,
+cr_FFR31MR_wing,cr_FFR31MR_variant,"fighter4, fighter, hist1t, auto_fighter,attact_at_an_angle,crusaders",3,0.3,8,20,V,5000,500,,1,FIGHTER,Heavy UAV,25,30000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

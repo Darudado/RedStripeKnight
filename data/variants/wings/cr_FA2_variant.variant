@@ -1,7 +1,7 @@
 {
   "variantId": "cr_FA2_variant",
   "hullId": "cr_FA2",
-  "displayName": "轻型截击机",
+  "displayName": "light interceptor",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

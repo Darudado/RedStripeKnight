@@ -341,26 +341,26 @@ public class Tr_SpecializedArmor extends BaseHullMod {
         Color warning = new Color(199, 78, 78, 155);
         Color flavor = new Color(110, 110, 110, 255);
 
-        tooltip.addSectionHeading("详细说明", Alignment.MID, 10.0F);
-        tooltip.addPara("反射装甲即使在船体装甲完全耗尽时也能提供卓越的生存能力，因为装甲板已与船体结构一体化建造。\n\n• 反射概率取决于投射物的 %s 和 %s，最高可达 %s。被反射的伤害会减少 %s，并且 %s 的基础伤害值会被转化为软通量。", 10.0F, Misc.getHighlightColor(), "入射角度", "武器类型", "100%", "50%", "90%");
+        tooltip.addSectionHeading("Detailed description", Alignment.MID, 10.0F);
+        tooltip.addPara("Reflective armor provides superior survivability even when the hull armor is completely depleted because the armor plates are built integrally with the hull structure.\n\n• Reflection probability depends on %s and %s of the projectile, up to %s. Reflected damage is reduced by %s, and %s of the base damage is converted to soft flux.", 10.0F, Misc.getHighlightColor(), "incident angle", "Weapon type", "100%", "50%", "90%");
 
-        tooltip.addPara("动能/高爆伤害减免: %s • 能量武器伤害减免: %s • 光束伤害减免: %s • EMP抗性提升: %s", 10.0F, green,
+        tooltip.addPara("Kinetic/High Explosive Damage Reduction: %s • Energy Weapon Damage Reduction: %s • Beam Damage Reduction: %s • EMP Resistance Boost: %s", 10.0F, green,
                 Misc.getRoundedValue(HE_KINETIC_DAMAGE_REDUCTION * 100.0F) + "%",
                 Misc.getRoundedValue(ENERGY_DAMAGE_REDUCTION * 100.0F) + "%",
                 Misc.getRoundedValue(BEAM_DAMAGE_REDUCTION * 100.0F) + "%",
                 Misc.getRoundedValue(EMP_DAMAGE_NEGATION * 100.0F) + "%");
 
-        tooltip.addPara("反射概率与入射角度关系:" +
-                "   ≤20°: 0% 反射" +
-                "   20°-45°: 30% 反射" +
-                "   45°-65°: 65% 反射" +
-                "   65°-80°: 85% 反射" +
-                "   ≥80°: 100% 反射", 10.0F, Misc.getHighlightColor(), "");
+        tooltip.addPara("The relationship between reflection probability and incident angle:" +
+                "≤20°: 0% reflection" +
+                "20°-45°: 30% reflective" +
+                "45°-65°: 65% reflective" +
+                "65°-80°: 85% reflective" +
+                "≥80°: 100% reflective", 10.0F, Misc.getHighlightColor(), "");
 
-        tooltip.addSectionHeading("警告", Misc.getHighlightColor(), warning, Alignment.MID, 10.0F);
+        tooltip.addSectionHeading("warn", Misc.getHighlightColor(), warning, Alignment.MID, 10.0F);
         TooltipMakerAPI incompat_text = tooltip.beginImageWithText("graphics/icons/tooltip/hullmod_incompatible.png", 40.0F);
-        incompat_text.addPara("这种装甲板 %s 和 %s 武器的防护效果不佳，同时无法完全抵御 %s。", 10.0F, Misc.getNegativeHighlightColor(),
-         "对光束武器", "高爆类型", "导弹和其他爆炸性弹药");
+        incompat_text.addPara("This armor plate %s and %s weapons provide poor protection and do not provide complete protection against %s.", 10.0F, Misc.getNegativeHighlightColor(),
+         "anti-beam weapons", "High explosive type", "Missiles and other explosive ordnance");
         //tooltip.addImageWithText(10.0F);
         //tooltip.addPara("%s", 10.0F, flavor, "这次攻击被弹开了！我们无法击穿他们的装甲。这到底是什么材料做的？！").italicize();
         //tooltip.addPara("%s", 2.0F, flavor, "         —— 一名前海盗幸存者在遭遇基哈尔级机动兵器后的叙述。");

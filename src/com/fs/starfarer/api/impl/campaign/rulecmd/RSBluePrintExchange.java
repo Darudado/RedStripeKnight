@@ -134,7 +134,7 @@ public class RSBluePrintExchange extends PaginatedOptions {
             eligibleMembers.add(member);
             String optId = OPTION_PREFIX + index;
             String hullName = member.getHullSpec().getHullNameWithDashClass();
-            String str = "交换 " + hullName + " 的蓝图";
+            String str = "exchange" + hullName + "blueprint";
             addOption(str, optId);
             index++;
         }
@@ -153,7 +153,7 @@ public class RSBluePrintExchange extends PaginatedOptions {
         dialog.getVisualPanel().showFleetMemberInfo(member, true);
 
         text.setFontSmallInsignia();
-        text.addPara("确认用 " + member.getHullSpec().getHullNameWithDashClass() + " 交换其蓝图？");
+        text.addPara("For confirmation" + member.getHullSpec().getHullNameWithDashClass() + "Exchange their blueprints?");
         text.addPara(desc.getText1FirstPara());
         text.setFontInsignia();
     }
@@ -173,7 +173,7 @@ public class RSBluePrintExchange extends PaginatedOptions {
 
         // 在文本面板显示结果（可选，因为 CSV 中也有“交换完成。”文本）
         text.setFontSmallInsignia();
-        text.addPara("获得蓝图：" + member.getHullSpec().getHullNameWithDashClass(),
+        text.addPara("Get the blueprint:" + member.getHullSpec().getHullNameWithDashClass(),
                 Misc.getPositiveHighlightColor(), Misc.getHighlightColor(),
                 member.getHullSpec().getHullNameWithDashClass());
         text.setFontInsignia();

@@ -361,7 +361,7 @@ public class YukikazeLockedTarget extends MagicSubsystem implements DamageDealtM
 
     @Override
     public String getDisplayText() {
-        return "锁定目标: " + TARGETS.size() + "/" + MAX_TARGETS + " (+" + (int)(DAMAGE_BONUS * 100) + "%伤害)";
+        return "Target:" + TARGETS.size() + "/" + MAX_TARGETS + " (+" + (int)(DAMAGE_BONUS * 100) + "%harm)";
     }
 
 }

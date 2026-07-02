@@ -1,16 +1,16 @@
 {
     "designTypeColors":{
-		"红条骑士团":[160,0,0,255],
-		"骑士团实验":[222,30,15,255],
-		"骑士团科技":[222,30,15,255],
-		"红条近卫军团":[150,25,25,255],
-		"十字军计划（独特）":[150,25,50,255],
-		"誓言者设计":[255,94,94,255],
-		"十字军计划":[35,135,205,255],
+		"red stripe knights":[160,0,0,255],
+		"Knights Experiment":[222,30,15,255],
+		"Knights Technology":[222,30,15,255],
+		"Red Stripe Guards Regiment":[150,25,25,255],
+		"Crusader Plan (unique)":[150,25,50,255],
+		"oath taker design":[255,94,94,255],
+		"crusade plan":[35,135,205,255],
 
-		"能量核心-拓展":[222,30,15,255],
-		"能量核心-强化":[35,135,205,255],
-		"能量核心-覆写":[255,94,94,255],
+		"Energy Core-Expansion":[222,30,15,255],
+		"Energy Core-Strengthened":[35,135,205,255],
+		"Energy Core-Overwrite":[255,94,94,255],
     },
   "graphics":{
     "blueprint_packages":{

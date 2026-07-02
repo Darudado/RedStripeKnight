@@ -278,7 +278,7 @@ public class CrusadersRaidExpedition extends BlockadeFGI implements EconomyTickL
         {
 
             final CampaignFleetAPI meshaniiGuardFleet = MagicCampaign.createFleetBuilder()
-                    .setFleetName("节点")
+                    .setFleetName("node")
                     .setFleetFaction("cinis_of_crusaders")
                     .setFleetType("taskForce")
                     .setFlagshipVariant("cr_tabernaculum_Standard")

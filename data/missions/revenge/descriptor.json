@@ -1,6 +1,6 @@
 {
-	"title":"复仇",
-	"difficulty":"困难",
-	"icon":"crest_rs_flag.png",
-	"background":"graphics/backgrounds/background3.jpg"
+  "title": "revenge",
+  "difficulty": "difficulty",
+  "icon": "crest_rs_flag.png",
+  "background": "graphics/backgrounds/background3.jpg"
 }

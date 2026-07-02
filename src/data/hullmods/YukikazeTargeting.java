@@ -14,7 +14,7 @@ public class YukikazeTargeting extends BaseHullMod{
             MagicSubsystemsManager.addSubsystemToShip(ship, Subsystem);
         } catch (Exception e) {
             // 记录错误日志，便于调试
-            Global.getLogger(this.getClass()).error("添加子系统失败: " + e.getMessage(), e);
+            Global.getLogger(this.getClass()).error("Failed to add subsystem:" + e.getMessage(), e);
         }
 
 

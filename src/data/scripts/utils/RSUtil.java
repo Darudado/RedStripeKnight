@@ -1069,7 +1069,7 @@ public class RSUtil {
             boolean disablePermanently) {
 
         if (engine == null || ship == null || weapon == null) {
-            log.warn("无法移除武器：参数为null");
+            log.warn("Unable to remove weapon: parameter is null");
             return;
         }
 
@@ -1086,11 +1086,11 @@ public class RSUtil {
                         weapon.disable(true);
                     }
 
-                    log.info("成功移除武器：" + weapon.getId() +
-                            "，槽位：" + weapon.getSlot().getId());
+                    log.info("Weapon removed successfully:" + weapon.getId() +
+                            ", slot:" + weapon.getSlot().getId());
 
                 } catch (Exception e) {
-                    log.error("移除武器失败：" + weapon.getId(), e);
+                    log.error("Failed to remove weapon:" + weapon.getId(), e);
                 } finally {
                     // 无论成功失败，都移除插件
                     engine.removePlugin(this);
@@ -1114,7 +1114,7 @@ public class RSUtil {
             boolean disablePermanently) {
 
         if (engine == null || ship == null || weapons == null || weapons.isEmpty()) {
-            log.warn("无法批量移除武器：参数为null或列表为空");
+            log.warn("Unable to batch remove weapons: parameter is null or list is empty");
             return;
         }
 
@@ -1137,10 +1137,10 @@ public class RSUtil {
                         }
                     }
 
-                    log.info("成功移除 " + successCount + " 个武器，舰船：" + ship.getName());
+                    log.info("successfully removed" + successCount + "weapons, ships:" + ship.getName());
 
                 } catch (Exception e) {
-                    log.error("批量移除武器失败", e);
+                    log.error("Failed to remove weapons in batches", e);
                 } finally {
                     // 无论成功失败，都移除插件
                     engine.removePlugin(this);
@@ -1164,7 +1164,7 @@ public class RSUtil {
             boolean disablePermanently) {
 
         if (engine == null || ship == null || slotId == null) {
-            log.warn("无法根据槽位移除武器：参数为null");
+            log.warn("Unable to remove weapon based on slot: parameter is null");
             return;
         }
 
@@ -1191,13 +1191,13 @@ public class RSUtil {
                             targetWeapon.disable(true);
                         }
 
-                        log.info("成功移除槽位武器：" + slotId);
+                        log.info("Successfully removed slot weapon:" + slotId);
                     } else {
-                        log.warn("未找到槽位武器：" + slotId);
+                        log.warn("Slot weapon not found:" + slotId);
                     }
 
                 } catch (Exception e) {
-                    log.error("根据槽位移除武器失败：" + slotId, e);
+                    log.error("Removing weapons based on slot fails:" + slotId, e);
                 } finally {
                     // 无论成功失败，都移除插件
                     engine.removePlugin(this);
@@ -1221,7 +1221,7 @@ public class RSUtil {
             boolean disablePermanently) {
 
         if (engine == null || ship == null || slotIdPrefix == null) {
-            log.warn("无法根据槽位前缀移除武器：参数为null");
+            log.warn("Unable to remove weapon based on slot prefix: parameter is null");
             return;
         }
 
@@ -1246,10 +1246,10 @@ public class RSUtil {
                         }
                     }
 
-                    log.info("成功移除 " + successCount + " 个前缀为 '" + slotIdPrefix + "' 的武器");
+                    log.info("successfully removed" + successCount + "prefixed with '" + slotIdPrefix + "' weapons");
 
                 } catch (Exception e) {
-                    log.error("根据槽位前缀批量移除武器失败：" + slotIdPrefix, e);
+                    log.error("Batch removal of weapons based on slot prefix failed:" + slotIdPrefix, e);
                 } finally {
                     // 无论成功失败，都移除插件
                     engine.removePlugin(this);

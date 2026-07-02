@@ -197,7 +197,7 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
             }
             String spritename = "graphics/icons/hullsys/high_energy_focus.png";
             engine.maintainStatusForPlayerShip(((Object[]) StatusDataKey.get(ship))[0], spritename,
-                    spec.getDisplayName(), "伤害提升" + increaseDamage + "%", false);
+                    spec.getDisplayName(), "Damage increased" + increaseDamage + "%", false);
         }
         MutableShipStatsAPI stats = ship.getMutableStats();
         stats.getDamageToTargetHullMult().modifyPercent(spec.getId(), increaseDamage);
@@ -288,10 +288,10 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
             String spritename = "graphics/icons/hullsys/high_energy_focus.png";
             String description;
             if (shutdown) {
-                description = "镀层已关闭 - 伤害提升" + increaseDamage + "%";
+                description = "Plating is off - damage increased" + increaseDamage + "%";
             } else {
-                description = "镀层:" + Math.round(currentPlating) + "/" + Math.round(maxPlating) +
-                        " - 伤害提升" + increaseDamage + "%";
+                description = "Plating:" + Math.round(currentPlating) + "/" + Math.round(maxPlating) +
+                        "- Damage increased" + increaseDamage + "%";
             }
             engine.maintainStatusForPlayerShip(((Object[]) StatusDataKey.get(ship))[0], spritename,
                     spec.getDisplayName(), description, false);
@@ -517,7 +517,7 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
                 if (ship == engine.getPlayerShip()) {
                     engine.addFloatingText(
                             ship.getLocation(),
-                            "电弧触发!",
+                            "Arc trigger!",
                             20f,
                             Color.CYAN,
                             ship,
@@ -600,59 +600,59 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
         Color positiveColor = com.fs.starfarer.api.util.Misc.getPositiveHighlightColor();
         Color grayColor = com.fs.starfarer.api.util.Misc.getGrayColor();
 
-        tooltip.addPara("天启计算阵列是先进的战斗分析系统，能够在战斗中实时优化武器系统、分析敌我损伤，并通过自适应算法不断提升作战效率。该系统特别适合持久战和消耗战，能够越战越强。",
+        tooltip.addPara("The Apocalypse Computing Array is an advanced combat analysis system that can optimize weapon systems in real time during combat, analyze enemy and friendly damage, and continuously improve combat efficiency through adaptive algorithms. This system is particularly suitable for protracted wars and wars of attrition, and can become stronger with each war.",
                 grayColor, opad);
 
-        tooltip.addSectionHeading("核心功能", Alignment.MID, opad);
+        tooltip.addSectionHeading("Core functions", Alignment.MID, opad);
 
         // 核心效果
-        tooltip.addPara("幅能优化系统:", opad);
-        tooltip.addPara("• 所有武器幅能消耗减少 %s", pad,
+        tooltip.addPara("Amplitude energy optimization system:", opad);
+        tooltip.addPara("• All weapon energy costs reduced by %s", pad,
                 highlightColor, FLUX_COST_DECREASE + "%");
-        tooltip.addPara("• 大型武器装配点需求 -%s", 0,
+        tooltip.addPara("• Large weapon assembly point requirements -%s", 0,
                 positiveColor, Math.abs(decModL) + "");
-        tooltip.addPara("• 小型武器装配点需求 -%s", pad,
+        tooltip.addPara("• Small arms assembly point requirements -%s", pad,
                 positiveColor, Math.abs(decModS) + "");
 
         // 战利品回收系统
-        tooltip.addPara("战利品回收系统:", opad);
-        tooltip.addPara("• 3000米内摧毁敌人时:", 0);
-        tooltip.addPara("   ↳ 恢复自身 %s 结构值", 0,
+        tooltip.addPara("Loot recovery system:", opad);
+        tooltip.addPara("• When destroying enemies within 3000 meters:", 0);
+        tooltip.addPara("↳Restore own %s structure value", 0,
                 positiveColor, HP_HEAL + "%");
-        tooltip.addPara("   ↳ 恢复所有装甲格 %s 装甲值", pad,
+        tooltip.addPara("↳ Restore all armor grid %s armor value", pad,
                 positiveColor, ARMOR_HEAL + "%");
 
         // 自适应伤害增幅
-        tooltip.addPara("自适应伤害增幅:", opad);
-        tooltip.addPara("• 每损失 %s 结构值/镀层值，伤害提升 %s", 0,
+        tooltip.addPara("Adaptive damage increase:", opad);
+        tooltip.addPara("• Damage increased by %s for every %s structure value/plating value lost", 0,
                 highlightColor, PLATING_LOST + "%", DAMAGE_INCREASE + "%");
-        tooltip.addPara("• 伤害提升效果:", 0);
-        tooltip.addPara("  ↳ 无上限叠加", 0, positiveColor);
-        tooltip.addPara("  ↳ 对战机和护盾同样生效", 0, positiveColor);
-        tooltip.addPara("  ↳ 实时更新，无需等待", pad, positiveColor);
+        tooltip.addPara("• Damage boosting effect:", 0);
+        tooltip.addPara("↳ Unlimited stacking", 0, positiveColor);
+        tooltip.addPara("↳ Also effective against fighters and shields", 0, positiveColor);
+        tooltip.addPara("↳ Real-time updates, no need to wait", pad, positiveColor);
 
         // 电弧连锁系统
-        tooltip.addPara("电弧连锁系统:", opad);
-        tooltip.addPara("• 武器攻击时有概率触发电弧:", 0);
-        tooltip.addPara("  ↳ 基础概率: %s", 0,
+        tooltip.addPara("Arc interlocking system:", opad);
+        tooltip.addPara("• There is a probability of triggering an arc when the weapon attacks:", 0);
+        tooltip.addPara("↳ Base probability: %s", 0,
                 highlightColor, ARC_BASE_CHANCE + "%");
-        tooltip.addPara("  ↳ 最大概率: %s", 0,
+        tooltip.addPara("↳ Maximum probability: %s", 0,
                 highlightColor, ARC_MAX_CHANCE + "%");
-        tooltip.addPara("• 电弧效果:", 0);
-        tooltip.addPara("  ↳ 伤害: 原始伤害的 %s", 0,
+        tooltip.addPara("• Arc effect:", 0);
+        tooltip.addPara("↳ Damage: %s of original damage", 0,
                 highlightColor, (int)(ARC_DAMAGE_MULT * 100) + "%");
-        tooltip.addPara("  ↳ EMP伤害: %s", 0,
+        tooltip.addPara("↳ EMP damage: %s", 0,
                 highlightColor, (int)ARC_EMP_DAMAGE + "");
-        tooltip.addPara("  ↳ 跳跃距离: %s 单位", pad,
+        tooltip.addPara("↳ Jump distance: %s units", pad,
                 highlightColor, (int)ARC_RANGE + "");
-        tooltip.addPara("• 概率随武器装配点提升:", 0);
-        tooltip.addPara("  ↳ 总OP越高，电弧触发概率越高", 0, positiveColor);
-        tooltip.addPara("  ↳ 最大OP限制: 400 OP对应最大概率", pad, highlightColor);
+        tooltip.addPara("• The probability increases with weapon assembly points:", 0);
+        tooltip.addPara("↳ The higher the total OP, the higher the probability of arc triggering", 0, positiveColor);
+        tooltip.addPara("↳ Maximum OP limit: 400 OP corresponds to the maximum probability", pad, highlightColor);
 
 
         // 当前状态显示（如果有船引用）
         if (ship != null && !isForModSpec) {
-            tooltip.addSectionHeading("当前状态", Alignment.MID, opad);
+            tooltip.addSectionHeading("Current status", Alignment.MID, opad);
 
             // 计算武器OP
             int weaponOP = calculateTotalWeaponOP(ship);
@@ -666,34 +666,34 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
             }
 
             // 显示武器信息
-            tooltip.addPara("武器系统:", 0);
-            tooltip.addPara("• 总装配点: %s OP", 0,
+            tooltip.addPara("Weapon system:", 0);
+            tooltip.addPara("• General assembly point: %s OP", 0,
                     highlightColor, weaponOP + "");
-            tooltip.addPara("• 电弧触发概率: %s", 0,
+            tooltip.addPara("• Arc trigger probability: %s", 0,
                     positiveColor, String.format("%.1f%%", arcChance));
 
             // 显示伤害增幅
-            tooltip.addPara("伤害增幅:", opad);
-            tooltip.addPara("• 当前增幅: %s", 0,
+            tooltip.addPara("Damage increase:", opad);
+            tooltip.addPara("• Current increase: %s", 0,
                     positiveColor, currentDamageBoost + "%");
 
             // 如果安装了十字军镀层，显示镀层状态
 
             // 性能评估
-            tooltip.addSectionHeading("性能评估", Alignment.MID, opad);
-            tooltip.addPara("• 电弧系统: %s", 0,
+            tooltip.addSectionHeading("Performance evaluation", Alignment.MID, opad);
+            tooltip.addPara("• Arc system: %s", 0,
                     arcChance > ARC_BASE_CHANCE ? positiveColor : highlightColor,
-                    arcChance > ARC_BASE_CHANCE ? "已优化" : "基础状态");
-            tooltip.addPara("• 武器配置: %s", pad,
+                    arcChance > ARC_BASE_CHANCE ? "Optimized" : "base state");
+            tooltip.addPara("• Weapon configuration: %s", pad,
                     weaponOP > 200 ? positiveColor : highlightColor,
-                    weaponOP > 200 ? "高OP配置" : "常规配置");
+                    weaponOP > 200 ? "High OP configuration" : "General configuration");
         }
 
         // 系统限制
-        tooltip.addSectionHeading("系统限制", Alignment.MID, opad);
-        tooltip.addPara("战利品回收仅对3000米内目标有效", 0, grayColor);
-        tooltip.addPara("电弧需要具有一定威力的弹丸触发", 0, grayColor);
-        tooltip.addPara("伤害增幅在战斗结束后重置", 0, grayColor);
+        tooltip.addSectionHeading("System limitations", Alignment.MID, opad);
+        tooltip.addPara("Loot recovery is only effective for targets within 3000 meters", 0, grayColor);
+        tooltip.addPara("The arc requires a projectile with a certain power to trigger it.", 0, grayColor);
+        tooltip.addPara("Damage amplification resets after combat", 0, grayColor);
     }
 
     private int calculateTotalWeaponOP(ShipAPI ship) {

@@ -105,8 +105,8 @@ public class Moci_RetreatModule extends Moci_BaseAIModule{
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                         "retreat_debug_" + ship.getId(),
                         Global.getSettings().getSpriteName("ui", "icon_tactical_cr_penalty"),
-                        "撤退调试",
-                        "朝向误差: " + String.format("%.1f", facingError) + "° | 旅行驱动: " + (travelDriveOn ? "开启" : "关闭") + " | Y: " + String.format("%.0f", ship.getLocation().getY()),
+                        "Retreat debugging",
+                        "Orientation error:" + String.format("%.1f", facingError) + "° | Travel Drive:" + (travelDriveOn ? "turn on" : "closure") + " | Y: " + String.format("%.0f", ship.getLocation().getY()),
                         false
                     );
                 }
@@ -115,7 +115,7 @@ public class Moci_RetreatModule extends Moci_BaseAIModule{
                 if(facingError <= 1f && !travelDriveOn){
                     ship.turnOnTravelDrive();
                     Global.getLogger(Moci_RetreatModule.class).info(
-                        "僚机 " + ship.getName() + " 激活旅行驱动，当前Y坐标: " + ship.getLocation().getY()
+                        "wingman" + ship.getName() + "Activate travel driver, current Y coordinate:" + ship.getLocation().getY()
                     );
                 }
                 break;

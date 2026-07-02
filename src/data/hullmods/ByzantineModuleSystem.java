@@ -139,26 +139,26 @@ public class ByzantineModuleSystem extends BaseHullMod {
         com.fs.starfarer.api.util.Misc.getHighlightColor();
         com.fs.starfarer.api.util.Misc.getPositiveHighlightColor();
 
-        tooltip.addPara("拜占庭的模块火控系统经过特殊设计", pads);
-        tooltip.addPara("能够为自身与队友带来强大增益", pad);
+        tooltip.addPara("Byzantine's modular fire control system is specially designed", pads);
+        tooltip.addPara("Can bring powerful benefits to yourself and your teammates", pad);
 
-        tooltip.addPara("**自身效果:**", pads);
-        tooltip.addPara("- 能量和实弹武器射程 +40%%", pad);
-        tooltip.addPara("- 武器最低射程提升至 %s", pad, com.fs.starfarer.api.util.Misc.getHighlightColor(), "1000");
-        tooltip.addPara("- 所有武器自动开火精度 +%s", pad,
+        tooltip.addPara("**Self Effect:**", pads);
+        tooltip.addPara("- Energy and live weapon range +40%%", pad);
+        tooltip.addPara("- Minimum weapon range increased to %s", pad, com.fs.starfarer.api.util.Misc.getHighlightColor(), "1000");
+        tooltip.addPara("- All weapons auto-fire accuracy +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "75%");
-        tooltip.addPara("- 所有武器部署点减少: 小型-%s 中型-%s 大型-%s", pad,
+        tooltip.addPara("- All weapon deployment points are reduced: small - %s, medium - %s, large - %s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(),
                 String.valueOf(SMALL_COST_REDUCTION),
                 String.valueOf(MEDIUM_COST_REDUCTION),
                 String.valueOf(LARGE_COST_REDUCTION));
 
-        tooltip.addPara("**舰队指挥效果:**", pads);
-        tooltip.addPara("- 周围 %s 码范围内的友军舰船获得:", pad,
+        tooltip.addPara("**Fleet command effect:**", pads);
+        tooltip.addPara("- Allied ships within %s yards gain:", pad,
                 com.fs.starfarer.api.util.Misc.getHighlightColor(), "2500");
-        tooltip.addPara("- 所有武器自动开火精度 +%s", pad,
+        tooltip.addPara("- All weapons auto-fire accuracy +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "25%");
-        tooltip.addPara("- 战术系统冷却缩减 +%s", pad,
+        tooltip.addPara("- Tactical system cooldown reduction +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "10%");
     }
 }

@@ -122,12 +122,12 @@ public class UniversalRangeFinder extends BaseHullMod {
         if (ship == null) return null;
         // 条件1: 必须有实弹或能量武器槽
         if (getLargestSlot(ship) == null)
-            return "舰船没有大型实弹或能量武器槽";
+            return "The ship does not have slots for large live ammunition or energy weapons";
         // 条件2: 仅限驱逐舰/巡洋舰/主力舰
         if (ship.getHullSize() != HullSize.CAPITAL_SHIP &&
                 ship.getHullSize() != HullSize.DESTROYER &&
                 ship.getHullSize() != HullSize.CRUISER)
-            return "只能安装在驱逐舰或更大型的舰船上";
+            return "Can only be installed on destroyers or larger ships";
         return null; // 可安装
     }
 
@@ -141,11 +141,11 @@ public class UniversalRangeFinder extends BaseHullMod {
         Color yellow = new Color(255, 255, 150);
 
         // 原有射程描述
-        tooltip.addPara("统一武器射程系统：优化舰船武器射程分布并应用硬性上限。", opad);
+        tooltip.addPara("Unified Weapon Range System: Optimizes ship weapon range distribution and applies hard caps.", opad);
 
         // OP调整表格
-        tooltip.addSectionHeading("装配点(OP)调整", Alignment.MID, opad);
-        tooltip.addPara("根据武器槽位大小调整装配点消耗：", pad);
+        tooltip.addSectionHeading("Assembly point (OP) adjustment", Alignment.MID, opad);
+        tooltip.addPara("Adjust assembly point consumption according to weapon slot size:", pad);
 
         float col1W = 120.0F;
         float colW = 80.0F;
@@ -157,24 +157,24 @@ public class UniversalRangeFinder extends BaseHullMod {
                 20.0F,
                 true,
                 true,
-                new Object[]{"武器槽位", col1W, "OP调整", colW}
+                new Object[]{"Weapon slot", col1W, "OP adjustment", colW}
         );
 
         String smallOP = (SMALL_SLOT_OP_MODIFIER < 0 ? "-" : "+") + Math.abs(SMALL_SLOT_OP_MODIFIER);
         String mediumOP = (MEDIUM_SLOT_OP_MODIFIER < 0 ? "-" : "+") + Math.abs(MEDIUM_SLOT_OP_MODIFIER);
         String largeOP = (LARGE_SLOT_OP_MODIFIER < 0 ? "-" : "+") + Math.abs(LARGE_SLOT_OP_MODIFIER);
 
-        tooltip.addRow(SMALL_SLOT_OP_MODIFIER < 0 ? good : bad, "小型槽位", smallOP);
-        tooltip.addRow(MEDIUM_SLOT_OP_MODIFIER < 0 ? good : bad, "中型槽位", mediumOP);
-        tooltip.addRow(LARGE_SLOT_OP_MODIFIER < 0 ? good : bad, "大型槽位", largeOP);
+        tooltip.addRow(SMALL_SLOT_OP_MODIFIER < 0 ? good : bad, "Small slot", smallOP);
+        tooltip.addRow(MEDIUM_SLOT_OP_MODIFIER < 0 ? good : bad, "medium slot", mediumOP);
+        tooltip.addRow(LARGE_SLOT_OP_MODIFIER < 0 ? good : bad, "Large slot", largeOP);
         tooltip.addTable("", 0, pad);
 
-        tooltip.addPara("注意：%s 的装配点消耗不会改变。",
-                opad, bad, "导弹武器");
+        tooltip.addPara("NOTE: The assembly point cost of %s will not change.",
+                opad, bad, "missile weapons");
 
         // 射程加成表格（包含上限说明）
-        tooltip.addSectionHeading("射程加成系统", Alignment.MID, opad);
-        tooltip.addPara("分层射程加成体系：", pad);
+        tooltip.addSectionHeading("range bonus system", Alignment.MID, opad);
+        tooltip.addPara("Layered range bonus system:", pad);
 
         // 加成表格
         tooltip.beginTable(
@@ -184,39 +184,39 @@ public class UniversalRangeFinder extends BaseHullMod {
                 20.0F,
                 true,
                 true,
-                new Object[]{"槽位类型", col1W, "加成值", colW}
+                new Object[]{"Slot type", col1W, "Bonus value", colW}
         );
 
-        tooltip.addRow(h, "小型槽位", "+" + (int)SMALL_SLOT_BONUS_PERCENT + "%");
-        tooltip.addRow(h, "中型槽位", "+" + (int)MEDIUM_SLOT_BONUS_PERCENT + "%");
-        tooltip.addRow(h, "大型槽位", "+" + (int)LARGE_SLOT_BONUS_FLAT);
+        tooltip.addRow(h, "Small slot", "+" + (int)SMALL_SLOT_BONUS_PERCENT + "%");
+        tooltip.addRow(h, "medium slot", "+" + (int)MEDIUM_SLOT_BONUS_PERCENT + "%");
+        tooltip.addRow(h, "Large slot", "+" + (int)LARGE_SLOT_BONUS_FLAT);
         tooltip.addTable("", 0, pad);
 
         // 全局加成说明
-        tooltip.addPara("▸ 所有武器获得 %s 基础射程加成",
+        tooltip.addPara("▸ All weapons gain %s base range bonus",
                 pad, h, "+300");
 
         // 射程上限说明（重点更新部分）
-        tooltip.addPara("▸ 强制射程上限：",
+        tooltip.addPara("▸ Forced range cap:",
                 pad, red);
-        tooltip.addPara("　• 小型武器: %s",
+        tooltip.addPara("• Small arms: %s",
                 pad, bad, "≤ 800");
-        tooltip.addPara("　• 中/大型武器: %s",
+        tooltip.addPara("• Medium/Large Weapons: %s",
                 pad, bad, "≤ 850");
 
         // 计算示例
-        tooltip.addSectionHeading("计算示例", Alignment.MID, opad);
-        tooltip.addPara("小型武器（基础400）:", pad);
+        tooltip.addSectionHeading("Calculation example", Alignment.MID, opad);
+        tooltip.addPara("Small arms (base 400):", pad);
         tooltip.addPara("　(400 + 300) × 1.25 = 875 → %s",
-                pad, red, "强制降至800");
+                pad, red, "Forced down to 800");
 
-        tooltip.addPara("大型武器（基础700）:", pad);
+        tooltip.addPara("Large weapons (base 700):", pad);
         tooltip.addPara("　700 + 300 + 150 = 1150 → %s",
-                pad, red, "强制降至850");
+                pad, red, "Forced down to 850");
 
         // 排除规则
-        tooltip.addPara("注意：%s 不受加成和限制影响",
-                opad, bad, "点防御和导弹武器");
+        tooltip.addPara("Note: %s is not affected by bonuses and restrictions",
+                opad, bad, "Point defense and missile weapons");
     }
 
     public float getTooltipWidth() {

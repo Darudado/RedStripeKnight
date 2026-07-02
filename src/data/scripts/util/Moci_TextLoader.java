@@ -49,7 +49,7 @@ public class Moci_TextLoader {
             loadConfigPath(configPath);
         }
         initialized = true;
-        log.info("文本加载器初始化成功，累计加载了 " + textCache.size() + " 条文本数据");
+        log.info("The text loader was initialized successfully and a total of" + textCache.size() + "text data");
     }
 
     private static void loadConfigPath(String configPath) {
@@ -62,11 +62,11 @@ public class Moci_TextLoader {
                     textCache.put(entryId, entry);
                 }
             }
-            log.info("加载文本配置: " + configPath + " (共 " + (root == null ? 0 : root.length()) + " 项)");
+            log.info("Load text configuration:" + configPath + "(common" + (root == null ? 0 : root.length()) + "item)");
         } catch (IOException e) {
-            log.warn("无法加载文本配置文件: " + configPath, e);
+            log.warn("Unable to load text configuration file:" + configPath, e);
         } catch (JSONException e) {
-            log.warn("文本配置文件JSON格式错误: " + configPath, e);
+            log.warn("Text configuration file JSON format error:" + configPath, e);
         }
     }
     
@@ -78,7 +78,7 @@ public class Moci_TextLoader {
      * @return 文本内容，如果未找到返回 "[缺失文本: " + key + "]"
      */
     public static String getText(String hullmodId, String key) {
-        return getText(hullmodId, key, "[缺失文本: " + key + "]");
+        return getText(hullmodId, key, "[Missing text:" + key + "]");
     }
 
     public static String getText(String hullmodId, String key, String fallback) {
@@ -89,7 +89,7 @@ public class Moci_TextLoader {
         if (fallback != null) {
             return fallback;
         }
-        return "[缺失文本: " + key + "]";
+        return "[Missing text:" + key + "]";
     }
 
     public static String getTextOrNull(String hullmodId, String key) {
@@ -159,7 +159,7 @@ public class Moci_TextLoader {
             }
             
         } catch (JSONException e) {
-            log.warn("获取高亮列表时发生错误: " + key + " (在 " + hullmodId + " 中)", e);
+            log.warn("An error occurred while getting the highlight list:" + key + "(exist" + hullmodId + "middle)", e);
         }
         
         return result;

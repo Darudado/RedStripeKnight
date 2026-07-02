@@ -1,7 +1,7 @@
 {
   "variantId": "rs_aquilachrysaetos_variant",
   "hullId": "rs_aquilachrysaetos",
-  "displayName": "攻击无人机",
+  "displayName": "attack drone",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

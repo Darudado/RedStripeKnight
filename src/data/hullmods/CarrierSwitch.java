@@ -177,13 +177,13 @@ public class CarrierSwitch extends BaseHullMod {
             }
 
             if (!toRemove.isEmpty()) {
-                Global.getLogger(this.getClass()).info("CarrierSwitch: 清理了 " + toRemove.size() + " 个无效引用");
+                Global.getLogger(this.getClass()).info("CarrierSwitch: Cleaned" + toRemove.size() + "invalid references");
             }
         }
     }
 
     private void applyCarrierMode(ShipVariantAPI variant, CarrierMode mode) {
-        Global.getLogger(this.getClass()).info("CarrierSwitch: 开始应用模式 " + mode);
+        Global.getLogger(this.getClass()).info("CarrierSwitch: Start application mode" + mode);
 
         // 清理现有模式
         cleanupCurrentMode(variant);
@@ -199,14 +199,14 @@ public class CarrierSwitch extends BaseHullMod {
                 safeAddPermaMod(variant, STRIKE_PERMA);
                 break;
             case NONE:
-                Global.getLogger(this.getClass()).warn("CarrierSwitch: 尝试应用NONE模式");
+                Global.getLogger(this.getClass()).warn("CarrierSwitch: Try to apply NONE mode");
                 break;
         }
 
         // 刷新UI
         try {
             RSUtil.refreshRefitUI();
-            Global.getLogger(this.getClass()).info("CarrierSwitch: UI刷新完成");
+            Global.getLogger(this.getClass()).info("CarrierSwitch: UI refresh completed");
         } catch (Exception e) {
             logError(e);
         }
@@ -216,7 +216,7 @@ public class CarrierSwitch extends BaseHullMod {
      * 清理当前模式
      */
     private void cleanupCurrentMode(ShipVariantAPI variant) {
-        Global.getLogger(this.getClass()).info("CarrierSwitch: 开始清理当前模式");
+        Global.getLogger(this.getClass()).info("CarrierSwitch: Start cleaning the current mode");
 
         int removedCount = 0;
         if (variant.hasHullMod(SUPPORT_MOD)) {
@@ -236,40 +236,40 @@ public class CarrierSwitch extends BaseHullMod {
             removedCount++;
         }
 
-        Global.getLogger(this.getClass()).info("CarrierSwitch: 清理了 " + removedCount + " 个模块");
+        Global.getLogger(this.getClass()).info("CarrierSwitch: Cleaned" + removedCount + "modules");
     }
 
     // 安全操作方法
     private void safeAddMod(ShipVariantAPI variant, String modId) {
         if (!variant.hasHullMod(modId)) {
             variant.addMod(modId);
-            Global.getLogger(this.getClass()).info("CarrierSwitch: 添加模块 " + modId);
+            Global.getLogger(this.getClass()).info("CarrierSwitch: Add module" + modId);
         }
     }
 
     private void safeRemoveMod(ShipVariantAPI variant, String modId) {
         if (variant.hasHullMod(modId)) {
             variant.removeMod(modId);
-            Global.getLogger(this.getClass()).info("CarrierSwitch: 移除模块 " + modId);
+            Global.getLogger(this.getClass()).info("CarrierSwitch: remove module" + modId);
         }
     }
 
     private void safeAddPermaMod(ShipVariantAPI variant, String modId) {
         if (!variant.hasHullMod(modId)) {
             variant.addPermaMod(modId, false);
-            Global.getLogger(this.getClass()).info("CarrierSwitch: 添加永久模块 " + modId);
+            Global.getLogger(this.getClass()).info("CarrierSwitch: Add permanent module" + modId);
         }
     }
 
     private void safeRemovePermaMod(ShipVariantAPI variant, String modId) {
         if (variant.hasHullMod(modId)) {
             variant.removePermaMod(modId);
-            Global.getLogger(this.getClass()).info("CarrierSwitch: 移除永久模块 " + modId);
+            Global.getLogger(this.getClass()).info("CarrierSwitch: Remove permanent modules" + modId);
         }
     }
 
 
     private void logError(Exception e) {
-        Global.getLogger(this.getClass()).error("CarrierSwitch: UI刷新失败", e);
+        Global.getLogger(this.getClass()).error("CarrierSwitch: UI refresh failed", e);
     }
 }

@@ -275,7 +275,7 @@ public class MathPersonal {
     }
 
     public static void main(String[] args) {
-        System.out.println("测试从1到1亿，平方根的用时（秒）");
+        System.out.println("Test from 1 to 100 million, square root time (seconds)");
         long startTime = System.currentTimeMillis();
         double[] origin = new double[100000000];
         double[] compared = new double[100000000];
@@ -287,7 +287,7 @@ public class MathPersonal {
         }
 
         long endTime = System.currentTimeMillis();
-        System.out.println("普通Math.sqrt:" + (double)(endTime - startTime) / (double)1000.0F);
+        System.out.println("Ordinary Math.sqrt:" + (double)(endTime - startTime) / (double)1000.0F);
         startTime = System.currentTimeMillis();
 
         for(int i = 1; i <= 100000000; ++i) {
@@ -295,7 +295,7 @@ public class MathPersonal {
         }
 
         endTime = System.currentTimeMillis();
-        System.out.println("魔法Math.sqrt:" + (double)(endTime - startTime) / (double)1000.0F);
+        System.out.println("MagicMath.sqrt:" + (double)(endTime - startTime) / (double)1000.0F);
 
         for(int i = 0; i < origin.length; ++i) {
             total += origin[i];
@@ -303,7 +303,7 @@ public class MathPersonal {
             error += Math.abs(variance / origin[i]);
         }
 
-        System.out.println("误差:" + error / (double)origin.length * (double)100.0F + "%");
+        System.out.println("error:" + error / (double)origin.length * (double)100.0F + "%");
     }
 
     public static Vector2f toRelative(CombatEntityAPI entity, Vector2f absolutePoint) {

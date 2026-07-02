@@ -68,12 +68,12 @@ public class BansheeEccm extends MagicSubsystem {
 
     @Override
     public String getDisplayText() {
-        return "量子脉冲";
+        return "quantum pulse";
     }
 
     @Override
     public String getBriefText() {
-        return "干扰敌方导弹制导系统";
+        return "Jamming enemy missile guidance systems";
     }
 
     @Override

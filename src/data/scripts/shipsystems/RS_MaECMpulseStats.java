@@ -239,7 +239,7 @@ public class RS_MaECMpulseStats extends BaseShipSystemScript {
     @Override
     public ShipSystemStatsScript.StatusData getStatusData(int index, ShipSystemStatsScript.State state, float effectLevel) {
         if (index == 0) {
-            return new ShipSystemStatsScript.StatusData("进行电子反制"+(int)ecmBounsRange+"/"+(int)ecmRate+"%" , false);
+            return new ShipSystemStatsScript.StatusData("conduct electronic countermeasures"+(int)ecmBounsRange+"/"+(int)ecmRate+"%" , false);
         }
         return null;
     }

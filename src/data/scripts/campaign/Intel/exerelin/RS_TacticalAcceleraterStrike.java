@@ -51,7 +51,7 @@ public class RS_TacticalAcceleraterStrike extends FireSupportAbilityPlugin {
 
         if (dialog != null) {
             dialog.getTextPanel().setFontSmallInsignia();
-            dialog.getTextPanel().addPara("所有敌方单位士气降低 %s", Misc.getHighlightColor(), StringHelper.toPercent(-ml));
+            dialog.getTextPanel().addPara("The morale of all enemy units is reduced by %s", Misc.getHighlightColor(), StringHelper.toPercent(-ml));
         }
 
     }
@@ -69,7 +69,7 @@ public class RS_TacticalAcceleraterStrike extends FireSupportAbilityPlugin {
         if (getLevel(fleet) <= 0) {
             if (!hasShip(fleet)) {
                 Map<String, Object> params = new HashMap<>();
-                params.put("desc", "未携带拥有行星打击能力舰船");
+                params.put("desc", "No ships with planetary strike capabilities are carried");
             }
         }
             return super.getDisabledReason(user);
@@ -101,8 +101,8 @@ public class RS_TacticalAcceleraterStrike extends FireSupportAbilityPlugin {
     }
 
     public void generateTooltip(TooltipMakerAPI tooltip) {
-        tooltip.addPara("使用幽灵部队的行星歼灭舰船进行定点轰炸，相比普通轨道轰炸会消耗更多燃料并造成更强力的杀伤，具体效果取决于舰队中最大的行星歼灭舰船类型.", 0.0F);
-        tooltip.addPara("消耗{%s}燃料对指定位置的敌方单位造成{%s}伤害，并使所有敌方单位士气降低{%s}.", 10.0F, Misc.getHighlightColor(), "" + this.getFuelCost(Global.getSector().getPlayerFleet()), "" + this.getDamage(), StringHelper.toPercent(-this.getMoraleMod()));
+        tooltip.addPara("Targeted bombing using Ghost Force's planetary annihilation ships will consume more fuel and cause more damage than ordinary orbital bombardment. The specific effect depends on the largest planetary annihilation ship type in the fleet.", 0.0F);
+        tooltip.addPara("Consume {%s} fuel to cause {%s} damage to enemy units at the specified location, and reduce the morale of all enemy units by {%s}.", 10.0F, Misc.getHighlightColor(), "" + this.getFuelCost(Global.getSector().getPlayerFleet()), "" + this.getDamage(), StringHelper.toPercent(-this.getMoraleMod()));
     }
 
     public int getFuelCost(CampaignFleetAPI fleet) {

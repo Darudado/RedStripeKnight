@@ -109,12 +109,12 @@ public class ByzantineSupport extends MagicSubsystem {
 
     @Override
     public String getDisplayText() {
-        return "众志行征";
+        return "united will march";
     }
 
     @Override
     public String getBriefText() {
-        return "提升友军效能";
+        return "Improve the effectiveness of friendly forces";
     }
 
     @Override
@@ -163,7 +163,7 @@ public class ByzantineSupport extends MagicSubsystem {
             }
         }
 
-        return String.format("支援中: %d/%d/%d", innerCount, midCount, outerCount);
+        return String.format("Supporting: %d/%d/%d", innerCount, midCount, outerCount);
     }
 
     @Override
@@ -503,7 +503,7 @@ public class ByzantineSupport extends MagicSubsystem {
         // 添加浮动文字
         engine.addFloatingText(
                 targetShip.getLocation(),
-                String.format("航速与机动性+%.0f%%", (rangeBonus - 1f) * 100f),
+                String.format("Speed ​​and maneuverability +%.0f%%", (rangeBonus - 1f) * 100f),
                 20f,
                 getBonusColor(rangeBonus),
                 targetShip,

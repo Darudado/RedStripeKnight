@@ -25,14 +25,14 @@ public class CyprpediumECM extends BaseHullMod {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
 
-        tooltip.addPara("灼兰经过极端的电子战特化设计，极大提升了电子战性能", opad, h);
-        tooltip.addSectionHeading("详情", Alignment.MID, opad);
-        tooltip.addPara("提升舰船 %s 的电子战强度", opad, h, "" + 50 + "%");
-        tooltip.addPara("提升舰船 %s 的传感器性能", opad, h, "" + 150 + "%");
-        tooltip.addPara("额外提升舰船 %s 的非导弹武器射程", opad, h, "" + 20 + "%");
+        tooltip.addPara("Zhuolan has undergone extreme electronic warfare specialization design, which greatly improves the electronic warfare performance.", opad, h);
+        tooltip.addSectionHeading("Details", Alignment.MID, opad);
+        tooltip.addPara("Increase the electronic warfare intensity of ship %s", opad, h, "" + 50 + "%");
+        tooltip.addPara("Improve sensor performance of ship %s", opad, h, "" + 150 + "%");
+        tooltip.addPara("Additional increase in non-missile weapon range of ship %s", opad, h, "" + 20 + "%");
 
-        tooltip.addPara("搭载现金火控系统，提升舰船 %s 的对战机与导弹伤害", opad, h, "" + 50 + "%");
-        tooltip.addPara("同时提升舰船 %s 的开火精度", opad, h, "" + 100 + "%" );
+        tooltip.addPara("Equipped with a cash fire control system to increase the damage of ship %s against aircraft and missiles", opad, h, "" + 50 + "%");
+        tooltip.addPara("Also improves the firing accuracy of ship %s", opad, h, "" + 100 + "%" );
 
 
 

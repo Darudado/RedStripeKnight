@@ -1,7 +1,7 @@
 {
 	"abilities":{
 		"MobileArmmorGroundSupport":{
-			"name":"机动近地轨道支援",
+			"name":"maneuverable low earth orbit support",
 			"icon":"graphics/icons/groundbattle/MobileArmmorGroundSupport.png",
 			"plugin":"data.scripts.campaign.Intel.exerelin.MobileArmmorGroundSupport",
 			"sound":"nex_sfx_deciv_bomb",
@@ -13,7 +13,7 @@
 
 
 		"RS_TacticalAcceleraterStrike":{
-			"name":"轨道加速器打击",
+			"name":"orbital accelerator strike",
 			"icon":"graphics/icons/cargo/planetkiller.png",
 			"plugin":"data.scripts.campaign.Intel.exerelin.RS_TacticalAcceleraterStrike",
 			"sound":"nex_sfx_deciv_bomb",

@@ -23,13 +23,13 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.initFleet(FleetSide.PLAYER, "RS", FleetGoal.ATTACK, false, 5);
 		api.initFleet(FleetSide.ENEMY, "LP", FleetGoal.ATTACK, true, 5);
 
-		api.setFleetTagline(FleetSide.PLAYER, "复仇之舰");
-		api.setFleetTagline(FleetSide.ENEMY, "返航中 阿基拉 的左径掠夺舰队");
+		api.setFleetTagline(FleetSide.PLAYER, "ship of revenge");
+		api.setFleetTagline(FleetSide.ENEMY, "Akira's left path plundering fleet is returning");
 
-		api.addBriefingItem("所有罪犯都应该得到应有的惩戒——属于它们的毁灭");
-		api.addBriefingItem("你应当清楚，复仇是为了迈向未来，而非抛弃未来");
-		api.addBriefingItem("你的舰员们拥有光辉的未来，你应该带着他们回家——道路可以用鲜血与荣誉铺设");
-		api.addBriefingItem("利用你的机动性与火力逐渐削弱敌人，须知群蚁也能咬死大象，请料敌从宽");
+		api.addBriefingItem("All criminals deserve the punishment they deserve - their own destruction");
+		api.addBriefingItem("You should know that revenge is to move towards the future, not to abandon the future");
+		api.addBriefingItem("Your crew has a bright future, and it's up to you to take them home - the road can be paved with blood and honor.");
+		api.addBriefingItem("Use your mobility and firepower to gradually weaken the enemy. Remember that a swarm of ants can kill an elephant. Please be lenient to the enemy.");
 
 
 		api.addToFleet(FleetSide.PLAYER, "rs_nazaret_Energy", FleetMemberType.SHIP, "RS Abaddōn", true);

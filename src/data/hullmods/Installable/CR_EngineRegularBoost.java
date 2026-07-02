@@ -305,18 +305,18 @@ public class CR_EngineRegularBoost extends BaseHullMod {
         float pads = 10f;
         float pad = 2f;
         // 修改激活系统的说明为自动触发
-        tooltip.addPara("经过特殊调整的能源系统会以能量潮汐的方式周期性加强能量输出", Misc.getHighlightColor(), pads);
+        tooltip.addPara("Specially tuned energy systems periodically enhance energy output in the form of energy tides", Misc.getHighlightColor(), pads);
 
-        tooltip.addSectionHeading("系统调整", Alignment.MID, pads);
+        tooltip.addSectionHeading("System adjustment", Alignment.MID, pads);
         //tooltip.addPara("自动触发间隔: 30秒", Color.GRAY, 3f);
         //tooltip.addPara("充电时间: 1秒", Color.GRAY, 3f);
         //tooltip.addPara("持续时间: 5秒", Color.GRAY, 3f);
         //tooltip.addPara("冷却时间: 3秒", Color.GRAY, 3f);
-        tooltip.addPara("引擎潮汐持续期间获得性能加成", pad, Misc.getHighlightColor());
-        tooltip.addPara("速度加成: " + SPEED_MAP.get(hullSize) + "节", Misc.getHighlightColor(), pad);
-        tooltip.addPara("机动性加成: +75% ", Misc.getHighlightColor(), pad);
-        tooltip.addPara("耗散加成: +150% ", Misc.getHighlightColor(), pad);
-        tooltip.addPara("完整潮汐周期: 20秒 ", new Color(150, 200, 255, 255), pads);
+        tooltip.addPara("Engine Tide gains performance bonus while it lasts", pad, Misc.getHighlightColor());
+        tooltip.addPara("Speed ​​bonus:" + SPEED_MAP.get(hullSize) + "knots", Misc.getHighlightColor(), pad);
+        tooltip.addPara("Mobility bonus: +75%", Misc.getHighlightColor(), pad);
+        tooltip.addPara("Dissipation Bonus: +150%", Misc.getHighlightColor(), pad);
+        tooltip.addPara("Complete tidal cycle: 20 seconds", new Color(150, 200, 255, 255), pads);
     }
 
     public boolean isApplicableToShip(ShipAPI ship) {
@@ -328,8 +328,8 @@ public class CR_EngineRegularBoost extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+        if (ship == null) return "ship does not exist";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
         return null;
     }
 }

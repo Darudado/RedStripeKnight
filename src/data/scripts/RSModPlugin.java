@@ -339,7 +339,7 @@ public class RSModPlugin extends BaseModPlugin {
 	}
 
 	private void throwJokeError(Throwable t) {
-		throw new RuntimeException("羽雨鱼猫最可爱啦！", t);
+		throw new RuntimeException("Yuyu fish cat is the cutest!", t);
 	}
 
 	private void createRSKomet() {

@@ -53,28 +53,28 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器伤害提升8%",
+                            "Non-missile weapon damage increased by 8%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器射速提升8%",
+                            "Non-missile weapon fire rate increased by 8%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器辐能消耗降低15%",
+                            "Radiation energy consumption of non-missile weapons reduced by 15%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY4,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "速度提升25节，时间流速改变",
+                            "The speed increases by 25 knots and the time flow rate changes",
                             false
                     );
                 }
@@ -128,28 +128,28 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                                     this.STATUSKEY1,
                                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                                     ship.getSystem().getDisplayName(),
-                                    "非导弹武器伤害提升8%",
+                                    "Non-missile weapon damage increased by 8%",
                                     false
                             );
                             Global.getCombatEngine().maintainStatusForPlayerShip(
                                     this.STATUSKEY2,
                                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                                     ship.getSystem().getDisplayName(),
-                                    "非导弹武器射速提升8%",
+                                    "Non-missile weapon fire rate increased by 8%",
                                     false
                             );
                             Global.getCombatEngine().maintainStatusForPlayerShip(
                                     this.STATUSKEY3,
                                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                                     ship.getSystem().getDisplayName(),
-                                    "非导弹武器辐能消耗降低15%",
+                                    "Radiation energy consumption of non-missile weapons reduced by 15%",
                                     false
                             );
                             Global.getCombatEngine().maintainStatusForPlayerShip(
                                     this.STATUSKEY4,
                                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                                     ship.getSystem().getDisplayName(),
-                                    "护盾效能提升",
+                                    "Shield effectiveness increased",
                                     false
                             );
                         }
@@ -167,21 +167,21 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器伤害提升25%",
+                            "Non-missile weapon damage increased by 25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器射速提升25%",
+                            "Non-missile weapon fire rate increased by 25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器辐能消耗降低50%",
+                            "Radiation energy consumption of non-missile weapons reduced by 50%",
                             false
                     );
                 }
@@ -198,21 +198,21 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器伤害提升15%",
+                            "Non-missile weapon damage increased by 15%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器射速提升15%",
+                            "The rate of fire of non-missile weapons is increased by 15%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "非导弹武器辐能消耗降低25%",
+                            "Radiation energy consumption of non-missile weapons reduced by 25%",
                             false
                     );
                 }

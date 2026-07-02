@@ -272,7 +272,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
 
         // 超时保护：50秒超时机制
         if (totalTimer > LANDING_TIMEOUT && state != STATE.FINISHED_LANDING) {
-            logEvent("着陆超时，中止。state=" + state
+            logEvent("Landing timed out, aborted. state=" + state
                     + ", isLanding=" + ship.isLanding()
                     + ", isFinishedLanding=" + ship.isFinishedLanding()
                     + ", totalTimer=" + totalTimer);
@@ -288,7 +288,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                 // ========== 使用原生起飞动画 ==========
 
                 if (!takeoffAnimationPlayed) {
-                    logEvent("开始播放原生起飞动画。");
+                    logEvent("Start playing the native takeoff animation.");
                     Global.getSoundPlayer().playSound("fighter_takeoff", 1f, 1f, ship.getLocation(), new Vector2f());
 
                     ship.setInvalidTransferCommandTarget(false);
@@ -314,7 +314,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
 
                 if (delay <= 0) {
                     delay = 0;
-                    logEvent("起飞延迟结束，执行起飞收尾。");
+                    logEvent("The takeoff delay is over and the takeoff wrap-up is performed.");
                     abort();
                     if (ship.getShipAI() != null) {
                         ship.getShipAI().setDoNotFireDelay(0.1f);
@@ -339,7 +339,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
 
                 if (delay <= 0) {
                     delay = 0;
-                    logEvent("自定义起飞模式延迟结束，执行起飞收尾。");
+                    logEvent("The custom take-off mode is delayed and the take-off finish is executed.");
                     abort();
                     if (ship.getShipAI() != null) {
                         ship.getShipAI().setDoNotFireDelay(0.1f);
@@ -384,7 +384,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                     || (Moci_RS_RepairBayScript.getInstance(bay.getShip()) != null
                             && Moci_RS_RepairBayScript.getInstance(bay.getShip()).getBay(bay) != null)
                             && Moci_RS_RepairBayScript.getInstance(bay.getShip()).getBay(bay).isOccupied()) {
-                logEvent("目标整备湾失效，中止着陆。"
+                logEvent("Target staging bay disabled, landing aborted."
                         + " hostAlive=" + (bay.getShip() != null && bay.getShip().isAlive())
                         + ", bayOccupied=" + (Moci_RS_RepairBayScript.getInstance(bay.getShip()) != null
                         && Moci_RS_RepairBayScript.getInstance(bay.getShip()).getBay(bay) != null
@@ -439,7 +439,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                         // 在触发距离时启动着陆动画，但继续执行移动和角度调整
                         if (d <= LANDING_TRIGGER_DISTANCE && !landingTriggered) {
                             if (!ship.isLanding()) {
-                                logEvent("触发 beginLandingAnimation。distance=" + d
+                                logEvent("Trigger beginLandingAnimation. distance=" + d
                                         + ", target=" + bay.getShip().getName());
                                 ship.beginLandingAnimation(bay.getShip());
                                 
@@ -457,7 +457,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                             
                             landingTriggered = true;
                             landingTimer = 0f;
-                            logEvent("进入原生着陆触发态。isLanding=" + ship.isLanding()
+                            logEvent("Enter the native landing trigger state. isLanding=" + ship.isLanding()
                                     + ", isFinishedLanding=" + ship.isFinishedLanding());
                         }
 
@@ -486,12 +486,12 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                             landingTimer += amount;
 
                             if (ship.isFinishedLanding()) {
-                                logEvent("原生着陆完成标记生效，切换到 FINISHED_LANDING。distance=" + d);
+                                logEvent("Native landing completion flag takes effect, switching to FINISHED_LANDING. distance=" + d);
                                 state = STATE.FINISHED_LANDING;
                                 stateTimer = 0f;
                             }
                             else if (landingTimer >= NATIVE_LANDING_FALLBACK_TIME && d <= LANDING_COMPLETE_DISTANCE) {
-                                logEvent("原生着陆未给出完成标记，使用距离/时间兜底切换 FINISHED_LANDING。distance="
+                                logEvent("Native landing does not give a completion mark, use distance/time to toggle FINISHED_LANDING. distance="
                                         + d + ", landingTimer=" + landingTimer);
                                 state = STATE.FINISHED_LANDING;
                                 stateTimer = 0f;
@@ -596,7 +596,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                         if (d <= LANDING_COMPLETE_DISTANCE && !landingTriggered) {
                             landingTriggered = true;
                             landingTimer = 0f;
-                            logEvent("触发自定义着陆态。distance=" + d);
+                            logEvent("Trigger custom landing state. distance=" + d);
                             
                             ship.setShipSystemDisabled(true);
                             ship.setControlsLocked(true);
@@ -619,13 +619,13 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
 
                             if (landingTimer >= 0.5f) {
                                 if (d <= 20f || ship.isFinishedLanding()) {
-                                    logEvent("自定义着陆完成，切换到 FINISHED_LANDING。distance=" + d
+                                    logEvent("Custom landing completed, switch to FINISHED_LANDING. distance=" + d
                                             + ", isFinishedLanding=" + ship.isFinishedLanding());
                                     state = STATE.FINISHED_LANDING;
                                     stateTimer = 0f;
                                 }
                                 else if (landingTimer >= 3.0f && d <= LANDING_COMPLETE_DISTANCE) {
-                                    logEvent("自定义着陆使用兜底切换 FINISHED_LANDING。distance=" + d
+                                    logEvent("Custom landings use the toggle FINISHED_LANDING. distance=" + d
                                             + ", landingTimer=" + landingTimer);
                                     state = STATE.FINISHED_LANDING;
                                     stateTimer = 0f;
@@ -651,7 +651,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
 
                 case FINISHED_LANDING:
                     if (!finished) {
-                        logEvent("开始调用 startRepair。isLanding=" + ship.isLanding()
+                        logEvent("Start calling startRepair. isLanding=" + ship.isLanding()
                                 + ", isFinishedLanding=" + ship.isFinishedLanding());
                         Moci_RS_RepairBayScript.getInstance(bay.getShip()).getBay(bay).startRepair(ship);
                         finished = true;
@@ -666,7 +666,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
             // 状态变化时重置计时器
             STATE oldState = state;
             if (oldState != state) {
-                logEvent("状态切换: " + oldState + " -> " + state
+                logEvent("Status switching:" + oldState + " -> " + state
                         + ", distance=" + d
                         + ", isLanding=" + ship.isLanding()
                         + ", isFinishedLanding=" + ship.isFinishedLanding());
@@ -682,22 +682,22 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
                 String statusText = "";
                 switch (state) {
                     case MOVING:
-                        statusText = "撤退中";
+                        statusText = "Retreating";
                         break;
                     case LANDING:
-                        statusText = "正在着陆";
+                        statusText = "Landing";
                         break;
                     case FINISHED_LANDING:
-                        statusText = "正在整备";
+                        statusText = "Under preparation";
                         break;
                 }
                 Global.getCombatEngine().maintainStatusForPlayerShip("Moci_LANDINGAI",
-                        Global.getSettings().getSpriteName("ui", "icon_tactical_bdeck"), "整备程序", statusText, true);
+                        Global.getSettings().getSpriteName("ui", "icon_tactical_bdeck"), "Maintenance procedures", statusText, true);
             }
 
             if (delay > 0 && ship.equals(Global.getCombatEngine().getPlayerShip())) {
                 Global.getCombatEngine().maintainStatusForPlayerShip("Moci_TAKEOFF",
-                        Global.getSettings().getSpriteName("ui", "icon_tactical_bdeck"), "整备程序", "准备起飞", true);
+                        Global.getSettings().getSpriteName("ui", "icon_tactical_bdeck"), "Maintenance procedures", "ready to take off", true);
             }
         }
     }
@@ -747,7 +747,7 @@ public class Moci_RS_LandingAI implements ShipAIPlugin {
     }
 
     protected void abort() {
-        logEvent("abort() 被调用。shouldResetAI=" + shouldResetAI
+        logEvent("abort() is called. shouldResetAI=" + shouldResetAI
                 + ", state=" + state
                 + ", isLanding=" + ship.isLanding()
                 + ", isFinishedLanding=" + ship.isFinishedLanding());

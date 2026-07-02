@@ -97,14 +97,14 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "本舰时流 +50%",
+                            "This ship’s time flow +50%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机时流 +100%",
+                            "Fighter time flow +100%",
                             false
                     );
                 } else if (ship.getVariant().hasHullMod(MOD_PHASE_DEFENSE)) {
@@ -112,21 +112,21 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "护盾减伤 +25%",
+                            "Shield damage reduction +25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "辐能耗散 +25%",
+                            "Radiant energy dissipation +25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机伤害减免 +50%",
+                            "Fighter damage reduction +50%",
                             false
                     );
                 } else if (ship.getVariant().hasHullMod(MOD_WEAPON_OVERLOAD)) {
@@ -134,28 +134,28 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "本舰武器伤害 +25%",
+                            "This ship's weapon damage +25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "本舰武器辐能消耗 -25%",
+                            "This ship's weapon radiation consumption -25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机武器伤害 +50%",
+                            "Fighter weapon damage +50%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY4,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机武器辐能消耗 -50%",
+                            "Fighter weapon radiation consumption -50%",
                             false
                     );
                 } else {
@@ -164,21 +164,21 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY1,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "本舰非导弹武器射程 +20%",
+                            "The ship's non-missile weapon range +20%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机航速 +50节",
+                            "Fighter speed +50 knots",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "战机武器伤害 +20%",
+                            "Fighter weapon damage +20%",
                             false
                     );
                 }

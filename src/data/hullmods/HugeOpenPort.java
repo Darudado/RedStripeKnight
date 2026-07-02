@@ -138,41 +138,41 @@ public class HugeOpenPort extends BaseHullMod {
         com.fs.starfarer.api.util.Misc.getHighlightColor();
         com.fs.starfarer.api.util.Misc.getPositiveHighlightColor();
 
-        tooltip.addSectionHeading("详细参数", Alignment.MID, pads);
+        tooltip.addSectionHeading("Detailed parameters", Alignment.MID, pads);
 
-        tooltip.addPara("装配优化:", pads);
-        tooltip.addPara("-小型非导弹武器装配点需求 -%s", pad,
+        tooltip.addPara("Assembly optimization:", pads);
+        tooltip.addPara("-Small non-missile weapon assembly point requirements -%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "2");
-        tooltip.addPara("-战斗机/拦截机/支援机装配点需求 -%s，轰炸机 -%s", pad,
+        tooltip.addPara("-Fighter/interceptor/support fighters assembly point requirements -%s, bomber -%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "5", "3");
 
-        tooltip.addPara("航空整备调整:", pads);
-        tooltip.addPara("- 舰载机损失率增加%s", pad,
+        tooltip.addPara("Aviation maintenance adjustments:", pads);
+        tooltip.addPara("- Carrier-based aircraft loss rate increased by %s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "30%");
-        tooltip.addPara("- 舰载机补充速率增加%s", pad,
+        tooltip.addPara("- The replenishment rate of carrier-based aircraft is increased by %s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "50%");
 
-        tooltip.addPara("航空管制优化:", pads);
-        tooltip.addPara("从此舰部署的舰载机获得增强：", pad);
-        tooltip.addPara("最大速度 +%s", pad,
+        tooltip.addPara("Air traffic control optimization:", pads);
+        tooltip.addPara("Carrier-based aircraft deployed from this ship receive enhancements:", pad);
+        tooltip.addPara("Maximum speed +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "25%");
-        tooltip.addPara("自动射击精度 +%s", pad,
+        tooltip.addPara("Automatic shooting accuracy +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "45%");
 
         // 新增：战机容量和耗散加成的描述
-        tooltip.addPara("舰载机维护空间:", pads);
-        tooltip.addPara("- 每架装载的战机增加 %s 点电网容量", pad,
+        tooltip.addPara("Carrier-based aircraft maintenance space:", pads);
+        tooltip.addPara("- Each loaded fighter increases grid capacity by %s points", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "300");
-        tooltip.addPara("- 每架装载的战机增加 %s 点耗散能力", pad,
+        tooltip.addPara("- Each loaded fighter increases %s points of dissipation ability", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "15");
 
-        tooltip.addPara("舰队后勤支援（效果最多叠加5次）:", pads);
-        tooltip.addPara("每艘该型舰船为整个舰队提供以下效果：", pad);
-        tooltip.addPara("维修速率 +%s（最高 +%s）", pad,
+        tooltip.addPara("Fleet logistics support (effect can be stacked up to 5 times):", pads);
+        tooltip.addPara("Each ship of this type provides the following effects to the entire fleet:", pad);
+        tooltip.addPara("Repair rate +%s (maximum +%s)", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "20%", "45%");
-        tooltip.addPara("每日CR恢复速率 +%s（最高 +%s）", pad,
+        tooltip.addPara("Daily CR recovery rate +%s (maximum +%s)", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "15%", "30%");
-        tooltip.addPara("每月补给消耗 -%s（最高 -%s）", pad,
+        tooltip.addPara("Monthly supply consumption -%s (maximum -%s)", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "10%", "30%");
 
         // 新增：如果当前有舰船引用，显示实际加成数值
@@ -191,16 +191,16 @@ public class HugeOpenPort extends BaseHullMod {
                 int capacityBonus = totalFighters * CAPACITY_PER_FIGHTER;
                 int dissipationBonus = totalFighters * DISSIPATION_PER_FIGHTER;
 
-                tooltip.addPara("当前装载 %s 架战机：", pads,
+                tooltip.addPara("Currently loading %s fighters:", pads,
                         com.fs.starfarer.api.util.Misc.getHighlightColor(), String.valueOf(totalFighters));
-                tooltip.addPara("电网容量容量增加：%s", pad,
+                tooltip.addPara("Grid capacity capacity increase: %s", pad,
                         com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), capacityBonus + "");
-                tooltip.addPara("耗散能力增加：%s", pad,
+                tooltip.addPara("Increase in dissipation capacity: %s", pad,
                         com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), dissipationBonus + "");
             }
         }
 
-        tooltip.addPara("该舰船作为舰队的移动后勤枢纽，通过整合维修设施、补给仓库和指挥中心，为长期深空作战提供了坚实保障。",
+        tooltip.addPara("As the mobile logistics hub of the fleet, the ship provides solid support for long-term deep space operations by integrating maintenance facilities, supply warehouses and command centers.",
                 com.fs.starfarer.api.util.Misc.getGrayColor(), pads);
     }
 

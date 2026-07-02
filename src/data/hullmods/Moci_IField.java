@@ -267,10 +267,10 @@ public class Moci_IField extends BaseHullMod {
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
         return switch (index) {
-            case 0 -> "前方180度";
+            case 0 -> "180 degrees ahead";
             case 1 -> (int) (FLUX_THRESHOLD * 100) + "%";
             case 2 -> "10%";
-            case 3 -> (int) BEAM_PUSH_DISTANCE + "像素";
+            case 3 -> (int) BEAM_PUSH_DISTANCE + "Pixel";
             default -> null;
         };
     }

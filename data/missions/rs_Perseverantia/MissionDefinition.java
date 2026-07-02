@@ -23,13 +23,13 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.initFleet(FleetSide.PLAYER, "RS", FleetGoal.ATTACK, false, 5);
 		api.initFleet(FleetSide.ENEMY, "LP", FleetGoal.ATTACK, true, 5);
 
-		api.setFleetTagline(FleetSide.PLAYER, "一支小舰队");
-		api.setFleetTagline(FleetSide.ENEMY, "碰运气的左径掠夺舰队先锋");
+		api.setFleetTagline(FleetSide.PLAYER, "a small fleet");
+		api.setFleetTagline(FleetSide.ENEMY, "Lucky Left Path Plunder Fleet Vanguard");
 
-		api.addBriefingItem("虽然措手不及，但是你们有过预案");
-		api.addBriefingItem("你很清楚，你们的机动性是短板");
-		api.addBriefingItem("善用你手下舰船的充足韧性");
-		api.addBriefingItem("尽量减少损失");
+		api.addBriefingItem("Although you were caught off guard, you had a plan");
+		api.addBriefingItem("You know very well that your mobility is your shortcoming.");
+		api.addBriefingItem("Take advantage of the ample resilience of your ships");
+		api.addBriefingItem("minimize losses");
 
 
 		api.addToFleet(FleetSide.PLAYER, "rs_leviathan_variant", FleetMemberType.SHIP, "Pax", true);

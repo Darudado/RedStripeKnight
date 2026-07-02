@@ -57,7 +57,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "最大装甲减伤从 85% 上升至 95%";
+            return "Maximum armor damage reduction increased from 85% to 95%";
         }
 
         public String getEffectPerLevelDescription() {
@@ -91,7 +91,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "基于舰船的辐能比例，可以计算最高 +" + (int) EFFECTIVE_ARMOR_BONUS + "% 的额外装甲减伤";
+            return "Based on the ship's radiation ratio, the maximum +" + (int) EFFECTIVE_ARMOR_BONUS + "% additional armor damage reduction";
         }
 
         public String getEffectPerLevelDescription() {
@@ -114,7 +114,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "舰船受到的EMP伤害最高减免" + Math.round(EMP_BONUS_PERCENT) + "%, 基于舰船目前的辐能比例";
+            return "The maximum EMP damage reduction a ship receives" + Math.round(EMP_BONUS_PERCENT) + "%, based on the ship’s current radiation ratio";
         }
 
         public String getEffectPerLevelDescription() {
@@ -139,7 +139,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "+" + (int) VENT_RATE_BONUS + "% 的强制排散速率";
+            return "+" + (int) VENT_RATE_BONUS + "% forced drain rate";
         }
 
         public String getEffectPerLevelDescription() {

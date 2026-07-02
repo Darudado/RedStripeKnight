@@ -67,13 +67,13 @@ public class BethlehemLauch extends MagicSubsystem {
 
     @Override
     public String getDisplayText() {
-        return "战机弹射系统";
+        return "Fighter ejection system";
     }
 
     @Override
     public String getStateText() {
         if (getState() == State.IN || getState() == State.ACTIVE) {
-            return "召回中 (" + activeEffects.size() + ")";
+            return "Recalling (" + activeEffects.size() + ")";
         }
         return super.getStateText();
     }

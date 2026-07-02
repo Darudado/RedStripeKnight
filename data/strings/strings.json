@@ -1,17 +1,17 @@
 {
 "cr_hullmods": {
-    "ImpregnableRampart_1": "坚壁自适应防御架构",
-    "ImpregnableRampart_2": "护盾效率 $resistanceBonusTtNum",
-    "Excalibur_1": "胜誓自适应能量配送架构",
-    "Excalibur_2": "时间流速 $time% 速度 +$speed% 机动性 +$maneuver%",
-    "Rhongomyniad_1": "终灭自适应武器校正架构",
-    "Rhongomyniad_2": "武器伤害 $damBonus% 武器能耗下降 $fluxPierce%",
-    "PennaVelox_1": "迅羽自适应航空管制架构",
-    "PennaVelox_2": "舰载机强化: 机动性+$speed% 时间流速+$time% 伤害+$damage%",
-    "PennaVelox_3": "母舰强化:  整备时间-$replace% 航程+$range%",
+    "ImpregnableRampart_1": "Hard wall adaptive defense architecture",
+    "ImpregnableRampart_2": "Shield efficiency $resistanceBonusTtNum",
+    "Excalibur_1": "Victory Adaptive Energy Distribution Architecture",
+    "Excalibur_2": "Time flow rate $time% speed +$speed% mobility +$maneuver%",
+    "Rhongomyniad_1": "Terminal Adaptive Weapon Correction Architecture",
+    "Rhongomyniad_2": "Weapon damage $damBonus% Weapon energy consumption reduced $fluxPierce%",
+    "PennaVelox_1": "Xunyu adaptive air traffic control architecture",
+    "PennaVelox_2": "Carrier-based aircraft enhancement: Mobility +$speed%, Time flow rate +$time%, Damage +$damage%",
+    "PennaVelox_3": "Mothership enhancement: Maintenance time-$replace% Voyage+$range%",
 },
 "cr_shipsystems": {
-    "CR_traveldrive": "提高引擎出力,进入偏相巡航状态",
+    "CR_traveldrive": "Increase engine output and enter phase-biased cruising state",
 }
 
 }

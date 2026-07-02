@@ -304,9 +304,9 @@ public class OrdoPraetorianorumMarket extends BaseSubmarketPlugin {
         FactionAPI player = Global.getSector().getPlayerFaction();
         RepLevel ordoLevel = Global.getSector().getFaction("red_stripe").getRelationshipLevel(player);
 
-        if (action == TransferAction.PLAYER_SELL) return "禁止出售商品";
-        if (!ordoLevel.isAtWorst(RepLevel.COOPERATIVE)) return "关系需达到合作以上";
-        return "未满足访问条件";
+        if (action == TransferAction.PLAYER_SELL) return "Items prohibited for sale";
+        if (!ordoLevel.isAtWorst(RepLevel.COOPERATIVE)) return "The relationship needs to be above cooperation";
+        return "Access conditions not met";
     }
 
     /**
@@ -320,9 +320,9 @@ public class OrdoPraetorianorumMarket extends BaseSubmarketPlugin {
         FactionAPI player = Global.getSector().getPlayerFaction();
         RepLevel ordoLevel = Global.getSector().getFaction("red_stripe").getRelationshipLevel(player);
 
-        if (action == TransferAction.PLAYER_SELL) return "禁止出售舰船";
-        if (!ordoLevel.isAtWorst(RepLevel.COOPERATIVE)) return "关系需达到合作以上";
-        return "未满足访问条件";
+        if (action == TransferAction.PLAYER_SELL) return "Ban on sale of ships";
+        if (!ordoLevel.isAtWorst(RepLevel.COOPERATIVE)) return "The relationship needs to be above cooperation";
+        return "Access conditions not met";
     }
 
     /**

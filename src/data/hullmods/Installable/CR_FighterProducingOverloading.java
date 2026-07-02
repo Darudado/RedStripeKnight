@@ -228,8 +228,8 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
                         Global.getCombatEngine().maintainStatusForPlayerShip(
                                 ID,
                                 "graphics/icons/hullsys/ammo_feeder.png", // 使用原版图标
-                                "战机锻炉",
-                                String.format("激活中: %.1f秒", remainingTime),
+                                "Fighter Forge",
+                                String.format("Active: %.1f seconds", remainingTime),
                                 false
                         );
                     }
@@ -337,8 +337,8 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
                     Global.getCombatEngine().maintainStatusForPlayerShip(
                             ID,
                             "graphics/icons/hullsys/ammo_feeder.png",
-                            "战机锻炉激活",
-                            "快速补充战机中...",
+                            "Warplane Forge Activated",
+                            "Quickly replenish fighters...",
                             false
                     );
                 }
@@ -381,13 +381,13 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
         Color highlight = Misc.getHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("超弛战舰安全协议以在合适时机对战机进行快速补充。",
+        tooltip.addPara("Override ship safety protocols to quickly replenish aircraft at the right time.",
                 10f, highlight, String.valueOf((int)FORGE_TOTAL_TIME));
-        tooltip.addPara("减少战舰 %s 的峰值时间，加速 %s 战备衰减速率。",
+        tooltip.addPara("Reduce the peak active time of battleship %s and accelerate the decay rate of %s combat readiness.",
                 2f, bad, "40%" ,"25%");
         // 添加效果标题
         tooltip.addSectionHeading(
-                "效果",
+                "Effect",
                 Alignment.MID,
                 10f
         );
@@ -396,7 +396,7 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
 
         // 添加锻炉效果说明
         String fluxLevelString = String.valueOf((int)(100f * MAX_ACTIVE_FLUX_LEVEL)) + "%";
-        tooltip.addPara("当战机存活率低于20%%且幅能水平低于%1$s时，激活战机锻炉系统，在%2$s秒内快速补充所有损失的战机。激活期间每秒产生相当于最大幅能%3$s的幅能。",
+        tooltip.addPara("When the fighter survival rate is lower than 20%% and the amplitude level is lower than %1$s, the fighter forge system is activated to quickly replenish all lost fighters within %2$s seconds. During activation, an amplitude energy equal to %3$s of the maximum amplitude is generated every second.",
                 10f, highlight,
                 fluxLevelString,
                 String.valueOf((int)FORGE_TOTAL_TIME),
@@ -404,14 +404,14 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
 
         // 添加惩罚说明
         float punish = computePunish(ship);
-        tooltip.addPara("装备装配点超过%1$s的重型战机时，补充时间增加：每超出1点装配点增加战机整备时间惩罚%2$s，当前惩罚：%3$s。",
+        tooltip.addPara("When equipping a heavy fighter aircraft with an assembly point exceeding %1$s, the replenishment time will increase: for each assembly point exceeding 1 point, the aircraft preparation time penalty will be increased by %2$s. The current penalty is: %3$s.",
                 10f, bad,
                 String.format("%.0f", PUNISH_START_OP),
                 String.format("%.1f", PUNISH_PER_OP),
                 String.format("%.1f", punish));
 
         // 添加战机增益说明
-        tooltip.addPara("在母舰1000距离内的低速战机获得速度和转向增益。",
+        tooltip.addPara("Low-speed fighters within 1000 range of the mothership gain speed and steering buffs.",
                 10f, highlight);
 
         // 显示不兼容的模块（如果有的话）
@@ -442,9 +442,9 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
      */
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "舰船不存在";
-        if (!ship.hasLaunchBays()) return "舰船没有飞行甲板";
-        if(!ship.getVariant().hasHullMod("CrusadersCore")) return "仅能在拥有能量核心的舰船上安装";
+        if (ship == null) return "The ship does not exist";
+        if (!ship.hasLaunchBays()) return "The ship has no flight deck";
+        if(!ship.getVariant().hasHullMod("CrusadersCore")) return "Can only be installed on ships with energy cores";
         return null;
     }
 

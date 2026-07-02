@@ -517,7 +517,7 @@ public class Moci_Owsla_LineBit_Advanced implements EveryFrameWeaponEffectPlugin
         public void advance(float amount) {
             if (!source.isAlive() || source.isHulk() || !ship.isAlive() || ship.isHulk()) {
                 if (!returned) {
-                    cleanupController("模块或母舰死亡");
+                    cleanupController("Module or mothership dies");
                 }
                 return;
             }
@@ -790,7 +790,7 @@ public class Moci_Owsla_LineBit_Advanced implements EveryFrameWeaponEffectPlugin
                     float vel = Misc.interpolate(75, ship.getVelocity().length(), dist / 200) * amount;
 
                     if (dist <= vel * 30) {
-                        cleanupController("正常返回对接");
+                        cleanupController("Return to docking normally");
                     }
 
                     float p = Math.max(0, (dist - vel) / dist);
@@ -940,7 +940,7 @@ public class Moci_Owsla_LineBit_Advanced implements EveryFrameWeaponEffectPlugin
                 ship.setShipAI(originAI);
                 ship.removeListener(this);
 
-                if (reason.equals("正常返回对接")) {
+                if (reason.equals("Return to docking normally")) {
                     startModuleRepair();
                 }
             }

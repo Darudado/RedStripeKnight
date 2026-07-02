@@ -88,7 +88,7 @@ public class RS_Redstripe extends BaseHullMod {
 	}
 
 	public String getUnapplicableReason(ShipAPI ship) {
-		return "该舰没有护盾";
+		return "The ship has no shields";
 	}
 
 }

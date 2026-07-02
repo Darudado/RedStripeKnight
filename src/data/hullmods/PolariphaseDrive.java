@@ -328,41 +328,41 @@ public class PolariphaseDrive extends BaseHullMod {
         Color h = Misc.getPositiveHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("对舰船进行特定升级的强化套件，每艘舰船只能安装一种特殊强化套件", opad, h);
-        tooltip.addPara("将大部分舰船能源重定向至动力系统。", pad, h);
-        tooltip.addSectionHeading("机制", Alignment.MID, opad);
-        tooltip.addPara("提升舰船 %s 的机动性能", pad, h, "" + 20 + "%");
-        tooltip.addPara("提升舰船 %s 的常态时间流速", pad, h, "" + 15 + "%");
-        tooltip.addPara("在战斗中提升舰船 %s 的最高速度", pad, h, "" + MAX_SPEED_BONUS_PERCENTAGE * SPEED_BONUS_MULT + "%");
-        tooltip.addPara("重构的引擎管线提高 %s 的引擎维修速度", pad, h, "" + 25 + "%");
-        tooltip.addPara("极端改进的舰船引擎更容易受损，提高 %s 的受到伤害", pad, bad , "" + 50 + "%");
-        tooltip.addPara("动力系统的高强度运行使得舰船峰值时间减少 %s ，战备衰减速率增加 %s ", pad, bad  ,"" + 50 + "%","" + 25 + "%");
-        tooltip.addPara("动力输出管线的优化使舰船能够以 %s 的方式做出小幅度机动", pad, h,"匪夷所思" );
-        tooltip.addPara("按住 %s 以查看详细机制", opad, highlight,  "F3" );
+        tooltip.addPara("Enhancement kits that provide specific upgrades to ships. Each ship can be equipped with a special enhancement kit.", opad, h);
+        tooltip.addPara("Redirects most of the ship's energy to the power system.", pad, h);
+        tooltip.addSectionHeading("mechanism", Alignment.MID, opad);
+        tooltip.addPara("Improve the maneuverability of ship %s", pad, h, "" + 20 + "%");
+        tooltip.addPara("Increase the normal time flow rate of ship %s", pad, h, "" + 15 + "%");
+        tooltip.addPara("Increase the maximum speed of ship %s during combat", pad, h, "" + MAX_SPEED_BONUS_PERCENTAGE * SPEED_BONUS_MULT + "%");
+        tooltip.addPara("Restructured engine pipeline improves engine repair speed for %s", pad, h, "" + 25 + "%");
+        tooltip.addPara("Extremely improved ship engines are more susceptible to damage, increasing damage taken by %s", pad, bad , "" + 50 + "%");
+        tooltip.addPara("The high-intensity operation of the power system reduces the ship's peak active time by %s and increases the combat readiness decay rate by %s.", pad, bad  ,"" + 50 + "%","" + 25 + "%");
+        tooltip.addPara("Optimization of the power take-off pipeline allows the ship to make small maneuvers in %s", pad, h,"Unbelievable" );
+        tooltip.addPara("Press and hold %s to view detailed mechanics", opad, highlight,  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
             // 新增推进系统说明
-            tooltip.addSectionHeading("相位推进系统", Alignment.MID, pad);
-            tooltip.addPara("双击方向键进行快速相位推进：", pad);
-            tooltip.addPara("双击 %s - 向前推进", pad, h, "W");
-            tooltip.addPara("双击 %s - 向左推进", pad, h, "A");
-            tooltip.addPara("双击 %s - 向后推进", pad, h, "S");
-            tooltip.addPara(" 双击 %s - 向右推进", pad, h, "D");
-            tooltip.addPara("%s " + "推进消耗系统能量，能量耗尽会导致引擎熄火", pad, Misc.getNegativeHighlightColor(), "⚠");
+            tooltip.addSectionHeading("phase propulsion system", Alignment.MID, pad);
+            tooltip.addPara("Double-click the direction keys for rapid phase advancement:", pad);
+            tooltip.addPara("Double click on %s - move forward", pad, h, "W");
+            tooltip.addPara("Double click on %s - push left", pad, h, "A");
+            tooltip.addPara("Double click on %s - advance backward", pad, h, "S");
+            tooltip.addPara("Double click on %s - push to the right", pad, h, "D");
+            tooltip.addPara("%s " + "Propulsion consumes system energy, and exhaustion of energy will cause the engine to stall.", pad, Misc.getNegativeHighlightColor(), "⚠");
         }
 
-        tooltip.addSectionHeading("船插对战术系统的增益", Alignment.MID, opad);
+        tooltip.addSectionHeading("The benefits of ship plugs to the tactical system", Alignment.MID, opad);
         if((ship == null)){
-            tooltip.addPara("未检测到合规舰船及战术系统", pad);
+            tooltip.addPara("Compliant ships and tactical systems not detected", pad);
         }
         if(!(ship == null)) {
             if (!(ship.getSystem() == null)) {
-                tooltip.addPara("按住 %s 以查看详细信息", opad, h, "F4");
+                tooltip.addPara("Press and hold %s to view details", opad, h, "F4");
                 if (Keyboard.isKeyDown(Keyboard.KEY_F4)) {
                     if (ship.getSystem().getId().equals("CR_PhaseboostDrive")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("使舰船在战术系统生效期间的时间流速变为6倍", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Increases the time flow rate of the ship to 6 times while the tactical system is in effect", pad);
                         tooltip.addImageWithText(15f);
                     }
 
@@ -370,8 +370,8 @@ public class PolariphaseDrive extends BaseHullMod {
                     if (ship.getSystem().getId().equals("CR_PhaseVerbJet")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("使舰船在战术系统生效期间的时间流速变为1.5倍", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("The time flow rate of the ship while the tactical system is in effect is increased to 1.5 times.", pad);
                         tooltip.addImageWithText(15f);
                     }
 
@@ -379,51 +379,51 @@ public class PolariphaseDrive extends BaseHullMod {
                     if (ship.getSystem().getId().equals("CR_PhaseDrift")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("提高战术系统持续期间的时流，并对周围单位造成持续伤害", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Improves the time flow during the duration of the tactical system and causes continuous damage to surrounding units", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("RS_WeaponOverloading")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("战术系统持续期间提升航速、时流加快1.5倍", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("During the duration of the tactical system, the speed is increased and the time flow is accelerated by 1.5 times.", pad);
                         tooltip.addImageWithText(15f);
                     }
                     if (ship.getSystem().getId().equals("CR_TargetingLink")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("大幅加速战舰与所放飞舰载机的时间流速", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Greatly accelerates the time flow of battleships and launched carrier-based aircraft", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("RS_FortressShieldStats")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("小幅度加压护盾并加速舰船时间流速", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Slightly pressurizes the shield and accelerates the ship's time flow", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("CR_PhaseCrossing")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("跳跃后进行能量喷发，放射大量电弧", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("After jumping, energy erupts, emitting a large amount of arcs.", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("CR_DamperBurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("系统持续期间加速舰船时间流速", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Accelerate the ship's time flow during the system duration", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("RS_MABurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("系统持续期间加速舰船时间流速", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Accelerate the ship's time flow during the system duration", pad);
                         tooltip.addImageWithText(15f);
                     }
 

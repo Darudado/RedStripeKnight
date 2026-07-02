@@ -170,7 +170,7 @@ public class Support_minestrike extends BaseShipSystemScript implements MineStri
             if (target != null) {
                 float dist = Misc.getDistance(ship.getLocation(), target);
                 float max = this.getMaxRange(ship) + ship.getCollisionRadius();
-                return dist > max ? "超出范围" : "就绪";
+                return dist > max ? "out of range" : "ready";
             } else {
                 return null;
             }

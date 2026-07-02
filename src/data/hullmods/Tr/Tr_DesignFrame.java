@@ -22,7 +22,7 @@ public class Tr_DesignFrame extends BaseHullMod {
     private static final String REMOVAL_SOUND = "cr_allied_critical";
 
     // 描述文本
-    private static final String RESTRICTION_DESC = "只能安装自动控制战斗机";
+    private static final String RESTRICTION_DESC = "Only automatic control fighters can be installed";
 
     public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
         stats.getVentRateMult().modifyPercent(id, 25f);
@@ -89,46 +89,46 @@ public class Tr_DesignFrame extends BaseHullMod {
         Color badColor = Misc.getNegativeHighlightColor();
 
         //tooltip.addPara("作为星域中你所能见到最为精密而高效的武器，她需要一些特殊的优渥对待", pad, highlight);
-        tooltip.addSectionHeading("效果", Alignment.MID, pad);
-        tooltip.addPara("过载时间减少 %s ", smallPad, highlight, "15%");
-        tooltip.addPara("强制排散速率增加 %s ", smallPad, highlight, "25%");
-        tooltip.addPara("只要舰船处于非过载或强制排散状态，不产生辐能便能维持0辐能加速", smallPad, highlight);
+        tooltip.addSectionHeading("Effect", Alignment.MID, pad);
+        tooltip.addPara("Overload time reduced by %s", smallPad, highlight, "15%");
+        tooltip.addPara("Forced drain rate increased by %s", smallPad, highlight, "25%");
+        tooltip.addPara("As long as the ship is not overloaded or forced to dissipate, it can maintain 0 radiation acceleration without generating radiation.", smallPad, highlight);
         // 添加限制说明
         tooltip.addPara(RESTRICTION_DESC, pad, badColor);
-        tooltip.addPara("每月维护消耗增加 %s ", smallPad, badColor, "15%");
+        tooltip.addPara("Monthly maintenance consumption increased by %s", smallPad, badColor, "15%");
 
-        tooltip.addSectionHeading("额外配置", Alignment.MID, pad);
+        tooltip.addSectionHeading("Additional configuration", Alignment.MID, pad);
         if(!(ship == null)) {
             if (ship.getVariant().hasHullMod("Tr_SpecializedArmor")){
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/damper_field.png", 45f);
-                imageText.addPara("该舰船集成了一套特殊装甲：", pad);
-                imageText.addPara("舰船装甲受击时会弹开以较大角度入射的弹丸", pad, highlight);
-                imageText.addPara("但装甲对于 %s 的抗性将会下降", pad, Color.red ,"动能伤害");
+                imageText.addPara("The ship integrates a special set of armor:", pad);
+                imageText.addPara("When the ship's armor is hit, it will bounce off projectiles that hit it at a larger angle.", pad, highlight);
+                imageText.addPara("But the armor's resistance to %s will be reduced", pad, Color.red ,"Kinetic damage");
                 tooltip.addImageWithText(15f);
             }
             else if (ship.getVariant().hasHullMod("Moci_IField")){
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/temporal_shell.png", 45f);
-                imageText.addPara("该舰船拥有一类光束防护装置：", pad);
-                imageText.addPara("舰船能够阻止正面光束的入射", pad, highlight);
-                imageText.addPara("但阻挡光束会产生 %s ，且舰船  %s 时失效", pad, Color.red ,"软辐能","过载");
+                imageText.addPara("The ship has Class 1 beam protection:", pad);
+                imageText.addPara("The ship is able to block the incidence of frontal beams", pad, highlight);
+                imageText.addPara("However, blocking the beam will produce %s and will be invalid when the ship is %s", pad, Color.red ,"soft radiant energy","overload");
                 tooltip.addImageWithText(15f);
             }
             else if (ship.getVariant().hasHullMod("Tr6_ControllingCore")){
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/station_defense_drones_mid.png", 45f);
-                imageText.addPara("该舰船的控制核心为一架TR6伍德沃特：", pad);
-                imageText.addPara("舰船被摧毁时伍德沃特会脱离并开始自主战斗", pad, highlight);
+                imageText.addPara("The ship's control core is a TR6 Woundwort:", pad);
+                imageText.addPara("When the ship is destroyed, Woundwort will disengage and start fighting autonomously.", pad, highlight);
                 //imageText.addPara("但阻挡光束会产生 %s ，且舰船  %s 时失效", pad, Color.red ,"软辐能","过载");
                 tooltip.addImageWithText(15f);
             }
             else if (ship.getVariant().hasHullMod("Tr6_Haznthley_system")){
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/station_defense_drones_mid.png", 45f);
-                imageText.addPara("该机动装甲基于TR6伍德沃特进行拓展：", pad);
-                imageText.addPara("可以通过更换装备应对不同作战环境", pad, highlight);
+                imageText.addPara("This mobile armor is expanded based on the TR6 Woundwort:", pad);
+                imageText.addPara("Can cope with different combat environments by changing equipment", pad, highlight);
                 //imageText.addPara("但阻挡光束会产生 %s ，且舰船  %s 时失效", pad, Color.red ,"软辐能","过载");
                 tooltip.addImageWithText(15f);
             }
             else{
-                tooltip.addPara("无特殊改装", smallPad, highlight);
+                tooltip.addPara("No special modifications", smallPad, highlight);
             }
         }
 
@@ -157,9 +157,9 @@ public class Tr_DesignFrame extends BaseHullMod {
             // 显示合规状态
             if (totalWings > 0) {
                 if (nonCompliantWings.isEmpty()) {
-                    tooltip.addPara("当前安装的战机均符合要求", pad, Misc.getPositiveHighlightColor());
+                    tooltip.addPara("All currently installed fighters meet the requirements", pad, Misc.getPositiveHighlightColor());
                 } else {
-                    tooltip.addPara("以下战机不符合要求，将被移除:", pad, badColor);
+                    tooltip.addPara("The following fighters do not meet the requirements and will be removed:", pad, badColor);
 
                     tooltip.setBulletedListMode("    - ");
                     for (String wingName : nonCompliantWings) {
@@ -168,7 +168,7 @@ public class Tr_DesignFrame extends BaseHullMod {
                     tooltip.setBulletedListMode(null);
                 }
             } else {
-                tooltip.addPara("未安装任何战机", pad);
+                tooltip.addPara("No fighter installed", pad);
             }
         }
     }

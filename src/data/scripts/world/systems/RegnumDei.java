@@ -46,7 +46,7 @@ public class RegnumDei implements SectorGeneratorPlugin {
         star.setCustomDescriptionId("Constantinople");
 
         // --- 1. 恒星吸积盘 ---
-        system.addRingBand(star, "misc", "rings_dust0", 256f, 0, Color.red, 2048f, 2000f, 40f, Terrain.ASTEROID_BELT, "吸积盘α");
+        system.addRingBand(star, "misc", "rings_dust0", 256f, 0, Color.red, 2048f, 2000f, 40f, Terrain.ASTEROID_BELT, "accretion disk α");
         system.addRingBand(star, "misc", "rings_ice0", 256f, 0, new Color(245,110,100, 175), 2048f, 2500f, 60f);
 
         system.addAsteroidBelt(
@@ -61,11 +61,11 @@ public class RegnumDei implements SectorGeneratorPlugin {
         );
         
         // 稍后将在此加入星球生成代码
-        SectorEntityToken A = system.addCustomEntity("RS_A", "中继通讯基座", "comm_relay", "red_stripe");
+        SectorEntityToken A = system.addCustomEntity("RS_A", "Relay communication base", "comm_relay", "red_stripe");
         A.setCircularOrbit(star, 180f, 2900f, 365f);
-        SectorEntityToken B = system.addCustomEntity("RS_B", "中继导航浮标", "nav_buoy", "red_stripe");
+        SectorEntityToken B = system.addCustomEntity("RS_B", "relay navigation buoy", "nav_buoy", "red_stripe");
         B.setCircularOrbit(star, 220f, 2500f, 365f);
-        SectorEntityToken C = system.addCustomEntity("RS_C", "中继传感器阵列", "sensor_array", "red_stripe");
+        SectorEntityToken C = system.addCustomEntity("RS_C", "relay sensor array", "sensor_array", "red_stripe");
         C.setCircularOrbit(star, 240f, 2900f, 365f);
         
 		
@@ -75,7 +75,7 @@ public class RegnumDei implements SectorGeneratorPlugin {
          * 
          */
             SectorEntityToken gate = system.addCustomEntity("RS_gate", // unique id 设置星门id
-                    "圣渊之门", // name - if null, defaultName from custom_entities.json will be used 设置你星门的名字
+                    "Gate of the Holy Abyss", // name - if null, defaultName from custom_entities.json will be used 设置你星门的名字
                     "inactive_gate", // type of object, defined in custom_entities.json 设置标签（让系统识别这是个星门）根据custom_entities.json设置
                     null);
         // 
@@ -304,7 +304,7 @@ public class RegnumDei implements SectorGeneratorPlugin {
         planet3Market.getIndustry(Industries.FUELPROD).setSpecialItem(new SpecialItemData(Items.SYNCHROTRON, null));
 
         SectorEntityToken RS1 = system.addCustomEntity("rs_oath_battlestation",
-                "誓约要塞",
+                "Oath Keep",
                 "rs_oath_station",
                 null);
         RS1.setCircularOrbitPointingDown(star, 0, 4500, 90);
@@ -316,7 +316,7 @@ public class RegnumDei implements SectorGeneratorPlugin {
 
 
         SectorEntityToken RS2 = system.addCustomEntity("rs_arxcaelestis_battlestation",
-                "星堡",
+                "Star Castle",
                 "rs_arxcaelestis",
                 "red_stripe");
         RS2.setCircularOrbitPointingDown(planet3, 0, 900, 45);

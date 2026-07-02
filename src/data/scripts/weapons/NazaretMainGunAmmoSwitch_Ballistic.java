@@ -186,11 +186,11 @@ public class NazaretMainGunAmmoSwitch_Ballistic implements EveryFrameWeaponEffec
 
         // 显示当前弹药类型（仅玩家舰船）
         if (isPlayerShip) {
-            String ammoType = useHE ? "破甲榴霰弹" : "电磁冲击弹";
+            String ammoType = useHE ? "HEAT Shrapnel" : "electromagnetic shock bomb";
             engine.maintainStatusForPlayerShip(STATUS_KEY,
                     "graphics/icons/hullsys/ammo_feeder.png",
                     weapon.getDisplayName() + ": " + ammoType,
-                    "按B键切换弹药",
+                    "Press the B button to switch ammunition",
                     false);
         }
     }

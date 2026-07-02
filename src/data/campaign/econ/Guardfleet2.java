@@ -55,7 +55,7 @@ public class Guardfleet2 extends BaseHazardCondition implements RouteManager.Rou
     private void modifyAllFactionMarkets(String id, FactionAPI faction) {
         for (MarketAPI thisMarket : Misc.getFactionMarkets(faction)) {
             float PRODUCTION_BONUS = 0.50f;
-            thisMarket.getStats().getDynamic().getMod(Stats.COMBAT_FLEET_SIZE_MULT).modifyFlat(id, PRODUCTION_BONUS, "近卫舰队泊地");
+            thisMarket.getStats().getDynamic().getMod(Stats.COMBAT_FLEET_SIZE_MULT).modifyFlat(id, PRODUCTION_BONUS, "Guard Fleet Anchorage");
             super.apply(id);
         }
     }

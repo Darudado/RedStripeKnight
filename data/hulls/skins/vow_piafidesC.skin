@@ -1,9 +1,9 @@
 {
     "baseHullId": "vow_piafides",
     "skinHullId": "vow_piafidesC",
-    "hullName": "虔信 (货运)",
+    "hullName": "Devotion (freight)",
     "descriptionId": "vow_piafides",
-    "descriptionPrefix": "将舰船的部分空间用于运载货物。",
+    "descriptionPrefix": "Use part of the ship's space to carry cargo.",
     "spriteName": "graphics/ships/Vower/Piafides.png",
     "removeBuiltInMods":[
 		"PennaVelox"

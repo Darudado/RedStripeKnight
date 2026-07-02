@@ -36,11 +36,11 @@ public class CR_carrier_supportcommand extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         Color green = new Color(55, 245, 65, 255);
         Color badbg = new Color(128, 38, 0, 175);
-        tooltip.addPara("提升舰载机补充速率: %s", 10.0F, green, Misc.getRoundedValue(10.0F) + "%");
-        tooltip.addPara("减少船员损失: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
-        tooltip.addPara("减少舰载机作战半径: %s", 10.0F, green, Misc.getRoundedValue(90.0F) + "%");
-        tooltip.addPara("增加舰载机武器射程: %s", 10.0F, green, Misc.getRoundedValue(90.0F) + "%");
-        tooltip.addPara("减少舰载机收到伤害: %s", 10.0F, green, Misc.getRoundedValue(10.0F) + "%");
+        tooltip.addPara("Increase carrier-based aircraft replenishment rate: %s", 10.0F, green, Misc.getRoundedValue(10.0F) + "%");
+        tooltip.addPara("Reduce crew losses: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
+        tooltip.addPara("Reduce carrier-based aircraft combat radius: %s", 10.0F, green, Misc.getRoundedValue(90.0F) + "%");
+        tooltip.addPara("Increase carrier aircraft weapon range: %s", 10.0F, green, Misc.getRoundedValue(90.0F) + "%");
+        tooltip.addPara("Reduce damage received by carrier-based aircraft: %s", 10.0F, green, Misc.getRoundedValue(10.0F) + "%");
 
 
     }

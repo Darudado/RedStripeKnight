@@ -186,8 +186,8 @@ public class Tr_Moudle_Controlling extends BaseHullMod {
             Global.getCombatEngine().maintainStatusForPlayerShip(
                     "TR_ENGINE_PERF",
                     "graphics/icons/hullsys/high_energy_focus.png",
-                    "引擎性能",
-                    String.format("性能系数: %.2f", enginePerformance),
+                    "engine performance",
+                    String.format("Performance coefficient: %.2f", enginePerformance),
                     false
             );
         }

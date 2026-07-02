@@ -196,10 +196,10 @@ public class VOW_FluxExtendTendency extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         float pads = 10f;
         float pad = 2f;
-        tooltip.addPara("舰船搭载了一套用于适配高辐能武器的电网系统", Misc.getHighlightColor(), pads);
-        tooltip.addSectionHeading("能量消耗调整", Alignment.MID, pads);
-        tooltip.addPara("武器能耗下降: " + (1 - 1 / DELAY_SECONDS) * 100 + "%", Misc.getHighlightColor(), pad);
-        tooltip.addPara("但在武器开火后的 %s 秒内，每秒会为舰船递送相当于武器开火所需辐能", pad, Misc.getNegativeHighlightColor(), String.valueOf((int) (DELAY_SECONDS)));
+        tooltip.addPara("The ship is equipped with a power grid system designed to adapt to high-radiation weapons.", Misc.getHighlightColor(), pads);
+        tooltip.addSectionHeading("Energy consumption adjustment", Alignment.MID, pads);
+        tooltip.addPara("Weapon energy consumption reduced:" + (1 - 1 / DELAY_SECONDS) * 100 + "%", Misc.getHighlightColor(), pad);
+        tooltip.addPara("However, within %s seconds after the weapon is fired, the ship will be delivered to the ship with radiation energy equivalent to the weapon fire required per second.", pad, Misc.getNegativeHighlightColor(), String.valueOf((int) (DELAY_SECONDS)));
     }
 
     public boolean isApplicableToShip(ShipAPI ship) {
@@ -208,8 +208,8 @@ public class VOW_FluxExtendTendency extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+        if (ship == null) return "ship does not exist";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
         return null;
     }
 }

@@ -140,7 +140,7 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
                             Global.getSoundPlayer().playSound("ui_noise_static",
                                     1f + MathUtils.getRandomNumberInRange(-0.3f, .3f), 1f,
                                     carrier.getLocation(), new Vector2f());
-                            carrier.getFluxTracker().showOverloadFloatyIfNeeded("祝你好运！", Color.white, 2f,
+                            carrier.getFluxTracker().showOverloadFloatyIfNeeded("Good luck!", Color.white, 2f,
                                     true);
                         }
 
@@ -152,7 +152,7 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
                         if (weaponPos != null) {
                             takeOffLoc = new Vector2f(weaponPos); // 防御性拷贝
                         } else {
-                            Global.getLogger(this.getClass()).warn("武器槽位置计算返回null: " + wep.getId());
+                            Global.getLogger(this.getClass()).warn("Weapon slot position calculation returns null:" + wep.getId());
                             // 将在后面使用fallback逻辑
                         }
 
@@ -173,7 +173,7 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
                     if (carrier.getLocation() != null) {
                         takeOffLoc = new Vector2f(carrier.getLocation()); // 防御性拷贝
                     } else {
-                        Global.getLogger(this.getClass()).error("载机位置为null: " + carrier.getHullSpec().getHullId());
+                        Global.getLogger(this.getClass()).error("The carrier position is null:" + carrier.getHullSpec().getHullId());
                         return; // 无法继续执行
                     }
                 }
@@ -324,8 +324,8 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
     private void setShipLocation(ShipAPI ship, Vector2f location) {
         // 位置有效性检查，防止0向量或无效坐标
         if (location == null || (Math.abs(location.x) < 1f && Math.abs(location.y) < 1f)) {
-            Global.getLogger(this.getClass()).warn("检测到无效起飞位置: " + location +
-                    ", 舰船: " + ship.getHullSpec().getHullId() + ", 使用载机位置作为fallback");
+            Global.getLogger(this.getClass()).warn("Invalid takeoff position detected:" + location +
+                    ", ship:" + ship.getHullSpec().getHullId() + ", using the aircraft position as fallback");
 
             // 使用载机位置加随机偏移作为安全fallback
             if (carrier != null) {
@@ -338,7 +338,7 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
                 Vector2f.add(safePos, offset, safePos);
                 location = safePos;
             } else {
-                Global.getLogger(this.getClass()).error("无法设置舰船位置：载机为null且位置无效");
+                Global.getLogger(this.getClass()).error("Unable to set ship position: carrier aircraft is null and position is invalid");
                 return;
             }
         }
@@ -374,7 +374,7 @@ public class Moci_SMALaunchTravelDrive extends BaseShipSystemScript {
      */
     public StatusData getStatusData(int index, State state, float effectLevel) {
         if (index == 0) {
-            return new StatusData("起飞中..", false);
+            return new StatusData("Taking off...", false);
         }
         return null;
     }

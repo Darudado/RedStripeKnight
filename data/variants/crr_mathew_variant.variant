@@ -1,7 +1,7 @@
 {
   "variantId": "crr_mathew_variant",
   "hullId": "crr_mathew",
-  "displayName": "标准",
+  "displayName": "standard",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 11,

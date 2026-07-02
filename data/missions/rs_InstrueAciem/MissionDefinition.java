@@ -23,13 +23,13 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.initFleet(FleetSide.PLAYER, "RS", FleetGoal.ATTACK, false, 5);
 		api.initFleet(FleetSide.ENEMY, "LP", FleetGoal.ATTACK, true, 5);
 
-		api.setFleetTagline(FleetSide.PLAYER, "一支小舰队");
-		api.setFleetTagline(FleetSide.ENEMY, "左径圣战舰队");
+		api.setFleetTagline(FleetSide.PLAYER, "a small fleet");
+		api.setFleetTagline(FleetSide.ENEMY, "Left Path Jihad Fleet");
 
-		api.addBriefingItem("你很清楚，你们的机动性是短板");
-		api.addBriefingItem("善用你手下舰船的充足韧性");
-		api.addBriefingItem("利用高辐能状态下的更佳表现应对敌方打击");
-		api.addBriefingItem("避免被围攻");
+		api.addBriefingItem("You know very well that your mobility is your shortcoming.");
+		api.addBriefingItem("Take advantage of the ample resilience of your ships");
+		api.addBriefingItem("Take advantage of better performance under high radiation conditions to deal with enemy attacks");
+		api.addBriefingItem("avoid being sieged");
 
 
 		api.addToFleet(FleetSide.PLAYER, "rs_constantia_defense", FleetMemberType.SHIP, "Corona Caritatis", true);

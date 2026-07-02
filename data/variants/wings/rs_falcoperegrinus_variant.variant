@@ -1,7 +1,7 @@
 {
   "variantId": "rs_falcoperegrinus_variant",
   "hullId": "rs_falcoperegrinus",
-  "displayName": "中型无人空优机",
+  "displayName": "Medium-sized unmanned air superiority aircraft",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

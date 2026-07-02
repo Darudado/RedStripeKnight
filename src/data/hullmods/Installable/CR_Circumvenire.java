@@ -279,18 +279,18 @@ public class CR_Circumvenire extends BaseHullMod {
         Color bad = Misc.getNegativeHighlightColor();
         Color good = Misc.getPositiveHighlightColor();
 
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
 
         // 机动增益
-        tooltip.addPara("舰船舰体强度 %s ", opad ,bad ,"减半");
-        tooltip.addPara("舰船加速度、减速度、转向加速度、最大转向率 %s", 5f, good, "+50%");
+        tooltip.addPara("Ship hull strength %s", opad ,bad ,"halved");
+        tooltip.addPara("Ship acceleration, deceleration, steering acceleration, maximum steering rate %s", 5f, good, "+50%");
 
-        tooltip.addPara("每当敌方一艘舰船被摧毁，本舰船获得增益：", opad);
-        tooltip.addPara("峰值时间 +%s 秒", 5f, good, String.valueOf((int) PEAK_TIME_INCREMENT));
-        tooltip.addPara("能量和实弹武器伤害 %s（每次击杀叠加，上限 %s）", 5f, good, "+1%", "+10%");
+        tooltip.addPara("Whenever an enemy ship is destroyed, this ship will gain:", opad);
+        tooltip.addPara("peak active time +%s seconds", 5f, good, String.valueOf((int) PEAK_TIME_INCREMENT));
+        tooltip.addPara("Energy and live weapon damage %s (stacks per kill, capped at %s)", 5f, good, "+1%", "+10%");
 
-        tooltip.addPara("在本舰参与的围猎行动中”。", opad);
-        tooltip.addPara("若在敌方舰船周围 %s 单位范围内有至少 %s 友方舰船时，对该敌方舰船施加减益：",
+        tooltip.addPara("During the hunting operation in which this ship participated.\"", opad);
+        tooltip.addPara("If there are at least %s friendly ships within %s units of an enemy ship, apply a debuff to the enemy ship:",
                 5f, h, String.valueOf((int) SCAN_SIZE), String.valueOf(DEBUFF_TRIGGER_COUNT));
         //tooltip.addPara("最大速度、加速度/减速度、转向加速度/转向率 %s", 5f, bad, "-15%");
         //tooltip.addPara("后坐力衰减 %s，每发射击后坐力 %s，最大后坐力 %s", 5f, bad, "-20%", "+20%", "+20%");
@@ -298,23 +298,23 @@ public class CR_Circumvenire extends BaseHullMod {
 
 
         // 按住F3显示详细说明
-        tooltip.addPara("按住 %s 查看详细机制", opad, h, "F3");
+        tooltip.addPara("Press and hold %s to see detailed mechanism", opad, h, "F3");
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addSectionHeading("详细机制", Alignment.MID, opad);
+            tooltip.addSectionHeading("Detailed mechanism", Alignment.MID, opad);
 
             //tooltip.addPara("猎手效应触发判定：", 5f);
             //tooltip.addPara("  以敌方舰船为中心，扫描 %s x %s 矩形区域，统计区域内本阵营存活的小型舰船（护卫舰/驱逐舰，不含战斗机）。",3f, h, String.valueOf((int) SCAN_SIZE), String.valueOf((int) SCAN_SIZE));
             //tooltip.addPara("  若数量 ≥ %s，则对该敌方舰船施加所有减益；否则移除减益。", 3f, h, String.valueOf(DEBUFF_TRIGGER_COUNT));
-            tooltip.addPara("减益机制：", opad);
-            tooltip.addPara("速度/机动相关：x0.85（-15%%）", 5f);
-            tooltip.addPara("后坐力衰减：x0.80（-20%%）", 5f);
-            tooltip.addPara("每发射击后坐力：x1.20（+20%%）", 5f);
-            tooltip.addPara("最大后坐力：x1.20（+20%%）", 5f);
-            tooltip.addPara("受到的伤害：x1.05（+5%%）", 5f);
+            tooltip.addPara("Debuff mechanism:", opad);
+            tooltip.addPara("Speed/maneuver related: x0.85 (-15%%)", 5f);
+            tooltip.addPara("Recoil attenuation: x0.80 (-20%%)", 5f);
+            tooltip.addPara("Recoil per shot: x1.20 (+20%%)", 5f);
+            tooltip.addPara("Maximum recoil: x1.20 (+20%%)", 5f);
+            tooltip.addPara("Damage received: x1.05 (+5%%)", 5f);
 
-            tooltip.addPara("猎杀奖励：", opad);
-            tooltip.addPara("每一艘敌方舰船被摧毁，本舰获得永久增益叠加。", 5f);
-            tooltip.addPara(" 峰值时间每次 +%s 秒（平加），武器伤害每次 +%s%%（百分比加算，上限 %s%%）。", 5f, h, String.valueOf(PEAK_TIME_INCREMENT), String.valueOf(DAMAGE_INCREMENT), String.valueOf(MAX_DAMAGE_BONUS));
+            tooltip.addPara("Hunting rewards:", opad);
+            tooltip.addPara("Every time an enemy ship is destroyed, this ship gains a permanent buff stack.", 5f);
+            tooltip.addPara("peak active time +%s seconds each time (flat addition), weapon damage +%s%% each time (percentage addition, upper limit %s%%).", 5f, h, String.valueOf(PEAK_TIME_INCREMENT), String.valueOf(DAMAGE_INCREMENT), String.valueOf(MAX_DAMAGE_BONUS));
         }
     }
 
@@ -327,11 +327,11 @@ public class CR_Circumvenire extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if(ship.getVariant().hasHullMod("CR_Votum")) return "舰船系统已被覆写";
-        if(ship.getVariant().hasHullMod("CR_Retinere")) return "舰船系统已被覆写";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
-        if(ship.isStationModule()) return "不能安装于舰船模块上";
+        if (ship == null) return "ship does not exist";
+        if(ship.getVariant().hasHullMod("CR_Votum")) return "Ship systems have been overwritten";
+        if(ship.getVariant().hasHullMod("CR_Retinere")) return "Ship systems have been overwritten";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
+        if(ship.isStationModule()) return "Cannot be installed on ship modules";
         return null;
     }
 

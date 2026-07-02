@@ -1,11 +1,11 @@
 {
   "id":"Red_stripe",
-	"name":"红条骑士团",
-	"author":" 百里连山，知足常乐，忧尘，aylott，手电筒_FW，Remington",
+	"name":"red stripe knights",
+	"author":"Hundreds of miles of mountains, contentment and happiness, worry about dust, aylott, flashlight_FW, Remington",
 	"version":"0.8",
         "totalConversion":"false",
         "utility":"false",
-	"description":"一群从黑暗中存活的人们是如何挣扎求生的" ,
+	"description":"How a group of people who survived the darkness struggled to survive" ,
 	"gameVersion":"0.98",
 	"dependencies": [
     {"id": "lw_lazylib", "name": "LazyLib"},

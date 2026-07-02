@@ -33,9 +33,9 @@ public class RSCommand extends BaseCommandPlugin {
 
         if ("showBuyHullMemberPanel".equals(k)) {
             if (Global.getSector().getMemoryWithoutUpdate().contains("$RS_ProductScript")) {
-                dialog.getOptionPanel().setOptionText("查询订单状态", "RS_person1_product_ops");
+                dialog.getOptionPanel().setOptionText("Check order status", "RS_person1_product_ops");
             } else {
-                dialog.getOptionPanel().setOptionText("生产机甲", "RS_person1_product_ops");
+                dialog.getOptionPanel().setOptionText("Produce mecha", "RS_person1_product_ops");
             }
             return false;
         }
@@ -125,12 +125,12 @@ public class RSCommand extends BaseCommandPlugin {
                     }
                 }
                 if (product.isEmpty()) {
-                    dialog.getTextPanel().addPara("未选择任何机甲。");
+                    dialog.getTextPanel().addPara("No mechs selected.");
                 } else {
                     long timestamp = Global.getSector().getClock().getTimestamp();
                     new RSProductScript(timestamp, product);
-                    dialog.getTextPanel().addPara("订单已提交，预计 30 天后完成。");
-                    dialog.getTextPanel().addPara("预估费用：" + Misc.getDGSCredits(totalCost) + " 星币（未实际扣除）");
+                    dialog.getTextPanel().addPara("The order has been submitted and is expected to be completed in 30 days.");
+                    dialog.getTextPanel().addPara("Estimated cost:" + Misc.getDGSCredits(totalCost) + "Star coins (not actually deducted)");
                 }
                 dialog.showVisualPanel();   // 恢复默认视觉面板
                 return;
@@ -158,7 +158,7 @@ public class RSCommand extends BaseCommandPlugin {
             TooltipMakerAPI ui = panel.createUIElement(panelWidth, panelHeight, true);
 
             float pad = 3f;
-            ui.addSectionHeading("机甲生产订单", Alignment.MID, pad);
+            ui.addSectionHeading("Mecha production order", Alignment.MID, pad);
 
             for (String hullId : ships) {
                 ShipHullSpecAPI spec = Global.getSettings().getHullSpec(hullId);
@@ -173,11 +173,11 @@ public class RSCommand extends BaseCommandPlugin {
                 }
                 ui.beginImageWithText(iconName, 32f);
                 ui.addPara(spec.getHullName() + " (" + spec.getDesignation() + ")", pad);
-                ui.addPara("单价：" + Misc.getDGSCredits(price) + " 星币", pad);
+                ui.addPara("unit price:" + Misc.getDGSCredits(price) + "star coins", pad);
                 ui.addImageWithText(0f);
 
                 // 数量与加减按钮放在同一行（使用简单布局）
-                ui.addPara("数量: " + qty, pad);
+                ui.addPara("quantity:" + qty, pad);
                 ui.addButton("sub_" + hullId, " - ", 30f, 20f, pad);
                 // 使用 TooltipMakerAPI 的 addSpacer 或 addPara 来分隔，然后添加 add 按钮
                 // 这里直接在减号按钮后添加加号按钮
@@ -185,7 +185,7 @@ public class RSCommand extends BaseCommandPlugin {
                 ui.addSpacer(5f);
             }
 
-            ui.addButton("confirm", "提交订单", 200f, 25f, pad);
+            ui.addButton("confirm", "Submit order", 200f, 25f, pad);
             panel.addUIElement(ui).inTL(5f, 5f);
         }
 
@@ -257,7 +257,7 @@ public class RSCommand extends BaseCommandPlugin {
                 }
             } else {
                 int remainingDays = (int) (getDays() - Global.getSector().getClock().getElapsedDaysSince(timestamp));
-                text.addPara("订单还有" + remainingDays + "天才能生产完毕，请耐心等待。");
+                text.addPara("There are still orders" + remainingDays + "The genius will be finished producing, please wait patiently.");
             }
         }
     }

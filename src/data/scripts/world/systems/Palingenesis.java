@@ -54,9 +54,9 @@ public class Palingenesis implements SectorGeneratorPlugin{
         system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white, 256f, 2200, 345f, null, null);
 
 
-        SectorEntityToken A = system.addCustomEntity("CR1", "中继通讯基座", "comm_relay", "red_stripe_vower");
+        SectorEntityToken A = system.addCustomEntity("CR1", "Relay communication base", "comm_relay", "red_stripe_vower");
         A.setCircularOrbit(star, 180f, 2900f, 365f);
-        SectorEntityToken B = system.addCustomEntity("CR2", "中继导航浮标", "nav_buoy", "red_stripe_vower");
+        SectorEntityToken B = system.addCustomEntity("CR2", "relay navigation buoy", "nav_buoy", "red_stripe_vower");
         B.setCircularOrbit(star, 220f, 2500f, 365f);
 
         system.autogenerateHyperspaceJumpPoints(true, true);

@@ -1,7 +1,7 @@
 {
   "variantId": "vow_seraphim_variant",
   "hullId": "vow_seraphim",
-  "displayName": "重型战斗轰炸机",
+  "displayName": "heavy fighter bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

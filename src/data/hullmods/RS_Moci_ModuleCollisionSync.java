@@ -265,7 +265,7 @@ public class RS_Moci_ModuleCollisionSync extends BaseHullMod {
                         // 如果是点防攻击，增加50%伤害
                         if (isPDAttack) {
                             damage.getModifier().modifyMult(this.getClass().getName() + "_pd", FRIGATE_PD_DAMAGE_MULT);
-                            return "模块受到点防攻击（继承母舰护卫舰规则）";
+                            return "The module is under point defense attack (inherited from the mothership frigate rules)";
                         }
                     }
                 }
@@ -299,11 +299,11 @@ public class RS_Moci_ModuleCollisionSync extends BaseHullMod {
     public String getDescriptionParam(int index, HullSize hullSize) {
         switch (index) {
             case 0:
-                return "模块";
+                return "module";
             case 1:
-                return "母舰";
+                return "mothership";
             case 2:
-                return "碰撞类型";
+                return "Collision type";
             case 3:
                 return "" + (int) Math.round((1f - PROFILE_MULT) * 100f) + "%"; // 信号降低
             case 4:
@@ -322,10 +322,10 @@ public class RS_Moci_ModuleCollisionSync extends BaseHullMod {
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
         if (ship == null) {
-            return "舰船无效";
+            return "Invalid ship";
         }
         if (!ship.isStationModule()) {
-            return "此船插只能安装在模块舰船上";
+            return "This ship plug can only be installed on module ships";
         }
         return null;
     }

@@ -139,7 +139,7 @@ public class SPAutomated extends BaseHullMod {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
 
-        tooltip.addPara("曾经有探险家在英仙座边缘星区发现过特殊的、遭受过严重损害的自动舰船工厂，其生产的大型舰船都带有这一特殊设计系统。令人惊奇的是，控制该工厂的ai核心已经严重损坏，大半的储存机构已然不翼而飞，但他仍在一丝不苟地按照已经遵守了几个世纪的计划进行着舰船建造。就像他依旧在静静地为了那个宏伟的计划而奉献一样。", opad, h);
+        tooltip.addPara("Some explorers once discovered a special, severely damaged automatic ship factory in the Perseus Edge Sector. The large ships they produced all had this special design system. Surprisingly, the AI ​​core that controls the factory has been severely damaged, and most of the storage mechanisms are missing. However, he is still constructing the ship meticulously according to the plan that has been adhered to for centuries. It's like he is still quietly devoting himself to that grand plan.", opad, h);
     }
 
 }

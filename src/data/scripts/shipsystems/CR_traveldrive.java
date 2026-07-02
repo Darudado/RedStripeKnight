@@ -461,7 +461,7 @@ public class CR_traveldrive extends BaseShipSystemScript {
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
         if (index == 0) {
-            return new StatusData("跃迁驱动", false);
+            return new StatusData("jump drive", false);
         }
         return null;
     }

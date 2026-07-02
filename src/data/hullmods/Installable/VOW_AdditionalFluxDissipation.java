@@ -64,8 +64,8 @@ public class VOW_AdditionalFluxDissipation extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship == null) return "船只不存在";
-        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+        if (ship == null) return "ship does not exist";
+        if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
         return null;
     }
 }

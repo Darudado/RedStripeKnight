@@ -169,7 +169,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             RS_Moci_MobileSuitRepairTracker.getOrCreate(rs).beginRepair(bay.getShip(), bay);
             Moci_SMALandingSequence.recordLandingMemory(rs, bay);
             rs.setCustomData("Moci_LaunchAnimStarted", null);
-            logRepairEvent(rs, "startRepair() 开始。carrier=" + (bay.getShip() != null ? bay.getShip().getName() : "null")
+            logRepairEvent(rs, "startRepair() starts. carrier=" + (bay.getShip() != null ? bay.getShip().getName() : "null")
                     + ", slot=" + bay.getSlotId()
                     + ", isLanding=" + rs.isLanding()
                     + ", isFinishedLanding=" + rs.isFinishedLanding());
@@ -215,7 +215,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             ShipAIConfig restoreConfig = originalAI != null ? originalAI.getConfig() : null;
             RS_Moci_MobileSuitRepairTracker tracker = RS_Moci_MobileSuitRepairTracker.getOrCreate(rs);
             tracker.beginTakeoff(bay.getShip(), bay);
-            logRepairEvent(rs, "forceFinishRepair() 执行。carrier="
+            logRepairEvent(rs, "forceFinishRepair() is executed. carrier="
                     + (bay.getShip() != null ? bay.getShip().getName() : "null")
                     + ", slot=" + bay.getSlotId());
             
@@ -249,11 +249,11 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
                 boolean shouldPlayAnimation = Moci_SMALandingSequence.bayShouldHidden(bay);
                 
                 if (Global.getSettings().isDevMode()) {
-                        Global.getLogger(this.getClass()).info(rs.getName() + " 起飞检查 - 应该播放动画: " + shouldPlayAnimation + 
-                            " - 有武器: " + (bay.getBay() != null ? "是" : "否") + 
-                            " - 武器ID: " + (bay.getBay() != null ? bay.getBay().getSpec().getWeaponId() : "无") +
-                        " - 武器标签: " + (bay.getBay() != null && bay.getBay().getSpec() != null ? 
-                            (bay.getBay().getSpec().hasTag("Moci_LimitedLanding") ? "有Moci_LimitedLanding标签" : "无Moci_LimitedLanding标签") : "无标签"));
+                        Global.getLogger(this.getClass()).info(rs.getName() + "Takeoff check - animation should play:" + shouldPlayAnimation + 
+                            "- Has weapons:" + (bay.getBay() != null ? "Yes" : "No") + 
+                            "- Weapon ID:" + (bay.getBay() != null ? bay.getBay().getSpec().getWeaponId() : "None") +
+                        "- Weapon tags:" + (bay.getBay() != null && bay.getBay().getSpec() != null ? 
+                            (bay.getBay().getSpec().hasTag("Moci_LimitedLanding") ? "Has Moci_LimitedLanding tag" : "No Moci_LimitedLanding tag") : "no label"));
                 }
 
                 if(shouldPlayAnimation){
@@ -269,7 +269,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
                             RS_Moci_ModuleCollisionSync.endRepairingHiding(module);
                         }
                     }
-                    logRepairEvent(rs, "forceFinishRepair() 已显式写入原生起飞动画标记。");
+                    logRepairEvent(rs, "forceFinishRepair() has explicitly written native takeoff animation markers.");
                 }
                     // 只有在应该播放动画的情况下才设置起飞动画
                     // 有武器的情况下，直接给一个额外的推力，模拟弹出效果
@@ -281,8 +281,8 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
                     rs.getVelocity().set(pushDirection.x * pushForce, pushDirection.y * pushForce);
                     
                     if (Global.getSettings().isDevMode()) {
-                        Global.getLogger(this.getClass()).info(rs.getName() + " 使用弹出起飞方式" + 
-                            (rs.getCustomData().get("Moci_LaunchAnimStarted") != null ? " (动画已经开始过)" : ""));
+                        Global.getLogger(this.getClass()).info(rs.getName() + "Use pop-up takeoff" + 
+                            (rs.getCustomData().get("Moci_LaunchAnimStarted") != null ? "(The animation has already started)" : ""));
                     }
             
             // 清除所有自定义数据，确保不会影响后续操作
@@ -291,7 +291,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             tracker.markTakingOff();
             Moci_AIRestoreUtil.restoreDefaultAI(rs, restoreConfig);
             tracker.markCompleted();
-            logRepairEvent(rs, "forceFinishRepair() 完成，已恢复 AI 并标记起飞完成。");
+            logRepairEvent(rs, "forceFinishRepair() Completed, restored AI and marked takeoff complete.");
             
             // 清除引用
             this.rs = null;
@@ -317,7 +317,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             ship.turnOffTravelDrive();
             
             if (Global.getSettings().isDevMode()) {
-                Global.getLogger(this.getClass()).info(ship.getName() + " 清理着陆相关的自定义数据，保留起飞动画和自动驾驶恢复标记");
+                Global.getLogger(this.getClass()).info(ship.getName() + "Clean custom data related to landing, retain takeoff animation and autopilot recovery flags");
             }
         }
 
@@ -363,7 +363,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
                 
                 
                 if(repairSequence.isFadedIn()){
-                    logRepairEvent(rs, "repairSequence 完成，准备收尾。");
+                    logRepairEvent(rs, "The repairSequence is completed and ready to be finished.");
                     // === 修理完成，进行最终处理 ===
                     
                     // 恢复主舰体所有武器弹药
@@ -633,7 +633,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             }
             ship.setExtraAlphaMult2(fader.getBrightness());
             if(fader.isFadedIn()){
-                logAnimationEvent(ship, "[MOCI_ANIM] 起飞动画淡入完成。");
+                logAnimationEvent(ship, "[MOCI_ANIM] Takeoff animation fade-in completed.");
                 ship.removeListener(this);
             }
         }
@@ -657,7 +657,7 @@ public class Moci_RS_RepairBayScript implements AdvanceableListener {
             }
             ship.setExtraAlphaMult2(fader.getBrightness());
             if(fader.isFadedOut()){
-                logAnimationEvent(ship, "[MOCI_ANIM] 着陆动画淡出完成。");
+                logAnimationEvent(ship, "[MOCI_ANIM] Landing animation fadeout completed.");
                 ship.removeListener(this);
             }
         }

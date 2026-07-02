@@ -53,8 +53,8 @@ public class RS_DestructiveEffect extends BaseMarketConditionPlugin {
                 return;
         }
 
-        this.market.getStability().modifyFlat(id, -stab, "行星杀手打击");
-        this.market.getStats().getDynamic().getMod("ground_defenses_mod").modifyMult(id, defe, "行星杀手打击");
+        this.market.getStability().modifyFlat(id, -stab, "planet killer strike");
+        this.market.getStats().getDynamic().getMod("ground_defenses_mod").modifyMult(id, defe, "planet killer strike");
     }
 
     public void unapply(String id) {
@@ -106,7 +106,7 @@ public class RS_DestructiveEffect extends BaseMarketConditionPlugin {
         }
 
         int time = (int)this.market.getMemoryWithoutUpdate().getFloat(Key_Time);
-        tooltip.addPara("稳定性降低{%s，地面防御降低{%s，持续{%s}天.", 10.0F, Misc.getHighlightColor(), new String[]{stab, defe, "" + time});
+        tooltip.addPara("Stability is reduced by {%s, ground defense is reduced by {%s, lasting {%s} days.", 10.0F, Misc.getHighlightColor(), new String[]{stab, defe, "" + time});
     }
 
     public static void tryAddCondition(MarketAPI market, boolean full) {

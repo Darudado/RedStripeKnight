@@ -176,7 +176,7 @@ public class RS_InterdictionDesign extends BaseHullMod {
         if (index == 1) return "50%";  // 射速提升
         if (index == 2) return "60%";  // 辐能消耗降低
         if (index == 3) return "25%";  // 伤害减免
-        if (index == 4 && hullSize == ShipAPI.HullSize.CAPITAL_SHIP) return "动态护盾变形"; // 护盾变形效果
+        if (index == 4 && hullSize == ShipAPI.HullSize.CAPITAL_SHIP) return "Dynamic shield deformation"; // 护盾变形效果
         return null;
     }
 
@@ -187,16 +187,16 @@ public class RS_InterdictionDesign extends BaseHullMod {
         Color h = Misc.getPositiveHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("特殊设计的舰船框架，专注机动性与进攻能力的提升",  opad,h);
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
-        tooltip.addPara("非导弹武器基础射程提升至 %s 以上 ", pad, h, "" +800);
-        tooltip.addPara("传感器截面 %s", pad, h, "降低50%");
-        tooltip.addPara("小型武器装配点 %s，中型 %s，大型 %s，战机 %s", pad, h, "-2", "-5", "-8", "-10");
-        tooltip.addPara("在舰船结构受到伤害时激发额外效果，按住 %s 以查看详细机制", opad, highlight,  "F3" );
+        tooltip.addPara("Specially designed ship frame, focusing on improving mobility and offensive capabilities",  opad,h);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
+        tooltip.addPara("The basic range of non-missile weapons is increased to above %s", pad, h, "" +800);
+        tooltip.addPara("Sensor cross section %s", pad, h, "50% reduction");
+        tooltip.addPara("Small arms assembly point %s, medium %s, large %s, fighter %s", pad, h, "-2", "-5", "-8", "-10");
+        tooltip.addPara("Trigger additional effects when the ship's structure is damaged, hold %s to view detailed mechanics", opad, highlight,  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addPara("实弹与能量武器射速随受损程度提升，最多 +%s", pad, h, "50%");
-            tooltip.addPara("武器辐能消耗随受损程度进一步降低，最多降至 %s", pad, h, "45%");
-            tooltip.addPara("舰体伤害减免随受损程度增加，最多减免 %s", pad, h, "25%");
+            tooltip.addPara("Fire rate of live ammunition and energy weapons increases with damage, up to +%s", pad, h, "50%");
+            tooltip.addPara("Weapon radiation consumption further decreases with damage, up to %s", pad, h, "45%");
+            tooltip.addPara("Hull damage reduction increases with the degree of damage, with a maximum reduction of %s", pad, h, "25%");
         }
     }
 

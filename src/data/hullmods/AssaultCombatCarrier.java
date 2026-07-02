@@ -228,8 +228,8 @@ public class AssaultCombatCarrier extends BaseHullMod {
             deckText.append(capacity);
         }
 
-        String title = "战机战备";
-        String main = "甲板后备战机数量：" + deckText;
+        String title = "fighter aircraft combat readiness";
+        String main = "Number of reserve fighters on deck:" + deckText;
         engine.maintainStatusForPlayerShip(
                 STATUS_KEY_PREFIX + ship.getId(),
                 "graphics/icons/hullsys/targeting_feed.png",
@@ -246,17 +246,17 @@ public class AssaultCombatCarrier extends BaseHullMod {
         Color h = Misc.getHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addSectionHeading("前线母舰调度系统",  Alignment.MID, opad);
+        tooltip.addSectionHeading("Frontline Mothership Scheduling System",  Alignment.MID, opad);
 
-        tooltip.addSectionHeading("火控升级", Color.ORANGE, Color.BLACK, Alignment.MID, opad);
-        tooltip.addPara("对于非导弹武器，小型/中型/大型炮塔安装时花费的装配点减少 %s / %s / %s 。", pad , h , "2","5","8");
-        tooltip.addPara("对于非导弹武器，基础射程最低为 %s ，甲板中每有一架舰载机增加 %s 点基础射程。", pad , h , String.valueOf(BASE_MIN), String.valueOf(RANGE_BOUNS));
-        tooltip.addPara("且甲板中每有一架舰载机增加 %s 点武器连射精度。", pad , h , String.valueOf(RANGE_BOUNS/500));
+        tooltip.addSectionHeading("Fire control upgrade", Color.ORANGE, Color.BLACK, Alignment.MID, opad);
+        tooltip.addPara("For non-missile weapons, small/medium/large turrets cost %s / %s / %s fewer assembly points to mount.", pad , h , "2","5","8");
+        tooltip.addPara("For non-missile weapons, the base range is at least %s and increases by %s points for each aircraft in the deck.", pad , h , String.valueOf(BASE_MIN), String.valueOf(RANGE_BOUNS));
+        tooltip.addPara("And each carrier-based aircraft in the deck increases the weapon firing accuracy by %s points.", pad , h , String.valueOf(RANGE_BOUNS/500));
 
-        tooltip.addSectionHeading("机库管控", Color.ORANGE, Color.BLACK, Alignment.MID, opad);
-        tooltip.addPara("为每个甲板提供独立的机库容量，容量为战机编队数量的 %s 倍。", pad , h , "2");
-        tooltip.addPara("战机损失时可立即从机库补充。", pad);
-        tooltip.addPara("容量会随时间自动恢复，恢复速度为战机整备速度的 %s 倍。", pad, bad , "2.5");
+        tooltip.addSectionHeading("Hangar control", Color.ORANGE, Color.BLACK, Alignment.MID, opad);
+        tooltip.addPara("Each deck is provided with independent hangar capacity, with a capacity equal to %s times the number of fighter formations.", pad , h , "2");
+        tooltip.addPara("When fighter aircraft are lost, they can be replenished immediately from the hangar.", pad);
+        tooltip.addPara("The capacity will be automatically restored over time, and the recovery speed is %s times the aircraft's maintenance speed.", pad, bad , "2.5");
     }
 
     @Override

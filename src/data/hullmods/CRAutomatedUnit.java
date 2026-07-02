@@ -30,7 +30,7 @@ public class CRAutomatedUnit extends BaseHullMod {
 
     public String getUnapplicableReason(ShipAPI ship) {
         if (!ship.getVariant().hasHullMod("automated")) {
-            return "只能安装在自动化舰船上";
+            return "Can only be installed on automated ships";
         }
         return "";
     }

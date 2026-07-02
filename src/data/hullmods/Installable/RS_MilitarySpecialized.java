@@ -119,39 +119,39 @@ public class RS_MilitarySpecialized extends BaseLogisticsHullMod {
         float currentLogisticsDec = Math.min(installedMods * Logistics_Dec_PER_MOD, MAX_Logistics_Dec) * 100f;
 
         // 添加效果说明
-        tooltip.addSectionHeading("效果说明", Alignment.MID, opad);
+        tooltip.addSectionHeading("Effect description", Alignment.MID, opad);
 
-        tooltip.addPara("根据安装的军事类船插数量提供战斗加成：", opad, textColor);
-        tooltip.addPara("- 每个军事类船插提供：", pad, textColor);
-        tooltip.addPara("  • %s 电网增益", pad, highlight, String.format("+%.1f%%", FLUX_BONUS_PER_MOD * 100f));
-        tooltip.addPara("  • %s 装甲加成", pad, highlight, String.format("+%.1f%%", ARMOR_BONUS_PER_MOD * 100f));
-        tooltip.addPara("  • %s 最大速度", pad, highlight, String.format("+%.1f%%", SPEED_BONUS_PER_MOD * 100f));
-        tooltip.addPara("  • %s 补给消耗", pad, highlight, String.format("+%.1f%%", Logistics_Dec_PER_MOD * 100f));
+        tooltip.addPara("Combat bonuses are provided based on the number of military-type ship plugs installed:", opad, textColor);
+        tooltip.addPara("- Each military class ship insert provides:", pad, textColor);
+        tooltip.addPara("• %s grid gain", pad, highlight, String.format("+%.1f%%", FLUX_BONUS_PER_MOD * 100f));
+        tooltip.addPara("• %s armor bonus", pad, highlight, String.format("+%.1f%%", ARMOR_BONUS_PER_MOD * 100f));
+        tooltip.addPara("• %s maximum speed", pad, highlight, String.format("+%.1f%%", SPEED_BONUS_PER_MOD * 100f));
+        tooltip.addPara("• %s supply consumption", pad, highlight, String.format("+%.1f%%", Logistics_Dec_PER_MOD * 100f));
 
-        tooltip.addPara("- 加成上限：", opad, textColor);
-        tooltip.addPara("  • 最大电网加成 %s", pad, highlight, String.format("%.0f%%", MAX_FLUX_BONUS * 100f));
-        tooltip.addPara("  • 最大装甲加成 %s", pad, highlight, String.format("%.0f%%", MAX_ARMOR_BONUS * 100f));
-        tooltip.addPara("  • 最大速度加成 %s", pad, highlight, String.format("%.0f%%", MAX_SPEED_BONUS * 100f));
-        tooltip.addPara("  • 最大补给消耗 %s", pad, highlight, String.format("%.0f%%", MAX_Logistics_Dec * 100f));
+        tooltip.addPara("- Bonus limit:", opad, textColor);
+        tooltip.addPara("• Maximum grid bonus %s", pad, highlight, String.format("%.0f%%", MAX_FLUX_BONUS * 100f));
+        tooltip.addPara("• Maximum armor bonus %s", pad, highlight, String.format("%.0f%%", MAX_ARMOR_BONUS * 100f));
+        tooltip.addPara("• Maximum speed bonus %s", pad, highlight, String.format("%.0f%%", MAX_SPEED_BONUS * 100f));
+        tooltip.addPara("• Maximum supply consumption %s", pad, highlight, String.format("%.0f%%", MAX_Logistics_Dec * 100f));
 
         // 显示当前状态（仅在查看具体舰船时显示）
         if (ship != null && !isForModSpec) {
-            tooltip.addSectionHeading("当前状态", new Color(245, 230, 185, 255), new Color(220, 199, 152, 155), Alignment.MID, opad);
+            tooltip.addSectionHeading("Current status", new Color(245, 230, 185, 255), new Color(220, 199, 152, 155), Alignment.MID, opad);
 
-            tooltip.addPara("已安装军事类船插：%s 个", pad,
+            tooltip.addPara("Installed military ship plug-ins: %s", pad,
                     installedMods > 0 ? positive : gray,
                     String.valueOf(installedMods));
 
             if (installedMods > 0) {
-                tooltip.addPara("当前加成效果：", pad, textColor);
-                tooltip.addPara("  • 电网强度提高：%s", 3f, positive, String.format("+%.1f%%", currentFluxBonus));
-                tooltip.addPara("  • 装甲强度：%s", 3f, positive, String.format("+%.1f%%", currentArmorBonus));
-                tooltip.addPara("  • 最大速度：%s", 3f, positive, String.format("+%.1f%%", currentSpeedBonus));
-                tooltip.addPara("  • 补给消耗增加：%s", 3f, positive, String.format("+%.1f%%", currentLogisticsDec));
+                tooltip.addPara("Current bonus effects:", pad, textColor);
+                tooltip.addPara("• Grid strength increased: %s", 3f, positive, String.format("+%.1f%%", currentFluxBonus));
+                tooltip.addPara("• Armor strength: %s", 3f, positive, String.format("+%.1f%%", currentArmorBonus));
+                tooltip.addPara("• Maximum speed: %s", 3f, positive, String.format("+%.1f%%", currentSpeedBonus));
+                tooltip.addPara("• Supply consumption increased: %s", 3f, positive, String.format("+%.1f%%", currentLogisticsDec));
 
                 // 显示可检测的船插列表（折叠显示）
                 if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-                    tooltip.addPara("按住F3以查看已检测到的军事类船插：", opad, textColor);
+                    tooltip.addPara("Hold down F3 to view detected military-type ships:", opad, textColor);
                     for (String modId : COMBAT_MOD_IDS) {
                         if (ship.getVariant().hasHullMod(modId)) {
                             tooltip.addPara("  • " + getHullModName(modId), pad, highlight);
@@ -162,45 +162,45 @@ public class RS_MilitarySpecialized extends BaseLogisticsHullMod {
         }
 
         // 兼容性说明
-        tooltip.addSectionHeading("兼容性说明", Alignment.MID, pad);
-        tooltip.addPara("可检测的军事类船插数量：%s 种", pad, highlight, String.valueOf(COMBAT_MOD_IDS.length));
-        tooltip.addPara("与大多数船插兼容，加成效果会自动计算。", pad, textColor);
+        tooltip.addSectionHeading("Compatibility Notes", Alignment.MID, pad);
+        tooltip.addPara("Number of detectable military ship plugs: %s types", pad, highlight, String.valueOf(COMBAT_MOD_IDS.length));
+        tooltip.addPara("Compatible with most ship plug-ins, bonus effects are automatically calculated.", pad, textColor);
     }
 
     // 辅助方法：获取船插的显示名称
     private String getHullModName(String modId) {
         // 这里可以添加更完整的名称映射
         return switch (modId) {
-            case "heavyarmor" -> "重型装甲";
-            case "reinforcedhull" -> "强化船体";
-            case "fluxcoil" -> "通量线圈";
-            case "fluxdistributor" -> "通量分发器";
-            case "advancedoptics" -> "先进光学";
-            case "targetingunit" -> "目标定位单元";
-            case "stabilizedshieldemitter" -> "稳定护盾发生器";
-            case "armoredweapons" -> "装甲武器";
-            case "turretgyros" -> "强化炮塔";
-            case "hardened_subsystems" -> "硬化子系统";
-            case "magazines" -> "扩展弹匣";
-            case "missileracks" -> "导弹架";
-            case "ecm" -> "电子对抗系统";
-            case "eccm" -> "电子反制组件";
-            case "auxiliarythrusters" -> "辅助推进器";
-            case "assault_package" -> "突击套件";
-            case "escort_package" -> "护航套件";
-            case "expanded_deck_crew" -> "扩编甲板人员";
-            case "missleracks" -> "扩展发射架";
-            case "PolariphaseDrive" -> "偏相驱动";
-            case "PhaseDefenseUnit" -> "偏相维度差防御";
-            case "WeaponOverLoad" -> "偏相武器系统超载";
-            case "EnergyTargetCognetrix" -> "能量投射计算阵列";
-            case "BallisticTargetCognetrix" -> "质量投射计算阵列";
-            case "UniversalRangeFinder" -> "通用性测距仪";
-            case "defensive_targeting_array" -> "舰载机防御定位网络";
-            case "CR_ImprovedWeaponControlling" -> "火控升级";
-            case "CR_FighterProducingOverloading" -> "战机锻炉超弛";
-            case "CR_EngineRegularBoost" -> "潮汐式引擎改装";
-            case "autorepair" -> "自动维修组件";
+            case "heavyarmor" -> "heavy armor";
+            case "reinforcedhull" -> "Reinforced hull";
+            case "fluxcoil" -> "flux coil";
+            case "fluxdistributor" -> "flux distributor";
+            case "advancedoptics" -> "advanced optics";
+            case "targetingunit" -> "targeting unit";
+            case "stabilizedshieldemitter" -> "Stable shield generator";
+            case "armoredweapons" -> "armored weapons";
+            case "turretgyros" -> "Reinforced turret";
+            case "hardened_subsystems" -> "hardened subsystem";
+            case "magazines" -> "extended magazine";
+            case "missileracks" -> "missile rack";
+            case "ecm" -> "electronic countermeasures system";
+            case "eccm" -> "Electronic countermeasure components";
+            case "auxiliarythrusters" -> "Auxiliary thruster";
+            case "assault_package" -> "assault kit";
+            case "escort_package" -> "escort kit";
+            case "expanded_deck_crew" -> "Expanded deck crew";
+            case "missleracks" -> "Extended launcher";
+            case "PolariphaseDrive" -> "Bi-phase drive";
+            case "PhaseDefenseUnit" -> "Partial Phase Dimension Difference Defense";
+            case "WeaponOverLoad" -> "Overload of partial phase weapon system";
+            case "EnergyTargetCognetrix" -> "Energy Projection Computing Array";
+            case "BallisticTargetCognetrix" -> "mass projection calculation array";
+            case "UniversalRangeFinder" -> "universal rangefinder";
+            case "defensive_targeting_array" -> "Carrier-based aircraft defense positioning network";
+            case "CR_ImprovedWeaponControlling" -> "Fire control upgrade";
+            case "CR_FighterProducingOverloading" -> "Fighter Forge Overrelaxation";
+            case "CR_EngineRegularBoost" -> "Tidal engine modification";
+            case "autorepair" -> "Automatic repair components";
 
             default -> modId;
         };

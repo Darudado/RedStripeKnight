@@ -55,12 +55,12 @@ public class CR_carrier_strikecommand extends BaseHullMod {
         Color flavor = new Color(110, 110, 110, 255);
         Color bad = Misc.getNegativeHighlightColor();
         Color badbg = new Color(128, 38, 0, 175);
-        tooltip.addPara("提升舰载机补充速率: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
-        tooltip.addPara("增加船员损失: %s", 30.0F, green, Misc.getRoundedValue(10.0F) + "%");
-        tooltip.addPara("增加舰载机作战半径: %s", 10.0F, green, Misc.getRoundedValue(30.0F) + "%");
-        tooltip.addPara("增加舰载机机动性", 10.0F);
-        tooltip.addPara("增加舰载机武器伤害", 10.0F);
-        tooltip.addPara("减少舰载机收到伤害: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
+        tooltip.addPara("Increase carrier-based aircraft replenishment rate: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
+        tooltip.addPara("Increase crew losses: %s", 30.0F, green, Misc.getRoundedValue(10.0F) + "%");
+        tooltip.addPara("Increase carrier-based aircraft combat radius: %s", 10.0F, green, Misc.getRoundedValue(30.0F) + "%");
+        tooltip.addPara("Increase carrier-based aircraft mobility", 10.0F);
+        tooltip.addPara("Increase carrier-based aircraft weapon damage", 10.0F);
+        tooltip.addPara("Reduce damage received by carrier-based aircraft: %s", 10.0F, green, Misc.getRoundedValue(20.0F) + "%");
 
 
     }

@@ -90,21 +90,21 @@ public class CR_ShieldOscillating extends BaseHullMod {
 		int arcEnergy = (int)(E_DAMAGE * 100);
 		int arcEMP = (int)(EMP_DAMAGE * 100);
 
-		tooltip.addPara("护盾系统能量寄存器，能缓冲护盾受到地冲击，但寄存器需要不定时释放能量，这部分能量只能由舰体承受。", Misc.getHighlightColor(), pad);
+		tooltip.addPara("The shield system energy register can buffer the shield from ground impact, but the register needs to release energy from time to time, and this part of the energy can only be borne by the ship body.", Misc.getHighlightColor(), pad);
 
-		tooltip.addSectionHeading("动态伤害响应", Alignment.MID, pad);
-		tooltip.addPara("护盾遭受攻击时，根据单次伤害大小动态减免伤害：" +
-						"伤害越低减伤比例越高，最高可达 %s；伤害越高减伤越低，当折算后减伤低于 1%% 时不再生效。" +
-						"例如，单发伤害 %s 时减免约 %s%%，%s 时约 %s%%，%s 时约 %s%%。",
+		tooltip.addSectionHeading("dynamic damage response", Alignment.MID, pad);
+		tooltip.addPara("When the shield is attacked, the damage is dynamically reduced based on the size of the single damage:" +
+						"The lower the damage, the higher the damage reduction ratio, up to %s; the higher the damage, the lower the damage reduction, and it will no longer take effect when the converted damage reduction is less than 1%%." +
+						"For example, the single-shot damage reduction is about %s%% when %s, about %s%% when %s, and about %s%% when %s.",
 				padS, Misc.getHighlightColor(),
 				(int)MAX_DAMAGE_REDUCE_PERCENT + "%",
 				(int)DAMAGE_REDUCE_TEST1 + "", lowDmgReduce + "%",
 				(int)DAMAGE_REDUCE_TEST2 + "", midDmgReduce + "%",
 				(int)DAMAGE_REDUCE_TEST4 + "", highDmgReduce + "%");
 
-		tooltip.addSectionHeading("谐振电弧", Alignment.MID, pad);
-		tooltip.addPara("每次成功减免的伤害会被盾体电容器吸收，累计满 %s 点后。" +
-						"对舰体释放电弧造成 %s 能量伤害和 %s EMP 伤害",
+		tooltip.addSectionHeading("resonant arc", Alignment.MID, pad);
+		tooltip.addPara("Each successfully reduced damage will be absorbed by the shield capacitor after accumulating %s points." +
+						"The arc released on the ship causes %s energy damage and %s EMP damage.",
 				padS, Misc.getHighlightColor(),
 				(int) ARC_THRESHOLD + "",
 				arcEnergy + "%", arcEMP + "%");
@@ -212,9 +212,9 @@ public class CR_ShieldOscillating extends BaseHullMod {
 
 	@Override
 	public String getUnapplicableReason(ShipAPI ship) {
-		if (ship == null) return "船只不存在";
-		if (ship.getShield() == null) return "船只没有护盾";
-		if (!ship.getVariant().hasHullMod("CrusadersCore")) return "需要十字军核心";
+		if (ship == null) return "ship does not exist";
+		if (ship.getShield() == null) return "The ship has no shields";
+		if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
 		return null;
 	}
 

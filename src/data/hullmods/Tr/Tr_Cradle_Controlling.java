@@ -93,8 +93,8 @@ public class Tr_Cradle_Controlling extends BaseHullMod {
                 // 显示消息
                 if (ship == Global.getCombatEngine().getPlayerShip()) {
                     String message = data.jettisonedCount > 0 ?
-                            String.format("CRADLE模块已分离 - 共%d个模块", data.jettisonedCount) :
-                            "未找到CRADLE模块";
+                            String.format("CRADLE module has been separated - %d modules in total", data.jettisonedCount) :
+                            "CRADLE module not found";
 
                     Global.getCombatEngine().getCombatUI().addMessage(1,
                             new Color(255, 150, 50, 255),
@@ -143,8 +143,8 @@ public class Tr_Cradle_Controlling extends BaseHullMod {
                     if (ship == Global.getCombatEngine().getPlayerShip()) {
                         Global.getCombatEngine().getCombatUI().addMessage(0,
                                 Color.GREEN,
-                                String.format("已分离模块: %s",
-                                        module.getStationSlot() != null ? module.getStationSlot().getId() : "未知"),
+                                String.format("Detached module: %s",
+                                        module.getStationSlot() != null ? module.getStationSlot().getId() : "unknown"),
                                 Color.WHITE);
                     }
                 }
@@ -154,7 +154,7 @@ public class Tr_Cradle_Controlling extends BaseHullMod {
         // 如果没有找到CRADLE模块，可以添加调试信息
         if (data.jettisonedCount == 0 && ship == Global.getCombatEngine().getPlayerShip()) {
             // 显示当前所有模块的槽位ID用于调试
-            StringBuilder moduleInfo = new StringBuilder("当前模块槽位ID: ");
+            StringBuilder moduleInfo = new StringBuilder("Current module slot ID:");
             for (ShipAPI module : childModules) {
                 WeaponSlotAPI slot = module.getStationSlot();
                 if (slot != null) {
@@ -589,25 +589,25 @@ public class Tr_Cradle_Controlling extends BaseHullMod {
         Color bad = Misc.getNegativeHighlightColor();
         Color good = Misc.getPositiveHighlightColor();
 
-        tooltip.addPara("功能说明:", pad, highlight, "功能说明");
-        tooltip.addPara("• 在战斗中双击X键分离标记的模块", small);
-        tooltip.addPara("• 分离的模块将自主战斗，不会返回", small);
-        tooltip.addPara("• 模块会攻击附近的敌人并试图保持在母舰附近", small);
+        tooltip.addPara("Function description:", pad, highlight, "Function description");
+        tooltip.addPara("• Double-click the X key to detach a marked module during combat", small);
+        tooltip.addPara("• Detached modules will fight autonomously and will not return", small);
+        tooltip.addPara("• The module will attack nearby enemies and try to stay close to the mothership", small);
 
-        tooltip.addPara("模块标记方法:", pad, highlight, "模块标记方法");
-        tooltip.addPara("只分离槽位id为 '" + MODULE_ID + "' 的模块", small);
+        tooltip.addPara("Module marking method:", pad, highlight, "Module marking method");
+        tooltip.addPara("Only separate slot id is '" + MODULE_ID + "' module", small);
 
-        tooltip.addPara("注意事项:", pad, bad, "注意事项");
-        tooltip.addPara("• 分离的模块无法重新回收", small);
-        tooltip.addPara("• 模块被摧毁后无法恢复", small);
-        tooltip.addPara("• 建议在紧急情况下使用此功能", small);
+        tooltip.addPara("Things to note:", pad, bad, "Things to note");
+        tooltip.addPara("• Detached modules cannot be recycled", small);
+        tooltip.addPara("• Modules cannot be restored after being destroyed", small);
+        tooltip.addPara("• Recommended to use this feature in emergency situations", small);
 
         if (ship != null) {
             // 显示当前可分离的模块数量
             int jettisonableCount = countJettisonableModules(ship);
             Color countColor = jettisonableCount > 0 ? good : bad;
 
-            tooltip.addPara("当前可分离模块: %s (槽位ID: %s)", pad, countColor,
+            tooltip.addPara("Current detachable module: %s (Slot ID: %s)", pad, countColor,
                     String.valueOf(jettisonableCount), MODULE_ID);
         }
     }
@@ -649,7 +649,7 @@ public class Tr_Cradle_Controlling extends BaseHullMod {
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
         if (ship == null || ship.getChildModulesCopy().isEmpty()) {
-            return "该舰船没有可分离的模块";
+            return "The ship has no detachable modules";
         }
         return null;
     }

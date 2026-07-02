@@ -91,8 +91,8 @@ public class PhaseDefenseUnit extends BaseHullMod {
             engine.maintainStatusForPlayerShip(
                     "PHASE_DEFENSE_STATUS",
                     "graphics/icons/hullsys/fortress_shield.png",
-                    "相位防御单元",
-                    "吸收概率: " + (int)(data.currentChance * 100) + "%",
+                    "phase defense unit",
+                    "Absorption probability:" + (int)(data.currentChance * 100) + "%",
                     false
             );
         }
@@ -217,75 +217,75 @@ public class PhaseDefenseUnit extends BaseHullMod {
         Color h = Misc.getPositiveHighlightColor();
         Color bad = Misc.getNegativeHighlightColor();
 
-        tooltip.addPara("对舰船进行特定升级的强化套件，每艘舰船只能安装一种特殊强化套件",  opad,h);
-        tooltip.addPara("将大部分舰船能源重定向至防护系统。", pad, h);
-        tooltip.addSectionHeading("效果", Alignment.MID, opad);
-        tooltip.addPara("舰船电网耗散降低 %s  ", pad, bad,  "" + 25 + "%");
-        tooltip.addPara("舰船电网容量提升 %s ", pad, h,  "" + 15 + "%");
-        tooltip.addPara("船体/护盾所受伤害降低 %s ，护盾被贯穿几率降低 %s ", pad, h, "" + 10 + "%","" + 25 + "%");
-        tooltip.addPara("强制排散速率提升 %s ", pad, h, "" + 25 + "%");
-        tooltip.addPara("最大战斗航速降低 %s ", pad, bad, "" + 40 + "%");
-        tooltip.addPara("如此大刀阔斧地改动是为了适配一种与镀层关联的全新防御机制",  pad, h);
-        tooltip.addPara("按住 %s 以查看详细机制", opad, Misc.getHighlightColor(),  "F3" );
+        tooltip.addPara("Enhancement kits that provide specific upgrades to ships. Each ship can be equipped with a special enhancement kit.",  opad,h);
+        tooltip.addPara("Redirects most of the ship's energy to its protection systems.", pad, h);
+        tooltip.addSectionHeading("Effect", Alignment.MID, opad);
+        tooltip.addPara("Ship power grid dissipation reduced by %s", pad, bad,  "" + 25 + "%");
+        tooltip.addPara("Ship power grid capacity increased by %s", pad, h,  "" + 15 + "%");
+        tooltip.addPara("The damage taken by the hull/shield is reduced by %s, and the chance of the shield being penetrated is reduced by %s.", pad, h, "" + 10 + "%","" + 25 + "%");
+        tooltip.addPara("Forced dispersion rate increased by %s", pad, h, "" + 25 + "%");
+        tooltip.addPara("Maximum combat speed reduced by %s", pad, bad, "" + 40 + "%");
+        tooltip.addPara("Such drastic changes are made to accommodate a new defense mechanism related to plating",  pad, h);
+        tooltip.addPara("Press and hold %s to view detailed mechanics", opad, Misc.getHighlightColor(),  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addPara("吸收护盾覆盖范围 %s 倍内的射弹，转化为电网辐能", pad, h, "" + (FIELD_RADIUS_FACTOR) + "%");
-            tooltip.addPara("每发射弹产生的辐能为其伤害的 %s ", pad, bad, "" + FLUX_PER_DAMAGE + "%");
-            tooltip.addPara("对确定的单一射弹的吸收概率为 %s - %s 之间，随着辐能上升而下降", pad, h, "" + (int)MIN_ABSORB_CHANCE*100+"%" , "" + (int)MAX_ABSORB_CHANCE *100+"%");
-            tooltip.addPara("产生辐能的 %s 用于给镀层充能", pad, h, "" + 0.05 + "%");
+            tooltip.addPara("Absorb projectiles within %s times of shield coverage and convert them into grid radiation", pad, h, "" + (FIELD_RADIUS_FACTOR) + "%");
+            tooltip.addPara("Each projectile generates radiant energy for %s of its damage", pad, bad, "" + FLUX_PER_DAMAGE + "%");
+            tooltip.addPara("The probability of absorption for a given single projectile is between %s - %s, decreasing as the radiant energy increases", pad, h, "" + (int)MIN_ABSORB_CHANCE*100+"%" , "" + (int)MAX_ABSORB_CHANCE *100+"%");
+            tooltip.addPara("%s generating radiant energy is used to charge the plating", pad, h, "" + 0.05 + "%");
 
         }
 
-        tooltip.addSectionHeading("船插对战术系统的增益", Alignment.MID, opad);
+        tooltip.addSectionHeading("The benefits of ship plugs to the tactical system", Alignment.MID, opad);
 
         if(!(ship == null)) {
             if (!(ship.getSystem() == null)) {
-                tooltip.addPara("按住 %s 以查看详细信息", opad, h, "F4");
+                tooltip.addPara("Press and hold %s to view details", opad, h, "F4");
                 if (Keyboard.isKeyDown(Keyboard.KEY_F4)) {
                     if (ship.getSystem().getId().equals("CR_PhaseboostDrive")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("加速舰船引擎修复并耗散基于目前辐能水平15%的辐能", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Speeds up ship engine repair and dissipates 15% of the radiation based on the current radiation level", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_PhaseVerbJet")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("为护盾加压，提供25％减伤效果", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Pressurizes the shield, providing 25% damage reduction", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_PhaseDrift")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("提高战术系统持续期间的软辐能散耗速率", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Increased soft radiation dissipation rate for the duration of tactical systems", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("RS_WeaponOverloading")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("战术系统持续期间提升盾效并发射点防御电弧", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("During the duration of the tactical system, the shield effectiveness is increased and a point defense arc is emitted.", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_TargetingLink")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("提升战舰与所放飞战机的伤害减免能力", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Improve the damage reduction capabilities of battleships and launched fighters", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("RS_FortressShieldStats")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("较大幅度加压护盾，提升舰船耗散能力并使舰船获得15%硬辐能耗散", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Pressurize the shield to a greater extent, improve the ship's dissipation ability and gain 15% hard radiation energy dissipation.", pad);
                         tooltip.addImageWithText(15f);
                     }else if (ship.getSystem().getId().equals("CR_PhaseCrossing")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("跳跃后为舰船提供持续3秒的大比例减伤，不可叠加", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("After jumping, it will provide the ship with a large proportion of damage reduction that lasts for 3 seconds and cannot be superimposed.", pad);
                         tooltip.addImageWithText(15f);
                     }else if (ship.getSystem().getId().equals("CR_DamperBurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("系统持续期间舰船受到伤害大幅减少", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("During the duration of the system, the damage taken by the ship is greatly reduced.", pad);
                         tooltip.addImageWithText(15f);
                     }else if (ship.getSystem().getId().equals("RS_MABurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("为战术系统附加效果：", pad);
-                        imageText.addPara("系统持续期间舰船受到伤害大幅减少", pad);
+                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("During the duration of the system, the damage taken by the ship is greatly reduced.", pad);
                         tooltip.addImageWithText(15f);
                     }
                 }

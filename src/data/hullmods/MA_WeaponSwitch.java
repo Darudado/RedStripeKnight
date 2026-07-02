@@ -23,16 +23,16 @@ public class MA_WeaponSwitch extends BaseHullMod {
             //比对新旧插件差异，被移除的插件丢进该set
             Set<String> removedHullMod = new HashSet<>();
             if (modRecorder.containsKey(variant)) {
-                Global.getLogger(this.getClass()).info("检查被移除的插件");
+                Global.getLogger(this.getClass()).info("Check for removed plugins");
                 for (String modId : modRecorder.get(variant)) {
                     if (!variant.hasHullMod(modId)) {
                         removedHullMod.add(modId);
-                        Global.getLogger(this.getClass()).info("被移除的插件："+modId);
+                        Global.getLogger(this.getClass()).info("Removed plugins:"+modId);
                     }
                 }
 
             } else {
-                Global.getLogger(this.getClass()).info("首次安装");
+                Global.getLogger(this.getClass()).info("First time installation");
                 Set<String> sourceHullMod = new HashSet<>();
                 for (MA_WeaponSwitch2.hullModComfig config : HULL_MOD_CONFIGS.values()) {
                     if (!sourceHullMod.contains(config.getSourceHullMod())) {
@@ -46,18 +46,18 @@ public class MA_WeaponSwitch extends BaseHullMod {
                     if (HULL_MOD_CONFIGS.containsKey(modId)) {
                         hullModComfig config = HULL_MOD_CONFIGS.get(modId);
                         sourceHullMod.remove(config.getSourceHullMod());
-                        Global.getLogger(this.getClass()).info("已安装的："+modId +" 移除"+sourceHullMod);
+                        Global.getLogger(this.getClass()).info("Installed:"+modId +"Remove"+sourceHullMod);
                     }
                 }
                 if (!sourceHullMod.isEmpty()) {
                     for (String modId : sourceHullMod) {
-                        Global.getLogger(this.getClass()).info("安装插件："+modId);
+                        Global.getLogger(this.getClass()).info("Install plugin:"+modId);
                         variant.addMod(modId);
                     }
                 }
             }
             if (!removedHullMod.isEmpty()) {
-                Global.getLogger(this.getClass()).info("遍历被移除mod的下一个mod：");
+                Global.getLogger(this.getClass()).info("Traverse the next mod after the removed mod:");
                 for (String modId : removedHullMod) {
                     String addId = null;
                     String sourceId = null;
@@ -75,16 +75,16 @@ public class MA_WeaponSwitch extends BaseHullMod {
                             modId=config.getNextHullmod();
                         }
                         if (i > 999) {
-                            Global.getLogger(this.getClass()).info("尝试寻找继承插件id的时候陷入死循环，跳出，所有插件都不适用于当前舰船 插件id：" + modId);
+                            Global.getLogger(this.getClass()).info("When trying to find the inherited plug-in ID, I fell into an infinite loop and jumped out. All plug-ins are not applicable to the current ship. Plug-in ID:" + modId);
                             break;
                         }
                     }
                     if (addId != null && !addId.isEmpty()) {
                         variant.addMod(addId);
-                        Global.getLogger(this.getClass()).info("安装插件："+addId);
+                        Global.getLogger(this.getClass()).info("Install plugin:"+addId);
                     } else if (sourceId != null && !sourceId.isEmpty()) {
                         variant.addMod(sourceId);
-                        Global.getLogger(this.getClass()).info("安装插件："+sourceId);
+                        Global.getLogger(this.getClass()).info("Install plugin:"+sourceId);
                     }
                 }
             }

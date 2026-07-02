@@ -1,7 +1,7 @@
 {
   "variantId": "rs_confutatio_Standerd",
   "hullId": "rs_confutatio",
-  "displayName": "重型战术轰炸机",
+  "displayName": "heavy tactical bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,

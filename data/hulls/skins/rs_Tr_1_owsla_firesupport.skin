@@ -1,12 +1,12 @@
 {
 	"baseHullId":"rs_Tr_1_owsla",
 	"skinHullId":"rs_Tr_1_owsla_firesupport",
-	"hullName":"海兹尔-奥斯拉(炮击装备)",
+	"hullName":"Hazel Osla (artillery equipment)",
 	"incompatibleWithBaseHull":false, # for the autofit dialog
 	"descriptionId":"rs_Tr_1_owsla",
-	"descriptionPrefix":"该型号为炮击作战进行了特殊改造。借此，该机体将发挥出不同以往的性能。",
+	"descriptionPrefix":"This model was specially modified for artillery operations. In this way, the aircraft will exhibit different performance than before.",
 	"tags":[rs_praetorianorum_bp , auto_rec],
-	"tech":"红条近卫军团",
+	"tech":"Red Stripe Guards Regiment",
 	"fleetPoints":12,
 	"ordnancePoints":95,
 	"maxSpeed":75,

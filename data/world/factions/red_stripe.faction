@@ -8,8 +8,8 @@
 	
 	"secondaryUIColor":[243,243,243,255],
     "secondarySegments":3,
-	"displayName":"红条骑士团",
-	"displayNameWithArticle":"红条骑士团",
+	"displayName":"Red Stripe Knights",
+	"displayNameWithArticle":"Red Stripe Knights",
 	"logo":"graphics/factions/rs_flag.png",
 	"crest":"graphics/factions/crest_rs_flag.png",
 	"shipNamePrefix":"RSS",
@@ -224,14 +224,14 @@
 	},
 	"ranks":{
 		"ranks":{
-			"factionLeader":{"name":"教宗"},
-			"spaceCommander":{"name":"指挥官"},
+			"factionLeader":{"name":"Pope"},
+			"spaceCommander":{"name":"Commander"},
 		},
 		"posts":{
-			"factionLeader":{"name":"教宗"},
-			"patrolCommander":{"name":"巡逻队指挥官"},
-			"fleetCommander":{"name":"舰队指挥官"},
-			"baseCommander":{"name":"基地指挥官"},
+			"factionLeader":{"name":"Pope"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
 		},
 	},
 	"voices":{ # 势力产生的联络人的类型分配比率，根据低、中、高重要性可以各自不同设计
@@ -269,25 +269,25 @@
 		},
 	},	
 	"fleetTypeNames":{
-    "trade": "贸易舰队",
-    "smallTrader": "商队",
-    "tradeLiner": "旅行舰队",
+    "trade": "Trade Fleet",
+    "smallTrader": "Caravan",
+    "tradeLiner": "Traveling Fleet",
 	
-    "patrolSmall": "维护者",
-    "patrolMedium": "追随者",
-    "patrolLarge": "簇拥者",
+    "patrolSmall": "Maintainer",
+    "patrolMedium": "Followers",
+    "patrolLarge": "Guardians",
 	
-    "inspectionFleet": "审查团",
+    "inspectionFleet": "Inspection Fleet",
 	
-    "mercScout": "维护者",
-    "mercBountyHunter": "赏金猎人",
-    "mercPrivateer": "追随者",
-    "mercPatrol": "簇拥者",
-    "mercArmada": "大型巡逻舰队",
+    "mercScout": "Maintainer",
+    "mercBountyHunter": "Bounty Hunter",
+    "mercPrivateer": "Followers",
+    "mercPatrol": "Guardians",
+    "mercArmada": "Large Patrol Fleet",
 	
-    "taskForce": "特别行动小组",
+    "taskForce": "Special Operations Team",
 	
-	"foodReliefFleet":"救援舰队",
+	"foodReliefFleet":"Relief Fleet",
 	},
 	
 },
