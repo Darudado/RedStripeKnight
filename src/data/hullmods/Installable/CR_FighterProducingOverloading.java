@@ -404,7 +404,7 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
 
         // 添加惩罚说明
         float punish = computePunish(ship);
-        tooltip.addPara("When equipping a heavy fighter aircraft with an assembly point exceeding %1$s, the replenishment time will increase: for each assembly point exceeding 1 point, the aircraft preparation time penalty will be increased by %2$s. The current penalty is: %3$s.",
+        tooltip.addPara("When equipping a heavy fighter aircraft with an Ordnance Point (OP) cost exceeding %1$s, the replenishment time will increase: for each OP exceeding 1, the aircraft preparation time penalty will be increased by %2$s. The current penalty is: %3$s.",
                 10f, bad,
                 String.format("%.0f", PUNISH_START_OP),
                 String.format("%.1f", PUNISH_PER_OP),

@@ -119,7 +119,7 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "Radiant energy dissipation +25%",
+                            "Flux dissipation +25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
@@ -141,7 +141,7 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY2,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "This ship's weapon radiation consumption -25%",
+                            "This ship's weapon flux cost -25%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
@@ -155,7 +155,7 @@ public class CR_TargetingLink extends BaseShipSystemScript {
                             STATUSKEY4,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "Fighter weapon radiation consumption -50%",
+                            "Fighter weapon flux cost -50%",
                             false
                     );
                 } else {

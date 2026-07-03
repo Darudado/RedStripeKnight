@@ -154,7 +154,7 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY4,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "Non-missile weapon radiation requirements reduced by 50%",
+                                "Non-missile weapon flux cost reduced by 50%",
                                 false
                         );
                     }
@@ -204,7 +204,7 @@ public class PhaseVerbJet extends BaseShipSystemScript {
                                 this.STATUSKEY4,
                                 ship.getSystem().getSpecAPI().getIconSpriteName(),
                                 ship.getSystem().getDisplayName(),
-                                "Non-missile weapon radiation requirements reduced by 10%",
+                                "Non-missile weapon flux cost reduced by 10%",
                                 false
                         );
                     }

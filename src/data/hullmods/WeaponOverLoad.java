@@ -162,20 +162,20 @@ public class WeaponOverLoad extends BaseHullMod {
         tooltip.addSectionHeading("Effect", Alignment.MID, opad);
         tooltip.addPara("Redirects the majority of the ship's energy to weapons systems.", pad, h);
         tooltip.addPara("Non-missile weapon damage + %s", pad, h, "" +30 + "%");
-        tooltip.addPara("At the same time, the required radiation energy + %s", pad, bad, "" +15 + "%");
+        tooltip.addPara("At the same time, weapon flux cost is increased by %s", pad, bad, "" +15 + "%");
         tooltip.addPara("Ship dissipation increased by %s", pad, h,  "" + 75+ "%" );
-        tooltip.addPara("Ship radiation capacity decreased by %s", pad, bad,  "" + 25+ "%");
+        tooltip.addPara("Ship flux capacity decreased by %s", pad, bad,  "" + 25+ "%");
         tooltip.addPara("The ship's maneuverability is reduced by %s", pad, bad,  "" + 25+ "%");
         tooltip.addPara("Gives additional effects to ship weapons, hold %s to view detailed mechanics", opad, highlight,  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addPara("When the weapon is fired, an additional %s of soft radiation required by the weapon is generated as temporary stored radiation.", pad, bad,"" +40+ "%");
-            tooltip.addPara("The temporarily stored radiant energy will occupy the power grid and be slowly dissipated, and the ship's plating will be restored based on %s of its total amount.", pad, h,  "" + 5+ "%");
+            tooltip.addPara("When a weapon is fired, an additional %s of the weapon's flux cost is generated as flux.", pad, bad,"" +40+ "%");
+            tooltip.addPara("This flux occupies the flux grid and is dissipated normally; additionally, the ship's armor is repaired by %s of the flux generated.", pad, h,  "" + 5+ "%");
 
         }
 
-        tooltip.addSectionHeading("The benefits of ship plugs to the tactical system", Alignment.MID, opad);
+        tooltip.addSectionHeading("Ship System Upgrades", Alignment.MID, opad);
         if((ship == null)){
-            tooltip.addPara("Compliant ships and tactical systems not detected", pad);
+            tooltip.addPara("No compatible ship systems detected", pad);
         }
         if(!(ship == null)) {
             if (!(ship.getSystem() == null)) {
@@ -184,8 +184,8 @@ public class WeaponOverLoad extends BaseHullMod {
                     if (ship.getSystem().getId().equals("CR_PhaseboostDrive")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/ammo_feeder.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Increases the damage of live ammunition and energy weapons by 50% within 1 second after using the tactical system", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Increases ballistic and energy weapon damage by 50% for 1 second after activating the ship system", pad);
                         tooltip.addImageWithText(15f);
                     }
 
@@ -193,16 +193,16 @@ public class WeaponOverLoad extends BaseHullMod {
                     if (ship.getSystem().getId().equals("CR_PhaseVerbJet")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/ammo_feeder.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Increases non-missile weapon damage, fire rate, and radiation consumption by 50% while the tactical system is enabled", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Increases non-missile weapon damage, rate of fire, and flux generation by 50% while the ship system is active", pad);
                         tooltip.addImageWithText(15f);
                     }
 
 
                     if (ship.getSystem().getId().equals("CR_PhaseDrift")) {
 
-                        TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/ammo_feeder.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("During the duration of the tactical system, a dem drone will be spawned to attack enemy units every 75 unit movements.", pad);
                         tooltip.addImageWithText(15f);
                     }
@@ -210,7 +210,7 @@ public class WeaponOverLoad extends BaseHullMod {
                     if (ship.getSystem().getId().equals("RS_WeaponOverloading")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Strengthen the effect of the tactical system on weapons", pad);
                         tooltip.addImageWithText(15f);
                     }
@@ -218,34 +218,34 @@ public class WeaponOverLoad extends BaseHullMod {
                     if (ship.getSystem().getId().equals("CR_TargetingLink")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Greatly enhance the weapon damage and energy consumption of battleships and launched fighters", pad);
                         tooltip.addImageWithText(15f);
                     }
                     if (ship.getSystem().getId().equals("RS_FortressShieldStats")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Moderately pressurizes the shield and reduces weapon radiation consumption, during which the ship can fire", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Moderately improves shield efficiency and reduces weapon flux cost; the ship can fire weapons while the system is active", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("CR_PhaseCrossing")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Tear apart space and form a powerful explosion at the point where the ship jumps.", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("CR_DamperBurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Increases the damage and rate of fire of non-missile weapons while the system lasts", pad);
                         tooltip.addImageWithText(15f);
                     }
 
                     if (ship.getSystem().getId().equals("RS_MABurn")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/high_energy_focus.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Increases the damage and rate of fire of non-missile weapons while the system lasts", pad);
                         tooltip.addImageWithText(15f);
                     }

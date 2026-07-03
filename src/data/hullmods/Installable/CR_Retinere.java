@@ -183,19 +183,19 @@ public class CR_Retinere extends BaseHullMod {
         tooltip.addPara("Enhancement kits that provide specific upgrades to ships. Each ship can be equipped with a special enhancement kit.", opad, h);
         tooltip.addSectionHeading("Effect", Alignment.MID, opad);
 
-        tooltip.addPara("Non-missile weapon fire rate %s, radiation consumption increased by %s.", pad, bad, "halved","150%");
+        tooltip.addPara("Non-missile weapon fire rate %s, flux generation increased by %s.", pad, bad, "halved","150%");
         tooltip.addPara("Missile weapon capacity and ammunition recovery rate %s.", pad, bad, "halved");
 
         // 护盾减伤
         tooltip.addPara("Shield takes %s less damage.", pad, h, "5%");
         // 友方硬辐能耗散比例加成
-        tooltip.addPara("Each friendly ship within %s units increases the hard radiation dissipation ratio by %s, up to a maximum of %s.", pad, h,
+        tooltip.addPara("Each friendly ship within %s units increases hard flux dissipation by %s, up to a maximum of %s.", pad, h,
                 String.valueOf((int) ALLY_RANGE), "10%", "50%");
         // 战斗耗散速率加成
-        tooltip.addPara("Increases the total radiation dissipation rate by %s per second during combat, up to a maximum of %s.", pad, h,
+        tooltip.addPara("Increases the flux dissipation rate by %s per second during combat, up to a maximum of %s.", pad, h,
                 (int) COMBAT_BONUS_PER_SECOND + "%", (int) MAX_COMBAT_BONUS + "%");
         // 脱战效果
-        tooltip.addPara("After being out of combat for %s seconds, the maximum capacity of soft radiation will be increased by %s per second; when overloaded, the soft radiation will be reduced by the same amount per second.", pad, h,
+        tooltip.addPara("After being out of combat for %s seconds, soft flux is dissipated by %s of maximum capacity per second; when overloaded, soft flux is dissipated at the same rate.", pad, h,
                 String.valueOf((int) OUT_OF_COMBAT_DELAY), "9%");
         // 战斗状态判定
         tooltip.addPara("Combat status is determined by firing or being attacked and lasts for %s seconds.", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
@@ -206,7 +206,7 @@ public class CR_Retinere extends BaseHullMod {
             tooltip.addSectionHeading("Detailed mechanism", Alignment.MID, opad);
             //tooltip.addPara("硬辐能耗散比例：舰船耗散辐能时，该比例的耗散将用于减少硬辐能。", pad);
             tooltip.addPara("Combat status determination: The ship is considered to be in combat within %s seconds after its weapons fire or receive damage, during which the combat dissipation bonus is accumulated.", pad, h, String.valueOf((int) COMBAT_TIMEOUT));
-            tooltip.addPara("Out-of-combat timer: Starts counting after leaving combat, and starts increasing soft radiation after %s seconds. If the ship is overloaded, the timer will be stopped and the soft radiation energy will be reduced.", pad, h, String.valueOf((int) OUT_OF_COMBAT_DELAY));
+            tooltip.addPara("Out-of-combat timer: Starts counting after leaving combat, and begins dissipating soft flux after %s seconds. If the ship is overloaded, the timer is paused and soft flux is dissipated directly.", pad, h, String.valueOf((int) OUT_OF_COMBAT_DELAY));
             tooltip.addPara("All bonuses are independently multiplied, and combat dissipation bonuses are removed immediately after leaving combat.", pad);
         }
     }

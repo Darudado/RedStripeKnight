@@ -220,22 +220,22 @@ public class PhaseDefenseUnit extends BaseHullMod {
         tooltip.addPara("Enhancement kits that provide specific upgrades to ships. Each ship can be equipped with a special enhancement kit.",  opad,h);
         tooltip.addPara("Redirects most of the ship's energy to its protection systems.", pad, h);
         tooltip.addSectionHeading("Effect", Alignment.MID, opad);
-        tooltip.addPara("Ship power grid dissipation reduced by %s", pad, bad,  "" + 25 + "%");
-        tooltip.addPara("Ship power grid capacity increased by %s", pad, h,  "" + 15 + "%");
+        tooltip.addPara("Ship flux dissipation reduced by %s", pad, bad,  "" + 25 + "%");
+        tooltip.addPara("Ship flux capacity increased by %s", pad, h,  "" + 15 + "%");
         tooltip.addPara("The damage taken by the hull/shield is reduced by %s, and the chance of the shield being penetrated is reduced by %s.", pad, h, "" + 10 + "%","" + 25 + "%");
-        tooltip.addPara("Forced dispersion rate increased by %s", pad, h, "" + 25 + "%");
+        tooltip.addPara("Active venting rate increased by %s", pad, h, "" + 25 + "%");
         tooltip.addPara("Maximum combat speed reduced by %s", pad, bad, "" + 40 + "%");
         tooltip.addPara("Such drastic changes are made to accommodate a new defense mechanism related to plating",  pad, h);
         tooltip.addPara("Press and hold %s to view detailed mechanics", opad, Misc.getHighlightColor(),  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addPara("Absorb projectiles within %s times of shield coverage and convert them into grid radiation", pad, h, "" + (FIELD_RADIUS_FACTOR) + "%");
-            tooltip.addPara("Each projectile generates radiant energy for %s of its damage", pad, bad, "" + FLUX_PER_DAMAGE + "%");
-            tooltip.addPara("The probability of absorption for a given single projectile is between %s - %s, decreasing as the radiant energy increases", pad, h, "" + (int)MIN_ABSORB_CHANCE*100+"%" , "" + (int)MAX_ABSORB_CHANCE *100+"%");
-            tooltip.addPara("%s generating radiant energy is used to charge the plating", pad, h, "" + 0.05 + "%");
+            tooltip.addPara("Absorb projectiles within %s of shield coverage and convert them into flux", pad, h, "" + (FIELD_RADIUS_FACTOR) + "%");
+            tooltip.addPara("Each projectile generates flux equal to %s of its damage", pad, bad, "" + FLUX_PER_DAMAGE + "%");
+            tooltip.addPara("The probability of absorption for a given single projectile is between %s - %s, decreasing as flux level increases", pad, h, "" + (int)MIN_ABSORB_CHANCE*100+"%" , "" + (int)MAX_ABSORB_CHANCE *100+"%");
+            tooltip.addPara("%s of flux generated this way is used to charge the plating", pad, h, "" + 0.05 + "%");
 
         }
 
-        tooltip.addSectionHeading("The benefits of ship plugs to the tactical system", Alignment.MID, opad);
+        tooltip.addSectionHeading("Ship System Upgrades", Alignment.MID, opad);
 
         if(!(ship == null)) {
             if (!(ship.getSystem() == null)) {
@@ -243,38 +243,38 @@ public class PhaseDefenseUnit extends BaseHullMod {
                 if (Keyboard.isKeyDown(Keyboard.KEY_F4)) {
                     if (ship.getSystem().getId().equals("CR_PhaseboostDrive")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Speeds up ship engine repair and dissipates 15% of the radiation based on the current radiation level", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Speeds up ship engine repair and dissipates 15% of the flux based on the current flux level", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_PhaseVerbJet")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Pressurizes the shield, providing 25% damage reduction", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_PhaseDrift")) {
 
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/active_flare_launcher.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Increased soft radiation dissipation rate for the duration of tactical systems", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Increased soft flux dissipation rate for the duration of the ship system", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("RS_WeaponOverloading")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("During the duration of the tactical system, the shield effectiveness is increased and a point defense arc is emitted.", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("CR_TargetingLink")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("Improve the damage reduction capabilities of battleships and launched fighters", pad);
                         tooltip.addImageWithText(15f);
                     } else if (ship.getSystem().getId().equals("RS_FortressShieldStats")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
-                        imageText.addPara("Pressurize the shield to a greater extent, improve the ship's dissipation ability and gain 15% hard radiation energy dissipation.", pad);
+                        imageText.addPara("Ship system effects:", pad);
+                        imageText.addPara("Further improves shield efficiency and ship flux dissipation, and grants 15% hard flux dissipation.", pad);
                         tooltip.addImageWithText(15f);
                     }else if (ship.getSystem().getId().equals("CR_PhaseCrossing")) {
                         TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/emp_emitter.png", 35f);
-                        imageText.addPara("Add effects to the tactical system:", pad);
+                        imageText.addPara("Ship system effects:", pad);
                         imageText.addPara("After jumping, it will provide the ship with a large proportion of damage reduction that lasts for 3 seconds and cannot be superimposed.", pad);
                         tooltip.addImageWithText(15f);
                     }else if (ship.getSystem().getId().equals("CR_DamperBurn")) {

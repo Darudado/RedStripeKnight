@@ -67,7 +67,7 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "Radiation energy consumption of non-missile weapons reduced by 15%",
+                            "Flux cost of non-missile weapons reduced by 15%",
                             false
                     );
                     Global.getCombatEngine().maintainStatusForPlayerShip(
@@ -142,7 +142,7 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                                     this.STATUSKEY3,
                                     ship.getSystem().getSpecAPI().getIconSpriteName(),
                                     ship.getSystem().getDisplayName(),
-                                    "Radiation energy consumption of non-missile weapons reduced by 15%",
+                                    "Flux cost of non-missile weapons reduced by 15%",
                                     false
                             );
                             Global.getCombatEngine().maintainStatusForPlayerShip(
@@ -181,7 +181,7 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "Radiation energy consumption of non-missile weapons reduced by 50%",
+                            "Flux cost of non-missile weapons reduced by 50%",
                             false
                     );
                 }
@@ -212,7 +212,7 @@ public class RS_WeaponOverloading extends BaseShipSystemScript {
                             this.STATUSKEY3,
                             ship.getSystem().getSpecAPI().getIconSpriteName(),
                             ship.getSystem().getDisplayName(),
-                            "Radiation energy consumption of non-missile weapons reduced by 25%",
+                            "Flux cost of non-missile weapons reduced by 25%",
                             false
                     );
                 }

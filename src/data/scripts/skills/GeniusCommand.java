@@ -107,7 +107,7 @@ public class GeniusCommand  {
 
         @Override
         public String getEffectDescription(float level) {
-            return "Increase the radiant energy dissipation rate of the entire fleet by 25% and reduce fighter aircraft maintenance efficiency by 25%";
+            return "Increase the flux dissipation rate of the entire fleet by 25% and reduce fighter aircraft maintenance efficiency by 25%";
         }
 
         @Override

@@ -191,11 +191,11 @@ public class RS_InterdictionDesign extends BaseHullMod {
         tooltip.addSectionHeading("Effect", Alignment.MID, opad);
         tooltip.addPara("The basic range of non-missile weapons is increased to above %s", pad, h, "" +800);
         tooltip.addPara("Sensor cross section %s", pad, h, "50% reduction");
-        tooltip.addPara("Small arms assembly point %s, medium %s, large %s, fighter %s", pad, h, "-2", "-5", "-8", "-10");
+        tooltip.addPara("Small weapon OP cost %s, medium %s, large %s, fighter %s", pad, h, "-2", "-5", "-8", "-10");
         tooltip.addPara("Trigger additional effects when the ship's structure is damaged, hold %s to view detailed mechanics", opad, highlight,  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
-            tooltip.addPara("Fire rate of live ammunition and energy weapons increases with damage, up to +%s", pad, h, "50%");
-            tooltip.addPara("Weapon radiation consumption further decreases with damage, up to %s", pad, h, "45%");
+            tooltip.addPara("Fire rate of ballistic and energy weapons increases with damage, up to +%s", pad, h, "50%");
+            tooltip.addPara("Weapon flux cost further decreases with damage, up to -%s", pad, h, "45%");
             tooltip.addPara("Hull damage reduction increases with the degree of damage, with a maximum reduction of %s", pad, h, "25%");
         }
     }

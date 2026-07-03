@@ -91,8 +91,8 @@ public class Tr_DesignFrame extends BaseHullMod {
         //tooltip.addPara("作为星域中你所能见到最为精密而高效的武器，她需要一些特殊的优渥对待", pad, highlight);
         tooltip.addSectionHeading("Effect", Alignment.MID, pad);
         tooltip.addPara("Overload time reduced by %s", smallPad, highlight, "15%");
-        tooltip.addPara("Forced drain rate increased by %s", smallPad, highlight, "25%");
-        tooltip.addPara("As long as the ship is not overloaded or forced to dissipate, it can maintain 0 radiation acceleration without generating radiation.", smallPad, highlight);
+        tooltip.addPara("Active venting rate increased by %s", smallPad, highlight, "25%");
+        tooltip.addPara("As long as the ship is not overloaded or actively venting, it can maintain its zero-flux boost without generating flux.", smallPad, highlight);
         // 添加限制说明
         tooltip.addPara(RESTRICTION_DESC, pad, badColor);
         tooltip.addPara("Monthly maintenance consumption increased by %s", smallPad, badColor, "15%");
@@ -110,7 +110,7 @@ public class Tr_DesignFrame extends BaseHullMod {
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/temporal_shell.png", 45f);
                 imageText.addPara("The ship has Class 1 beam protection:", pad);
                 imageText.addPara("The ship is able to block the incidence of frontal beams", pad, highlight);
-                imageText.addPara("However, blocking the beam will produce %s and will be invalid when the ship is %s", pad, Color.red ,"soft radiant energy","overload");
+                imageText.addPara("However, blocking beams generates %s, and the system is disabled when %s.", pad, Color.red ,"soft flux","overloaded");
                 tooltip.addImageWithText(15f);
             }
             else if (ship.getVariant().hasHullMod("Tr6_ControllingCore")){

@@ -141,9 +141,9 @@ public class HugeOpenPort extends BaseHullMod {
         tooltip.addSectionHeading("Detailed parameters", Alignment.MID, pads);
 
         tooltip.addPara("Assembly optimization:", pads);
-        tooltip.addPara("-Small non-missile weapon assembly point requirements -%s", pad,
+        tooltip.addPara("-Small non-missile weapon Ordnance Point (OP) cost -%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "2");
-        tooltip.addPara("-Fighter/interceptor/support fighters assembly point requirements -%s, bomber -%s", pad,
+        tooltip.addPara("-Fighter/interceptor/support fighters Ordnance Point (OP) cost -%s, bomber -%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "5", "3");
 
         tooltip.addPara("Aviation maintenance adjustments:", pads);

@@ -48,9 +48,9 @@ public class CR_ShieldOscillating extends BaseHullMod {
 
 		//stats.getShieldUpkeepMult().modifyMult(id, 1 + SHIELD_UPKEEP);
 
-		stats.getKineticShieldDamageTakenMult().modifyPercent(id , Kinetic_BOUNS);
-		stats.getEnergyShieldDamageTakenMult().modifyPercent(id , Energy_BOUNS);
-		stats.getShieldSoftFluxConversion().modifyPercent(id ,SoftFlux_BOUNS);
+		stats.getKineticShieldDamageTakenMult().modifyPercent(id , Kinetic_BOUNS * 100f);
+		stats.getEnergyShieldDamageTakenMult().modifyPercent(id , Energy_BOUNS * 100f);
+		stats.getShieldSoftFluxConversion().modifyPercent(id , SoftFlux_BOUNS * 100f);
 
 
 		boolean sMod = isSMod(stats);
@@ -68,9 +68,9 @@ public class CR_ShieldOscillating extends BaseHullMod {
 	}
 	@Override
 	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return (int)Kinetic_BOUNS*100 + "%";
-		if (index == 1) return (int)Energy_BOUNS*100 + "%";
-		if (index == 2) return (int)SoftFlux_BOUNS*100 + "%";
+		if (index == 0) return (int)(Kinetic_BOUNS*100) + "%";
+		if (index == 1) return (int)(Energy_BOUNS*100) + "%";
+		if (index == 2) return (int)(SoftFlux_BOUNS*100) + "%";
 		if (index == 3) return (int)CR_ShieldOscillatingListener.getReduceInPercent(DAMAGE_REDUCE_TEST2) + "%";
 		if (index == 4) return (int)DAMAGE_REDUCE_TEST4 + "";
 		if (index == 5) return (int)CR_ShieldOscillatingListener.getReduceInPercent(DAMAGE_REDUCE_TEST4) + "%";

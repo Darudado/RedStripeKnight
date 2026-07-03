@@ -93,13 +93,13 @@ public class CR_Votum extends BaseHullMod {
         //tooltip.addPara("受到的导弹伤害减免 %s。", 5f, h, "25%");
         //tooltip.addPara("受到攻击为非导弹武器时：", opad, h);
         tooltip.addPara("The upper limit of the ship's range is locked at %s, but the ship's acceleration performance is improved by %s and its maximum speed is increased by %s.", 5f, bad, String.valueOf((int) rangeCap),"30%","10%");
-        tooltip.addPara("Ship radiation capacity reduced by %s", 5f, bad, "30%");
+        tooltip.addPara("Ship flux capacity reduced by %s", 5f, bad, "30%");
         tooltip.addPara("When the attacker is more than %s units away from the ship, long-range damage falloff is triggered:", 5f, h, String.valueOf((int) rangeCap));
         tooltip.addPara("Base damage reduction %s.", 5f, h, "75%");
         tooltip.addPara("Damage reduction increases by an additional %s per unit beyond %s.", 5f, h, String.valueOf((int) STEP_DISTANCE), "5%");
         tooltip.addPara("Can reduce up to %s damage (completely immune).", 5f, h, "100%");
-        tooltip.addPara("%s ship is forced to disperse.", 5f, bad, "prohibit");
-        tooltip.addPara("You will %s.", 5f,  bad, "Can't go back");
+        tooltip.addPara("%s active venting.", 5f, bad, "Prohibits");
+        tooltip.addPara("The ship %s.", 5f,  bad, "cannot accelerate backwards");
 
         tooltip.addPara("Press and hold %s to view detailed instructions", opad, h, "F3");
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {

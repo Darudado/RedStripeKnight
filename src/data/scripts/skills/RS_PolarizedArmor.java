@@ -91,7 +91,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "Based on the ship's radiation ratio, the maximum +" + (int) EFFECTIVE_ARMOR_BONUS + "% additional armor damage reduction";
+            return "Based on the ship's flux level, the maximum +" + (int) EFFECTIVE_ARMOR_BONUS + "% additional armor damage reduction";
         }
 
         public String getEffectPerLevelDescription() {
@@ -114,7 +114,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "The maximum EMP damage reduction a ship receives" + Math.round(EMP_BONUS_PERCENT) + "%, based on the ship’s current radiation ratio";
+            return "The maximum EMP damage reduction a ship receives " + Math.round(EMP_BONUS_PERCENT) + "%, based on the ship's current flux level";
         }
 
         public String getEffectPerLevelDescription() {
@@ -139,7 +139,7 @@ public class RS_PolarizedArmor {
         }
 
         public String getEffectDescription(float level) {
-            return "+" + (int) VENT_RATE_BONUS + "% forced drain rate";
+            return "+" + (int) VENT_RATE_BONUS + "% active venting rate";
         }
 
         public String getEffectPerLevelDescription() {

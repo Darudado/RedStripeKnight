@@ -411,7 +411,7 @@ public class CR_ChargingRing extends BaseHullMod {
                     if (cooldownStarted) {
                         description = "Cooling down...";
                     } else {
-                        description = "Wait for radiation to reach 65%";
+                        description = "Waiting for flux to reach 65%";
                     }
                     break;
                 case CHARGING:
@@ -504,9 +504,9 @@ public class CR_ChargingRing extends BaseHullMod {
         tooltip.addPara("Specially tuned energy systems automatically and explosively dissipate grid waste heat", Misc.getHighlightColor(), pads);
 
         tooltip.addSectionHeading("energy burst", Alignment.MID, pads);
-        tooltip.addPara("Automatically triggered when radiation level is greater than %s and shield is on", pad, Misc.getHighlightColor(), "65%");
+        tooltip.addPara("Automatically triggered when flux level is greater than %s and shield is on", pad, Misc.getHighlightColor(), "65%");
         tooltip.addPara("Releases an energy blast in the direction of the shield, causing damage and knocking back enemy units.", new Color(150, 200, 255, 255), pads);
-        tooltip.addPara("And dissipate %s of the ship's radiation energy", pad, Misc.getHighlightColor(), "25%");
+        tooltip.addPara("And dissipate %s of the ship's accumulated flux", pad, Misc.getHighlightColor(), "25%");
         tooltip.addPara("The system has a 30-second cooldown. Turning off the shield during the cooldown period will not reset the timer.", Misc.getHighlightColor(), pad);
     }
 

@@ -609,22 +609,22 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
         tooltip.addPara("Amplitude energy optimization system:", opad);
         tooltip.addPara("• All weapon energy costs reduced by %s", pad,
                 highlightColor, FLUX_COST_DECREASE + "%");
-        tooltip.addPara("• Large weapon assembly point requirements -%s", 0,
+        tooltip.addPara("• Large weapon Ordnance Point cost reduced by %s", 0,
                 positiveColor, Math.abs(decModL) + "");
-        tooltip.addPara("• Small arms assembly point requirements -%s", pad,
+        tooltip.addPara("• Small weapon Ordnance Point cost reduced by %s", pad,
                 positiveColor, Math.abs(decModS) + "");
 
         // 战利品回收系统
         tooltip.addPara("Loot recovery system:", opad);
         tooltip.addPara("• When destroying enemies within 3000 meters:", 0);
-        tooltip.addPara("↳Restore own %s structure value", 0,
+        tooltip.addPara("↳Restore %s hull integrity", 0,
                 positiveColor, HP_HEAL + "%");
-        tooltip.addPara("↳ Restore all armor grid %s armor value", pad,
+        tooltip.addPara("↳ Restores %s armor across the armor grid", pad,
                 positiveColor, ARMOR_HEAL + "%");
 
         // 自适应伤害增幅
         tooltip.addPara("Adaptive damage increase:", opad);
-        tooltip.addPara("• Damage increased by %s for every %s structure value/plating value lost", 0,
+        tooltip.addPara("• Damage increased by %s for every %s hull/plating integrity lost", 0,
                 highlightColor, PLATING_LOST + "%", DAMAGE_INCREASE + "%");
         tooltip.addPara("• Damage boosting effect:", 0);
         tooltip.addPara("↳ Unlimited stacking", 0, positiveColor);
@@ -645,7 +645,7 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
                 highlightColor, (int)ARC_EMP_DAMAGE + "");
         tooltip.addPara("↳ Jump distance: %s units", pad,
                 highlightColor, (int)ARC_RANGE + "");
-        tooltip.addPara("• The probability increases with weapon assembly points:", 0);
+        tooltip.addPara("• The probability increases with weapon Ordnance Points (OP):", 0);
         tooltip.addPara("↳ The higher the total OP, the higher the probability of arc triggering", 0, positiveColor);
         tooltip.addPara("↳ Maximum OP limit: 400 OP corresponds to the maximum probability", pad, highlightColor);
 
@@ -667,7 +667,7 @@ public class RevelatioComputingCognetrix extends BaseHullMod {
 
             // 显示武器信息
             tooltip.addPara("Weapon system:", 0);
-            tooltip.addPara("• General assembly point: %s OP", 0,
+            tooltip.addPara("• Total weapon OP: %s OP", 0,
                     highlightColor, weaponOP + "");
             tooltip.addPara("• Arc trigger probability: %s", 0,
                     positiveColor, String.format("%.1f%%", arcChance));

@@ -122,7 +122,7 @@ public class UniversalRangeFinder extends BaseHullMod {
         if (ship == null) return null;
         // 条件1: 必须有实弹或能量武器槽
         if (getLargestSlot(ship) == null)
-            return "The ship does not have slots for large live ammunition or energy weapons";
+            return "The ship does not have slots for ballistic or energy weapons";
         // 条件2: 仅限驱逐舰/巡洋舰/主力舰
         if (ship.getHullSize() != HullSize.CAPITAL_SHIP &&
                 ship.getHullSize() != HullSize.DESTROYER &&
@@ -144,8 +144,8 @@ public class UniversalRangeFinder extends BaseHullMod {
         tooltip.addPara("Unified Weapon Range System: Optimizes ship weapon range distribution and applies hard caps.", opad);
 
         // OP调整表格
-        tooltip.addSectionHeading("Assembly point (OP) adjustment", Alignment.MID, opad);
-        tooltip.addPara("Adjust assembly point consumption according to weapon slot size:", pad);
+        tooltip.addSectionHeading("Ordnance Point (OP) adjustment", Alignment.MID, opad);
+        tooltip.addPara("Adjusts Ordnance Point costs based on weapon size:", pad);
 
         float col1W = 120.0F;
         float colW = 80.0F;
@@ -169,7 +169,7 @@ public class UniversalRangeFinder extends BaseHullMod {
         tooltip.addRow(LARGE_SLOT_OP_MODIFIER < 0 ? good : bad, "Large slot", largeOP);
         tooltip.addTable("", 0, pad);
 
-        tooltip.addPara("NOTE: The assembly point cost of %s will not change.",
+        tooltip.addPara("NOTE: The Ordnance Point cost of %s is unaffected.",
                 opad, bad, "missile weapons");
 
         // 射程加成表格（包含上限说明）
@@ -199,14 +199,14 @@ public class UniversalRangeFinder extends BaseHullMod {
         // 射程上限说明（重点更新部分）
         tooltip.addPara("▸ Forced range cap:",
                 pad, red);
-        tooltip.addPara("• Small arms: %s",
+        tooltip.addPara("• Small weapons: %s",
                 pad, bad, "≤ 800");
         tooltip.addPara("• Medium/Large Weapons: %s",
                 pad, bad, "≤ 850");
 
         // 计算示例
         tooltip.addSectionHeading("Calculation example", Alignment.MID, opad);
-        tooltip.addPara("Small arms (base 400):", pad);
+        tooltip.addPara("Small weapons (base 400):", pad);
         tooltip.addPara("　(400 + 300) × 1.25 = 875 → %s",
                 pad, red, "Forced down to 800");
 

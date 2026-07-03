@@ -196,10 +196,10 @@ public class VOW_FluxExtendTendency extends BaseHullMod {
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         float pads = 10f;
         float pad = 2f;
-        tooltip.addPara("The ship is equipped with a power grid system designed to adapt to high-radiation weapons.", Misc.getHighlightColor(), pads);
-        tooltip.addSectionHeading("Energy consumption adjustment", Alignment.MID, pads);
-        tooltip.addPara("Weapon energy consumption reduced:" + (1 - 1 / DELAY_SECONDS) * 100 + "%", Misc.getHighlightColor(), pad);
-        tooltip.addPara("However, within %s seconds after the weapon is fired, the ship will be delivered to the ship with radiation energy equivalent to the weapon fire required per second.", pad, Misc.getNegativeHighlightColor(), String.valueOf((int) (DELAY_SECONDS)));
+        tooltip.addPara("The ship is equipped with a flux grid designed to adapt to high-flux weapons.", Misc.getHighlightColor(), pads);
+        tooltip.addSectionHeading("Flux cost adjustment", Alignment.MID, pads);
+        tooltip.addPara("Weapon flux cost reduced: " + (1 - 1 / DELAY_SECONDS) * 100 + "%", Misc.getHighlightColor(), pad);
+        tooltip.addPara("However, this deferred flux is generated back over the %s seconds following the shot.", pad, Misc.getNegativeHighlightColor(), String.valueOf((int) (DELAY_SECONDS)));
     }
 
     public boolean isApplicableToShip(ShipAPI ship) {

@@ -249,7 +249,7 @@ public class AssaultCombatCarrier extends BaseHullMod {
         tooltip.addSectionHeading("Frontline Mothership Scheduling System",  Alignment.MID, opad);
 
         tooltip.addSectionHeading("Fire control upgrade", Color.ORANGE, Color.BLACK, Alignment.MID, opad);
-        tooltip.addPara("For non-missile weapons, small/medium/large turrets cost %s / %s / %s fewer assembly points to mount.", pad , h , "2","5","8");
+        tooltip.addPara("For non-missile weapons, small/medium/large turrets cost %s / %s / %s fewer Ordnance Points (OP) to mount.", pad , h , "2","5","8");
         tooltip.addPara("For non-missile weapons, the base range is at least %s and increases by %s points for each aircraft in the deck.", pad , h , String.valueOf(BASE_MIN), String.valueOf(RANGE_BOUNS));
         tooltip.addPara("And each carrier-based aircraft in the deck increases the weapon firing accuracy by %s points.", pad , h , String.valueOf(RANGE_BOUNS/500));
 

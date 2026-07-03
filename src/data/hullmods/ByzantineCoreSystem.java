@@ -150,9 +150,9 @@ public class ByzantineCoreSystem extends BaseHullMod {
         tooltip.addPara("Sensor field of view +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "1500");
         tooltip.addPara("- When you are alive, all friendly ships within %s will get:", pad);
-        tooltip.addPara("Radiant energy dissipation +%s", pad,
+        tooltip.addPara("Flux dissipation +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "10%");
-        tooltip.addPara("Hard Radiant Energy Dissipation Capacity +%s", pad,
+        tooltip.addPara("Hard flux dissipation +%s", pad,
                 com.fs.starfarer.api.util.Misc.getPositiveHighlightColor(), "5%");
 
         tooltip.addPara("**Integrated subsystem: united will and march**", pads);

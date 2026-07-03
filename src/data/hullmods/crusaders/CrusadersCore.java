@@ -162,18 +162,18 @@ public class CrusadersCore extends BaseHullMod {
         if(!(ship == null)){
             if (ship.getVariant().hasHullMod("CrusadersPlating")) {
                 Color h = Misc.getPositiveHighlightColor();
-                tooltip.addPara("The ship has a defensive plating covering the surface of the ship based on radiation capacity.", opad, h);
-                tooltip.addPara("Provides a total of %s of %s plating based on hull size and radiation capacity", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize)), "Armor-like");
+                tooltip.addPara("The ship has a defensive plating covering the surface of the ship based on flux capacity.", opad, h);
+                tooltip.addPara("Provides a total of %s of %s plating based on hull size and flux capacity", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize)), "Armor-like");
                 tooltip.addPara("When the plating is online, it can reduce the damage taken by the ship and has EMP damage reduction.", pad, h);
                 tooltip.addPara("Due to plating support, hull armor increased by %s, but damage reduction decreased by %s", pad, h, 40 +"%",(1-ARMOR_MULT)*100+"%");
                 tooltip.addSectionHeading("Hold F3 to view detailed mechanics", Alignment.MID, opad);
                 if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
                     tooltip.addPara("After %s seconds without being hit, the plating will regenerate at a rate of %s units per second", pad, h, "2", "10");
                     tooltip.addPara("Once the plating collapses, restart when the plating recharges to %s", pad, h, String.valueOf(Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * THRESHOLD_RECOVERY)));
-                    tooltip.addPara("The coating effect is halved when overloaded or actively dissipated.", pad, h);
+                    tooltip.addPara("The plating effect is halved when overloaded or actively venting.", pad, h);
                     tooltip.addPara("Reduces %s beam damage and %s energy damage taken by the hull", pad, h,"25"+ "%","15"+ "%");
                     tooltip.addPara("When a single damage exceeds %s, the plating will be reduced by %s", pad, h,"750", "50"+ "%");
-                    tooltip.addPara("When actively dissipating, %s of coating capacity can be restored for each %s unit of radiant energy dissipated.", pad, Misc.getHighlightColor(), "25", "1 unit");
+                    tooltip.addPara("When actively venting, %s of coating capacity can be restored for each %s unit of flux vented.", pad, Misc.getHighlightColor(), "25", "1 unit");
                     tooltip.addPara("When the ship is overloaded, the plating will be destroyed at a rate of %s units per second", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize) * OVERLOAD_DEGRADE));
                     tooltip.addPara("Below %s readiness value, the plating will be partially deactivated", pad, h, Math.round(40.0F) + "%");
                     tooltip.addPara("Coating avoids damage caused by corona", pad, h);
@@ -206,7 +206,7 @@ public class CrusadersCore extends BaseHullMod {
                 tooltip.addSectionHeading("Hard wall adaptive defense architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/fortress_shield.png", 35f);
                 imageText.addPara("The ship has a unique frame system:", pad);
-                imageText.addPara("As the ship's radiation level increases, the power grid system can pressurize the shield to increase shield effectiveness.", pad, h);
+                imageText.addPara("As the ship's flux level increases, the flux system can overcharge the shield to increase shield effectiveness.", pad, h);
                 imageText.addPara("However, it makes it difficult to upgrade some hulls and is not compatible with %s", pad, Color.red ,"Extended launcher");
                 tooltip.addImageWithText(15f);
             }
@@ -214,7 +214,7 @@ public class CrusadersCore extends BaseHullMod {
                 tooltip.addSectionHeading("Xunyu adaptive air traffic control architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/reserve_deployment.png", 35f);
                 imageText.addPara("The ship has a unique frame system:", pad);
-                imageText.addPara("As the radiation level of the ship increases, the energy system will increase the energy consumption of the maintenance system to improve efficiency.", pad, h);
+                imageText.addPara("As the flux level of the ship increases, the power system will increase the energy consumption of the maintenance system to improve efficiency.", pad, h);
                 imageText.addPara("However, this is at the expense of reducing the hull strength of %s carrier-based aircraft and increasing the damage suffered by %s carrier-based aircraft.", pad, Color.red ,"50%","25%");
                 tooltip.addImageWithText(15f);
             }
@@ -222,7 +222,7 @@ public class CrusadersCore extends BaseHullMod {
                 tooltip.addSectionHeading("Terminal Adaptive Weapon Correction Architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/ammo_feeder.png", 35f);
                 imageText.addPara("The ship has a unique frame system:", pad);
-                imageText.addPara("As the ship's radiation level increases, the energy system will pressurize the ship's weapon systems to enhance weapon damage performance.", pad, Color.red);
+                imageText.addPara("As the ship's flux level increases, the energy system will pressurize the ship's weapon systems to enhance weapon damage performance.", pad, Color.red);
                 imageText.addPara("But increases %s shield maintenance cost", pad, Color.red ,"50%");
                 tooltip.addImageWithText(15f);
             }
@@ -230,7 +230,7 @@ public class CrusadersCore extends BaseHullMod {
                 tooltip.addSectionHeading("Victory Adaptive Energy Distribution Architecture", Alignment.MID, opad);
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/plasma_jets.png", 35f);
                 imageText.addPara("The ship has a unique frame system:", pad);
-                imageText.addPara("As the ship's radiation level increases, the energy system will pressurize the ship's power system to accelerate the ship's time and maneuverability", pad, Color.red);
+                imageText.addPara("As the ship's flux level increases, the energy system will pressurize the ship's power system to accelerate the ship's time and maneuverability", pad, Color.red);
                 imageText.addPara("However, the ship will receive %s more damage, and the shield will receive an additional %s damage.", pad, Color.red ,"25%","35%");
                 tooltip.addImageWithText(15f);
             }
