@@ -22,8 +22,8 @@
 	},
 
 	"cr_gatehauler":{
-		"defaultName":"Stargate transport ship attached to Project Crusader", # used if name=null in addCustomEntity()
-		"nameInText":"Stargate transport ship attached to Project Crusader",
+		"defaultName":"Project Crusader Gate Hauler", # used if name=null in addCustomEntity()
+		"nameInText":"Project Crusader Gate Hauler",
 		"aOrAn":"a",
 		"isOrAre":"is",
 		"defaultRadius":250, # used if radius<0 in addCustomEntity()
@@ -48,8 +48,8 @@
 	},
 
 	"rs_arxcaelestis":{
-		"defaultName":"Star Castle", # used if name=null in addCustomEntity()
-		"nameInText":"Star Castle",
+		"defaultName":"Arx Caelestis", # used if name=null in addCustomEntity()
+		"nameInText":"Arx Caelestis",
 		"aOrAn":"an",
 		"isOrAre":"is",
 		"defaultRadius":250, # used if radius<0 in addCustomEntity()

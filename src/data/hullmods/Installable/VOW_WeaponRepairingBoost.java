@@ -174,9 +174,9 @@ public class VOW_WeaponRepairingBoost extends BaseHullMod {
         float pad = 10f;
         float padS = 2f;
         tooltip.addPara("Weapon repair time reduced by %s" , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
-        tooltip.addPara("After the weapon is repaired, the cooldown rate increases by %s for %s seconds." , padS, Misc.getHighlightColor(), String.format("%.1f", BONUS_TIME),(int) BONUS_LEVEL + "%");
-        tooltip.addPara("When weapons are restored, ship structure is restored according to size: Small +" + (int) HEAL_SMALL + ", medium+" + (int) HEAL_MEDIUM + ", large+" + (int) HEAL_LARGE, pad);
-        tooltip.addPara("But weapon recoil increases by %s" , padS, Misc.getNegativeHighlightColor(),(int) RECOIL_BONUS + "%");
+        tooltip.addPara("After the weapon is repaired, the cooldown rate increases by %s for %s seconds." , padS, Misc.getHighlightColor(), (int) BONUS_LEVEL + "%", String.format("%.1f", BONUS_TIME));
+        tooltip.addPara("When a weapon is repaired, hull integrity is restored based on the weapon's size: Small: +" + (int) HEAL_SMALL + ", Medium: +" + (int) HEAL_MEDIUM + ", Large: +" + (int) HEAL_LARGE + ".", pad);
+        tooltip.addPara("However, weapon recoil is increased by %s." , padS, Misc.getNegativeHighlightColor(),(int) RECOIL_BONUS + "%");
     }
 
 
@@ -185,6 +185,15 @@ public class VOW_WeaponRepairingBoost extends BaseHullMod {
         float padS = 2f;
         tooltip.addPara("Weapon HP reduced additionally" , pad, Misc.getNegativeHighlightColor(), (int) WEAPON_HEALTH_PENALTY + "%");
         tooltip.addPara("However, weapon maintenance time is shortened" , padS, Misc.getHighlightColor(), (int) REPAIR_BONUS + "%");
+    }
+
+    @Override
+    public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
+        if (index == 0) return (int) REPAIR_BONUS + "%";
+        if (index == 1) return (int) BONUS_LEVEL + "%";
+        if (index == 2) return String.format("%.1f", BONUS_TIME);
+        if (index == 3) return (int) RECOIL_BONUS + "%";
+        return null;
     }
 
     @Override

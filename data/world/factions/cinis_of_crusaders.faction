@@ -221,9 +221,9 @@
 	"custom":{
 		"engageWhenEvenStrength":true,
 		"offersCommissions":false,
-		"engagesInHostilities":true, # 是否敌对时主动攻击
-		"buysAICores":true, # 是否收购ai核心
-		"AICoreValueMult":1, # 收购ai核心的价格倍率，1就是默认，2就是翻倍，允许小数
+		"engagesInHostilities":true, # Whether to attack actively when hostile
+		"buysAICores":true, # Whether to buy AI cores
+		"AICoreValueMult":1, # Price multiplier for buying AI cores, 1 is default, 2 is double, decimals allowed
 		"AICoreRepMult":0,
 		"decentralized":true, 
 		"ignoreTradeWithEnemiesForReputation":true,

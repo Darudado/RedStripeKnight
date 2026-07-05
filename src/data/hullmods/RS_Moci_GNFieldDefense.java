@@ -163,9 +163,10 @@ public class RS_Moci_GNFieldDefense extends BaseHullMod {
             float colW = (int) ((width - col1W - 12f));
 
             tooltip.addSectionHeading(Moci_TextLoader.getText(TEXT_ID, "description.table_heading"), com.fs.starfarer.api.ui.Alignment.MID, opad + 7f);
-            tooltip.beginTable(c, bg, b, 20f, true, true,
+            tooltip.beginTable(c, bg, b, 20f, true, true, new Object[] {
                     Moci_TextLoader.getText(TEXT_ID, "description.table_col_attr"), col1W,
-                    Moci_TextLoader.getText(TEXT_ID, "description.table_col_value"), colW);
+                    Moci_TextLoader.getText(TEXT_ID, "description.table_col_value"), colW
+            });
 
             tooltip.addRow(com.fs.starfarer.api.ui.Alignment.MID, c, Moci_TextLoader.getText(TEXT_ID, "description.table_shield_cap"),
                     com.fs.starfarer.api.ui.Alignment.MID, c,

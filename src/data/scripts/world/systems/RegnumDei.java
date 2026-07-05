@@ -61,11 +61,11 @@ public class RegnumDei implements SectorGeneratorPlugin {
         );
         
         // 稍后将在此加入星球生成代码
-        SectorEntityToken A = system.addCustomEntity("RS_A", "Relay communication base", "comm_relay", "red_stripe");
+        SectorEntityToken A = system.addCustomEntity("RS_A", "Regnum Dei Comm Relay", "comm_relay", "red_stripe");
         A.setCircularOrbit(star, 180f, 2900f, 365f);
-        SectorEntityToken B = system.addCustomEntity("RS_B", "relay navigation buoy", "nav_buoy", "red_stripe");
+        SectorEntityToken B = system.addCustomEntity("RS_B", "Regnum Dei Nav Buoy", "nav_buoy", "red_stripe");
         B.setCircularOrbit(star, 220f, 2500f, 365f);
-        SectorEntityToken C = system.addCustomEntity("RS_C", "relay sensor array", "sensor_array", "red_stripe");
+        SectorEntityToken C = system.addCustomEntity("RS_C", "Regnum Dei Sensor Array", "sensor_array", "red_stripe");
         C.setCircularOrbit(star, 240f, 2900f, 365f);
         
 		
@@ -316,7 +316,7 @@ public class RegnumDei implements SectorGeneratorPlugin {
 
 
         SectorEntityToken RS2 = system.addCustomEntity("rs_arxcaelestis_battlestation",
-                "Star Castle",
+                "Arx Caelestis",
                 "rs_arxcaelestis",
                 "red_stripe");
         RS2.setCircularOrbitPointingDown(planet3, 0, 900, 45);

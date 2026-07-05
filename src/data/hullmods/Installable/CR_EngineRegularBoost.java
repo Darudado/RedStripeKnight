@@ -313,7 +313,7 @@ public class CR_EngineRegularBoost extends BaseHullMod {
         //tooltip.addPara("持续时间: 5秒", Color.GRAY, 3f);
         //tooltip.addPara("冷却时间: 3秒", Color.GRAY, 3f);
         tooltip.addPara("Engine Tide gains performance bonus while it lasts", pad, Misc.getHighlightColor());
-        tooltip.addPara("Speed ​​bonus:" + SPEED_MAP.get(hullSize) + "knots", Misc.getHighlightColor(), pad);
+        tooltip.addPara("Speed bonus: +" + SPEED_MAP.get(hullSize).intValue() + " su", Misc.getHighlightColor(), pad);
         tooltip.addPara("Mobility bonus: +75%", Misc.getHighlightColor(), pad);
         tooltip.addPara("Dissipation Bonus: +150%", Misc.getHighlightColor(), pad);
         tooltip.addPara("Complete tidal cycle: 20 seconds", new Color(150, 200, 255, 255), pads);

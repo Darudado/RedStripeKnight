@@ -337,7 +337,7 @@ public class PolariphaseDrive extends BaseHullMod {
         tooltip.addPara("Restructured engine pipeline improves engine repair speed for %s", pad, h, "" + 25 + "%");
         tooltip.addPara("Extremely improved ship engines are more susceptible to damage, increasing damage taken by %s", pad, bad , "" + 50 + "%");
         tooltip.addPara("The high-intensity operation of the power system reduces the ship's peak active time by %s and increases the combat readiness decay rate by %s.", pad, bad  ,"" + 50 + "%","" + 25 + "%");
-        tooltip.addPara("Optimization of the power take-off pipeline allows the ship to make small maneuvers in %s", pad, h,"Unbelievable" );
+        tooltip.addPara("Optimization of the power take-off pipeline allows the ship to perform incredible micro-maneuvers.", pad, h);
         tooltip.addPara("Press and hold %s to view detailed mechanics", opad, highlight,  "F3" );
         if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
             // 新增推进系统说明

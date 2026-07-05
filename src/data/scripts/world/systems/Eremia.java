@@ -58,9 +58,9 @@ public class Eremia implements SectorGeneratorPlugin{
         system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white, 256f, 2200, 345f, null, null);
 
 
-        SectorEntityToken A = system.addCustomEntity("CR1", "Relay communication base", "comm_relay", "cinis_of_crusaders");
+        SectorEntityToken A = system.addCustomEntity("CR1", "Eremia Comm Relay", "comm_relay", "cinis_of_crusaders");
         A.setCircularOrbit(star, 180f, 2900f, 365f);
-        SectorEntityToken B = system.addCustomEntity("CR2", "relay navigation buoy", "nav_buoy", "cinis_of_crusaders");
+        SectorEntityToken B = system.addCustomEntity("CR2", "Eremia Nav Buoy", "nav_buoy", "cinis_of_crusaders");
         B.setCircularOrbit(star, 220f, 2500f, 365f);
 
         system.autogenerateHyperspaceJumpPoints(true, true);
@@ -127,7 +127,7 @@ public class Eremia implements SectorGeneratorPlugin{
         planet5.hasCondition(RUINS_EXTENSIVE);
 
         SectorEntityToken Cusader_GATEHAULER = system.addCustomEntity("CR_Entity1",
-                "cinis_delta",
+                "Cinis Delta",
                 "cr_gatehauler",
                 "cinis_of_crusaders");
         Cusader_GATEHAULER.setCircularOrbitPointingDown(star, 0, 3000, 45);

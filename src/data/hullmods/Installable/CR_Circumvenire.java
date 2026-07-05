@@ -287,9 +287,9 @@ public class CR_Circumvenire extends BaseHullMod {
 
         tooltip.addPara("Whenever an enemy ship is destroyed, this ship will gain:", opad);
         tooltip.addPara("peak active time +%s seconds", 5f, good, String.valueOf((int) PEAK_TIME_INCREMENT));
-        tooltip.addPara("Energy and live weapon damage %s (stacks per kill, capped at %s)", 5f, good, "+1%", "+10%");
+        tooltip.addPara("Energy and ballistic weapon damage %s (stacks per kill, capped at %s)", 5f, good, "+1%", "+10%");
 
-        tooltip.addPara("During the hunting operation in which this ship participated.\"", opad);
+        tooltip.addPara("During the hunting operation in which this ship participated.", opad);
         tooltip.addPara("If there are at least %s friendly ships within %s units of an enemy ship, apply a debuff to the enemy ship:",
                 5f, h, String.valueOf((int) SCAN_SIZE), String.valueOf(DEBUFF_TRIGGER_COUNT));
         //tooltip.addPara("最大速度、加速度/减速度、转向加速度/转向率 %s", 5f, bad, "-15%");

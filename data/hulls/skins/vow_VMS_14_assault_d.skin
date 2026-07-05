@@ -6,7 +6,7 @@
 	"descriptionId":"rs_Tr_1_owsla",
 	"descriptionPrefix":"This model has been specially modified for assault operations. In this way, the aircraft will exhibit different performance than before.",
 	"tags":[auto_rec, restricted, no_dealer, no_sell ,crusaders_ma, no_battle_salvage],
-	"tech":"oath taker design",
+	"tech":"Oathkeeper Design",
 	"fleetPoints":12,
 	"ordnancePoints":105,
 	"maxSpeed":105,

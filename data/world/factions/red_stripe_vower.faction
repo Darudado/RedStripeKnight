@@ -245,7 +245,7 @@
 		"allowsTransponderOffTrade":true,
 		"pirateBehavior":true,
 		"makesPirateBases":true,
-		"fightToTheLast":true, # 是否在战斗中大多数船都会死战不退
+		"fightToTheLast":true, # Whether most ships will fight to the death and not retreat in combat
 		"caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
 			"vsCompetitors":true,

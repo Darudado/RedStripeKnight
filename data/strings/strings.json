@@ -1,14 +1,14 @@
 {
 "cr_hullmods": {
-    "ImpregnableRampart_1": "Hard wall adaptive defense architecture",
+    "ImpregnableRampart_1": "Impregnable Rampart Adaptive Defense System",
     "ImpregnableRampart_2": "Shield efficiency $resistanceBonusTtNum",
-    "Excalibur_1": "Victory Adaptive Energy Distribution Architecture",
+    "Excalibur_1": "Excalibur Adaptive Power System",
     "Excalibur_2": "Time flow rate $time% speed +$speed% mobility +$maneuver%",
-    "Rhongomyniad_1": "Terminal Adaptive Weapon Correction Architecture",
+    "Rhongomyniad_1": "Rhongomyniad Adaptive Calibration System",
     "Rhongomyniad_2": "Weapon damage $damBonus% Weapon energy consumption reduced $fluxPierce%",
-    "PennaVelox_1": "Xunyu adaptive air traffic control architecture",
-    "PennaVelox_2": "Carrier-based aircraft enhancement: Mobility +$speed%, Time flow rate +$time%, Damage +$damage%",
-    "PennaVelox_3": "Mothership enhancement: Maintenance time-$replace% Voyage+$range%",
+    "PennaVelox_1": "Penna Velox Adaptive Flight Deck System",
+    "PennaVelox_2": "Carrier aircraft: Mobility +$speed%, time flow +$time%, damage +$damage%",
+    "PennaVelox_3": "Mothership: Refit time -$replace%, range +$range%",
 },
 "cr_shipsystems": {
     "CR_traveldrive": "Increase engine output and enter phase-biased cruising state",

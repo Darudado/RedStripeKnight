@@ -195,12 +195,6 @@ public class DisintegratorBeanEffect implements BeamEffectPlugin {
             return;
         }
 
-        // 保存原始混合模式
-        int prevBlendEquation = GL11.glGetInteger(GL14.GL_BLEND_EQUATION);
-
-        // 设置加色混合
-        GL14.glBlendEquation(GL14.GL_FUNC_ADD);
-
         // 渲染每个粒子
         for (ParticleData p : data.particles) {
             if (p.sprite == null) continue;
@@ -216,12 +210,12 @@ public class DisintegratorBeanEffect implements BeamEffectPlugin {
             p.sprite.setAlphaMult(p.fader.getBrightness());
             p.sprite.setColor(p.color);
 
+            // 使用加色混合 (Additive Blending)
+            p.sprite.setBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE);
+
             // 渲染粒子
             p.sprite.renderAtCenter(particlePos.x, particlePos.y);
         }
-
-        // 恢复原始混合模式
-        GL14.glBlendEquation(prevBlendEquation);
     }
 
     private void playSound(BeamEffectData data) {

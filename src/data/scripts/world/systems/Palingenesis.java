@@ -54,9 +54,9 @@ public class Palingenesis implements SectorGeneratorPlugin{
         system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white, 256f, 2200, 345f, null, null);
 
 
-        SectorEntityToken A = system.addCustomEntity("CR1", "Relay communication base", "comm_relay", "red_stripe_vower");
+        SectorEntityToken A = system.addCustomEntity("CR1", "Palingenesis Comm Relay", "comm_relay", "red_stripe_vower");
         A.setCircularOrbit(star, 180f, 2900f, 365f);
-        SectorEntityToken B = system.addCustomEntity("CR2", "relay navigation buoy", "nav_buoy", "red_stripe_vower");
+        SectorEntityToken B = system.addCustomEntity("CR2", "Palingenesis Nav Buoy", "nav_buoy", "red_stripe_vower");
         B.setCircularOrbit(star, 220f, 2500f, 365f);
 
         system.autogenerateHyperspaceJumpPoints(true, true);
@@ -123,7 +123,7 @@ public class Palingenesis implements SectorGeneratorPlugin{
         planet5.hasCondition(RUINS_EXTENSIVE);
 
         SectorEntityToken Cusader_GATEHAULER = system.addCustomEntity("VOW_Entity1",
-                "cinis_Alpha",
+                "Cinis Alpha",
                 "cr_gatehauler",
                 "red_stripe_vower");
         Cusader_GATEHAULER.setCircularOrbitPointingDown(star, 0, 3000, 45);

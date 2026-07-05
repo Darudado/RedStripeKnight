@@ -92,12 +92,19 @@ public class CR_Votum extends BaseHullMod {
         float rangeCap = getRangeCap(hullSize);
         //tooltip.addPara("受到的导弹伤害减免 %s。", 5f, h, "25%");
         //tooltip.addPara("受到攻击为非导弹武器时：", opad, h);
-        tooltip.addPara("The upper limit of the ship's range is locked at %s, but the ship's acceleration performance is improved by %s and its maximum speed is increased by %s.", 5f, bad, String.valueOf((int) rangeCap),"30%","10%");
+        Color good = Misc.getPositiveHighlightColor();
+        tooltip.addPara("The upper limit of the ship's range is locked at %s, but the ship's acceleration performance is improved by %s and its maximum speed is increased by %s.", 
+                5f, 
+                new Color[] { bad, good, good }, 
+                String.valueOf((int) rangeCap), "30%", "10%");
         tooltip.addPara("Ship flux capacity reduced by %s", 5f, bad, "30%");
         tooltip.addPara("When the attacker is more than %s units away from the ship, long-range damage falloff is triggered:", 5f, h, String.valueOf((int) rangeCap));
-        tooltip.addPara("Base damage reduction %s.", 5f, h, "75%");
-        tooltip.addPara("Damage reduction increases by an additional %s per unit beyond %s.", 5f, h, String.valueOf((int) STEP_DISTANCE), "5%");
-        tooltip.addPara("Can reduce up to %s damage (completely immune).", 5f, h, "100%");
+        tooltip.addPara("Base damage reduction %s.", 5f, good, "75%");
+        tooltip.addPara("Damage reduction increases by an additional %s for every %s units beyond the range limit.", 
+                5f, 
+                new Color[] { good, h }, 
+                "5%", String.valueOf((int) STEP_DISTANCE));
+        tooltip.addPara("Can reduce up to %s damage (completely immune).", 5f, good, "100%");
         tooltip.addPara("%s active venting.", 5f, bad, "Prohibits");
         tooltip.addPara("The ship %s.", 5f,  bad, "cannot accelerate backwards");
 

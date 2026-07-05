@@ -396,7 +396,7 @@ public class CR_FighterProducingOverloading extends BaseHullMod {
 
         // 添加锻炉效果说明
         String fluxLevelString = String.valueOf((int)(100f * MAX_ACTIVE_FLUX_LEVEL)) + "%";
-        tooltip.addPara("When the fighter survival rate is lower than 20%% and the amplitude level is lower than %1$s, the fighter forge system is activated to quickly replenish all lost fighters within %2$s seconds. During activation, an amplitude energy equal to %3$s of the maximum amplitude is generated every second.",
+        tooltip.addPara("When the fighter survival rate is lower than 20%% and the flux level is lower than %1$s, the fighter forge system is activated to quickly replenish all lost fighters within %2$s seconds. During activation, flux equal to %3$s of the maximum capacity is generated every second.",
                 10f, highlight,
                 fluxLevelString,
                 String.valueOf((int)FORGE_TOTAL_TIME),

@@ -1,24 +1,24 @@
 {
   "Moci_CaptainMachine": {
-    "name": "Captain's aircraft",
+    "name": "Captain's Aircraft",
     "description": {
       "deployment_cost": "Ship deployment point consumption increased by }%s}.",
       "deployment_cost_highlights": [
         "+{cost}%"
       ],
       "base_effects_heading": "Basic effect",
-      "base_effects": "The amplitude energy capacity is increased by }%s}, and the spread ability, command point recovery speed, and damage reduction are each increased by }%s}.",
+      "base_effects": "The flux capacity is increased by }%s}, and the maneuverability, command point recovery speed, and damage reduction are each increased by }%s}.",
       "base_effects_highlights": [
         "{flux_capacity}%",
         "{base_bonus}%"
       ],
       "synergy_heading": "Synergy",
-      "synergy_range": "For each ship of the same level within the range of }%s}, additional bonuses will be given to spread, command point recovery, damage reduction, and hard energy dissipation. At most }%s} ships can be stacked.",
+      "synergy_range": "For each ship of the same class within the range of }%s}, additional bonuses will be given to maneuverability, command point recovery, damage reduction, and hard flux dissipation. At most }%s} ships can be stacked.",
       "synergy_range_highlights": [
         "{range}",
         "{max_ships}"
       ],
-      "synergy_per_ship": "Bonuses for each ship of the same level: spread}%s}, damage reduction}%s}, command point recovery}%s}, hard energy dissipation}%s}.",
+      "synergy_per_ship": "Bonuses for each ship of the same class: maneuverability }%s}, damage reduction }%s}, command point recovery }%s}, hard flux dissipation }%s}.",
       "synergy_per_ship_highlights": [
         "{flux_per_ship}%",
         "{defense_per_ship}%",
@@ -26,7 +26,7 @@
         "{hard_flux_per_ship}%"
       ],
       "full_squad_heading": "Full formation effect",
-      "full_flux": "}%s}Total spread ability:}%s}(}%s}+}%s}×}%s})",
+      "full_flux": "}%s}Total maneuverability:}%s}(}%s}+}%s}×}%s})",
       "full_flux_highlights": [
         "#",
         "{max_flux}%",
@@ -50,7 +50,7 @@
         "{cp_per_ship}%",
         "{max_ships}"
       ],
-      "full_hard_flux": "}%s}Total hard amplitude energy dissipation:}%s}(}%s}+}%s}×}%s})",
+      "full_hard_flux": "}%s}Total hard flux dissipation:}%s}(}%s}+}%s}×}%s})",
       "full_hard_flux_highlights": [
         "#",
         "{max_hard_flux}%",
@@ -60,22 +60,22 @@
       ]
     },
     "status": {
-      "captain_title": "Captain's aircraft",
+      "captain_title": "Captain's Aircraft",
       "captain_support": "Support ships: {count}/{max}",
       "captain_no_support": "No support from ships of the same class",
       "synergy_title": "Synergy",
-      "synergy_effects": "Scattered flux +{flux}%, damage reduction +{defense}%, command points +{cp}%, hard flux dissipation +{hard_flux}%",
-      "wingman_title": "Captain machine halo",
-      "wingman_effects": "Mobility +30% Speed ​​+30%"
+      "synergy_effects": "Maneuverability +{flux}%, damage reduction +{defense}%, command points +{cp}%, hard flux dissipation +{hard_flux}%",
+      "char_halo_title": "Captain machine halo",
+      "char_halo_effects": "Mobility +30%, Speed +30%"
     }
   },
   "Moci_MobileSuitsIDcard": {
-    "name": "Mobile weapon ID card",
+    "name": "Mobile Suit ID Card",
     "description": {
-      "main": "As a unique design type of ship, %s is immune to most explosion and ramming damage. Unable to install %s.",
+      "main": "As a unique design type of ship, %s is immune to most collision and explosion damage. Unable to install %s.",
       "main_highlights": [
-        "Mobile weapons (MS)",
-        "Modified hangar, integrated point defense AI, exploration equipment"
+        "Mobile Suit (MS)",
+        "Converted Hangar, Integrated Point Defense AI, Surveying Equipment"
       ],
       "immunity_both": "Exactly %s and %s .",
       "immunity_both_highlights": [
@@ -92,67 +92,66 @@
       ],
       "anti_missile_fighter": "Deals an additional %s damage to %s and %s.",
       "anti_missile_fighter_highlights": [
-        "missile",
-        "fighter plane",
+        "missiles",
+        "fighters",
         "{damage}%"
       ],
-      "disabled_by_hullmod": "The current ship has already installed the %s series plug-ins of %s, so the current ship plug-ins are no longer effective.",
+      "disabled_by_hullmod": "The current ship has already installed the %s series hullmods from %s, so this hullmod is no longer effective.",
       "disabled_by_hullmod_highlights": [
-        "Shower Military Corporation",
-        "Heavy fighter"
+        "Moci Military Corporation",
+        "Heavy Fighter"
       ],
-      "sensor_profile": "Signal radius decreased by %s.",
+      "sensor_profile": "Sensor profile decreased by %s.",
       "sensor_profile_highlights": [
         "{profile}%"
       ],
-      "engine_stats": "Engine durability increased by %s and overload time increased by %s.",
+      "engine_stats": "Engine durability increased by %s, and engine repair speed increased by %s.",
       "engine_stats_highlights": [
         "{health}%",
-        "{overload}%"
+        "{repair}%"
       ],
       "repair_speed": "Engine and weapon repair speed increased by %s.",
       "repair_speed_highlights": [
         "{repair}%"
       ],
-      "zero_flux_boost": "Gain %s speed bonus when at zero acceleration, but has no effect when %s is installed.",
+      "zero_flux_boost": "Gain zero-flux speed boost, but has no effect when %s is installed.",
       "zero_flux_boost_highlights": [
-        "double",
-        "Security protocol override"
+        "Safety Overrides"
       ],
       "safety_overrides_penalty": "{%s}: Installed %s, deployment point %s.",
       "safety_overrides_penalty_highlights": [
-        "punish",
-        "Security protocol override",
+        "Penalty",
+        "Safety Overrides",
         "+{dp}"
       ],
-      "frigate_rules_heading": "special rules",
+      "frigate_rules_heading": "Special Rules",
       "frigate_disabled": "This effect is disabled for units with special modifications such as %s %s.",
       "frigate_disabled_highlights": [
-        "Native weapons",
-        "Super alloy armor"
+        "Built-in Weapons",
+        "Super Alloy Armor"
       ],
       "frigate_collision_only": "Frigates with %s installed enjoy special benefits:",
       "frigate_collision_only_highlights": [
-        "Secmu system"
+        "Psycommu System"
       ],
       "frigate_collision_only_benefit1": "%s collision type changed to fighter (%s)",
       "frigate_collision_only_benefit1_highlights": [
         "#",
-        "Can travel through meteorites, ships, and wreckage"
+        "Can pass through meteorites, ships, and wreckage"
       ],
       "frigate_collision_only_benefit2": "%s %s is not subject to the frigate's numerical penalty",
       "frigate_collision_only_benefit2_highlights": [
         "#",
         "but"
       ],
-      "frigate_rules_intro": "When a frigate does not have certain advanced ship plugs installed, it will be treated as %s:",
+      "frigate_rules_intro": "When a frigate does not have certain advanced hullmods installed, it will be treated as %s:",
       "frigate_rules_intro_highlights": [
-        "light mobile weapons"
+        "light mobile suits"
       ],
       "frigate_rule1": "%s collision type changed to fighter (%s)",
       "frigate_rule1_highlights": [
         "#",
-        "Can travel through meteorites, ships, and wreckage"
+        "Can pass through meteorites, ships, and wreckage"
       ],
       "frigate_rule2": "%s combat readiness decay rate increased by %s",
       "frigate_rule2_highlights": [
@@ -169,7 +168,7 @@
         "#",
         "{pd_damage}%"
       ],
-      "frigate_rule5": "%s The maximum combat readiness value when driving without an officer is reduced by %s",
+      "frigate_rule5": "%s The maximum combat readiness value when piloting without an officer is reduced by %s",
       "frigate_rule5_highlights": [
         "#",
         "{no_officer_cr}%"
@@ -177,17 +176,17 @@
     }
   },
   "Moci_cargo_carrier_deck": {
-    "name": "Cargo ship modified aircraft carrier deck",
+    "name": "Makeshift Flight Deck",
     "description": {
-      "intro": "Transforming the cargo space into a carrier-based aircraft maintenance area. This non-professional transformation will significantly affect the combat efficiency of the carrier-based aircraft and increase the carrier-based aircraft maintenance time by %s.",
+      "intro": "Converting cargo space into a carrier-based aircraft maintenance area. This makeshift modification significantly affects refit efficiency, increasing refit time by %s.",
       "intro_highlights": [
         "{refit_time}%"
       ],
-      "rearm": "At the same time, all bombers that return to the ship for reloading and fighters that return to the ship for repairs need to spend %s of their base readiness time before they can take off again.",
+      "rearm": "Additionally, all bombers returning to rearm and fighters returning to repair must spend %s of their base refit time before they can launch again.",
       "rearm_highlights": [
         "{rearm_time}%"
       ],
-      "cargo_penalty": "Each %s assembly points spent on a carrier aircraft will reduce the cargo capacity by %s, up to a maximum reduction of %s.",
+      "cargo_penalty": "Each %s OP spent on fighter wings reduces cargo capacity by %s, up to a maximum reduction of %s.",
       "cargo_penalty_highlights": [
         "{op_per_cargo}",
         "{cargo_step}",
@@ -200,33 +199,33 @@
     }
   },
   "Moci_LivingShip": {
-    "name": "living ship",
+    "name": "Living Ship",
     "description": {
       "reveal": "This %s is actually %s",
       "reveal_highlights": [
-        "'ship'",
-        "Alive!"
+        "ship",
+        "alive!"
       ],
-      "hull_regen": "The ship's structure will automatically repair at a rate of %s/second.",
+      "hull_regen": "The ship's hull structure automatically repairs at a rate of %s/second.",
       "hull_regen_highlights": [
         "{hull_regen}%"
       ],
-      "dmod_reduction": "Reduce the negative effects of D insertion %s.",
+      "dmod_reduction": "Reduces the negative effects of D-mods by %s.",
       "dmod_reduction_highlights": [
         "{dmod_reduction}%"
       ],
-      "aggression": "You will behave more %s in battle.",
+      "aggression": "The crew and systems behave in a more %s manner in combat.",
       "aggression_highlights": [
-        "Aggression"
+        "Aggressive"
       ],
-      "sensor_penalty": "However, bioenergetic radiation increases its detection range by %s.",
+      "sensor_penalty": "However, bioenergetic radiation increases the ship's sensor profile by %s.",
       "sensor_penalty_highlights": [
         "{sensor_penalty}%"
       ]
     },
     "status": {
-      "title": "living ship",
-      "text": "Bioregenerative systems are repairing structures"
+      "title": "Living Ship",
+      "text": "Bioregenerative systems are repairing the hull structure"
     }
   },
   "Moci_emergency_missile_factory": {
@@ -239,7 +238,7 @@
       ],
       "incompatible": "- Not compatible with %s",
       "incompatible_highlights": [
-        "Extended launcher"
+        "Expanded Missile Racks"
       ],
       "reload_heading": "According to the size of the missile weapon, ammunition is replenished for the missile weapon at certain intervals:",
       "small_reload": "- Small missiles: replenish %s pieces every %s",
@@ -261,7 +260,7 @@
     }
   },
   "Moci_MobileArmour": {
-    "name": "Mobile armor",
+    "name": "Mobile Armor",
     "description": {
       "main": "As a unique design type of ship, %s's combat performance is different from ordinary ships.",
       "main_highlights": [
@@ -270,7 +269,7 @@
       "defense_heading": "Comprehensive protection",
       "defense_main": "Drastically reduces %s and %s damage taken.",
       "defense_main_highlights": [
-        "die in explosion",
+        "explosion",
         "collision"
       ],
       "weapon_engine_damage": "Weapons and engines take %s less damage.",
@@ -281,18 +280,18 @@
       "emp_damage_highlights": [
         "{emp_damage}%"
       ],
-      "flux_heading": "amplitude energy system",
-      "hard_flux": "Gained %s ability to dissipate %s when shield is deployed.",
+      "flux_heading": "Flux System",
+      "hard_flux": "Allows the ship to dissipate %s at a rate of %s while shields are active.",
       "hard_flux_highlights": [
-        "{hard_flux}%",
-        "Hard amplitude"
+        "hard flux",
+        "{hard_flux}%"
       ],
-      "vent_penalty": "The ship's forced frame speed is reduced by %s.",
+      "vent_penalty": "The ship's active venting rate is reduced by %s.",
       "vent_penalty_highlights": [
         "{vent_penalty}%"
       ],
       "sensor_heading": "Perception system",
-      "sensor_profile": "Sensor signal decreased by %s.",
+      "sensor_profile": "Sensor profile decreased by %s.",
       "sensor_profile_highlights": [
         "{sensor_profile}%"
       ],
@@ -329,13 +328,13 @@
     "name": "Magnetic Fluid Control System",
     "description": {
       "intro": "Through the magnetic fluid control system, the system can significantly reduce the ship's sensor signal and improve its ability to withstand adverse environments.",
-      "sensor_profile": "The sensor signal has decreased by %s and traditional radar cannot track the ship.",
+      "sensor_profile": "The sensor profile has decreased by %s, making traditional radar unable to track the ship.",
       "sensor_profile_highlights": [
         "{sensor_profile}%"
       ],
       "environment_immunity": "Exactly %s.",
       "environment_immunity_highlights": [
-        "Immunity against corona and similar hazards"
+        "Immune to stellar coronas and similar hazards"
       ],
       "immunity_both": "Exactly %s and %s .",
       "immunity_both_highlights": [
@@ -357,14 +356,14 @@
     }
   },
   "Moci_PhaseShiftArmor": {
-    "name": "Dimensional distortion defense wall",
+    "name": "Phase Shift Armor System",
     "description": {
-      "intro": "Through advanced dimensional distortion conversion technology, this armor system provides additional protection capabilities to the ship.",
-      "sensor_profile": "The sensor signal is reduced by %s, reducing the probability of being discovered by the enemy.",
+      "intro": "Through advanced phase-shift conversion technology, this armor system provides additional protection capabilities to the ship.",
+      "sensor_profile": "The sensor profile is reduced by %s, reducing the probability of being discovered by the enemy.",
       "sensor_profile_highlights": [
         "{sensor_profile}%"
       ],
-      "hard_flux": "Allows the ship to dissipate hard amplitude energy at a rate of %s while shields are on.",
+      "hard_flux": "Allows the ship to dissipate hard flux at a rate of %s while shields are active.",
       "hard_flux_highlights": [
         "{hard_flux}%"
       ],
@@ -550,27 +549,27 @@
     }
   },
   "Moci_nanobot_factory": {
-    "name": "Nanobug Missile Factory",
+    "name": "Nanite Missile Factory",
     "description": {
       "warning_heading": "Notice",
-      "warning_main": "Indirect-hit weapons may not trigger rebound properly, such as %s torpedoes.",
+      "warning_main": "Guided / indirect-hit weapons may not trigger replenishment properly, such as %s torpedoes.",
       "warning_main_highlights": [
         "DEM/MEM"
       ],
-      "mechanism_heading": "Kill rebound mechanism",
-      "mechanism_main": "After causing damage to an enemy ship, if the target is destroyed within %s, missile weapons and ammunition will be replenished according to the target ship level.",
+      "mechanism_heading": "Kill replenishment mechanism",
+      "mechanism_main": "After causing damage to an enemy ship, if the target is destroyed within %s, missile ammunition will be replenished based on the target ship class.",
       "mechanism_main_highlights": [
         "{kill_timeout} seconds"
       ],
-      "target_heading": "Kill the target",
+      "target_heading": "On-Kill Replenishment",
       "table_ship_size": "Ship size",
-      "table_replenish_ratio": "Supplementary ratio",
+      "table_replenish_ratio": "Replenishment ratio",
       "table_frigate": "frigate",
       "table_destroyer": "destroyer",
       "table_cruiser": "cruiser",
       "table_capital": "capital ship",
-      "effect_limited": "Only takes effect on non-internal limited ammunition missile weapons",
-      "repair_penalty": "Overload, engine and weapon repair time increased by %s",
+      "effect_limited": "Only takes effect on missile weapons with limited ammunition.",
+      "repair_penalty": "Weapon and engine malfunction repair time increased by %s",
       "repair_penalty_highlights": [
         "{repair_penalty}%"
       ],
@@ -578,37 +577,37 @@
     }
   },
   "Moci_highspeed_missilerack": {
-    "name": "High-speed missile pylon modification",
+    "name": "High-Speed Missile Rack Modification",
     "description": {
-      "intro": "High-speed missile pylons will greatly speed up missile launches, but will generate a large amount of amplitude energy.",
+      "intro": "High-speed missile racks will greatly accelerate missile launches, but will generate a large amount of flux.",
       "effect_heading": "Effect",
-      "flux_intro": "- When launching a missile, a hard amplitude energy equivalent to a certain proportion of the total amplitude energy will be generated according to the size of the weapon:",
-      "flux_small": "Small missile weapon %s",
+      "flux_intro": "- When launching a missile, hard flux equivalent to a certain proportion of the total flux capacity will be generated based on the size of the weapon:",
+      "flux_small": "Small missile weapon: %s",
       "flux_small_highlights": [
         "{small_flux}%"
       ],
-      "flux_medium": "Medium Missile Weapon %s",
+      "flux_medium": "Medium missile weapon: %s",
       "flux_medium_highlights": [
         "{medium_flux}%"
       ],
-      "flux_large": "Large missile weapon %s",
+      "flux_large": "Large missile weapon: %s",
       "flux_large_highlights": [
         "{large_flux}%"
       ],
-      "cooldown": "- Missile weapons will quickly cool down after firing",
+      "cooldown": "- Missile weapon cooldown is reduced",
       "diminish": "- Continuous firing causes %s, more noticeable on larger weapons",
       "diminish_highlights": [
-        "Reduced effectiveness"
+        "reduced fire rate"
       ],
-      "ammo_reduction": "- The ammo capacity of non-auto-loading missile weapons is reduced by %s",
+      "ammo_reduction": "- The ammunition capacity of non-auto-loading missile weapons is reduced by %s",
       "ammo_reduction_highlights": [
         "50%"
       ],
-      "limit_heading": "limit",
+      "limit_heading": "Limit",
       "limit_auto": "- Not effective against missile weapons capable of automatic reloading",
       "limit_incompatible": "- Not compatible with %s",
       "limit_incompatible_highlights": [
-        "missile autoloader"
+        "Expanded Missile Racks"
       ]
     }
   },
@@ -631,34 +630,34 @@
     }
   },
   "Moci_entropy_suppressor": {
-    "name": "Integrated entropy suppressor",
+    "name": "Integrated Entropy Suppressor",
     "description": {
-      "repair": "- %s offline weapons and engines",
+      "repair": "- %s disabled weapons and engines",
       "repair_highlights": [
         "Instant repair"
       ],
-      "armor_penalty": "- Reduce the armor value of ship %s",
+      "armor_penalty": "- Reduce the armor value of ship by %s",
       "armor_penalty_highlights": [
         "20%"
       ],
-      "flux_penalty": "- Reduce the maximum radiation power of ship %s",
+      "flux_penalty": "- Reduce the maximum dissipation rate of ship by %s",
       "flux_penalty_highlights": [
         "20%"
       ]
     }
   },
   "Moci_ballisticweaponcountrangefinder": {
-    "name": "live ammunition coordination system",
+    "name": "Ballistic Weapon Coordination System",
     "description": {
-      "intro": "Weapon range is further increased by coordinating rangefinders of different sized live weapons without affecting missiles, composite weapons and point defense weapons.",
+      "intro": "Weapon range is further increased by coordinating rangefinders of different sized ballistic weapons without affecting missiles, composite, or point defense weapons.",
       "intro_highlights": [
-        "Does not affect missiles, composite weapons and point defense weapons"
+        "Does not affect missiles, composite, and point defense weapons"
       ],
-      "current_loadout": "Current live ammunition configuration: large %s, medium %s, small %s",
-      "range_heading": "range coordination effect",
+      "current_loadout": "Current ballistic configuration: large %s, medium %s, small %s",
+      "range_heading": "Range coordination effect",
       "large_rule": "- Large weapons provide range bonus to %s weapons",
       "large_rule_highlights": [
-        "Medium and small"
+        "medium and small"
       ],
       "large_rule_value": "Base bonus: %s range, reduced by %s for each additional large weapon",
       "large_rule_value_highlights": [
@@ -667,50 +666,50 @@
       ],
       "medium_rule": "- Medium weapons provide range bonus to %s weapons",
       "medium_rule_highlights": [
-        "large, small"
+        "large and small"
       ],
       "medium_rule_large": "Large weapon bonus: %s range, reduced by %s per additional medium weapon",
       "medium_rule_large_highlights": [
         "+50",
         "-50"
       ],
-      "medium_rule_small": "Small Arms Bonus: %s range, reduced by %s per additional medium weapon",
+      "medium_rule_small": "Small weapon bonus: %s range, reduced by %s per additional medium weapon",
       "medium_rule_small_highlights": [
         "+250",
         "-50"
       ],
-      "small_rule": "- Small arms provide range bonus for %s weapons",
+      "small_rule": "- Small weapons provide range bonus for %s weapons",
       "small_rule_highlights": [
-        "Medium and large"
+        "medium and large"
       ],
-      "small_rule_value": "Base bonus: %s range, reduced by %s per additional small arms",
+      "small_rule_value": "Base bonus: %s range, reduced by %s per additional small weapon",
       "small_rule_value_highlights": [
         "+50",
         "-10"
       ],
       "current_heading": "Current bonus effect",
-      "current_large": "Large live weapon: %s range",
-      "current_medium": "Medium live weapon: %s range",
-      "current_small": "Small live ammunition: %s range",
-      "no_weapon": "The current ship has no qualifying live weapons",
-      "interaction_heading": "Interaction with other fixes",
-      "interaction": "Since the increase is to base range, this modifier is further enhanced by percentage modifiers from other hull modifications and abilities.",
+      "current_large": "Large ballistic weapon: %s range",
+      "current_medium": "Medium ballistic weapon: %s range",
+      "current_small": "Small ballistic weapon: %s range",
+      "no_weapon": "The current ship has no qualifying ballistic weapons",
+      "interaction_heading": "Interaction with other modifications",
+      "interaction": "Since the increase is to base range, this modifier is further enhanced by percentage modifiers from other hull modifications and skills.",
       "unapplicable_conflict": "Mutually exclusive with Energy Weapon Coordination System",
       "unapplicable_capital": "Cannot be installed on capital ships"
     }
   },
   "Moci_energyweaponcountrangefinder": {
-    "name": "energy weapon coordination system",
+    "name": "Energy Weapon Coordination System",
     "description": {
-      "intro": "Weapon range is further increased by coordinating rangefinders for energy weapons of different sizes, without affecting missiles, composite weapons and point defense weapons.",
+      "intro": "Weapon range is further increased by coordinating rangefinders for energy weapons of different sizes, without affecting missiles, composite, or point defense weapons.",
       "intro_highlights": [
-        "Does not affect missiles, composite weapons and point defense weapons"
+        "Does not affect missiles, composite, and point defense weapons"
       ],
       "current_loadout": "Current energy weapon configuration: large %s, medium %s, small %s",
-      "range_heading": "range coordination effect",
+      "range_heading": "Range coordination effect",
       "large_rule": "- Large weapons provide range bonus to %s weapons",
       "large_rule_highlights": [
-        "Medium and small"
+        "medium and small"
       ],
       "large_rule_value": "Base bonus: %s range, reduced by %s for each additional large weapon",
       "large_rule_value_highlights": [
@@ -719,23 +718,23 @@
       ],
       "medium_rule": "- Medium weapons provide range bonus to %s weapons",
       "medium_rule_highlights": [
-        "large, small"
+        "large and small"
       ],
       "medium_rule_large": "Large weapon bonus: %s range, reduced by %s per additional medium weapon",
       "medium_rule_large_highlights": [
         "+50",
         "-50"
       ],
-      "medium_rule_small": "Small Arms Bonus: %s range, reduced by %s per additional medium weapon",
+      "medium_rule_small": "Small weapon bonus: %s range, reduced by %s per additional medium weapon",
       "medium_rule_small_highlights": [
         "+250",
         "-50"
       ],
-      "small_rule": "- Small arms provide range bonus for %s weapons",
+      "small_rule": "- Small weapons provide range bonus for %s weapons",
       "small_rule_highlights": [
-        "Medium and large"
+        "medium and large"
       ],
-      "small_rule_value": "Base bonus: %s range, reduced by %s per additional small arms",
+      "small_rule_value": "Base bonus: %s range, reduced by %s per additional small weapon",
       "small_rule_value_highlights": [
         "+50",
         "-10"
@@ -745,14 +744,14 @@
       "current_medium": "Medium energy weapon: %s range",
       "current_small": "Small energy weapon: %s range",
       "no_weapon": "The current ship has no eligible energy weapons",
-      "interaction_heading": "Interaction with other fixes",
-      "interaction": "Since the increase is to base range, this modifier is further enhanced by percentage modifiers from other hull modifications and abilities.",
-      "unapplicable_conflict": "Mutually exclusive with Live Weapons Coordination System",
+      "interaction_heading": "Interaction with other modifications",
+      "interaction": "Since the increase is to base range, this modifier is further enhanced by percentage modifiers from other hull modifications and skills.",
+      "unapplicable_conflict": "Mutually exclusive with Ballistic Weapon Coordination System",
       "unapplicable_capital": "Cannot be installed on capital ships"
     }
   },
   "Moci_WideAreaRadar": {
-    "name": "wide area combat radar",
+    "name": "Wide-Area Combat Radar",
     "description": {
       "intro": "Additional combat radars were installed to enable the aircraft carrier's carrier-based aircraft to fight at longer ranges.",
       "effect_heading": "Effect",
@@ -764,17 +763,17 @@
       "fighter_bonus_highlights": [
         "{fighter_bonus}%"
       ],
-      "limit_heading": "limit",
+      "limit_heading": "Limit",
       "limit_intro": "The additional energy consumption caused by combat radar will limit some functions of the ship.",
-      "disable_zero_flux": "%s Zero amplitude can accelerate.",
+      "disable_zero_flux": "%s zero-flux speed boost.",
       "disable_zero_flux_highlights": [
         "Disable"
       ],
-      "disable_shield": "%s shield.",
+      "disable_shield": "%s shields.",
       "disable_shield_highlights": [
         "Disable"
       ],
-      "disable_vent": "%s forces placement.",
+      "disable_vent": "%s active venting.",
       "disable_vent_highlights": [
         "Disable"
       ]
@@ -833,13 +832,13 @@
     }
   },
   "Moci_GravityReceiver": {
-    "name": "gravity wave receiver",
+    "name": "Gravity Wave Receiver",
     "description": {
       "unapplicable_reason": "Cannot be installed simultaneously with gravitational wave antenna",
       "main": "In the ship %s with %s, the aircraft %s and %s equipped with gravity wave receivers will not decay, and the %s ammunition reserves of all weapons will be restored after every %s.",
       "main_highlights": [
         "Gravitational wave antenna",
-        "{range}range",
+        "{range} range",
         "peak",
         "CR",
         "{interval} seconds",
@@ -852,13 +851,13 @@
       ],
       "smod_nelgar": "Built-in effect: Gain %s.",
       "smod_nelgar_highlights": [
-        "Zero amplitude can be permanent"
+        "Zero-flux boost can be permanent"
       ],
       "smod_other": "Built-in effect: %s.",
       "smod_other_highlights": [
         "No longer suffers from decay penalty caused by non-Nilga manufacturing"
       ],
-      "smod_param_nelgar": "Zero amplitude can be permanent",
+      "smod_param_nelgar": "Zero-flux boost can be permanent",
       "smod_param_other": "No longer suffers from decay penalty caused by non-Nilga manufacturing"
     },
     "status": {
@@ -942,7 +941,7 @@
     }
   },
   "Moci_RedComet": {
-    "name": "red comet",
+    "name": "Red Comet",
     "description": {
       "speed_bonus": "Maximum speed increased by %s.",
       "speed_bonus_highlights": [
@@ -954,13 +953,13 @@
       ],
       "zero_flux": "Get %s anytime.",
       "zero_flux_highlights": [
-        "Zero amplitude can accelerate"
+        "zero-flux speed boost"
       ],
       "incompatible": "Cannot be installed at the same time as %s.",
       "incompatible_highlights": [
-        "Security protocol override"
+        "Safety Overrides"
       ],
-      "legend_heading": "The legend of the red comet",
+      "legend_heading": "The Legend of the Red Comet",
       "legend_text": "That red guy is %s faster than us!",
       "legend_text_highlights": [
         "three times"
@@ -1082,74 +1081,74 @@
     }
   },
   "Moci_conditional_system_change": {
-    "name": "Customized tactical system",
+    "name": "Customized Tactical System",
     "description": {
-      "title": "Feilong Tactical System Switcher",
-      "intro": "Allows Feilong to switch between three tactical systems:",
+      "title": "Hiryu Tactical System Switcher",
+      "intro": "Allows Hiryu to switch between three tactical systems:",
       "line_highenergy": "- %s - Provides high-energy focused tactical system",
       "line_highenergy_highlights": [
-        "High energy focus"
+        "High Energy Focus"
       ],
       "line_recall": "- %s - Provides recall command tactical system",
       "line_recall_highlights": [
-        "recall order"
+        "Recall Order"
       ],
       "line_plasma": "- %s - Provides plasma thruster tactical system",
       "line_plasma_highlights": [
-        "plasma thruster"
+        "Plasma Thruster"
       ],
-      "unapplicable_reason": "Can only be installed on Feilong-class battleships",
-      "config_highenergy_name": "High energy focus",
+      "unapplicable_reason": "Can only be installed on Hiryu-class battleships",
+      "config_highenergy_name": "High Energy Focus",
       "config_highenergy_desc": "Provides high-energy focused tactical systems",
-      "config_recall_name": "recall order",
+      "config_recall_name": "Recall Order",
       "config_recall_desc": "Provide recall command tactical system",
-      "config_plasma_name": "plasma thruster",
+      "config_plasma_name": "Plasma Thruster",
       "config_plasma_desc": "Providing plasma thruster tactical systems"
     }
   },
   "Moci_hiryu_system_highenergy": {
-    "name": "High energy focusing system",
+    "name": "High Energy Focusing System",
     "description": {
-      "title": "High energy focusing system",
-      "install": "- Install %s tactical system for Feilong",
+      "title": "High Energy Focusing System",
+      "install": "- Install %s tactical system for Hiryu",
       "install_highlights": [
-        "High energy focus"
+        "High Energy Focus"
       ],
       "switch_next": "Removing this ship plug will switch to %s.",
       "switch_next_highlights": [
-        "recall order"
+        "Recall Order"
       ],
-      "unapplicable_reason": "Can only be installed on Feilong-class battleships"
+      "unapplicable_reason": "Can only be installed on Hiryu-class battleships"
     }
   },
   "Moci_hiryu_system_recall": {
-    "name": "recall command system",
+    "name": "Recall Command System",
     "description": {
-      "title": "recall command system",
-      "install": "- Install %s tactical system for Feilong",
+      "title": "Recall Command System",
+      "install": "- Install %s tactical system for Hiryu",
       "install_highlights": [
-        "recall order"
+        "Recall Order"
       ],
       "switch_next": "Removing this ship plug will switch to %s.",
       "switch_next_highlights": [
-        "plasma thruster"
+        "Plasma Thruster"
       ],
-      "unapplicable_reason": "Can only be installed on Feilong-class battleships"
+      "unapplicable_reason": "Can only be installed on Hiryu-class battleships"
     }
   },
   "Moci_hiryu_system_plasma": {
-    "name": "plasma thruster system",
+    "name": "Plasma Thruster System",
     "description": {
-      "title": "plasma thruster system",
-      "install": "- Install %s tactical system for Feilong",
+      "title": "Plasma Thruster System",
+      "install": "- Install %s tactical system for Hiryu",
       "install_highlights": [
-        "plasma thruster"
+        "Plasma Thruster"
       ],
       "switch_next": "Removing this ship plug will switch to %s.",
       "switch_next_highlights": [
-        "High energy focus"
+        "High Energy Focus"
       ],
-      "unapplicable_reason": "Can only be installed on Feilong-class battleships"
+      "unapplicable_reason": "Can only be installed on Hiryu-class battleships"
     }
   },
   "Moci_VortexClanEvolution": {
@@ -1264,9 +1263,9 @@
     }
   },
   "Moci_VectorIndustrialDesign": {
-    "name": "Victor Industrial Design",
+    "name": "Vector Industrial Design",
     "description": {
-      "intro": "Victor Industries' ships often reserve weapon interfaces that far exceed conventional ones, but its reactor scale and energy supply network cannot fully support the simultaneous operation of these weapons. Therefore, this type of ship often does not fill up all the weapon slots in actual combat, but redistributes the energy supply margin of unenabled interfaces to the amplitude and protection systems.",
+      "intro": "Vector Industries' ships often reserve weapon slots that far exceed conventional ones, but their reactor size and energy supply network cannot fully support the simultaneous operation of these weapons. Therefore, this type of ship often does not fill all the weapon slots in actual combat, but redistributes the energy supply margin of unused slots to the flux and protection systems.",
       "missile_penalty": "Missile weapons %s and %s are both reduced by %s.",
       "missile_penalty_highlights": [
         "rate of fire",
@@ -1281,17 +1280,17 @@
         "{small_flux}",
         "{medium_flux}",
         "{large_flux}",
-        "Amplitude energy capacity",
-        "Amplitude energy dissipation",
+        "Flux capacity",
+        "Flux dissipation",
         "{small_vent}",
         "{medium_vent}",
         "{large_vent}",
-        "Forced spreading speed",
+        "Active venting rate",
         "{max_vent}"
       ],
       "armor_bonus": "During the battle, %s of up to %s will be obtained based on the current %s ratio.",
       "armor_bonus_highlights": [
-        "Hard amplitude",
+        "hard flux",
         "{max_armor}",
         "Effective armor damage reduction"
       ],
@@ -1308,23 +1307,23 @@
       "current_total_bonus": "Currently getting a total of %s of maximum %s and %s, and %s %s.",
       "current_total_bonus_highlights": [
         "{total_flux_bonus}",
-        "Amplitude energy capacity",
-        "Amplitude energy dissipation",
+        "Flux capacity",
+        "Flux dissipation",
         "{total_vent_bonus}",
-        "Forced spreading speed"
+        "Active venting rate"
       ]
     }
   },
   "Moci_PlayerSkill1": {
-    "name": "new humanity",
+    "name": "Newtype",
     "description": {
       "level1": "Ignore the interference effects of Minovsky particles",
       "level2": "Reduces the probability of a missile being intercepted by electronic countermeasures or thermal decoys by 100%.",
-      "level3": "The effect is triggered when there are enemies within {enemy_range} or high-threat ammunition within {projectile_range}, gaining {ship_time_mult} times the time flow, and gradually returning to 1x within {active_duration} seconds, with a cooldown of {cooldown_duration} seconds."
+      "level3": "The effect is triggered when there are enemies within {enemy_range} or high-threat projectiles within {projectile_range}, gaining {ship_time_mult}x time dilation, and gradually returning to 1x within {active_duration} seconds, with a cooldown of {cooldown_duration} seconds."
     },
     "status": {
-      "title": "N.T.",
-      "time_mult": "Current time flow multiplier x{ship_time_mult}"
+      "title": "Newtype",
+      "time_mult": "Current time dilation multiplier: x{ship_time_mult}"
     }
   }
 }

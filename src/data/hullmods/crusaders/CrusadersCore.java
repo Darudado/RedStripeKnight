@@ -165,7 +165,7 @@ public class CrusadersCore extends BaseHullMod {
                 tooltip.addPara("The ship has a defensive plating covering the surface of the ship based on flux capacity.", opad, h);
                 tooltip.addPara("Provides a total of %s of %s plating based on hull size and flux capacity", pad, h, "" + Math.round(ship.getMutableStats().getFluxCapacity().getModifiedValue() * mag.get(hullSize)), "Armor-like");
                 tooltip.addPara("When the plating is online, it can reduce the damage taken by the ship and has EMP damage reduction.", pad, h);
-                tooltip.addPara("Due to plating support, hull armor increased by %s, but damage reduction decreased by %s", pad, h, 40 +"%",(1-ARMOR_MULT)*100+"%");
+                tooltip.addPara("Due to plating support, armor rating is increased by %s, but effective armor is decreased by %s", pad, h, "40%", "25%");
                 tooltip.addSectionHeading("Hold F3 to view detailed mechanics", Alignment.MID, opad);
                 if (Keyboard.isKeyDown(Keyboard.KEY_F3)) {
                     tooltip.addPara("After %s seconds without being hit, the plating will regenerate at a rate of %s units per second", pad, h, "2", "10");
@@ -207,7 +207,7 @@ public class CrusadersCore extends BaseHullMod {
                 TooltipMakerAPI imageText = tooltip.beginImageWithText("graphics/icons/hullsys/fortress_shield.png", 35f);
                 imageText.addPara("The ship has a unique frame system:", pad);
                 imageText.addPara("As the ship's flux level increases, the flux system can overcharge the shield to increase shield effectiveness.", pad, h);
-                imageText.addPara("However, it makes it difficult to upgrade some hulls and is not compatible with %s", pad, Color.red ,"Extended launcher");
+                imageText.addPara("However, it makes it difficult to upgrade some hulls and is not compatible with %s", pad, Color.red ,"Expanded Missile Racks");
                 tooltip.addImageWithText(15f);
             }
             if (ship.getVariant().hasHullMod("PennaVelox")) {

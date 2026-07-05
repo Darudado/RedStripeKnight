@@ -189,7 +189,7 @@ public class RS_MilitarySpecialized extends BaseLogisticsHullMod {
             case "assault_package" -> "assault kit";
             case "escort_package" -> "escort kit";
             case "expanded_deck_crew" -> "Expanded deck crew";
-            case "missleracks" -> "Extended launcher";
+            case "missleracks" -> "Expanded Missile Racks";
             case "PolariphaseDrive" -> "Bi-phase drive";
             case "PhaseDefenseUnit" -> "Partial Phase Dimension Difference Defense";
             case "WeaponOverLoad" -> "Overload of partial phase weapon system";

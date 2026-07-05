@@ -146,11 +146,13 @@ public class CR_ImprovedWeaponControlling extends BaseHullMod {
         Color bad = Misc.getNegativeHighlightColor();
 
         tooltip.addSectionHeading("Extra effects", Alignment.MID, opad);
-        // 动态后坐力减免描述（注意所有 % 都转义为 %%）
-        tooltip.addPara("When the weapon is continuously fired, the recoil is reduced every second." + String.format("%.0f", FIRE_RATE_PER_SECOND) + "%%" +
-                ", at most superimposed" + String.format("%.0f", MAX_FIRE_RATE_BONUS) + "seconds (total" +
-                String.format("%.0f", FIRE_RATE_PER_SECOND * MAX_FIRE_RATE_BONUS) + "%%）。", pad, h);
-        tooltip.addPara("stop firing" + String.format("%.0f", RESET_DELAY) + "The bonus will return to zero after seconds.", pad, h);
+        Color good = Misc.getPositiveHighlightColor();
+        tooltip.addPara("While firing weapons continuously, recoil is reduced by %s for each second of active firing.",
+                pad, good, String.format("%.0f%%", FIRE_RATE_PER_SECOND));
+        tooltip.addPara("This effect can stack for up to %s seconds, for a maximum recoil reduction of %s.",
+                pad, new Color[]{h, good}, String.format("%.0f", MAX_FIRE_RATE_BONUS), String.format("%.0f%%", FIRE_RATE_PER_SECOND * MAX_FIRE_RATE_BONUS));
+        tooltip.addPara("The recoil reduction bonus resets to zero if the ship stops firing for %s second.",
+                pad, bad, String.format("%.0f", RESET_DELAY));
     }
 
 }

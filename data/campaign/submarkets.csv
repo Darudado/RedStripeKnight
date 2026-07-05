@@ -1,2 +1,2 @@
 id,name,faction,desc,script,icon,order
-RS_OrdoPraetorianorumMarket,Guard-Controlled Market,red_stripe,"A controlled market officially provided by the Knights for friendly individuals or forces, selling some of the active military weapons.",data.campaign.submarket.OrdoPraetorianorumMarket,,0
+RS_OrdoPraetorianorumMarket,Guard-Controlled Market,red_stripe,"A controlled market officially provided by the Knights for friendly individuals or forces, offering military-grade equipment currently in active service.",data.campaign.submarket.OrdoPraetorianorumMarket,,0

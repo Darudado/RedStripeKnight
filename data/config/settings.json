@@ -1,12 +1,12 @@
 {
     "designTypeColors":{
-		"red stripe knights":[160,0,0,255],
+		"Red Stripe Knights":[160,0,0,255],
 		"Knights Experiment":[222,30,15,255],
 		"Knights Technology":[222,30,15,255],
 		"Red Stripe Guards Regiment":[150,25,25,255],
-		"Crusader Plan (unique)":[150,25,50,255],
-		"oath taker design":[255,94,94,255],
-		"crusade plan":[35,135,205,255],
+		"Crusader Design (Unique)":[150,25,50,255],
+		"Oathkeeper Design":[255,94,94,255],
+		"Crusader Design":[35,135,205,255],
 
 		"Energy Core-Expansion":[222,30,15,255],
 		"Energy Core-Strengthened":[35,135,205,255],

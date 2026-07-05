@@ -1,8 +1,8 @@
 name,id,tags,rarity,base price,stack size,cargo space,icon,sound id,sound id drop,plugin,plugin params,desc,order
-Knights of the Red Stripes Vintage Blueprint,rs_old_package,package_bp,,150000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_old_bp,,230.3
-Red Stripe Knights Blueprint,rs_package,package_bp,,250000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_bp,,230.4
-Knights Experimental Plan Blueprint,rs_shiyan_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_shiyan_bp,,230.5
-,,,,,,,,,,,,,
-Oathkeeper Conventions Blueprint,vownor_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,vownor_bp,,230.6
-,,,,,,,,,,,,,
-Crusader Conventional Weapons Blueprint,cr_normalweapon_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,cr_norwea_bp,,230.7
+Red Stripe Knights Vintage Blueprint Package,rs_old_package,package_bp,,150000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_old_bp,,230.3
+Red Stripe Knights Blueprint Package,rs_package,package_bp,,250000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_bp,,230.4
+Red Stripe Knights Experimental Blueprint Package,rs_shiyan_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rs_shiyan_bp,,230.5
+,,,,, ,,,,,,,,
+Red Stripe Oathkeeper Blueprint Package,vownor_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,vownor_bp,,230.6
+,,,,, ,,,,,,,,
+Crusader Weapon Blueprint Package,cr_normalweapon_package,package_bp,,350000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,cr_norwea_bp,,230.7

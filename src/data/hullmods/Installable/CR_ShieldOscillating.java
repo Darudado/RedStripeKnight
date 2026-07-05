@@ -90,21 +90,21 @@ public class CR_ShieldOscillating extends BaseHullMod {
 		int arcEnergy = (int)(E_DAMAGE * 100);
 		int arcEMP = (int)(EMP_DAMAGE * 100);
 
-		tooltip.addPara("The shield system energy register can buffer the shield from ground impact, but the register needs to release energy from time to time, and this part of the energy can only be borne by the ship body.", Misc.getHighlightColor(), pad);
+		tooltip.addPara("The shield buffer system can cushion the impact of attacks on the shield, but the buffer must discharge energy periodically, which is directed into the ship's hull.", Misc.getHighlightColor(), pad);
 
-		tooltip.addSectionHeading("dynamic damage response", Alignment.MID, pad);
-		tooltip.addPara("When the shield is attacked, the damage is dynamically reduced based on the size of the single damage:" +
-						"The lower the damage, the higher the damage reduction ratio, up to %s; the higher the damage, the lower the damage reduction, and it will no longer take effect when the converted damage reduction is less than 1%%." +
-						"For example, the single-shot damage reduction is about %s%% when %s, about %s%% when %s, and about %s%% when %s.",
+		tooltip.addSectionHeading("Dynamic Damage Response", Alignment.MID, pad);
+		tooltip.addPara("When the shield takes hit damage, the damage is dynamically reduced based on the size of the individual damage instance:\n" +
+						"The lower the damage, the higher the damage reduction ratio, up to %s; the higher the damage, the lower the reduction, which ceases to take effect entirely when the reduction is less than 1%%.\n" +
+						"For example, the single-shot damage reduction is approximately %s%% at %s damage, %s%% at %s damage, and %s%% at %s damage.",
 				padS, Misc.getHighlightColor(),
 				(int)MAX_DAMAGE_REDUCE_PERCENT + "%",
-				(int)DAMAGE_REDUCE_TEST1 + "", lowDmgReduce + "%",
-				(int)DAMAGE_REDUCE_TEST2 + "", midDmgReduce + "%",
-				(int)DAMAGE_REDUCE_TEST4 + "", highDmgReduce + "%");
+				lowDmgReduce + "%", (int)DAMAGE_REDUCE_TEST1 + "",
+				midDmgReduce + "%", (int)DAMAGE_REDUCE_TEST2 + "",
+				highDmgReduce + "%", (int)DAMAGE_REDUCE_TEST4 + "");
 
-		tooltip.addSectionHeading("resonant arc", Alignment.MID, pad);
-		tooltip.addPara("Each successfully reduced damage will be absorbed by the shield capacitor after accumulating %s points." +
-						"The arc released on the ship causes %s energy damage and %s EMP damage.",
+		tooltip.addSectionHeading("Resonant Arc", Alignment.MID, pad);
+		tooltip.addPara("Each point of damage successfully mitigated is stored, releasing a feedback arc into the hull after accumulating %s points.\n" +
+						"The arc strikes the ship, causing %s energy damage and %s EMP damage.",
 				padS, Misc.getHighlightColor(),
 				(int) ARC_THRESHOLD + "",
 				arcEnergy + "%", arcEMP + "%");
@@ -212,9 +212,9 @@ public class CR_ShieldOscillating extends BaseHullMod {
 
 	@Override
 	public String getUnapplicableReason(ShipAPI ship) {
-		if (ship == null) return "ship does not exist";
-		if (ship.getShield() == null) return "The ship has no shields";
-		if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusader Core";
+		if (ship == null) return "Ship does not exist";
+		if (ship.getShield() == null) return "The ship has no shield";
+		if (!ship.getVariant().hasHullMod("CrusadersCore")) return "Requires Crusaders Core";
 		return null;
 	}
 
